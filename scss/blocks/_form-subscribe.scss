@@ -1,0 +1,24 @@
+@media (width >= 1440px) {
+	.form-subscribe {
+		&__form {
+			display: flex;
+			flex-direction: column;
+			& input {
+				width: 522px;
+				height: 88px;
+				padding: 0px 10px 0px 20px;
+				margin-bottom: 20px;
+				border-radius: 6px;
+				font-size: 24px;
+				line-height: 1.17;
+				background-color: var(--bg);
+				color: var(--color-text);
+			}
+			& button {
+				display: flex;
+				align-self: flex-start;
+				font-size: 15px;
+			}
+		}
+	}
+}

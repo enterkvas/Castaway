@@ -1,0 +1,17 @@
+@media (width >= 1440px) {
+	.page-main__about {
+		padding: 100px 0px 0px;
+		margin: 0px 0px 100px;
+	}	
+	.about {
+		&__host {
+			padding: 0px 0px 100px;
+			margin: 0px 0px 100px;
+		}
+		&__subscribe {
+			// padding: 100px 0px 0px;
+			background-color: var(--bg-black);
+			border-radius: 32px;			
+		}
+	}
+}

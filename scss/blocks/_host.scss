@@ -1,0 +1,39 @@
+@media (width >=1440px) {
+	.host {
+		&__row {
+			display: flex;
+			justify-content: space-between;
+			column-gap: 45px;
+		}
+		&__col {
+			position: relative;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		&__card {
+			position: absolute;
+			top: 38%;
+		}
+		&__blue {margin-bottom: 0px;}
+		&__title {margin-bottom: 32px;}
+		&__image img {
+			border-radius: 14px;
+		}
+	}
+	a.card__arrow {
+		position: absolute;
+    width: 112px;
+    height: 112px;
+    background-image: url("../img/images/about-img/host/arrow-host.png");
+    background-color: var(--blue);
+    background-repeat: no-repeat;
+    background-position: left top;
+    top: -48%;
+    background-position: 50% 50%;
+    border-radius: 50%;
+	}	
+	.addgap {margin: 0px 0px 32px;}
+	.nullgap {margin: 0px;}
+}

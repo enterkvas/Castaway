@@ -1,0 +1,33 @@
+@media (width >= 1440px) {
+	.subscribe {
+		padding: 60px 0px 60px;
+		&__container {padding: 0px 60px;}
+		&__row {
+			display: flex;
+			justify-content: space-between;
+			background-color: var(--bg-black);
+		}
+		&__card {
+			position: relative;
+			&::before {
+				content: "";
+				width: 147px;
+				height: 91px;
+				position: absolute;
+				bottom: -104%;
+				left: -13%;
+				z-index: 7;
+				background-image: url('../../img/images/about-img/subscribe.svg');
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		}
+		&__blue {margin: 0px 0px 0px;}
+		&__title {
+			max-width: 70%;
+			margin-bottom: 0px;
+			font-size: 72px;
+			letter-spacing: 2.88px;
+		}
+	}
+}
