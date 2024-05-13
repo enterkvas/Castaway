@@ -377,3 +377,4 @@ element {
 ------------------------------------------
 12.05.24	Микшанский
 	Сделал 1-й коммит в Castaway: "1: All sections and blocks for 1440 except the Reviews and Footer blocks are ready"
+	
