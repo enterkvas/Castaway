@@ -1,3 +1,13 @@
+.host {
+	&__row {
+		// display: flex;
+		// flex-direction: row;
+		// justify-content: space-between;
+		// column-gap: 45px;
+	}
+	&__col {display: block;}
+	// &__col-revers {order: 0;}
+}
 @media (width >=1440px) {
 	.host {
 		&__row {

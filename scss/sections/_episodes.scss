@@ -20,12 +20,17 @@
 		row-gap: 20px;
 	}
 	&__image {
+		margin: 0px 0px 12px;
 		& img {
 			max-width: 100%;
 			height: auto;
 			border-radius: 8px;
 		}
-	}	
+	}
+	&__top-title {margin: 0px 0px 40px;}
+	&__textblue {margin: 0px 0px 16px;}
+	&__title {margin: 0px 0px 16px;}
+	&__subtitle {margin: 0px 0px 20px;}
 }
 @media (width >= 576px) {
 	.page-main__episodes {padding: 24px 0px;}
@@ -65,7 +70,12 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			padding: 0px;
+			text-align: left;
 		}
+		&__textblue {margin: 0px 0px 0px;}
+		&__title {margin: 0px 0px 0px;}
+		&__subtitle {margin: 0px 0px 0px;} 
 	}
 }
 @media (width >= 992px) {
@@ -81,6 +91,13 @@
 		}
 		&__image {
 			& img {border-radius: 0px;}
+		}
+		&__textblue {margin: 0px 0px 16px;}
+		&__top-title {
+			margin: 8px 0px 28px 0px;
+		}
+		&__title {
+			margin-bottom: 20px;
 		}
 	}
 }
@@ -101,6 +118,9 @@
 			border-radius: 24px;
 			&--content {padding: 32px;}
 		}
+		&__subtitle {
+			margin-bottom: 12px;
+		}
 	}
 }
 @media (width >= 1440px) {
@@ -117,19 +137,24 @@
 				letter-spacing: 2.88px;
 			}
 		}
+		&__image {margin: 0px 0px 0px;}
 		&__image img {max-width: none;}
 		&__row {row-gap: 60px;}
 		&__col {
 			border-radius: 32px;
 			background-color: var(--bg-black);
 			&--content {
-				column-gap: 60px;	
+				column-gap: 53px;	
 				padding: 40px;
 			}
 		}
 		&__card {
 			width: 100%;
 			padding-top: 8px;
-   } 	
+    }
+		&__textblue {margin: 0px 0px 20px;}
+		&__subtitle {
+			margin-bottom: 20px;
+		}
 	}
 }

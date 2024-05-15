@@ -13,4 +13,7 @@
 	@media (min-width: 768px) {
 		column-gap: 20px;
 	}
+	@media (width >= 1440px) {
+		column-gap: 3%;
+	}
 }

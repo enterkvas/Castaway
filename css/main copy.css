@@ -348,6 +348,12 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
          column-gap: 20px;
   }
 }
+@media (width >= 1440px) {
+  .icons-hero {
+    -moz-column-gap: 3%;
+         column-gap: 3%;
+  }
+}
 
 .page-main__hero {
   margin-top: 60px;
@@ -705,5 +711,9 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   .hero__text-add {
     margin-bottom: 20px;
     font-size: 15px;
+  }
+  .hero__icons {
+    -moz-column-gap: 3%;
+         column-gap: 3%;
   }
 }/*# sourceMappingURL=main copy.css.map */
