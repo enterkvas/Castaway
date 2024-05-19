@@ -1,26 +1,37 @@
-.page-main__hero {
-	margin-top: 60px;
-	padding: 4px 0px 24px;
+.page__hero {
+	position: relative;
+	// margin-top: 60px;
+	// padding: 4px 0px 24px;
 }
 .hero {
 	&__image {
-		height: 225px;
-		overflow: hidden;
-		position: relative;
-		border-radius: 8px;
+		// height: 225px;
+		// overflow: hidden;
+		// position: relative;
+		// border-radius: 8px;
+
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		height: 100%;
 		& img {
-			position: absolute;
-			top: 75%;
-			left: 40%;
-			transform: translate(-50%, -50%);
+			// max-width: 100%;
+			height: 90%;
+			// position: absolute;
+			// top: 75%;
+			// left: 40%;
+			// transform: translate(-50%, -50%);
 		}
 	}
-	&__content {
-		padding: 32px 15px 0px;
+	&__body {
+		// padding: 12px 15px 0px;
+		position: relative;
+		padding: 72px 0px 0px;
 	}
 	&__text-main {
 		position: relative;
-		margin-bottom: 28px;
+		margin: 0px 0px 200px;
 		text-align: center;
 		font-size: 32px;
 		line-height: 1.25;
@@ -33,6 +44,7 @@
 			height: 5px;
 			left: 21%;
 			bottom: 0%;
+			// bottom: 0%;
 			background-repeat: no-repeat;
 			background-size: cover;
 			@media (321px <= width <= 375px) {
@@ -46,16 +58,26 @@
 		}
 	}
 	&__text-add {
-		margin-bottom: 16px;
-		font-size: 10px;
+		margin-bottom: 12px;
+		font-size: 12px;
 		line-height: 1.6;
+	}
+}
+//----------------------------------------
+@media (width >= 325px) {
+	.hero {
+		&__text-main {
+			padding: 0px 25px;
+		}
 	}
 }
 //-------------------------------------------------
 @media (width >= 375px) {
 	.hero {
 		&__text-main {
-			padding: 0px 30px;
+			padding: 0px 50px;
+			margin: 0px 0px 200px;
+			& span {color: #1ED760}
 			&::after {
 				left: 26%;
 				@media (376px <= width <= 424px) {
@@ -63,54 +85,60 @@
 				}
 			}
 		}
-		&__icons {
-			justify-content: flex-start;
-			column-gap: 10%;
-		}
 	}
 }
 //-------------------------------------------------
 @media (width >= 424px) {
 	.hero {
 		&__text-main {
-			padding: 0px 50px;
+			padding: 0px 5px;
 			&::after {
-				left: 29%;
-				@media (426px <= width <= 576px) {
+				left: 37%;
+				@media (426px <= width <= 489px) {
 					display: none;
 				}
 			}
 		}
+		&__icons {
+			justify-content: flex-start;
+			column-gap: 10%;
+		}		
 	}
 }
+//-----------------------------------------
+// @media (width >= 490px) {
+// 	.hero {
+// 		&__text-main {
+// 			padding: 0px 100px;
+// 		}
+// 	}	
+// }
 //-------------------------------------------------
-@media (width >= 500px) {
-	.page-main__hero {
-		padding: 5px 0px 32px;
-	}
-	.hero {
-		&__image {
-			& img {left: 48%;}
-		}
-	}	
-}
+// @media (width >= 525px) {
+// 	.hero {
+// 		&__text-main {
+// 			padding: 0px 125px;
+// 		}
+// 	}	
+// }
 //-------------------------------------------------
-@media (width >= 576px) {
-	.page-main__hero {
-		padding: 10px 0px 40px;
-	}
+@media (width >= 490px) {
+	// .page__hero {
+	// 	padding: 10px 0px 40px;
+	// }
 	.hero {
-		&__content {padding: 40px 20px 0px;}
+		// &__body {padding: 40px 20px 0px;}
 		&__text-main {
-			padding: 0px 110px;
-			margin-bottom: 40px;
+			padding: 0px 35px;
+			// margin-bottom: 40px;
 			font-size: 36px;
 			letter-spacing: 1.6px;
 			&::after {
-				display: inline-block;
-				left: 33%;
-				width: 75px;
-				@media (577px <= width <= 768px) {
+				// display: inline-block;
+				// top: 36.5%;
+				left: 37%;
+				width: 79px;
+				@media (491px <= width <= 575px) {
 					display: none;
 				}
 			}
@@ -118,45 +146,68 @@
 				font-size: 40px;
 			}
 		}
-		&__text-add {margin-bottom: 24px;}
+		&__icons {
+			column-gap: 8%;
+		}
+		// &__text-add {margin-bottom: 24px;}
 	}
 }
-//-------------------------------------------------
-@media (width >= 600px) {
+//--------------------------------------------
+@media (width > 575px) {
 	.hero {
-		&__image {
-			& img {left: 54%;}
+		&__text-main {
+			&::after {
+				// top: 37%;
+    		left: 32.5%;
+				@media (576px <= width <= 649px) {
+					display: none;
+				}
+			}
 		}
-	}	
+		&__icons {
+			column-gap: 5%;
+		}
+	}
 }
 //-------------------------------------------------
 @media (width >= 650px) {
 	.hero {
 		&__container {padding: 0px 20px;}
 		&__image {
-			height: 300px;
-			width: 100%;
+			// height: 300px;
+			// width: 100%;
 		}
 		&__text-main {
-			padding: 0px 35px;
-			margin-bottom: 32px;
+			padding: 0px 75px;
+			&::after {
+				// display: inline-block;
+				// top: 36%;
+				left: 34.5%;
+				@media (651px <= width <= 768px) {
+					display: none;
+				}
+			}
+			// margin-bottom: 32px;
 		}
-		&__text-add {margin-bottom: 24px;}
+		// &__text-add {margin-bottom: 24px;}
 	}	
 }
 //-------------------------------------------------
 @media (width >= 768px) {
-	.page-main__hero {
-		padding: 10px 0px;
+	.page__hero {
+		padding: 10px 0px 20px;
 		margin-top: 80px;
 	}
 	.hero {
-		&__container {padding: 0px 30px;}
-		&__row {
+		column-gap: 30px;
+		&__container {
 			display: flex;
+			padding: 0px 30px;
 			column-gap: 30px;
 		}
-		&__col {width: 50%;}
+		&__row {
+		}
+		// &__col {width: 50%;}
 		&__image {
 			position: static;
 			height: auto;
@@ -175,13 +226,16 @@
 				position: static;
 				width: 100%;
 				height: auto;
+				border-radius: 8px;
 				transform: translate(0, 0);
 			}
 		}
-		&__content {
+		&__body {
+			position: static;
 			padding: 100px 0px 0px 0px;
 		}
 		&__text-main {
+			position:relative;
 			padding: 0px 15px 0px 0px;
 			margin-bottom: 60px;
 			text-align: left;
@@ -197,6 +251,7 @@
 				}
 			}
 			& span {
+				color: var(--color-text);
 				font-size: 52px;
 			}
 		}
@@ -208,22 +263,24 @@
 }
 //-------------------------------------------------
 @media (width >= 992px) {
-	.page-main__hero {
+	.page__hero {
 		margin: 120px 0px 28px;
 	}	
 	.hero {
-		&__container {padding: 0px 40px;}
+		&__container {
+			padding: 0px 40px;
+			column-gap: 40px;
+		}
 		&__row {column-gap: 50px;}
 		&__image {
 			position: static;
 			height: auto;
-			border-radius: 10px;
 			&::before {
-				top: 2.4%;
-    		left: 1.7%;
+				top: 2%;
 			}
+			& img {border-radius: 10px;}
 		}
-		&__content {padding: 160px 0px 0px 0px;}
+		&__body {padding: 160px 0px 0px 0px;}
 		&__text-main {
 			padding: 0px 30px 0px 0px;
 			margin-bottom: 72px;
@@ -241,15 +298,15 @@
 				font-size: 62px;
 			}			
 		}
+		&__text-add {
+			font-size: 14px;
+		}
 	}
 }
 //-------------------------------------------------
 @media (width >= 1024px) {
 	.hero {
 		&__container {padding: 0px 50px;}
-		&__image {
-			&::before {left: 3%;}
-		}
 		&__text-main {
 			letter-spacing: 2.6px;
 			&::after {
@@ -263,14 +320,21 @@
 }
 //-------------------------------------------------
 @media (width >= 1190px) {
-	.page-main__hero {
+	.page__hero {
 		margin: 120px 0px 60px;
 	}
 	.hero {
-		&__container {padding: 0px 60px;}
+		&__container {
+			padding: 0px 60px;
+			column-gap: 50px;
+		}
 		&__image {
-			border-radius: 12px;}
-		&__content {padding: 200px 0px 0px 0px;}
+			&::before {
+				top: -2%;
+				left: 3%;
+			}
+		}
+		&__body {padding: 200px 0px 0px 0px;}
 		&__text-main {
 			font-size: 62px;
 			letter-spacing: 2.8px;
@@ -290,12 +354,15 @@
 }
 //-------------------------------------------------
 @media (width >= 1440px) {
-	.page-main__hero {
+	.page__hero {
 		padding: 40px 0px 80px;
 		margin: 120px 0px 0px;
 	}
 	.hero {
-		&__container {padding: 0px 70px;}
+		&__container {
+			padding: 0px 70px;
+			column-gap: 60px;
+		}
 		&__row {
 			position: relative;
 			display: flex;
@@ -304,13 +371,12 @@
 		&__image {
 			border-radius: 14px;
 			&::before {
-				top: -3%;
-    		left: -2%;
+				top: 2%;
 			}
-			& img {border-radius: 14px;}
+			& img {border-radius: 12px;}
 		}
-		&__content {
-			padding: 276px 0px 0px 0px;
+		&__body {
+			padding: 264px 0px 0px 0px;
 		}
 		&__text-main {
 			font-size: 70px;

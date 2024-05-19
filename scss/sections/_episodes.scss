@@ -1,5 +1,5 @@
-.page-main__episodes {
-	padding: 20px 0px 60px;
+.page__episodes {
+	padding: 60px 0px;
 	background-color: var(--bg-black);
 	text-align: center;
 }
@@ -27,13 +27,15 @@
 			border-radius: 8px;
 		}
 	}
-	&__top-title {margin: 0px 0px 40px;}
+	&__top-title {margin: 0px 0px 20px;}
 	&__textblue {margin: 0px 0px 16px;}
 	&__title {margin: 0px 0px 16px;}
 	&__subtitle {margin: 0px 0px 20px;}
 }
 @media (width >= 576px) {
-	.page-main__episodes {padding: 24px 0px;}
+	.page__episodes {
+		// padding: 24px 0px;
+	}
 	.episodes {
 		&__header {
 			padding: 0px 20px;
@@ -43,7 +45,7 @@
 	}
 }
 @media (width >= 768px) {
-	.page-main__episodes {padding: 20px 0px;}
+	.page__episodes {padding: 20px 0px;}
 	.episodes {
 		&__header {
 			display: flex;
@@ -56,15 +58,23 @@
 				font-size: 36px;
 				letter-spacing: 1.8px;
 			}
-			&--link {margin-bottom: 0px;}
+			&--link {
+				align-self: center;
+				margin-bottom: 0px;
+			}
 		}
+		&__row {row-gap: 40px;}
 		&__col {
 			&--content {
 				display: flex;
-				column-gap: 40px;
+				column-gap: 30px;
 				padding: 0px;
 			}
 	  }
+		&__image {
+			margin: 0px;
+			& img {border-radius: 16px;}
+		}
   	&__card {
 			width: 50%;
 			display: flex;
@@ -79,7 +89,7 @@
 	}
 }
 @media (width >= 992px) {
-	.page-main__episodes {background-color: var(--bg);}	
+	.page__episodes {background-color: var(--bg);}	
 	.episodes {
 		&__header {
 			&--title {font-size: 42px;}
@@ -124,7 +134,7 @@
 	}
 }
 @media (width >= 1440px) {
-	.page-main__episodes {
+	.page__episodes {
 		padding: 0px;
 		margin: 0px 0px 160px;
 	}

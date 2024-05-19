@@ -4,8 +4,8 @@
 	&__icon {
 		position: relative;
 		display: block;
-		width: 30px;
-		height: 18px;
+		width: 24px;
+		height: 16px;
 		cursor: pointer;
 
 		&::before,
@@ -13,7 +13,7 @@
 		& span {
 			position: absolute;
 			left: 0;
-			height: 15%;
+			height: 20%;
 			width: 100%;
 			background-color: var(--color-text);
 			transition: all 0.3s ease 0s;
@@ -33,19 +33,22 @@
 			transform: scale(1) translate(0px, -50%);
 		}
 		&._active {
-			bottom: 130%;
-			right: -130%;
+			bottom: 150%;
+			right: -170%;
+			@media (width >= 576px) {
+				bottom: 100%;
+			}
 		}
 		&._active span {
 			transform: scale(0) translate(0px, -50%);
 		}
 		&._active::before {
 			top: 430%;
-			transform: rotate(-45deg) translate(0px, -50px);
+			transform: rotate(-50deg) translate(0px, -50px);
 		}
 		&._active::after {
 			bottom: 50%;
-			transform: rotate(45deg) translate(0px, 50px);
+			transform: rotate(50deg) translate(0px, 50px);
 		}
 		@media (width >= 768px) {
 			display: none;

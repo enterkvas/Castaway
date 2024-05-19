@@ -54,12 +54,12 @@ body._lock {overflow: hidden;}
 		padding-right: 0px;		
 	}
 }
-// ._ibg {position: relative;}
-// ._ibg img {
-// 	position: absolute;
-// 	width: 100%;
-// 	top: 0;
-// 	left: 0;
-// 	z-index: 6;
-// 	object-fit: cover;
-// }
+._ibg {position: relative;}
+._ibg img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
