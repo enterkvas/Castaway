@@ -567,15 +567,20 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 .episodes__row {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+}
+.episodes__col--content {
+  position: relative;
 }
 .episodes__image {
-  margin: 0px 0px 12px;
+  position: absolute;
+  width: 100%;
 }
 .episodes__image img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
+}
+.episodes__card {
+  position: relative;
 }
 .episodes__top-title {
   margin: 0px 0px 20px;
@@ -822,9 +827,11 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 @media (width >= 424px) {
   .hero__text-main {
-    padding: 0px 5px;
+    padding: 60px 5px;
+    margin: 0;
   }
   .hero__text-main::after {
+    bottom: 30%;
     left: 37%;
   }
 }
@@ -843,10 +850,12 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 @media (width >= 490px) {
   .hero__text-main {
     padding: 0px 35px;
+    margin: 0px 0px 200px;
     font-size: 36px;
     letter-spacing: 1.6px;
   }
   .hero__text-main::after {
+    bottom: 2%;
     left: 37%;
     width: 79px;
   }
@@ -866,7 +875,12 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (width > 575px) {
+  .hero__text-main {
+    padding: 100px 35px;
+    margin: 0px;
+  }
   .hero__text-main::after {
+    bottom: 34%;
     left: 32.5%;
   }
 }
@@ -883,12 +897,17 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 @media (width >= 650px) {
   .hero__container {
-    padding: 0px 20px;
+    padding: 80px 20px;
+  }
+  .hero__image img {
+    height: 80%;
   }
   .hero__text-main {
-    padding: 0px 75px;
+    padding: 40px 75px;
+    margin: 0px 0px 100px;
   }
   .hero__text-main::after {
+    bottom: 24%;
     left: 34.5%;
   }
 }
@@ -948,6 +967,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
   .hero__text-main::after {
     display: inline-block;
+    bottom: 0%;
     left: 0%;
     width: 88px;
     height: 6px;
@@ -992,7 +1012,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     border-radius: 10px;
   }
   .hero__body {
-    padding: 160px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
   }
   .hero__text-main {
     padding: 0px 30px 0px 0px;
@@ -1048,9 +1068,6 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     top: -2%;
     left: 3%;
   }
-  .hero__body {
-    padding: 200px 0px 0px 0px;
-  }
   .hero__text-main {
     font-size: 62px;
     letter-spacing: 2.8px;
@@ -1100,6 +1117,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     padding: 264px 0px 0px 0px;
   }
   .hero__text-main {
+    margin: 0px 0px 72px;
     font-size: 70px;
     letter-spacing: 3.2px;
   }

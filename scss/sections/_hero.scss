@@ -91,8 +91,10 @@
 @media (width >= 424px) {
 	.hero {
 		&__text-main {
-			padding: 0px 5px;
+			padding: 60px 5px;
+			margin: 0;
 			&::after {
+				bottom: 30%;
 				left: 37%;
 				@media (426px <= width <= 489px) {
 					display: none;
@@ -130,12 +132,14 @@
 		// &__body {padding: 40px 20px 0px;}
 		&__text-main {
 			padding: 0px 35px;
+			margin: 0px 0px 200px;
 			// margin-bottom: 40px;
 			font-size: 36px;
 			letter-spacing: 1.6px;
 			&::after {
 				// display: inline-block;
 				// top: 36.5%;
+				bottom: 2%;
 				left: 37%;
 				width: 79px;
 				@media (491px <= width <= 575px) {
@@ -156,8 +160,11 @@
 @media (width > 575px) {
 	.hero {
 		&__text-main {
+			padding: 100px 35px;
+			margin: 0px;
 			&::after {
 				// top: 37%;
+				bottom: 34%;
     		left: 32.5%;
 				@media (576px <= width <= 649px) {
 					display: none;
@@ -172,16 +179,21 @@
 //-------------------------------------------------
 @media (width >= 650px) {
 	.hero {
-		&__container {padding: 0px 20px;}
+		&__container {padding: 80px 20px;}
 		&__image {
+			& img {
+				height: 80%;
+			}
 			// height: 300px;
 			// width: 100%;
 		}
 		&__text-main {
-			padding: 0px 75px;
+			padding: 40px 75px;
+			margin: 0px 0px 100px;
 			&::after {
 				// display: inline-block;
 				// top: 36%;
+				bottom: 24%;
 				left: 34.5%;
 				@media (651px <= width <= 768px) {
 					display: none;
@@ -243,6 +255,7 @@
 			letter-spacing: 1.8px;
 			&::after {
 				display: inline-block;
+				bottom: 0%;
 				left: 0%;
 				width: 88px;
 				height: 6px;
@@ -280,7 +293,7 @@
 			}
 			& img {border-radius: 10px;}
 		}
-		&__body {padding: 160px 0px 0px 0px;}
+		&__body {padding: 100px 0px 0px 0px;}
 		&__text-main {
 			padding: 0px 30px 0px 0px;
 			margin-bottom: 72px;
@@ -334,7 +347,7 @@
 				left: 3%;
 			}
 		}
-		&__body {padding: 200px 0px 0px 0px;}
+		// &__body {padding: 200px 0px 0px 0px;}
 		&__text-main {
 			font-size: 62px;
 			letter-spacing: 2.8px;
@@ -379,6 +392,7 @@
 			padding: 264px 0px 0px 0px;
 		}
 		&__text-main {
+			margin: 0px 0px 72px;
 			font-size: 70px;
 			letter-spacing: 3.2px;
 

@@ -17,16 +17,23 @@
 	&__row {
 		display: flex;
 		flex-direction: column;
-		row-gap: 20px;
+		// row-gap: 200px;
 	}
+	// &__col {margin-bottom: 20px;}
+	&__col--content {position: relative;}
 	&__image {
-		margin: 0px 0px 12px;
+		position: absolute;
+		width: 100%;
+		// height: auto;
+		// margin: 0px 0px 12px;
 		& img {
 			max-width: 100%;
 			height: auto;
-			border-radius: 8px;
+			// border-radius: 8px;
 		}
+		// & a {display: block;}
 	}
+	&__card {position: relative;}
 	&__top-title {margin: 0px 0px 20px;}
 	&__textblue {margin: 0px 0px 16px;}
 	&__title {margin: 0px 0px 16px;}
