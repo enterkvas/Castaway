@@ -297,25 +297,42 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (min-width: 576px) {
+@media (width >= 576px) {
   .icons-hero {
     justify-content: flex-start;
-    column-gap: 40px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
 }
-@media (min-width: 650px) {
+@media (width >= 650px) {
   .icons-hero {
     flex-wrap: nowrap;
   }
 }
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .icons-hero {
-    column-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media (width >= 992px) {
+  .icons-hero {
+    -moz-column-gap: 3%;
+         column-gap: 3%;
   }
 }
 @media (width >= 1440px) {
   .icons-hero {
-    column-gap: 3%;
+    -moz-column-gap: 3%;
+         column-gap: 3%;
+  }
+}
+.icons-hero__icon {
+  width: 40px;
+}
+@media (width >= 992px) {
+  .icons-hero__icon {
+    width: 32px;
   }
 }
 
@@ -444,17 +461,20 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   .menu__list {
     display: flex;
     align-items: center;
-    column-gap: 25px;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
   }
 }
 @media (width >= 1190px) {
   .menu__list {
-    column-gap: 35px;
+    -moz-column-gap: 35px;
+         column-gap: 35px;
   }
 }
 @media (width >= 1440px) {
   .menu__list {
-    column-gap: 40px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
 }
 .menu__list > li {
@@ -615,7 +635,8 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
   .episodes__col--content {
     display: flex;
-    column-gap: 30px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
     padding: 0px;
   }
   .episodes__image {
@@ -718,7 +739,8 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     background-color: var(--bg-black);
   }
   .episodes__col--content {
-    column-gap: 53px;
+    -moz-column-gap: 53px;
+         column-gap: 53px;
     padding: 40px;
   }
   .episodes__card {
@@ -744,7 +766,10 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 .hero__image img {
+  width: 100%;
   height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .hero__body {
   position: relative;
@@ -791,9 +816,6 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (width >= 375px) {
-  .hero__body {
-    padding: 24px 0px 0px;
-  }
   .hero__text-main {
     padding: 0px 50px;
     margin: 0px 0px 200px;
@@ -811,19 +833,16 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (width >= 425px) {
-  .hero__body {
-    padding: 24px 0px 0px;
-  }
   .hero__text-main {
-    padding: 60px 5px;
-    margin: 0;
+    padding: 60px 24px;
+    margin: 0px 0px 100px;
   }
   .hero__text-main::after {
     bottom: 30%;
     left: 37%;
   }
 }
-@media (width >= 425px) and (426px <= width <= 489px) {
+@media (width >= 425px) and (426px <= width <= 575px) {
   .hero__text-main::after {
     display: none;
   }
@@ -831,43 +850,48 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 @media (width >= 425px) {
   .hero__icons {
     justify-content: flex-start;
-    column-gap: 10%;
+    -moz-column-gap: 10%;
+         column-gap: 10%;
   }
 }
-@media (width > 575px) {
+@media (width >= 575px) {
   .hero__text-main {
-    padding: 100px 35px;
+    padding: 100px 70px;
     margin: 0px;
   }
   .hero__text-main::after {
-    bottom: 34%;
-    left: 32.5%;
+    bottom: 35%;
+    left: 35%;
   }
 }
-@media (width > 575px) and (576px <= width <= 649px) {
+@media (width >= 575px) and (576px <= width <= 650px) {
   .hero__text-main::after {
     display: none;
   }
 }
-@media (width > 575px) {
+@media (width >= 575px) {
   .hero__icons {
-    column-gap: 5%;
+    -moz-column-gap: 10%;
+         column-gap: 10%;
   }
 }
 @media (width >= 650px) {
   .hero__container {
-    padding: 80px 20px;
+    padding: 40px 20px;
   }
-  .hero__image img {
-    height: 80%;
+  .hero__body {
+    padding: 0px;
+  }
+  .hero__image {
+    height: 96%;
   }
   .hero__text-main {
-    padding: 40px 75px;
-    margin: 0px 0px 100px;
+    padding: 40px 80px;
+    margin: 60px 0px 32px;
   }
   .hero__text-main::after {
     bottom: 24%;
-    left: 34.5%;
+    left: 36%;
   }
 }
 @media (width >= 650px) and (651px <= width <= 768px) {
@@ -877,16 +901,18 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 @media (width >= 768px) {
   .page__hero {
-    padding: 10px 0px 20px;
+    padding: 0px 0px 20px;
     margin-top: 80px;
   }
   .hero {
-    column-gap: 30px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
   .hero__container {
     display: flex;
     padding: 0px 30px;
-    column-gap: 30px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
   .hero__image {
     position: static;
@@ -912,7 +938,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
   .hero__body {
     position: static;
-    padding: 100px 0px 0px 0px;
+    padding: 0px;
   }
   .hero__text-main {
     position: relative;
@@ -947,21 +973,20 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 @media (width >= 992px) {
   .page__hero {
-    margin: 120px 0px 28px;
+    margin: 80px 0px 28px;
   }
   .hero__container {
     padding: 0px 40px;
-    column-gap: 40px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
   .hero__row {
-    column-gap: 50px;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
   }
   .hero__image {
     position: static;
     height: auto;
-  }
-  .hero__image::before {
-    top: 2%;
   }
   .hero__image img {
     border-radius: 10px;
@@ -974,6 +999,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 72px;
     font-size: 52px;
     letter-spacing: 2.2px;
+    line-height: 1;
   }
   .hero__text-main::after {
     display: inline-block;
@@ -1016,10 +1042,11 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
   .hero__container {
     padding: 0px 60px;
-    column-gap: 50px;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
   }
   .hero__image::before {
-    top: -2%;
+    top: -4%;
     left: 3%;
   }
   .hero__text-main {
@@ -1049,12 +1076,14 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
   .hero__container {
     padding: 0px 70px;
-    column-gap: 60px;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
   }
   .hero__row {
     position: relative;
     display: flex;
-    column-gap: 60px;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
   }
   .hero__image {
     border-radius: 14px;
@@ -1072,6 +1101,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     margin: 0px 0px 72px;
     font-size: 70px;
     letter-spacing: 3.2px;
+    line-height: 1.25;
   }
   .hero__text-main::after {
     display: inline-block;
@@ -1086,7 +1116,8 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     font-size: 15px;
   }
   .hero__icons {
-    column-gap: 3%;
+    -moz-column-gap: 3%;
+         column-gap: 3%;
   }
 }
 .host__col {
@@ -1097,7 +1128,8 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   .host__row {
     display: flex;
     justify-content: space-between;
-    column-gap: 45px;
+    -moz-column-gap: 45px;
+         column-gap: 45px;
   }
   .host__col {
     position: relative;

@@ -3,17 +3,26 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 
-	@media (min-width: 576px) {
+	@media (width >= 576px) {
 		justify-content: flex-start;
 		column-gap: 40px;
 	}
-	@media (min-width: 650px) {
+	@media (width >= 650px) {
 		flex-wrap: nowrap;
 	}
-	@media (min-width: 768px) {
+	@media (width >= 768px) {
 		column-gap: 20px;
+	}
+	@media (width >= 992px) {
+		column-gap: 3%;
 	}
 	@media (width >= 1440px) {
 		column-gap: 3%;
+	}
+	&__icon {
+		width: 40px;
+		@media (width >= 992px) {
+			width: 32px;
+		}
 	}
 }
