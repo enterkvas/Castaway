@@ -130,6 +130,9 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
   }
 }
+.card__container {
+  padding: 0px 28px;
+}
 .card__top-title {
   display: inline-block;
   padding: 0px 8px;
@@ -578,9 +581,10 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 .episodes__image img {
-  max-width: 100%;
-  height: auto;
-  opacity: 0.7;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.7);
 }
 .episodes__card {
   position: relative;
@@ -591,6 +595,11 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 .episodes__textblue {
   margin: 0px 0px 16px;
+  display: inline-block;
+  filter: brightness(0.6);
+  padding: 1px 6px;
+  border-radius: 3px;
+  background-color: var(--color-text);
 }
 .episodes__title {
   margin: 0px 0px 16px;
