@@ -1,5 +1,4 @@
 .page__episodes {
-	// position: relative;
 	padding: 60px 0px;
 	background-color: var(--bg-black);
 	text-align: center;
@@ -29,38 +28,9 @@
 			width: 100%;
 			object-fit: cover;
 			filter: brightness(0.7);
-			// opacity: 0.7;
 		}
-		// & a {display: block;}
 	}
-	&__card {
-		position: relative;
-		padding: 8px 15px 12px;
-	}
-	&__top-title {margin: 0px 0px 20px;}
-	&__textblue {
-		margin: 0px 0px 16px;
-		display: inline-block;
-		filter: brightness(0.6);
-		padding: 1px 6px;
-		border-radius: 3px;
-		background-color: var(--color-text);
-	}
-	&__title {margin: 0px 0px 16px;}
-	&__subtitle {margin: 0px 0px 20px;}
-	// &__button a {
-	// 	display: block;
-	// 	padding: 0px 0px 20px;
-	// }
-}
-// a.episodes__button {
-// 	display: block;
-// 	padding: 0px 0px 20px;
-// }
 @media (width >= 576px) {
-	.page__episodes {
-		// padding: 24px 0px;
-	}
 	.episodes {
 		&__header {
 			padding: 0px 20px;
@@ -70,7 +40,7 @@
 	}
 }
 @media (width >= 768px) {
-	.page__episodes {padding: 20px 0px;}
+	.page__episodes {padding: 40px 0px;}
 	.episodes {
 		&__header {
 			display: flex;
@@ -92,25 +62,19 @@
 		&__col {
 			&--content {
 				display: flex;
-				column-gap: 30px;
+				column-gap: 0px;
 				padding: 0px;
 			}
-	  }
+		}
 		&__image {
+			position: static;
+			width: auto;
 			margin: 0px;
-			& img {border-radius: 16px;}
+			& img {
+				border-radius: 16px;
+				filter: brightness(1);
+			}
 		}
-  	&__card {
-			width: 50%;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			padding: 0px;
-			text-align: left;
-		}
-		&__textblue {margin: 0px 0px 0px;}
-		&__title {margin: 0px 0px 0px;}
-		&__subtitle {margin: 0px 0px 0px;} 
 	}
 }
 @media (width >= 992px) {

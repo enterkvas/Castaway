@@ -130,11 +130,16 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
   }
 }
+.card {
+  position: relative;
+  padding: 8px 0px 12px;
+}
 .card__container {
   padding: 0px 28px;
 }
 .card__top-title {
   display: inline-block;
+  margin: 0px 0px 20px;
   padding: 0px 8px;
   border-radius: 2px;
   background-color: var(--bg);
@@ -142,39 +147,72 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
 }
 .card__textblue {
+  display: inline-block;
+  padding: 0px 8px;
+  margin: 0px 0px 16px;
   font-size: 14px;
-  color: var(--blue);
   line-height: 1.6;
+  border-radius: 2px;
+  color: var(--blue);
+  background-color: var(--bg);
+  filter: saturate(200%);
 }
 .card__textblue span {
   font-size: 15px;
   line-height: 1.5;
 }
 .card__title {
+  margin: 0px 0px 16px;
   font-size: 30px;
   line-height: 1.1;
   letter-spacing: 1.5px;
 }
 .card__subtitle {
+  margin: 0px 0px 20px;
   font-size: 16px;
   line-height: 1.5;
 }
 
 @media (width >= 576px) {
+  .card__container {
+    padding: 0px 64px;
+  }
   .card__title {
     font-size: 34px;
   }
 }
 @media (width >= 768px) {
+  .card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+    text-align: left;
+  }
+  .card__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0px 28px;
+  }
   .card__top-title {
     align-self: flex-start;
-    margin: 8px 0px 0px 0px;
+    margin: 8px 0px 0px;
+  }
+  .card__textblue {
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
   }
   .card__title {
+    margin: 0px;
     font-size: 36px;
   }
   .card__subtitle {
-    font-size: 18px;
+    margin: 0px;
+    font-size: 14px;
   }
   .card__button {
     align-self: flex-start;
@@ -586,28 +624,6 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
      object-fit: cover;
   filter: brightness(0.7);
 }
-.episodes__card {
-  position: relative;
-  padding: 8px 15px 12px;
-}
-.episodes__top-title {
-  margin: 0px 0px 20px;
-}
-.episodes__textblue {
-  margin: 0px 0px 16px;
-  display: inline-block;
-  filter: brightness(0.6);
-  padding: 1px 6px;
-  border-radius: 3px;
-  background-color: var(--color-text);
-}
-.episodes__title {
-  margin: 0px 0px 16px;
-}
-.episodes__subtitle {
-  margin: 0px 0px 20px;
-}
-
 @media (width >= 576px) {
   .episodes__header {
     padding: 0px 20px;
@@ -621,7 +637,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 @media (width >= 768px) {
   .page__episodes {
-    padding: 20px 0px;
+    padding: 40px 0px;
   }
   .episodes__header {
     display: flex;
@@ -644,32 +660,18 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
   .episodes__col--content {
     display: flex;
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
     padding: 0px;
   }
   .episodes__image {
+    position: static;
+    width: auto;
     margin: 0px;
   }
   .episodes__image img {
     border-radius: 16px;
-  }
-  .episodes__card {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0px;
-    text-align: left;
-  }
-  .episodes__textblue {
-    margin: 0px 0px 0px;
-  }
-  .episodes__title {
-    margin: 0px 0px 0px;
-  }
-  .episodes__subtitle {
-    margin: 0px 0px 0px;
+    filter: brightness(1);
   }
 }
 @media (width >= 992px) {

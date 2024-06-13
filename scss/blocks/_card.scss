@@ -1,7 +1,10 @@
 .card {
+	position: relative;
+	padding: 8px 0px 12px;
 	&__container {padding: 0px 28px;}
 	&__top-title {
 		display: inline-block;
+		margin: 0px 0px 20px;
 		padding: 0px 8px;
 		border-radius: 2px;
 		background-color: var(--bg);
@@ -9,48 +12,69 @@
 		line-height: 1.5;
 	}
 	&__textblue {
+		display: inline-block;
+		padding: 0px 8px;
+		margin: 0px 0px 16px;
 		font-size: 14px;
-		color: var(--blue);
 		line-height: 1.6;
+		border-radius: 2px;
+		color: var(--blue);
+		background-color: var(--bg);
+		filter: saturate(200%);
 		& span {
 			font-size: 15px;
 			line-height: 1.5;
 		}
 	}
 	&__title {
-		// margin-bottom: 16px;
+		margin: 0px 0px 16px;
 		font-size: 30px;
 		line-height: 1.1;
 		letter-spacing: 1.5px;
 	}
 	&__subtitle {
-		// margin-bottom: 20px;
+		margin: 0px 0px 20px;
 		font-size: 16px;
 		line-height: 1.5;
 	}
 }
 @media (width >= 576px) {
 	.card {
-		// padding: 60px;
+		&__container {padding: 0px 64px;}
 		&__title {font-size: 34px;}
 	}
 }
 @media (width >= 768px) {
 	.card {
-		// padding: 0px;
-		// text-align: left;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 0px;
+		text-align: left;
+		&__container {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100%;
+			padding: 0px 28px;
+		}
 		&__top-title {
 			align-self: flex-start;
-			margin: 8px 0px 0px 0px;
+			margin: 8px 0px 0px;
 		}
-		// &__textblue {margin-bottom: 0px;}
+		&__textblue {
+			padding: 0px;
+			margin: 0px;
+			background-color: transparent;
+		}
 		&__title {
-			// margin-bottom: 0px;
+			margin: 0px;
 			font-size: 36px;
 		}
 		&__subtitle {
-			// margin-bottom: 0px;
-			font-size: 18px;
+			margin: 0px;
+			font-size: 14px;
 		}
 		&__button {align-self: flex-start;}
 	}
