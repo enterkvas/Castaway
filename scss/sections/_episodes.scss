@@ -1,9 +1,8 @@
-.page__episodes {
-	padding: 60px 0px;
+.episodes {
+	position: relative;
+	padding: 40px 0px;
 	background-color: var(--bg-black);
 	text-align: center;
-}
-.episodes {
 	&__header {
 		padding: 0px 15px ;
 		&--title {
@@ -20,16 +19,18 @@
 		row-gap: 20px;
 	}
 	&__col {overflow: hidden;}
-	&__col--content {position: relative;}
+	// &__col--content {position: relative;}
 	&__image {
 		position: absolute;
 		width: 100%;
+		
 		& img {
 			width: 100%;
 			object-fit: cover;
 			filter: brightness(0.7);
 		}
 	}
+}
 @media (width >= 576px) {
 	.episodes {
 		&__header {
@@ -62,7 +63,7 @@
 		&__col {
 			&--content {
 				display: flex;
-				column-gap: 0px;
+				column-gap: 20px;
 				padding: 0px;
 			}
 		}
@@ -86,17 +87,20 @@
 		&__col {
 			background-color: var(--bg-black);
 			border-radius: 18px;
-			&--content {padding: 20px;}
+			&--content {
+				padding: 20px;
+				column-gap: 60px;
+			}
 		}
 		&__image {
 			& img {border-radius: 0px;}
 		}
-		&__textblue {margin: 0px 0px 16px;}
+		// &__textblue {margin: 0px 0px 16px;}
 		&__top-title {
-			margin: 8px 0px 28px 0px;
+			// margin: 8px 0px 28px 0px;
 		}
 		&__title {
-			margin-bottom: 20px;
+			// margin-bottom: 20px;
 		}
 	}
 }
@@ -117,9 +121,9 @@
 			border-radius: 24px;
 			&--content {padding: 32px;}
 		}
-		&__subtitle {
-			margin-bottom: 12px;
-		}
+		// &__subtitle {
+		// 	margin-bottom: 12px;
+		// }
 	}
 }
 @media (width >= 1440px) {
@@ -136,24 +140,27 @@
 				letter-spacing: 2.88px;
 			}
 		}
-		&__image {margin: 0px 0px 0px;}
+		&__image {
+			width: 50%;
+			margin: 0px 0px 0px;
+		}
 		&__image img {max-width: none;}
 		&__row {row-gap: 60px;}
 		&__col {
 			border-radius: 32px;
 			background-color: var(--bg-black);
 			&--content {
-				column-gap: 53px;	
+				column-gap: 30px;	
 				padding: 40px;
 			}
 		}
-		&__card {
-			width: 100%;
-			padding-top: 8px;
-    }
-		&__textblue {margin: 0px 0px 20px;}
-		&__subtitle {
-			margin-bottom: 20px;
-		}
+		// &__card {
+		// 	width: 100%;
+		// 	padding-top: 8px;
+		// }
+		// &__textblue {margin: 0px 0px 20px;}
+		// &__subtitle {
+		// 	margin-bottom: 20px;
+		// }
 	}
 }
