@@ -1,10 +1,16 @@
 .card {
 	position: relative;
-	padding: 8px 0px;
-	&__container {padding: 0px 28px;}
+	padding-top: 10px;
+	&__container {
+		padding: 0px 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 	&__top-title {
 		display: inline-block;
-		margin: 0px 0px 20px;
+		align-self: flex-start;
+		margin: 0px auto;
 		padding: 0px 8px;
 		border-radius: 2px;
 		background-color: var(--bg);
@@ -13,8 +19,9 @@
 	}
 	&__textblue {
 		display: inline-block;
+		align-self: flex-start;
 		padding: 0px 8px;
-		margin: 0px 0px 16px;
+		margin: 0px auto 12px;
 		font-size: 14px;
 		line-height: 1.6;
 		border-radius: 2px;
@@ -27,7 +34,7 @@
 		}
 	}
 	&__title {
-		margin: 0px 0px 16px;
+		margin: 0px 0px 8px;
 		font-size: 30px;
 		line-height: 1.1;
 		letter-spacing: 1.5px;
@@ -36,12 +43,96 @@
 		margin: 0px 0px 20px;
 		font-size: 16px;
 		line-height: 1.5;
+		
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		
+		@media (width >= 325px) {-webkit-line-clamp: 3;}
+		@media (width >= 469px) {-webkit-line-clamp: 2;}
+	}
+	&__button {
+		margin: 0px auto;
+		align-self: flex-start;
+	}
+}
+@media (width >= 330px) {
+	.card {
+		&__top-title {margin: 0px auto 16px;}
+		&__textblue {margin: 0px auto 20px;}
+		&__title {margin: 0px 0px 16px;}
+	}
+}
+@media (width >= 351px) {
+	.card {
+		&__container {padding: 0px 70px;}
+	}
+}
+@media (width >= 360px) {
+	.card {
+		&__textblue {margin: 0px auto 40px;}
+		&__title {margin: 0px 0px 20px;}
+		&__subtitle {margin: 0px 0px 40px;}
+	}
+}
+@media (width >= 400px) {
+	.card {
+		&__top-title {margin: 0px auto 32px;}
+		&__subtitle {margin: 0px 0px 60px;}
+		&__button {margin-bottom: 20px;}
+	}
+}
+@media (width >= 450px) {
+	.card {
+		padding-top: 20px;
+		&__textblue {margin: 0px auto 80px;}
+		&__title {margin: 0px -40px 40px;}
+		&__subtitle {margin: 0px 0px 60px;}
+		&__button {margin-bottom: 40px;}
+	}
+}
+@media (width >= 469px) {
+	.card {
+		&__container {padding: 0px 100px;}
+	}
+}
+@media (width >= 500px) {
+	.card {
+		padding-top: 32px;
+		&__top-title {margin: 0px auto 40px;}
+		&__textblue {margin: 0px auto 80px;}
+		&__title {margin: 0px -60px 20px;}
+		&__subtitle {
+			margin: 0px 0px 120px;
+			-webkit-line-clamp: 3;
+		}
 	}
 }
 @media (width >= 576px) {
 	.card {
-		&__container {padding: 0px 64px;}
+		&__top-title {margin: 0px auto 60px;}
+		&__textblue {margin: 0px auto 100px;}
 		&__title {font-size: 34px;}
+		&__subtitle {margin: 0px 0px 160px;}
+	}
+}
+@media (width >= 576px) {
+	.card {
+		&__subtitle {-webkit-line-clamp: 2;}
+	}
+}
+@media (width >= 650px) {
+	.card {
+		&__title {margin: 0px 0px 40px;}
+		&__subtitle {margin: 0px 0px 180px;}
+	}
+}
+@media (width >= 700px) {
+	.card {
+		&__top-title {margin: 0px auto 100px;}
+		&__subtitle {margin: 0px 0px 246px;}
 	}
 }
 @media (width >= 768px) {
@@ -59,10 +150,7 @@
 			height: 100%;
 			padding: 0px 20px;
 		}
-		&__top-title {
-			align-self: flex-start;
-			margin: 8px 0px 0px;
-		}
+		&__top-title {margin: 8px 0px 0px;}
 		&__textblue {
 			padding: 0px;
 			margin: 0px;
@@ -75,18 +163,19 @@
 		&__subtitle {
 			margin: 0px;
 			font-size: 14px;
+			-webkit-line-clamp: 3;
+
 		}
-		&__button {align-self: flex-start;}
+		&__button {
+			margin: 0px;
+			align-self: flex-start;
+		}
 	}
 }
 @media (width >= 992px) {
 	.card {
-		&__top-title {
-			// margin: 8px 0px 28px 0px;
-			border-radius: 4px;
-		}
+		&__top-title {border-radius: 4px;}
 		&__title {
-			// margin-bottom: 20px;
 			font-size: 42px;
 			letter-spacing: 2px;
 		}
@@ -99,19 +188,13 @@
 			font-size: 16px;
 			& span {font-size: 17px;} 
 		}
-		// &__title {font-size: 52px;}
-		&__subtitle {
-			// margin-bottom: 12px;
-			font-size: 18px;
-		}
+		&__subtitle {font-size: 18px;}
 	}
 }
 @media (width >= 1440px) {
 	.card {
 		width: 100%;
-		&__container {
-			padding: 0px 14px;
-		}
+		&__container {padding: 0px 14px;}
 		&__top-title {
 			padding: 0px 16px;
 			border-radius: 6px;
@@ -128,9 +211,6 @@
 			font-size: 64px;
 			letter-spacing: 2.56px;
 		}
-		&__subtitle {
-			// margin-bottom: 20px;
-			font-size: 22px;
-		}
+		&__subtitle {font-size: 22px;}
 	}
 } 
