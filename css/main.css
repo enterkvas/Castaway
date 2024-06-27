@@ -685,20 +685,6 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.page__about {
-  padding: 100px 0px 0px;
-  margin: 0px 0px 100px;
-}
-
-.about__host {
-  padding: 0px 0px 100px;
-  margin: 0px 0px 100px;
-}
-.about__subscribe {
-  background-color: var(--bg-black);
-  border-radius: 32px;
-}
-
 @media (width >= 1440px) {
   .page__about {
     padding: 100px 0px 0px;
@@ -715,7 +701,8 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 .episodes {
   position: relative;
-  padding: 40px 0px;
+  padding: 20px 0px;
+  margin: 0px 0px 20px;
   background-color: var(--bg-black);
   text-align: center;
 }
@@ -1239,10 +1226,6 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     column-gap: 3%;
   }
 }
-.host__col {
-  display: block;
-}
-
 @media (width >= 1440px) {
   .host__row {
     display: flex;
@@ -1266,7 +1249,12 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   .host__title {
     margin-bottom: 32px;
   }
+  .host__image {
+    position: static;
+  }
   .host__image img {
+    width: 100%;
+    object-fit: cover;
     border-radius: 14px;
   }
   a.card__arrow {
@@ -1308,9 +1296,8 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     width: 147px;
     height: 91px;
     position: absolute;
-    bottom: -88%;
+    bottom: -100%;
     left: -13%;
-    z-index: 7;
     background-image: url("../img/images/about-img/subscribe.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1321,6 +1308,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   .subscribe__title {
     max-width: 70%;
     margin-bottom: 0px;
+    padding-right: 40px;
     font-size: 72px;
     letter-spacing: 2.88px;
   }

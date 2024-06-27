@@ -1,3 +1,10 @@
+// .subscribe {
+// 	&__blue {
+// 		padding: 0px;
+// 		margin: 0px 0px 12px;
+// 		background-color: var(--bg-black);
+// 	}
+// }
 @media (width >= 1440px) {
 	.subscribe {
 		padding: 60px 0px 60px;
@@ -14,9 +21,8 @@
 				width: 147px;
 				height: 91px;
 				position: absolute;
-				bottom: -88%;
+				bottom: -100%;
 				left: -13%;
-				z-index: 7;
 				background-image: url('../img/images/about-img/subscribe.svg');
 				background-repeat: no-repeat;
 				background-size: cover;
@@ -26,6 +32,7 @@
 		&__title {
 			max-width: 70%;
 			margin-bottom: 0px;
+			padding-right: 40px;
 			font-size: 72px;
 			letter-spacing: 2.88px;
 		}
