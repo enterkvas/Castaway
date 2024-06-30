@@ -1,21 +1,24 @@
-// .host {
-// 	&__row {
-// 		// display: flex;
-// 		// flex-direction: row;
-// 		// justify-content: space-between;
-// 		// column-gap: 45px;
-// 	}
-// 	&__col {display: block;}
-// 	// &__col-revers {order: 0;}
-// 	&__image {
-// 		position: absolute;
-// 		left: 0;
-// 		& img {
-// 			width: 100%;
-// 			border-radius: 14px;
-// 		}
-// 	}
-// }
+.host {
+	&__row {
+		// display: flex;
+		// flex-direction: row;
+		// justify-content: space-between;
+		// column-gap: 45px;
+	}
+	&__col {display: block;}
+	// &__col-revers {order: 0;}
+	&__image {
+		position: absolute;
+		left: 0;
+		& img {
+			width: 100%;
+			// border-radius: 14px;
+		}
+	}
+	&__card {
+		position: relative;
+	}
+}
 @media (width >= 1440px) {
 	.host {
 		&__row {

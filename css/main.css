@@ -23,11 +23,6 @@ body._lock {
   flex-direction: column;
 }
 
-.page-main {
-  position: relative;
-  flex: 1 1 auto;
-}
-
 .container {
   max-width: 1440px;
   margin: 0px auto;
@@ -135,7 +130,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   padding-top: 10px;
 }
 .card__container {
-  padding: 0px 20px;
+  padding: 0px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -173,13 +168,13 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1.5px;
 }
 .card__subtitle {
-  margin: 0px 0px 20px;
+  margin: 0px 0px 40px;
   font-size: 16px;
   line-height: 1.5;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 @media (width >= 325px) {
@@ -193,7 +188,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 .card__button {
-  margin: 0px auto;
+  margin: 0px auto 40px;
   align-self: flex-start;
 }
 
@@ -207,21 +202,29 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   .card__title {
     margin: 0px 0px 16px;
   }
+  .card__subtitle {
+    margin: 0px 0px 20px;
+  }
+  .card__button {
+    margin: 0px auto;
+  }
 }
-@media (width >= 351px) {
-  .card__container {
-    padding: 0px 70px;
+@media (width >= 340px) {
+  .card__title {
+    padding: 0px 20px;
   }
 }
 @media (width >= 360px) {
-  .card__textblue {
-    margin: 0px auto 40px;
+  .card__subtitle {
+    margin: 0px 0px 60px;
   }
+}
+@media (width >= 380px) {
   .card__title {
-    margin: 0px 0px 20px;
+    padding: 0px;
   }
   .card__subtitle {
-    margin: 0px 0px 40px;
+    margin: 0px 0px 100px;
   }
 }
 @media (width >= 400px) {
@@ -229,10 +232,10 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     margin: 0px auto 32px;
   }
   .card__subtitle {
-    margin: 0px 0px 60px;
+    margin: 0px 0px 100px;
   }
   .card__button {
-    margin-bottom: 20px;
+    margin: 0px auto 20px;
   }
 }
 @media (width >= 450px) {
@@ -249,12 +252,18 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     margin: 0px 0px 60px;
   }
   .card__button {
-    margin-bottom: 40px;
+    margin: 0px auto 40px;
+  }
+  .card__container {
+    padding: 0px 20px;
   }
 }
 @media (width >= 469px) {
   .card__container {
-    padding: 0px 100px;
+    padding: 0px 80px;
+  }
+  .card__subtitle {
+    margin: 0px 0px 112px;
   }
 }
 @media (width >= 500px) {
@@ -271,8 +280,13 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     margin: 0px -60px 20px;
   }
   .card__subtitle {
-    margin: 0px 0px 120px;
+    margin: 0px 0px 90px;
     -webkit-line-clamp: 3;
+  }
+}
+@media (width >= 550px) {
+  .card__subtitle {
+    margin: 0px 0px 160px;
   }
 }
 @media (width >= 576px) {
@@ -296,10 +310,11 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 @media (width >= 650px) {
   .card__title {
+    padding: 0px;
     margin: 0px 0px 40px;
   }
   .card__subtitle {
-    margin: 0px 0px 180px;
+    margin: 0px 0px 220px;
   }
 }
 @media (width >= 700px) {
@@ -685,11 +700,108 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.page-main {
+  position: relative;
+  flex: 1 1 auto;
+}
+.page__hero {
+  position: relative;
+  margin: 0px 0px 40px;
+}
+@media (width >= 500px) {
+  .page__hero {
+    margin: 0px 0px 60px;
+  }
+}
+@media (width >= 768px) {
+  .page__hero {
+    padding: 0px 0px 20px;
+    margin: 80px 0px 12px;
+  }
+}
+@media (width >= 992px) {
+  .page__hero {
+    margin: 80px 0px 28px;
+  }
+}
+@media (width >= 1190px) {
+  .page__hero {
+    margin: 120px 0px 60px;
+  }
+}
+@media (width >= 1440px) {
+  .page__hero {
+    padding: 40px 0px 80px;
+    margin: 120px 0px 0px;
+  }
+}
+.page__episodes {
+  padding: 20px 0px 0px;
+  margin: 0px 0px 28px;
+}
+@media (width >= 330px) {
+  .page__episodes {
+    margin: 0px 0px 80px;
+  }
+}
+@media (width >= 360px) {
+  .page__episodes {
+    margin: 0px 0px 92px;
+  }
+}
+@media (width >= 450px) {
+  .page__episodes {
+    margin: 0px 0px 60px;
+  }
+}
+@media (width >= 500px) {
+  .page__episodes {
+    margin: 0px 0px 100px;
+  }
+}
+@media (width >= 700px) {
+  .page__episodes {
+    padding: 20px 0px;
+  }
+}
+@media (width >= 768px) {
+  .page__episodes {
+    padding: 40px 0px;
+    margin: 0px 0px 40px;
+  }
+}
+@media (width >= 992px) {
+  .page__episodes {
+    background-color: var(--bg);
+  }
+}
+@media (width >= 1440px) {
+  .page__episodes {
+    padding: 0px;
+    margin: 0px 0px 160px;
+  }
+}
 @media (width >= 1440px) {
   .page__about {
     padding: 100px 0px 0px;
     margin: 0px 0px 100px;
   }
+}
+
+.page__about {
+  padding: 12px 0px 0px;
+  margin: 0px 0px 20px;
+}
+
+.about__host {
+  margin: 0px 0px 20px;
+}
+.about__subscribe {
+  background-color: var(--bg-black);
+  border-radius: 32px;
+}
+
+@media (width >= 1440px) {
   .about__host {
     padding: 0px 0px 100px;
     margin: 0px 0px 100px;
@@ -701,29 +813,31 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 .episodes {
   position: relative;
-  padding: 20px 0px;
-  margin: 0px 0px 20px;
-  background-color: var(--bg-black);
   text-align: center;
 }
 .episodes__header {
   padding: 0px 15px;
 }
 .episodes__header--title {
-  margin-bottom: 20px;
+  margin: 0px 0px 20px;
   font-size: 30px;
   line-height: 1.25;
   letter-spacing: 1.5px;
 }
 .episodes__header--link {
-  margin-bottom: 20px;
+  margin: 0px 0px 32px;
 }
 .episodes__row {
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 20px;
 }
 @media (width >= 330px) {
+  .episodes__row {
+    row-gap: 80px;
+  }
+}
+@media (width >= 450px) {
   .episodes__row {
     row-gap: 60px;
   }
@@ -755,33 +869,25 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     font-size: 36px;
   }
   .episodes__header--link {
-    margin-bottom: 40px;
-  }
-}
-@media (width >= 700px) {
-  .episodes {
-    padding: 72px 0px;
+    margin: 0px 0px 40px;
   }
 }
 @media (width >= 768px) {
-  .page__episodes {
-    padding: 40px 0px;
-  }
   .episodes__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 4px 0px;
-    margin-bottom: 40px;
+    margin: 0px 0px 40px;
   }
   .episodes__header--title {
-    margin-bottom: 0px;
+    margin: 0px;
     font-size: 36px;
     letter-spacing: 1.8px;
   }
   .episodes__header--link {
     align-self: center;
-    margin-bottom: 0px;
+    margin: 0px;
   }
   .episodes__row {
     row-gap: 40px;
@@ -789,7 +895,9 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   .episodes__col--content {
     display: flex;
     column-gap: 20px;
-    padding: 0px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: var(--bg-black);
   }
   .episodes__image {
     position: static;
@@ -797,14 +905,10 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     margin: 0px;
   }
   .episodes__image img {
-    border-radius: 16px;
     filter: brightness(1);
   }
 }
 @media (width >= 992px) {
-  .page__episodes {
-    background-color: var(--bg);
-  }
   .episodes__header--title {
     font-size: 42px;
   }
@@ -813,7 +917,6 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     border-radius: 18px;
   }
   .episodes__col--content {
-    padding: 20px;
     column-gap: 60px;
   }
   .episodes__image img {
@@ -840,12 +943,8 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (width >= 1440px) {
-  .page__episodes {
-    padding: 0px;
-    margin: 0px 0px 160px;
-  }
   .episodes__header {
-    margin-bottom: 56px;
+    margin: 0px 0px 56px;
     padding: 10px 0px;
   }
   .episodes__header--title {
@@ -871,10 +970,6 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     padding: 40px;
   }
 }
-.page__hero {
-  position: relative;
-}
-
 .hero__image {
   position: absolute;
   top: 60px;
@@ -890,6 +985,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 .hero__body {
   position: relative;
   padding: 72px 0px 0px;
+  margin: 0px 0px 40px;
 }
 .hero__text-main {
   position: relative;
@@ -1014,10 +1110,6 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (width >= 768px) {
-  .page__hero {
-    padding: 0px 0px 20px;
-    margin-top: 80px;
-  }
   .hero {
     column-gap: 30px;
   }
@@ -1084,9 +1176,6 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (width >= 992px) {
-  .page__hero {
-    margin: 80px 0px 28px;
-  }
   .hero__container {
     padding: 0px 40px;
     column-gap: 40px;
@@ -1147,9 +1236,6 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (width >= 1190px) {
-  .page__hero {
-    margin: 120px 0px 60px;
-  }
   .hero__container {
     padding: 0px 60px;
     column-gap: 50px;
@@ -1179,10 +1265,6 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (width >= 1440px) {
-  .page__hero {
-    padding: 40px 0px 80px;
-    margin: 120px 0px 0px;
-  }
   .hero__container {
     padding: 0px 70px;
     column-gap: 60px;
@@ -1226,6 +1308,20 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     column-gap: 3%;
   }
 }
+.host__col {
+  display: block;
+}
+.host__image {
+  position: absolute;
+  left: 0;
+}
+.host__image img {
+  width: 100%;
+}
+.host__card {
+  position: relative;
+}
+
 @media (width >= 1440px) {
   .host__row {
     display: flex;

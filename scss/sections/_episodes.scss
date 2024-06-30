@@ -1,24 +1,24 @@
 .episodes {
 	position: relative;
-	padding: 20px 0px;
-	margin: 0px 0px 20px;
-	background-color: var(--bg-black);
 	text-align: center;
 	&__header {
 		padding: 0px 15px ;
 		&--title {
-			margin-bottom: 20px;
+			margin: 0px 0px 20px;
 			font-size: 30px;
 			line-height: 1.25;
 			letter-spacing: 1.5px;
 		}
-		&--link {margin-bottom: 20px;}
+		&--link {margin: 0px 0px 32px;}
 	}
 	&__row {
 		display: flex;
 		flex-direction: column;
-		row-gap: 40px;
-		@media (width >= 330px) {row-gap: 60px;}
+		row-gap: 20px;
+		@media (width >= 330px) {
+			row-gap: 80px;
+		}
+		@media (width >= 450px) {row-gap: 60px;}
 		@media (width >= 500px) {row-gap: 80px;}
 	}
 	&__col {overflow: hidden;}
@@ -38,30 +38,26 @@
 		&__header {
 			padding: 0px 20px;
 			&--title {font-size: 36px;}
-			&--link {margin-bottom: 40px;}
+			&--link {margin: 0px 0px 40px;}
 		}	
 	}
 }
-@media (width >= 700px) {
-	.episodes {	padding: 72px 0px;}
-}
 @media (width >= 768px) {
-	.page__episodes {padding: 40px 0px;}
 	.episodes {
 		&__header {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			padding: 4px 0px;
-			margin-bottom: 40px;
+			margin: 0px 0px 40px;
 			&--title {
-				margin-bottom: 0px;
+				margin: 0px;
 				font-size: 36px;
 				letter-spacing: 1.8px;
 			}
 			&--link {
 				align-self: center;
-				margin-bottom: 0px;
+				margin: 0px;
 			}
 		}
 		&__row {row-gap: 40px;}
@@ -69,7 +65,9 @@
 			&--content {
 				display: flex;
 				column-gap: 20px;
-				padding: 0px;
+				padding: 20px;
+				border-radius: 16px;
+				background-color: var(--bg-black);
 			}
 		}
 		&__image {
@@ -77,14 +75,12 @@
 			width: 50%;
 			margin: 0px;
 			& img {
-				border-radius: 16px;
 				filter: brightness(1);
 			}
 		}
 	}
 }
-@media (width >= 992px) {
-	.page__episodes {background-color: var(--bg);}	
+@media (width >= 992px) {	
 	.episodes {
 		&__header {
 			&--title {font-size: 42px;}
@@ -93,7 +89,6 @@
 			background-color: var(--bg-black);
 			border-radius: 18px;
 			&--content {
-				padding: 20px;
 				column-gap: 60px;
 			}
 		}
@@ -122,13 +117,9 @@
 	}
 }
 @media (width >= 1440px) {
-	.page__episodes {
-		padding: 0px;
-		margin: 0px 0px 160px;
-	}
 	.episodes {
 		&__header {	
-			margin-bottom: 56px;
+			margin: 0px 0px 56px;
 			padding: 10px 0px;
 			&--title {
 				font-size: 64px;
