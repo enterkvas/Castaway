@@ -3,6 +3,7 @@
 @import "./base/base";
 @import "./base/null";
 
+@import "./blocks/arrow-to-right";
 @import "./blocks/buttons";
 @import "./blocks/card";
 @import "./blocks/footer";
@@ -13,8 +14,9 @@
 @import "./blocks/menu";
 @import "./blocks/page";
 
+
+@import "./sections/hero";
 @import "./sections/about";
 @import "./sections/episodes";
-@import "./sections/hero";
 @import "./sections/host";
 @import "./sections/subscribe";

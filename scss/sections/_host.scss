@@ -1,18 +1,10 @@
 .host {
-	&__row {
-		// display: flex;
-		// flex-direction: row;
-		// justify-content: space-between;
-		// column-gap: 45px;
-	}
 	&__col {display: block;}
-	// &__col-revers {order: 0;}
 	&__image {
 		position: absolute;
 		left: 0;
 		& img {
 			width: 100%;
-			// border-radius: 14px;
 		}
 	}
 	&__card {
@@ -23,43 +15,39 @@
 	.host {
 		&__row {
 			display: flex;
-			justify-content: space-between;
-			column-gap: 45px;
+			& > div:nth-child(1) {
+				order: 2;
+			}
+			& > div:nth-child(2) {
+				order: 1;
+			}
 		}
 		&__col {
-			position: relative;
 			width: 100%;
 			display: flex;
 			align-items: center;
-			justify-content: center;
 		}
 		&__card {
-			position: absolute;
-			top: 38%;
+			max-width: 590px;
+			height: 448px;
+			justify-content: flex-start;
 		}
-		&__blue {margin-bottom: 0px;}
-		&__title {margin-bottom: 32px;}
+		&__arrow {
+			width: 112px;
+			height: 112px;
+			margin: 0px 0px 20px;
+			background-color: var(--blue);
+		}
+		&__blue {margin: 0px 0px 4px;}
+		&__title {margin: 0px 0px 32px;}
 		&__image {
 			position: static;
 			& img {
 				width: 100%;
 				object-fit: cover;
-				border-radius: 14px;
+				border-radius: 12px;
 			}
 		}
+		&__subtitle:not(:last-child) {margin: 0px 0px 32px;}
 	}
-	a.card__arrow {
-		position: absolute;
-    width: 112px;
-    height: 112px;
-    background-image: url("../img/images/about-img/host/arrow-host.png");
-    background-color: var(--blue);
-    background-repeat: no-repeat;
-    background-position: left top;
-    top: -48%;
-    background-position: 50% 50%;
-    border-radius: 50%;
-	}	
-	.addgap {margin: 0px 0px 32px;}
-	.nullgap {margin: 0px;}
-}
+}	

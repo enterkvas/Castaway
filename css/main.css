@@ -102,6 +102,14 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+.arrow-to-right {
+  background-image: url("../img/images/about-img/host/arrow-host.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-position: 50% 50%;
+  border-radius: 50%;
+}
+
 .button {
   display: inline-block;
   padding: 4px 12px;
@@ -788,188 +796,6 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.page__about {
-  padding: 12px 0px 0px;
-  margin: 0px 0px 20px;
-}
-
-.about__host {
-  margin: 0px 0px 20px;
-}
-.about__subscribe {
-  background-color: var(--bg-black);
-  border-radius: 32px;
-}
-
-@media (width >= 1440px) {
-  .about__host {
-    padding: 0px 0px 100px;
-    margin: 0px 0px 100px;
-  }
-  .about__subscribe {
-    background-color: var(--bg-black);
-    border-radius: 32px;
-  }
-}
-.episodes {
-  position: relative;
-  text-align: center;
-}
-.episodes__header {
-  padding: 0px 15px;
-}
-.episodes__header--title {
-  margin: 0px 0px 20px;
-  font-size: 30px;
-  line-height: 1.25;
-  letter-spacing: 1.5px;
-}
-.episodes__header--link {
-  margin: 0px 0px 32px;
-}
-.episodes__row {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-}
-@media (width >= 330px) {
-  .episodes__row {
-    row-gap: 80px;
-  }
-}
-@media (width >= 450px) {
-  .episodes__row {
-    row-gap: 60px;
-  }
-}
-@media (width >= 500px) {
-  .episodes__row {
-    row-gap: 80px;
-  }
-}
-.episodes__col {
-  overflow: hidden;
-}
-.episodes__image {
-  position: absolute;
-  width: 100%;
-  left: 0;
-}
-.episodes__image img {
-  width: 100%;
-  height: auto;
-  filter: brightness(0.7);
-}
-
-@media (width >= 576px) {
-  .episodes__header {
-    padding: 0px 20px;
-  }
-  .episodes__header--title {
-    font-size: 36px;
-  }
-  .episodes__header--link {
-    margin: 0px 0px 40px;
-  }
-}
-@media (width >= 768px) {
-  .episodes__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 0px;
-    margin: 0px 0px 40px;
-  }
-  .episodes__header--title {
-    margin: 0px;
-    font-size: 36px;
-    letter-spacing: 1.8px;
-  }
-  .episodes__header--link {
-    align-self: center;
-    margin: 0px;
-  }
-  .episodes__row {
-    row-gap: 40px;
-  }
-  .episodes__col--content {
-    display: flex;
-    column-gap: 20px;
-    padding: 20px;
-    border-radius: 16px;
-    background-color: var(--bg-black);
-  }
-  .episodes__image {
-    position: static;
-    width: 50%;
-    margin: 0px;
-  }
-  .episodes__image img {
-    filter: brightness(1);
-  }
-}
-@media (width >= 992px) {
-  .episodes__header--title {
-    font-size: 42px;
-  }
-  .episodes__col {
-    background-color: var(--bg-black);
-    border-radius: 18px;
-  }
-  .episodes__col--content {
-    column-gap: 60px;
-  }
-  .episodes__image img {
-    border-radius: 0px;
-  }
-}
-@media (width >= 1024px) {
-  .episodes__header--title {
-    letter-spacing: 2px;
-  }
-}
-@media (width >= 1190px) {
-  .episodes__header--title {
-    font-size: 52px;
-  }
-  .episodes__row {
-    row-gap: 40px;
-  }
-  .episodes__col {
-    border-radius: 24px;
-  }
-  .episodes__col--content {
-    padding: 32px;
-  }
-}
-@media (width >= 1440px) {
-  .episodes__header {
-    margin: 0px 0px 56px;
-    padding: 10px 0px;
-  }
-  .episodes__header--title {
-    font-size: 64px;
-    letter-spacing: 2.88px;
-  }
-  .episodes__image {
-    width: 50%;
-    margin: 0px 0px 0px;
-  }
-  .episodes__image img {
-    max-width: none;
-  }
-  .episodes__row {
-    row-gap: 60px;
-  }
-  .episodes__col {
-    border-radius: 32px;
-    background-color: var(--bg-black);
-  }
-  .episodes__col--content {
-    column-gap: 30px;
-    padding: 40px;
-  }
-}
 .hero__image {
   position: absolute;
   top: 60px;
@@ -1308,6 +1134,183 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     column-gap: 3%;
   }
 }
+.about__host {
+  margin: 0px 0px 20px;
+}
+.about__subscribe {
+  background-color: var(--bg-black);
+  border-radius: 32px;
+}
+
+@media (width >= 1440px) {
+  .about__host {
+    padding: 0px 0px 100px;
+    margin: 0px 0px 100px;
+  }
+  .about__subscribe {
+    background-color: var(--bg-black);
+    border-radius: 32px;
+  }
+}
+.episodes {
+  position: relative;
+  text-align: center;
+}
+.episodes__header {
+  padding: 0px 15px;
+}
+.episodes__header--title {
+  margin: 0px 0px 20px;
+  font-size: 30px;
+  line-height: 1.25;
+  letter-spacing: 1.5px;
+}
+.episodes__header--link {
+  margin: 0px 0px 32px;
+}
+.episodes__row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+@media (width >= 330px) {
+  .episodes__row {
+    row-gap: 80px;
+  }
+}
+@media (width >= 450px) {
+  .episodes__row {
+    row-gap: 60px;
+  }
+}
+@media (width >= 500px) {
+  .episodes__row {
+    row-gap: 80px;
+  }
+}
+.episodes__col {
+  overflow: hidden;
+}
+.episodes__image {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.episodes__image img {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.7);
+}
+
+@media (width >= 576px) {
+  .episodes__header {
+    padding: 0px 20px;
+  }
+  .episodes__header--title {
+    font-size: 36px;
+  }
+  .episodes__header--link {
+    margin: 0px 0px 40px;
+  }
+}
+@media (width >= 768px) {
+  .episodes__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0px;
+    margin: 0px 0px 40px;
+  }
+  .episodes__header--title {
+    margin: 0px;
+    font-size: 36px;
+    letter-spacing: 1.8px;
+  }
+  .episodes__header--link {
+    align-self: center;
+    margin: 0px;
+  }
+  .episodes__row {
+    row-gap: 40px;
+  }
+  .episodes__col--content {
+    display: flex;
+    column-gap: 20px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: var(--bg-black);
+  }
+  .episodes__image {
+    position: static;
+    width: 50%;
+    margin: 0px;
+  }
+  .episodes__image img {
+    filter: brightness(1);
+  }
+}
+@media (width >= 992px) {
+  .episodes__header--title {
+    font-size: 42px;
+  }
+  .episodes__col {
+    background-color: var(--bg-black);
+    border-radius: 18px;
+  }
+  .episodes__col--content {
+    column-gap: 60px;
+  }
+  .episodes__image img {
+    border-radius: 0px;
+  }
+}
+@media (width >= 1024px) {
+  .episodes__header--title {
+    letter-spacing: 2px;
+  }
+}
+@media (width >= 1190px) {
+  .episodes__header--title {
+    font-size: 52px;
+  }
+  .episodes__row {
+    row-gap: 40px;
+  }
+  .episodes__col {
+    border-radius: 24px;
+  }
+  .episodes__col--content {
+    padding: 32px;
+  }
+}
+@media (width >= 1440px) {
+  .episodes__header {
+    margin: 0px 0px 56px;
+    padding: 10px 0px;
+  }
+  .episodes__header--title {
+    font-size: 64px;
+    letter-spacing: 2.88px;
+  }
+  .episodes__image {
+    width: 50%;
+    margin: 0px 0px 0px;
+  }
+  .episodes__image img {
+    max-width: none;
+  }
+  .episodes__row {
+    row-gap: 60px;
+  }
+  .episodes__col {
+    border-radius: 32px;
+    background-color: var(--bg-black);
+  }
+  .episodes__col--content {
+    column-gap: 30px;
+    padding: 40px;
+  }
+}
 .host__col {
   display: block;
 }
@@ -1325,25 +1328,34 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 @media (width >= 1440px) {
   .host__row {
     display: flex;
-    justify-content: space-between;
-    column-gap: 45px;
+  }
+  .host__row > div:nth-child(1) {
+    order: 2;
+  }
+  .host__row > div:nth-child(2) {
+    order: 1;
   }
   .host__col {
-    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
   .host__card {
-    position: absolute;
-    top: 38%;
+    max-width: 590px;
+    height: 448px;
+    justify-content: flex-start;
+  }
+  .host__arrow {
+    width: 112px;
+    height: 112px;
+    margin: 0px 0px 20px;
+    background-color: var(--blue);
   }
   .host__blue {
-    margin-bottom: 0px;
+    margin: 0px 0px 4px;
   }
   .host__title {
-    margin-bottom: 32px;
+    margin: 0px 0px 32px;
   }
   .host__image {
     position: static;
@@ -1351,25 +1363,10 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   .host__image img {
     width: 100%;
     object-fit: cover;
-    border-radius: 14px;
+    border-radius: 12px;
   }
-  a.card__arrow {
-    position: absolute;
-    width: 112px;
-    height: 112px;
-    background-image: url("../img/images/about-img/host/arrow-host.png");
-    background-color: var(--blue);
-    background-repeat: no-repeat;
-    background-position: left top;
-    top: -48%;
-    background-position: 50% 50%;
-    border-radius: 50%;
-  }
-  .addgap {
+  .host__subtitle:not(:last-child) {
     margin: 0px 0px 32px;
-  }
-  .nullgap {
-    margin: 0px;
   }
 }
 @media (width >= 1440px) {
