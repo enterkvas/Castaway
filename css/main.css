@@ -428,16 +428,29 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   color: var(--color-text);
 }
 
+.form-subscribe__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.form-subscribe input {
+  padding: 12px 10px;
+  border-radius: 4px;
+  line-height: 1.17;
+}
+.form-subscribe button {
+  display: flex;
+  align-self: flex-start;
+  padding: 8px 14px;
+  font-size: 11px;
+}
+
 @media (width >= 1440px) {
-  .form-subscribe__form {
-    display: flex;
-    flex-direction: column;
-  }
   .form-subscribe__form input {
     width: 522px;
     height: 88px;
     padding: 0px 10px 0px 20px;
-    margin-bottom: 20px;
+    margin: 0px 0px 20px;
     border-radius: 6px;
     font-size: 24px;
     line-height: 1.17;
@@ -745,7 +758,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 .page__episodes {
   padding: 20px 0px 0px;
-  margin: 0px 0px 28px;
+  margin: 0px 0px 60px;
 }
 @media (width >= 330px) {
   .page__episodes {
@@ -789,10 +802,14 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     margin: 0px 0px 160px;
   }
 }
+.page__about {
+  margin: 0px 0px 60px;
+  text-align: center;
+}
 @media (width >= 1440px) {
   .page__about {
     padding: 100px 0px 0px;
-    margin: 0px 0px 100px;
+    margin: 0px 0px 160px;
   }
 }
 
@@ -1135,10 +1152,9 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 .about__host {
-  margin: 0px 0px 20px;
+  margin: 0px 0px 60px;
 }
 .about__subscribe {
-  background-color: var(--bg-black);
   border-radius: 32px;
 }
 
@@ -1320,9 +1336,24 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 .host__image img {
   width: 100%;
+  filter: brightness(0.7);
 }
 .host__card {
-  position: relative;
+  padding: 28px 0px 0px;
+}
+.host__blue {
+  padding: 0px;
+  margin: 0px 0px 40px;
+  background-color: transparent;
+}
+.host__title {
+  margin: 0px 0px 32px;
+}
+.host .card__subtitle {
+  margin: 0px;
+}
+.host__subtitle:not(:last-child) {
+  margin: 0px 0px 20px;
 }
 
 @media (width >= 1440px) {
@@ -1369,6 +1400,15 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     margin: 0px 0px 32px;
   }
 }
+.subscribe__blue {
+  padding: 0px;
+  margin: 0px 0px 20px;
+}
+.subscribe__title {
+  margin: 0px 0px 40px;
+  line-height: 1.5;
+}
+
 @media (width >= 1440px) {
   .subscribe {
     padding: 60px 0px 60px;
@@ -1403,6 +1443,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0px;
     padding-right: 40px;
     font-size: 72px;
+    line-height: 1.1;
     letter-spacing: 2.88px;
   }
 }/*# sourceMappingURL=main.css.map */

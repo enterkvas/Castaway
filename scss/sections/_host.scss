@@ -5,11 +5,20 @@
 		left: 0;
 		& img {
 			width: 100%;
+			filter: brightness(0.7);
 		}
 	}
 	&__card {
-		position: relative;
+		padding: 28px 0px 0px;
 	}
+	&__blue {
+		padding: 0px;
+		margin: 0px 0px 40px;
+		background-color: transparent;
+	}
+	&__title {margin: 0px 0px 32px;}
+	.card__subtitle {margin: 0px;}
+	&__subtitle:not(:last-child) {margin: 0px 0px 20px;}
 }
 @media (width >= 1440px) {
 	.host {

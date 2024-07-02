@@ -20,7 +20,7 @@
 	}	
 	&__episodes {
 		padding: 20px 0px 0px;
-		margin: 0px 0px 28px;
+		margin: 0px 0px 60px;
 		@media (width >= 330px) {margin: 0px 0px 80px;}
 		@media (width >= 360px) {margin: 0px 0px 92px;}
 		@media (width >= 450px) {margin: 0px 0px 60px;}
@@ -37,9 +37,11 @@
 		}
 	}	
 	&__about {
+		margin: 0px 0px 60px;
+		text-align: center;
 		@media (width >= 1440px) {
 			padding: 100px 0px 0px;
-			margin: 0px 0px 100px;
+			margin: 0px 0px 160px;
 		}
 	}	
 }

@@ -1,13 +1,29 @@
+.form-subscribe {
+	&__form {
+		display: flex;
+		flex-direction: column;
+		row-gap: 32px;
+	}
+	& input {
+		padding: 12px 10px;
+    	border-radius: 4px;
+		line-height: 1.17;
+	}
+	& button {
+		display: flex;
+		align-self: flex-start;
+		padding: 8px 14px;
+		font-size: 11px;
+	}
+}
 @media (width >= 1440px) {
 	.form-subscribe {
 		&__form {
-			display: flex;
-			flex-direction: column;
 			& input {
 				width: 522px;
 				height: 88px;
 				padding: 0px 10px 0px 20px;
-				margin-bottom: 20px;
+				margin: 0px 0px 20px;
 				border-radius: 6px;
 				font-size: 24px;
 				line-height: 1.17;
