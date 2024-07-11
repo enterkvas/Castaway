@@ -2,7 +2,7 @@
 	position: relative;
 	text-align: center;
 	&__header {
-		padding: 0px 15px ;
+		// padding: 0px 15px ;
 		&--title {
 			margin: 0px 0px 20px;
 			font-size: 30px;
@@ -41,8 +41,8 @@
 			&--title {font-size: 52px;}
 		}
 		@media (width >= 1440px) {
-			margin: 0px 0px 56px;
-			padding: 10px 0px;
+			margin: 0px 0px 66px;
+			// padding: 10px 0px;
 			&--title {
 				font-size: 64px;
 				letter-spacing: 2.88px;
@@ -111,5 +111,8 @@
 			margin: 0px 0px 0px;
 			& img {max-width: none;}
 		}
+	}
+	&__card {
+		position: relative;
 	}
 }

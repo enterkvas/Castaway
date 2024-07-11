@@ -1,7 +1,11 @@
 .about {
+	&__container {
+		padding-left: 0;
+		padding-right: 0;
+	}
 	&__host {
 		margin: 0px 0px 60px;
-		@media (width >= 400px) {margin: 0px 0px 180px;}
+		@media (width >= 400px) {margin: 0px 0px 120px;}
 		@media (width >= 500px) {margin: 0px 0px 48px;}
 		@media (width >= 520px) {margin: 0px 0px 20px;}
 		@media (width >= 576px) {margin: 0px 0px 60px;}
@@ -11,7 +15,13 @@
 		}
 	}
 	&__subscribe {
-		border-radius: 32px;
+		background-color: var(--bg-black);
+		// /* position: relative; */
+		// position: absolute;
+		// top: 365px;
+		// left: 0px;
+		// width: 100%;
+		// border-radius: 32px;
 		@media (width >= 1440px) {
 			background-color: var(--bg-black);
 			border-radius: 32px;			

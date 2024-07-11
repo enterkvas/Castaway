@@ -1,4 +1,5 @@
 .subscribe {
+	padding: 40px 0px;
 	@media (width >= 1440px) {padding: 60px 0px 60px;}
 	&__container {
 		@media (width >= 1440px) {padding: 0px 60px;}
@@ -10,7 +11,7 @@
 			background-color: var(--bg-black);
 		}
 	}
-	&__card {
+	&__text {
 		@media (width >= 1440px) {
 			position: relative;
 			&::before {
@@ -26,11 +27,12 @@
 			}
 		}
 	}
-	&__blue {
+	&__textblue {
+		display: inline-block;
 		padding: 0px 8px;
 		margin: 0px 0px 20px;
-		background-color: var(--bg);
-		border-radius: 2px;
+		// background-color: var(--bg);
+		// border-radius: 2px;
 		@media (width >= 1440px) {margin: 0px;}
 	}
 	&__title {

@@ -29,7 +29,7 @@ body._lock {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 576px) {
+@media (min-width: 375px) {
   .container {
     padding-left: 20px;
     padding-right: 20px;
@@ -71,6 +71,40 @@ body._lock {
     padding-left: 0px;
     padding-right: 0px;
   }
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+}
+@media (width >= 768px) {
+  .subtitle {
+    font-size: 14px;
+  }
+}
+@media (width >= 1190px) {
+  .subtitle {
+    font-size: 18px;
+  }
+}
+@media (width >= 1440px) {
+  .subtitle {
+    font-size: 22px;
+  }
+}
+
+.textblue {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--blue);
+  filter: saturate(200%);
+}
+
+.ellipsis-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 
 *, *::before, *::after {
@@ -125,7 +159,6 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
   }
 }
-
 @media (width >= 1440px) {
   .button {
     padding: 11px 18px;
@@ -133,17 +166,76 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
   }
 }
-.card {
-  position: relative;
+
+.card-episodes {
   padding-top: 10px;
 }
-.card__container {
+@media (width >= 450px) {
+  .card-episodes {
+    padding-top: 20px;
+  }
+}
+@media (width >= 500px) {
+  .card-episodes {
+    padding-top: 32px;
+  }
+}
+@media (width >= 768px) {
+  .card-episodes {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+    text-align: left;
+  }
+}
+@media (width >= 1440px) {
+  .card-episodes {
+    width: 100%;
+  }
+}
+.card-episodes__container {
   padding: 0px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.card__top-title {
+@media (width >= 450px) {
+  .card-episodes__container {
+    padding: 0px 20px;
+  }
+}
+@media (width >= 496px) {
+  .card-episodes__container {
+    padding: 0px 40px;
+  }
+}
+@media (width >= 500px) {
+  .card-episodes__container {
+    padding: 0px 60px;
+  }
+}
+@media (width >= 545px) {
+  .card-episodes__container {
+    padding: 0px 80px;
+  }
+}
+@media (width >= 768px) {
+  .card-episodes__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0px 20px;
+  }
+}
+@media (width >= 1440px) {
+  .card-episodes__container {
+    padding: 0px 14px;
+  }
+}
+.card-episodes__top-title {
   display: inline-block;
   align-self: flex-start;
   margin: 0px auto;
@@ -153,7 +245,55 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   line-height: 1.5;
 }
-.card__textblue {
+@media (width >= 330px) {
+  .card-episodes__top-title {
+    margin: 0px auto 16px;
+  }
+}
+@media (width >= 400px) {
+  .card-episodes__top-title {
+    margin: 0px auto 32px;
+  }
+}
+@media (width >= 500px) {
+  .card-episodes__top-title {
+    margin: 0px auto 40px;
+  }
+}
+@media (width >= 576px) {
+  .card-episodes__top-title {
+    margin: 0px auto 60px;
+  }
+}
+@media (width >= 700px) {
+  .card-episodes__top-title {
+    margin: 0px auto 100px;
+  }
+}
+@media (width >= 768px) {
+  .card-episodes__top-title {
+    margin: 8px 0px 0px;
+  }
+}
+@media (width >= 992px) {
+  .card-episodes__top-title {
+    border-radius: 4px;
+  }
+}
+@media (width >= 1190px) {
+  .card-episodes__top-title {
+    font-size: 16px;
+  }
+}
+@media (width >= 1440px) {
+  .card-episodes__top-title {
+    padding: 0px 16px;
+    border-radius: 6px;
+    font-size: 18px;
+    background-color: var(--bg);
+  }
+}
+.card-episodes__textblue {
   display: inline-block;
   align-self: flex-start;
   padding: 0px 8px;
@@ -165,270 +305,323 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   background-color: var(--bg);
   filter: saturate(200%);
 }
-.card__textblue span {
+.card-episodes__textblue span {
   font-size: 15px;
   line-height: 1.5;
 }
-.card__title {
+@media (width >= 330px) {
+  .card-episodes__textblue {
+    margin: 0px auto 20px;
+  }
+}
+@media (width >= 450px) {
+  .card-episodes__textblue {
+    margin: 0px auto 80px;
+  }
+}
+@media (width >= 576px) {
+  .card-episodes__textblue {
+    margin: 0px auto 100px;
+  }
+}
+@media (width >= 768px) {
+  .card-episodes__textblue {
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+  }
+}
+@media (width >= 1190px) {
+  .card-episodes__textblue {
+    font-size: 16px;
+  }
+  .card-episodes__textblue span {
+    font-size: 17px;
+  }
+}
+@media (width >= 1440px) {
+  .card-episodes__textblue {
+    display: block;
+    font-size: 18px;
+  }
+  .card-episodes__textblue span {
+    font-size: 19px;
+  }
+}
+.card-episodes__title {
   margin: 0px 0px 8px;
   font-size: 30px;
   line-height: 1.1;
   letter-spacing: 1.5px;
 }
-.card__subtitle {
-  margin: 0px 0px 40px;
-  font-size: 16px;
-  line-height: 1.5;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-@media (width >= 325px) {
-  .card__subtitle {
-    -webkit-line-clamp: 3;
-  }
-}
-@media (width >= 469px) {
-  .card__subtitle {
-    -webkit-line-clamp: 2;
-  }
-}
-.card__button {
-  margin: 0px auto 40px;
-  align-self: flex-start;
-}
-
 @media (width >= 330px) {
-  .card__top-title {
-    margin: 0px auto 16px;
-  }
-  .card__textblue {
-    margin: 0px auto 20px;
-  }
-  .card__title {
+  .card-episodes__title {
     margin: 0px 0px 16px;
-  }
-  .card__subtitle {
-    margin: 0px 0px 20px;
-  }
-  .card__button {
-    margin: 0px auto;
   }
 }
 @media (width >= 340px) {
-  .card__title {
+  .card-episodes__title {
     padding: 0px 20px;
-  }
-}
-@media (width >= 360px) {
-  .card__subtitle {
-    margin: 0px 0px 60px;
   }
 }
 @media (width >= 380px) {
-  .card__title {
+  .card-episodes__title {
     padding: 0px;
-  }
-  .card__subtitle {
-    margin: 0px 0px 100px;
-  }
-}
-@media (width >= 400px) {
-  .card__top-title {
-    margin: 0px auto 32px;
-  }
-  .card__subtitle {
-    margin: 0px 0px 100px;
-  }
-  .card__button {
-    margin: 0px auto 20px;
   }
 }
 @media (width >= 450px) {
-  .card {
-    padding-top: 20px;
-  }
-  .card__textblue {
-    margin: 0px auto 80px;
-  }
-  .card__title {
+  .card-episodes__title {
     margin: 0px -40px 40px;
-  }
-  .card__subtitle {
-    margin: 0px 0px 60px;
-  }
-  .card__button {
-    margin: 0px auto 40px;
-  }
-  .card__container {
-    padding: 0px 20px;
-  }
-}
-@media (width >= 496px) {
-  .card__container {
-    padding: 0px 40px;
-  }
-  .card__subtitle {
-    margin: 0px 0px 112px;
   }
 }
 @media (width >= 500px) {
-  .card {
-    padding-top: 32px;
-  }
-  .card__container {
-    padding: 0px 60px;
-  }
-  .card__top-title {
-    margin: 0px auto 40px;
-  }
-  .card__textblue {
-    margin: 0px auto 80px;
-  }
-  .card__title {
+  .card-episodes__title {
     margin: 0px -60px 20px;
   }
-  .card__subtitle {
-    margin: 0px 0px 90px;
-    -webkit-line-clamp: 3;
-  }
-}
-@media (width >= 545px) {
-  .card__container {
-    padding: 0px 80px;
-  }
-  .card__subtitle {
-    margin: 0px 0px 160px;
-  }
 }
 @media (width >= 576px) {
-  .card__top-title {
-    margin: 0px auto 60px;
-  }
-  .card__textblue {
-    margin: 0px auto 100px;
-  }
-  .card__title {
+  .card-episodes__title {
     font-size: 34px;
-  }
-  .card__subtitle {
-    margin: 0px 0px 160px;
-  }
-}
-@media (width >= 576px) {
-  .card__subtitle {
-    -webkit-line-clamp: 2;
   }
 }
 @media (width >= 650px) {
-  .card__title {
-    padding: 0px;
+  .card-episodes__title {
     margin: 0px 0px 40px;
-  }
-  .card__subtitle {
-    margin: 0px 0px 220px;
-  }
-}
-@media (width >= 700px) {
-  .card__top-title {
-    margin: 0px auto 100px;
-  }
-  .card__subtitle {
-    margin: 0px 0px 246px;
   }
 }
 @media (width >= 768px) {
-  .card {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0px;
-    text-align: left;
-  }
-  .card__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding: 0px 20px;
-  }
-  .card__top-title {
-    margin: 8px 0px 0px;
-  }
-  .card__textblue {
-    padding: 0px;
-    margin: 0px;
-    background-color: transparent;
-  }
-  .card__title {
+  .card-episodes__title {
     margin: 0px;
     font-size: 36px;
   }
-  .card__subtitle {
-    margin: 0px;
-    font-size: 14px;
-    -webkit-line-clamp: 3;
-  }
-  .card__button {
-    margin: 0px;
-    align-self: flex-start;
-  }
 }
 @media (width >= 992px) {
-  .card__top-title {
-    border-radius: 4px;
-  }
-  .card__title {
+  .card-episodes__title {
     font-size: 42px;
     letter-spacing: 2px;
   }
 }
-@media (width >= 1190px) {
-  .card__top-title {
-    font-size: 16px;
-  }
-  .card__textblue {
-    font-size: 16px;
-  }
-  .card__textblue span {
-    font-size: 17px;
-  }
-  .card__subtitle {
-    font-size: 18px;
-  }
-}
 @media (width >= 1440px) {
-  .card {
-    width: 100%;
-  }
-  .card__container {
-    padding: 0px 14px;
-  }
-  .card__top-title {
-    padding: 0px 16px;
-    border-radius: 6px;
-    font-size: 18px;
-    background-color: var(--bg);
-  }
-  .card__textblue {
-    display: block;
-    font-size: 18px;
-  }
-  .card__textblue span {
-    font-size: 19px;
-  }
-  .card__title {
+  .card-episodes__title {
     padding-right: 77px;
     font-size: 64px;
     letter-spacing: 2.56px;
   }
-  .card__subtitle {
-    font-size: 22px;
+}
+.card-episodes__subtitle {
+  margin: 0px 0px 40px;
+  -webkit-line-clamp: 3;
+}
+@media (width >= 330px) {
+  .card-episodes__subtitle {
+    margin: 0px 0px 20px;
   }
 }
+@media (width >= 360px) {
+  .card-episodes__subtitle {
+    margin: 0px 0px 60px;
+  }
+}
+@media (width >= 380px) {
+  .card-episodes__subtitle {
+    margin: 0px 0px 100px;
+  }
+}
+@media (width >= 400px) {
+  .card-episodes__subtitle {
+    margin: 0px 0px 100px;
+  }
+}
+@media (width >= 450px) {
+  .card-episodes__subtitle {
+    margin: 0px 0px 60px;
+  }
+}
+@media (width >= 496px) {
+  .card-episodes__subtitle {
+    margin: 0px 0px 112px;
+  }
+}
+@media (width >= 500px) {
+  .card-episodes__subtitle {
+    margin: 0px 0px 90px;
+  }
+}
+@media (width >= 545px) {
+  .card-episodes__subtitle {
+    margin: 0px 0px 160px;
+  }
+}
+@media (width >= 576px) {
+  .card-episodes__subtitle {
+    margin: 0px 0px 160px;
+    padding: 0px 20px;
+  }
+}
+@media (width >= 650px) {
+  .card-episodes__subtitle {
+    margin: 0px 0px 220px;
+    padding: 0px 40px;
+  }
+}
+@media (width >= 700px) {
+  .card-episodes__subtitle {
+    padding: 0px 80px;
+    margin: 0px 0px 246px;
+  }
+}
+@media (width >= 768px) {
+  .card-episodes__subtitle {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+.card-episodes__button {
+  margin: 0px auto 40px;
+  align-self: flex-start;
+}
+@media (width >= 330px) {
+  .card-episodes__button {
+    margin: 0px auto;
+  }
+}
+@media (width >= 400px) {
+  .card-episodes__button {
+    margin: 0px auto 20px;
+  }
+}
+@media (width >= 450px) {
+  .card-episodes__button {
+    margin: 0px auto 40px;
+  }
+}
+@media (width >= 768px) {
+  .card-episodes__button {
+    margin: 0px;
+    align-self: flex-start;
+  }
+}
+
+.card-host {
+  padding: 28px 0px 0px;
+}
+@media (width >= 545px) {
+  .card-host {
+    padding: 40px 0px 0px;
+  }
+}
+@media (width >= 1440px) {
+  .card-host {
+    max-width: 590px;
+    height: 448px;
+    justify-content: flex-start;
+  }
+}
+.card-host__arrow {
+  position: absolute;
+  top: 6%;
+  right: 15%;
+  width: 40px;
+  height: 40px;
+  background-size: 60%;
+  background-color: var(--blue);
+}
+@media (width >= 400px) {
+  .card-host__arrow {
+    right: 20%;
+  }
+}
+@media (width >= 545px) {
+  .card-host__arrow {
+    top: 10%;
+    right: 25%;
+  }
+}
+@media (width >= 650px) {
+  .card-host__arrow {
+    top: 8%;
+    right: 30%;
+  }
+}
+@media (width >= 768px) {
+  .card-host__arrow {
+    position: static;
+  }
+}
+@media (width >= 1440px) {
+  .card-host__arrow {
+    width: 112px;
+    height: 112px;
+    margin: 0px 0px 20px;
+    background-color: var(--blue);
+  }
+}
+.card-host__textblue {
+  display: inline-block;
+  margin: 0px auto 20px;
+  padding: 0px 8px;
+  border-radius: 2px;
+  background-color: var(--bg);
+}
+@media (width >= 400px) {
+  .card-host__textblue {
+    margin: 0px auto 100px;
+  }
+}
+@media (width >= 450px) {
+  .card-host__textblue {
+    margin: 0px auto 140px;
+  }
+}
+@media (width >= 500px) {
+  .card-host__textblue {
+    margin: 0px auto 160px;
+  }
+}
+@media (width >= 520px) {
+  .card-host__textblue {
+    margin: 0px auto 20px;
+  }
+}
+@media (width >= 600px) {
+  .card-host__textblue {
+    margin: 0px auto 40px;
+  }
+}
+@media (width >= 650px) {
+  .card-host__textblue {
+    margin: 0px auto 100px;
+  }
+}
+@media (width >= 1440px) {
+  .card-host__textblue {
+    margin: 0px 0px 4px;
+  }
+}
+.card-host__title {
+  margin: 0px 0px 32px;
+  font-size: 34px;
+  line-height: 1.14;
+}
+@media (width >= 520px) {
+  .card-host__title {
+    margin: 0px 0px 12px;
+  }
+}
+@media (width >= 1440px) {
+  .card-host__title {
+    margin: 0px 0px 32px;
+  }
+}
+.card-host__subtitle:not(:last-child) {
+  margin: 0px 0px 20px;
+}
+@media (width >= 1440px) {
+  .card-host__subtitle:not(:last-child) {
+    margin: 0px 0px 32px;
+  }
+}
+
 .footer {
   background-color: blue;
   color: var(--color-text);
@@ -761,6 +954,11 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     margin: 0px 0px 60px;
   }
 }
+@media (width >= 650px) {
+  .page__hero {
+    margin: 0px 0px 40px;
+  }
+}
 @media (width >= 768px) {
   .page__hero {
     padding: 0px 0px 20px;
@@ -785,21 +983,16 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 .page__episodes {
   padding: 20px 0px 0px;
-  margin: 0px 0px 60px;
+  margin: 0px 0px 40px;
 }
 @media (width >= 330px) {
   .page__episodes {
-    margin: 0px 0px 80px;
-  }
-}
-@media (width >= 360px) {
-  .page__episodes {
-    margin: 0px 0px 92px;
+    margin: 0px 0px 100px;
   }
 }
 @media (width >= 450px) {
   .page__episodes {
-    margin: 0px 0px 60px;
+    margin: 0px 0px 80px;
   }
 }
 @media (width >= 500px) {
@@ -825,7 +1018,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 @media (width >= 1440px) {
   .page__episodes {
-    padding: 0px;
+    padding: 100px 0px 0px;
     margin: 0px 0px 160px;
   }
 }
@@ -840,6 +1033,19 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.hero {
+  padding: 32px 0px 0px;
+}
+@media (width >= 500px) {
+  .hero {
+    padding: 60px 0px 12px;
+  }
+}
+@media (width >= 650px) {
+  .hero {
+    padding: 60px 0px 12px;
+  }
+}
 @media (width >= 768px) {
   .hero {
     column-gap: 30px;
@@ -847,7 +1053,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 @media (width >= 650px) {
   .hero__container {
-    padding: 40px 20px;
+    padding: 0px 20px;
   }
 }
 @media (width >= 768px) {
@@ -877,18 +1083,6 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 @media (width >= 1440px) {
   .hero__container {
     padding: 0px 70px;
-    column-gap: 60px;
-  }
-}
-@media (width >= 992px) {
-  .hero__row {
-    column-gap: 50px;
-  }
-}
-@media (width >= 1440px) {
-  .hero__row {
-    position: relative;
-    display: flex;
     column-gap: 60px;
   }
 }
@@ -944,7 +1138,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 @media (width >= 1190px) {
   .hero__image::before {
-    top: -4%;
+    top: 5%;
     left: 3%;
   }
 }
@@ -953,7 +1147,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     border-radius: 14px;
   }
   .hero__image::before {
-    top: 2%;
+    top: 4%;
   }
   .hero__image img {
     border-radius: 12px;
@@ -961,8 +1155,13 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 .hero__body {
   position: relative;
-  padding: 72px 0px 0px;
+  padding: 60px 0px 0px;
   margin: 0px 0px 40px;
+}
+@media (width >= 500px) {
+  .hero__body {
+    margin: 0px;
+  }
 }
 @media (width >= 650px) {
   .hero__body {
@@ -987,7 +1186,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 .hero__text-main {
   position: relative;
-  margin: 0px 0px 200px;
+  margin: 0px 0px 180px;
   text-align: center;
   font-size: 32px;
   line-height: 1.25;
@@ -1013,34 +1212,25 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.125;
+  color: #1ED760;
 }
 @media (width >= 325px) {
   .hero__text-main {
-    padding: 0px 50px;
-    margin: 0px 0px 200px;
-  }
-  .hero__text-main span {
-    color: #1ED760;
-  }
-  .hero__text-main::after {
-    left: 26%;
+    padding: 0px 20px;
   }
 }
-@media (width >= 325px) and (376px <= width <= 424px) {
-  .hero__text-main::after {
-    display: none;
+@media (width >= 365px) {
+  .hero__text-main {
+    padding: 0px 40px;
   }
 }
 @media (width >= 375px) {
   .hero__text-main {
-    padding: 0px 50px;
-    margin: 0px 0px 200px;
-  }
-  .hero__text-main span {
-    color: #1ED760;
+    margin: 0px 0px 60px;
   }
   .hero__text-main::after {
-    left: 26%;
+    top: 97%;
+    left: 25%;
   }
 }
 @media (width >= 375px) and (376px <= width <= 424px) {
@@ -1050,12 +1240,12 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 @media (width >= 425px) {
   .hero__text-main {
-    padding: 60px 24px;
+    padding: 20px 72px;
     margin: 0px 0px 100px;
   }
   .hero__text-main::after {
-    bottom: 30%;
-    left: 37%;
+    top: 85%;
+    left: 28%;
   }
 }
 @media (width >= 425px) and (426px <= width <= 575px) {
@@ -1063,17 +1253,17 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
-@media (width >= 575px) {
+@media (width >= 576px) {
   .hero__text-main {
     padding: 100px 70px;
     margin: 0px;
   }
   .hero__text-main::after {
-    bottom: 35%;
-    left: 35%;
+    top: 63%;
+    left: 40%;
   }
 }
-@media (width >= 575px) and (576px <= width <= 650px) {
+@media (width >= 576px) and (577px <= width <= 650px) {
   .hero__text-main::after {
     display: none;
   }
@@ -1084,7 +1274,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     margin: 60px 0px 32px;
   }
   .hero__text-main::after {
-    bottom: 24%;
+    top: 72%;
     left: 36%;
   }
 }
@@ -1104,7 +1294,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
   .hero__text-main::after {
     display: inline-block;
-    bottom: 0%;
+    top: 96%;
     left: 0%;
     width: 88px;
     height: 6px;
@@ -1234,12 +1424,16 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.about__container {
+  padding-left: 0;
+  padding-right: 0;
+}
 .about__host {
   margin: 0px 0px 60px;
 }
 @media (width >= 400px) {
   .about__host {
-    margin: 0px 0px 180px;
+    margin: 0px 0px 120px;
   }
 }
 @media (width >= 500px) {
@@ -1264,7 +1458,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 .about__subscribe {
-  border-radius: 32px;
+  background-color: var(--bg-black);
 }
 @media (width >= 1440px) {
   .about__subscribe {
@@ -1276,9 +1470,6 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 .episodes {
   position: relative;
   text-align: center;
-}
-.episodes__header {
-  padding: 0px 15px;
 }
 .episodes__header--title {
   margin: 0px 0px 20px;
@@ -1335,8 +1526,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 }
 @media (width >= 1440px) {
   .episodes__header {
-    margin: 0px 0px 56px;
-    padding: 10px 0px;
+    margin: 0px 0px 66px;
   }
   .episodes__header--title {
     font-size: 64px;
@@ -1446,6 +1636,9 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     max-width: none;
   }
 }
+.episodes__card {
+  position: relative;
+}
 
 @media (width >= 1440px) {
   .host__row {
@@ -1491,122 +1684,12 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 .host__card {
-  padding: 28px 0px 0px;
-}
-@media (width >= 545px) {
-  .host__card {
-    padding: 40px 0px 0px;
-  }
-}
-@media (width >= 1440px) {
-  .host__card {
-    max-width: 590px;
-    height: 448px;
-    justify-content: flex-start;
-  }
-}
-.host__arrow {
-  position: absolute;
-  top: 4%;
-  right: 5%;
-  width: 50px;
-  height: 50px;
-  background-size: 60%;
-  background-color: var(--blue);
-}
-@media (width >= 400px) {
-  .host__arrow {
-    right: 20%;
-  }
-}
-@media (width >= 545px) {
-  .host__arrow {
-    top: 10%;
-    right: 25%;
-  }
-}
-@media (width >= 650px) {
-  .host__arrow {
-    top: 8%;
-    right: 30%;
-  }
-}
-@media (width >= 768px) {
-  .host__arrow {
-    position: static;
-  }
-}
-@media (width >= 1440px) {
-  .host__arrow {
-    width: 112px;
-    height: 112px;
-    margin: 0px 0px 20px;
-    background-color: var(--blue);
-  }
-}
-.host__blue {
-  margin: 0px auto 40px;
-}
-@media (width >= 400px) {
-  .host__blue {
-    margin: 0px auto 100px;
-  }
-}
-@media (width >= 450px) {
-  .host__blue {
-    margin: 0px auto 140px;
-  }
-}
-@media (width >= 500px) {
-  .host__blue {
-    margin: 0px auto 160px;
-  }
-}
-@media (width >= 520px) {
-  .host__blue {
-    margin: 0px auto 20px;
-  }
-}
-@media (width >= 600px) {
-  .host__blue {
-    margin: 0px auto 40px;
-  }
-}
-@media (width >= 650px) {
-  .host__blue {
-    margin: 0px auto 100px;
-  }
-}
-@media (width >= 1440px) {
-  .host__blue {
-    margin: 0px 0px 4px;
-  }
-}
-.host__title {
-  margin: 0px 0px 32px;
-}
-@media (width >= 520px) {
-  .host__title {
-    margin: 0px 0px 12px;
-  }
-}
-@media (width >= 1440px) {
-  .host__title {
-    margin: 0px 0px 32px;
-  }
-}
-.host .card__subtitle {
-  margin: 0px;
-}
-.host__subtitle:not(:last-child) {
-  margin: 0px 0px 20px;
-}
-@media (width >= 1440px) {
-  .host__subtitle:not(:last-child) {
-    margin: 0px 0px 32px;
-  }
+  position: relative;
 }
 
+.subscribe {
+  padding: 40px 0px;
+}
 @media (width >= 1440px) {
   .subscribe {
     padding: 60px 0px 60px;
@@ -1625,10 +1708,10 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (width >= 1440px) {
-  .subscribe__card {
+  .subscribe__text {
     position: relative;
   }
-  .subscribe__card::before {
+  .subscribe__text::before {
     content: "";
     width: 147px;
     height: 91px;
@@ -1640,14 +1723,13 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
     background-size: cover;
   }
 }
-.subscribe__blue {
+.subscribe__textblue {
+  display: inline-block;
   padding: 0px 8px;
   margin: 0px 0px 20px;
-  background-color: var(--bg);
-  border-radius: 2px;
 }
 @media (width >= 1440px) {
-  .subscribe__blue {
+  .subscribe__textblue {
     margin: 0px;
   }
 }

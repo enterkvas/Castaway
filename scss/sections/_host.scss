@@ -33,61 +33,6 @@
 		}
 	}
 	&__card {
-		padding: 28px 0px 0px;			
-		@media (width >= 545px) {padding: 40px 0px 0px;}
-		@media (width >= 1440px) {
-			max-width: 590px;
-			height: 448px;
-			justify-content: flex-start;
-		}	
-	}
-	&__arrow {
-		position: absolute;
-		top: 4%;
-		right: 5%;
-		width: 50px;
-		height: 50px;
-		background-size: 60%;
-		background-color: var(--blue);
-		@media (width >= 400px) {
-			right: 20%;
-		}
-		@media (width >= 545px) {
-			top: 10%;
-			right: 25%;
-		}
-		@media (width >= 650px) {
-			top: 8%;
-			right: 30%;
-		}
-		@media (width >= 768px) {
-			position: static;
-		}
-		@media (width >= 1440px) {
-			width: 112px;
-			height: 112px;
-			margin: 0px 0px 20px;
-			background-color: var(--blue);
-		}
-	}
-	&__blue {
-		margin: 0px auto 40px;
-		@media (width >= 400px) {margin: 0px auto 100px;}
-		@media (width >= 450px) {margin: 0px auto 140px;}
-		@media (width >= 500px) {margin: 0px auto 160px;}
-		@media (width >= 520px) {margin: 0px auto 20px;}
-		@media (width >= 600px) {margin: 0px auto 40px;}
-		@media (width >= 650px) {margin: 0px auto 100px;}
-		@media (width >= 1440px) {margin: 0px 0px 4px;}
-	}
-	&__title {
-		margin: 0px 0px 32px;
-		@media (width >= 520px) {margin: 0px 0px 12px;}
-		@media (width >= 1440px) {margin: 0px 0px 32px;}
-	}
-	.card__subtitle {margin: 0px;}
-	&__subtitle:not(:last-child) {
-		margin: 0px 0px 20px;
-		@media (width >= 1440px) {margin: 0px 0px 32px;}
+		position: relative;	
 	}
 }	

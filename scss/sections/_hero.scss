@@ -1,7 +1,11 @@
 .hero {
+	padding: 32px 0px 0px;
+	// @media (width >= 365px) {padding: 32px 0px 0px;}
+	@media (width >= 500px) {padding: 60px 0px 12px;}
+	@media (width >= 650px) {padding: 60px 0px 12px;}
 	@media (width >= 768px) {column-gap: 30px;}
 	&__container {
-		@media (width >= 650px) {padding: 40px 20px;}
+		@media (width >= 650px) {padding: 0px 20px;}
 		@media (width >= 768px) {
 			display: flex;
 			padding: 0px 30px;
@@ -21,14 +25,14 @@
 			column-gap: 60px;
 		}
 	}
-	&__row {
-		@media (width >= 992px) {column-gap: 50px;}
-		@media (width >= 1440px) {
-			position: relative;
-			display: flex;
-			column-gap: 60px;
-		}
-	}
+	// &__row {
+	// 	@media (width >= 992px) {column-gap: 50px;}
+	// 	@media (width >= 1440px) {
+	// 		position: relative;
+	// 		display: flex;
+	// 		column-gap: 60px;
+	// 	}
+	// }
 	&__image {
 		position: absolute;
 		top: 60px;
@@ -70,20 +74,22 @@
 		}
 		@media (width >= 1190px) {
 			&::before {
-				top: -4%;
+				top: 5%;
 				left: 3%;
 			}
 		}
 		@media (width >= 1440px) {
 			border-radius: 14px;
-			&::before {top: 2%;}
+			&::before {top: 4%;}
 			& img {border-radius: 12px;}
 		}
 	}
 	&__body {
 		position: relative;
-		padding: 72px 0px 0px;
+		// padding: 100px 0px 0px;
+		padding: 60px 0px 0px;
 		margin: 0px 0px 40px;
+		@media (width >= 500px) {margin: 0px;}
 		@media (width >= 650px) {padding: 0px;}
 		@media (width >= 768px) {
 			position: static;
@@ -94,7 +100,7 @@
 	}
 	&__text-main {
 		position: relative;
-		margin: 0px 0px 200px;
+		margin: 0px 0px 180px;
 		text-align: center;
 		font-size: 32px;
 		line-height: 1.25;
@@ -115,48 +121,55 @@
 			font-size: 36px;
 			font-weight: 700;
 			line-height: 1.125;
+			color: #1ED760
 		}
 		@media (width >= 325px) {
-			padding: 0px 50px;
-			margin: 0px 0px 200px;
-			& span {color: #1ED760}
-			&::after {
-				left: 26%;
-				@media (376px <= width <= 424px) {display: none;}
-			}
+			padding: 0px 20px;
+			// margin: 0px 0px 200px;
+			// & span {color: #1ED760}
+			// &::after {
+			// 	left: 26%;
+			// 	@media (376px <= width <= 424px) {display: none;}
+			// }
 		}
+		@media (width >= 365px) {padding: 0px 40px;}
 		@media (width >= 375px) {
-			padding: 0px 50px;
-			margin: 0px 0px 200px;
-			& span {color: #1ED760}
+			// padding: 60px;
+			margin: 0px 0px 60px;
+			// & span {color: #1ED760}
 			&::after {
-				left: 26%;
+				// left: 26%;
+				top: 97%;
+				left: 25%;
 				@media (376px <= width <= 424px) {display: none;}
 			}
 		}
 		@media (width >= 425px) {
-			padding: 60px 24px;
+			padding: 20px 72px;
 			margin: 0px 0px 100px;
 			&::after {
-				bottom: 30%;
-				left: 37%;
-				@media (426px <= width <= 575px) {display: none;}
+				top: 85%;
+				// bottom: 30%;
+				left: 28%;
+				@media (426px <= width <= 575px) {display: none;}					
 			}
 		}
-		@media (width >= 575px) {
+		@media (width >= 576px) {
 			padding: 100px 70px;
 			margin: 0px;
 			&::after {
-				bottom: 35%;
-				left: 35%;
-				@media (576px <= width <= 650px) {display: none;}
+				top: 63%;
+				// bottom: 35%;
+				left: 40%;
+				@media (577px <= width <= 650px) {display: none;}
 			}
 		}
 		@media (width >= 650px) {
 			padding: 40px 80px;
 			margin: 60px 0px 32px;
 			&::after {
-				bottom: 24%;
+				top: 72%;
+				// bottom: 24%;
 				left: 36%;
 				@media (651px <= width <= 768px) {display: none;}
 			}
@@ -170,7 +183,8 @@
 			letter-spacing: 1.8px;
 			&::after {
 				display: inline-block;
-				bottom: 0%;
+				top: 96%;
+				// bottom: 0%;
 				left: 0%;
 				width: 88px;
 				height: 6px;
