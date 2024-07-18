@@ -1,38 +1,27 @@
 .hero {
 	padding: 32px 0px 0px;
-	// @media (width >= 365px) {padding: 32px 0px 0px;}
-	@media (width >= 500px) {padding: 60px 0px 12px;}
-	@media (width >= 650px) {padding: 60px 0px 12px;}
-	@media (width >= 768px) {column-gap: 30px;}
+	@media (width >= 500px) {padding: 60px 0px 0px;}
+	@media (width >= 650px) {padding: 60px 0px 0px;}
+	@media (width >= 768px) {
+		padding: 88px 0px 12px;
+		column-gap: 30px;
+	}
+	@media (width >= 992px) {padding: 100px 0px 0px;}
+	@media (width >= 1190px) {padding: 140px 0px 0px;}
+	@media (width >= 1440px) {padding: 40px 0px 0px;}
 	&__container {
-		@media (width >= 650px) {padding: 0px 20px;}
 		@media (width >= 768px) {
 			display: flex;
-			padding: 0px 30px;
-			column-gap: 30px;
-		}
-		@media (width >= 992px) {
-			padding: 0px 40px;
-			column-gap: 40px;
-		}
-		@media (width >= 1024px) {padding: 0px 50px;}
-		@media (width >= 1190px) {
-			padding: 0px 60px;
-			column-gap: 50px;
-		}
-		@media (width >= 1440px) {
-			padding: 0px 70px;
-			column-gap: 60px;
 		}
 	}
-	// &__row {
-	// 	@media (width >= 992px) {column-gap: 50px;}
-	// 	@media (width >= 1440px) {
-	// 		position: relative;
-	// 		display: flex;
-	// 		column-gap: 60px;
-	// 	}
-	// }
+	&__row {
+		display: flex;
+	}
+	&__col {
+		@media (width >= 768px) {
+			width: 50%;			
+		}
+	}
 	&__image {
 		position: absolute;
 		top: 60px;
@@ -43,11 +32,11 @@
 			width: 100%;
 			height: 90%;
 			object-fit: cover;
+			filter: brightness(0.8);
 		}
-		@media (width >= 650px) {height: 96%;}
 		@media (width >= 768px) {
-			position: static;
-			height: auto;
+			position: relative;
+			top: 0%;
 			border-radius: 8px;			
 			&::before {
 				content: "";
@@ -58,6 +47,10 @@
 				background-image: url('../img/images/hero-img/hero-img_add-top.svg');
 				background-repeat: no-repeat;
 				background-size: cover;
+				@media (width >= 1190px) {
+					top: -3%;
+					left: -4%;
+				}
 			}
 			& img {
 				position: static;
@@ -68,176 +61,121 @@
 			}
 		}
 		@media (width >= 992px) {
-			position: static;
-			height: auto;
 			& img {border-radius: 10px;}
-		}
-		@media (width >= 1190px) {
-			&::before {
-				top: 5%;
-				left: 3%;
-			}
 		}
 		@media (width >= 1440px) {
 			border-radius: 14px;
-			&::before {top: 4%;}
-			& img {border-radius: 12px;}
 		}
 	}
 	&__body {
 		position: relative;
-		// padding: 100px 0px 0px;
 		padding: 60px 0px 0px;
-		margin: 0px 0px 40px;
-		@media (width >= 500px) {margin: 0px;}
-		@media (width >= 650px) {padding: 0px;}
+		@media (width >= 496px) {padding: 100px 0px 0px;}
 		@media (width >= 768px) {
-			position: static;
-			padding: 0px;
+			padding: 100px 20px 0px 40px;
 		}
-		@media (width >= 992px) {padding: 100px 0px 0px;}
-		@media (width >= 1440px) {padding: 264px 0px 0px;}
+		@media (width >= 885px) {padding: 100px 60px 0px 40px;}
+		@media (width >= 900px) {padding: 140px 60px 0px 40px;}
+		@media (width >= 965px) {padding: 180px 120px 0px 40px;}
+		@media (width >= 992px) {padding: 180px 40px 0px 40px;}
+		@media (width >= 1162px) {padding: 180px 40px 0px 60px;}
+		@media (width >= 1190px) {padding: 200px 4px 0px 60px;}
+		@media (width >= 1395px) {padding: 240px 40px 0px 60px;}
+		@media (width >= 1440px) {padding: 294px 60px 0px;}
 	}
 	&__text-main {
-		position: relative;
 		margin: 0px 0px 180px;
 		text-align: center;
 		font-size: 32px;
-		line-height: 1.25;
+		line-height: 1.26;
 		letter-spacing: 1.45px;
+		@media (width >= 325px) {padding: 0px 20px;}	
+		@media (width >= 365px) {padding: 0px 40px;}
+		@media (width >= 416px) {padding: 0px 60px;}
+		@media (width >= 456px) {padding: 0px 80px;}
+		@media (width >= 496px) {padding: 0px 100px;}
+		@media (width >= 524px) {padding: 0px 60px;}
+		@media (width >= 644px) {padding: 0px 80px;}
+		@media (width >= 684px) {padding: 0px 120px;}
+		@media (width >= 768px) {
+			padding: 0px;
+			margin: 0px 0px 80px;
+			text-align: left;
+			font-size: 38px;
+			letter-spacing: 1.8px;
+		}
+		@media (width >= 900px) {margin: 0px 0px 100px;}
+		@media (width >= 992px) {
+			margin: 0px 0px 60px;
+			font-size: 48px;
+			letter-spacing: 2.2px;			
+		}
+		@media (width >= 1024px) {
+			letter-spacing: 2.6px;
+		}
+		@media (width >= 1190px) {
+			margin: 0px 0px 80px;
+			font-size: 62px;
+			letter-spacing: 2.8px;
+		}
+		@media (width >= 1440px) {
+			margin: 0px 0px 84px;
+			font-size: 70px;
+			letter-spacing: 3.2px;
+			padding: 0px;
+		}
+	}
+	&__text-green {
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 1.125;
+		color: #1ED760;
+		@media (width >= 768px) {
+			font-size: 42px;
+			line-height: 1.142;
+			color: var(--color-text);
+		}
+		@media (width >= 992px) {
+			font-size: 56px;
+			line-height: 1.080;
+		}
+		@media (width >= 1190px) {
+			font-size: 74px;
+			line-height: 1.054;
+		}
+		@media (width >= 1440px) {
+			font-size: 80px;
+			line-height: 1.1;
+		}
+	}
+	&__text-underlining {
+		position: relative;
+		@media (width >= 768px) {
+			font-size: 40px;
+			line-height: 1.2;
+		}
+		@media (width >= 992px) {
+			font-size: 52px;
+			line-height: 1.163;
+		}
+		@media (width >= 1190px) {
+			font-size: 66px;
+			line-height: 1.182;
+		}
+		@media (width >= 1440px) {
+			font-size: 75px;
+			line-height: 1.173;
+		}
 		&::after {
 			content: "";
 			background-image: url("../img/images/hero-img/hero-img_line.svg");
 			position: absolute;
-			width: 68px;
-			height: 5px;
-			left: 21%;
+			width: 100%;
+			height: 12%;
+			left: 0%;
 			bottom: 0%;
 			background-repeat: no-repeat;
 			background-size: cover;
-			@media (321px <= width <= 375px) {display: none;}
-		}
-		& span {
-			font-size: 36px;
-			font-weight: 700;
-			line-height: 1.125;
-			color: #1ED760
-		}
-		@media (width >= 325px) {
-			padding: 0px 20px;
-			// margin: 0px 0px 200px;
-			// & span {color: #1ED760}
-			// &::after {
-			// 	left: 26%;
-			// 	@media (376px <= width <= 424px) {display: none;}
-			// }
-		}
-		@media (width >= 365px) {padding: 0px 40px;}
-		@media (width >= 375px) {
-			// padding: 60px;
-			margin: 0px 0px 60px;
-			// & span {color: #1ED760}
-			&::after {
-				// left: 26%;
-				top: 97%;
-				left: 25%;
-				@media (376px <= width <= 424px) {display: none;}
-			}
-		}
-		@media (width >= 425px) {
-			padding: 20px 72px;
-			margin: 0px 0px 100px;
-			&::after {
-				top: 85%;
-				// bottom: 30%;
-				left: 28%;
-				@media (426px <= width <= 575px) {display: none;}					
-			}
-		}
-		@media (width >= 576px) {
-			padding: 100px 70px;
-			margin: 0px;
-			&::after {
-				top: 63%;
-				// bottom: 35%;
-				left: 40%;
-				@media (577px <= width <= 650px) {display: none;}
-			}
-		}
-		@media (width >= 650px) {
-			padding: 40px 80px;
-			margin: 60px 0px 32px;
-			&::after {
-				top: 72%;
-				// bottom: 24%;
-				left: 36%;
-				@media (651px <= width <= 768px) {display: none;}
-			}
-		}
-		@media (width >= 768px) {
-			position:relative;
-			padding: 0px 15px 0px 0px;
-			margin-bottom: 60px;
-			text-align: left;
-			font-size: 42px;
-			letter-spacing: 1.8px;
-			&::after {
-				display: inline-block;
-				top: 96%;
-				// bottom: 0%;
-				left: 0%;
-				width: 88px;
-				height: 6px;
-				@media (769px <= width <= 992px) {display: none;}
-			}
-			& span {
-				color: var(--color-text);
-				font-size: 52px;
-			}
-		}
-		@media (width >= 992px) {
-			padding: 0px 30px 0px 0px;
-			margin-bottom: 72px;
-			font-size: 52px;
-			letter-spacing: 2.2px;
-			line-height: 1;
-			&::after {
-				display: inline-block;
-				width: 106px;
-				height: 7px;
-				@media (993px <= width <= 1024px) {display: none;}
-			}
-			& span {font-size: 62px;}			
-		}
-		@media (width >= 1024px) {
-			letter-spacing: 2.6px;
-			&::after {
-				display: inline-block;
-				@media (1025px <= width <= 1190px) {display: none;}
-			}
-		}
-		@media (width >= 1190px) {
-			font-size: 62px;
-			letter-spacing: 2.8px;
-			&::after {
-				display: inline-block;
-				width: 128px;
-				height: 8px;
-				@media (1191px <= width <= 1440px) {display: none;}
-			}
-			& span {font-size: 72px;}
-		}
-		@media (width >= 1440px) {
-			margin: 0px 0px 72px;
-			font-size: 70px;
-			letter-spacing: 3.2px;
-			line-height: 1.25;
-			&::after {
-				display: inline-block;
-				width: 150px;
-				height: 10px;
-			}
-			& span {font-size: 80px;}
 		}
 	}
 	&__text-add {
@@ -259,7 +197,9 @@
 			justify-content: flex-start;
 			column-gap: 10%;
 		}
+		@media (width >= 500px) {margin: 0px 0px 20px;}
 		@media (width >= 575px) {column-gap: 10%;}
-		@media (width >= 1440px) {column-gap: 3%;}
+		@media (width >= 768px) {column-gap: 7%;}
+		@media (width >= 1440px) {column-gap: 22px;}
 	}
 }
