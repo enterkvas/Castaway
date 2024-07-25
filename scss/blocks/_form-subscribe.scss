@@ -3,49 +3,41 @@
 		display: flex;
 		flex-direction: column;
 		row-gap: 32px;
-		@media (width >= 450px) {
-			align-items: center;
-		}
-	}
-	& input {
-		padding: 12px 10px;
-    	border-radius: 4px;
-		line-height: 1.17;
-		@media (width >= 450px) {
-			width: 70%;
-		}
-		@media (width >= 450px) {
-			width: 60%;
-		}
-		@media (width >= 650px) {
-			width: 50%;
-		}
-	}
-	& button {
-		display: flex;
-		align-self: flex-start;
-		padding: 8px 14px;
-		margin: 0px auto;
-		font-size: 11px;
-	}
-}
-@media (width >= 1440px) {
-	.form-subscribe {
-		&__form {
-			& input {
+		@media (width >= 450px) {align-items: center;}
+		@media (width >= 768px) {row-gap: 20px;}
+		& input {
+			padding: 12px 10px;
+			border-radius: 4px;
+			line-height: 1.2;
+			@media (width >= 450px) {width: 70%;}
+			@media (width >= 650px) {width: 60%;}
+			@media (width >= 1440px) {
 				width: 522px;
-				height: 88px;
+				height: 82px;
 				padding: 0px 10px 0px 20px;
-				margin: 0px 0px 20px;
+				margin: 0px;
 				border-radius: 6px;
 				font-size: 24px;
-				line-height: 1.17;
 				background-color: var(--bg);
 				color: var(--color-text);
 			}
-			& button {
+		}
+		& button {
+			display: flex;
+			align-self: flex-start;
+			padding: 8px 14px;
+			margin: 0px auto;
+			font-size: 11px;
+			line-height: 1.92;
+			@media (width >= 768px) {
 				display: flex;
 				align-self: flex-start;
+				margin: 0px;
+				font-size: 11px;
+				font-weight: 700;
+			}
+			@media (width >= 1440px) {
+				padding: 9px 18px 10px;
 				font-size: 15px;
 			}
 		}

@@ -1,7 +1,8 @@
 .host {
 	&__row {
-		@media (width >= 1440px) {
+		@media (width >= 768px) {
 			display: flex;
+			align-items: center;
 			& > div:nth-child(1) {
 				order: 2;
 			}
@@ -9,30 +10,61 @@
 				order: 1;
 			}
 		}
+		@media (width >= 1440px) {
+			// display: flex;
+			// & > div:nth-child(1) {
+			// 	order: 2;
+			// }
+			// & > div:nth-child(2) {
+			// 	order: 1;
+			// }
+		}
 	}
-	&__col {display: block;}
+	&__col {
+		display: block;
+		@media (width >= 768px) {
+			width: 50%;
+		}
+	}
 	@media (width >= 1440px) {
 		width: 100%;
 		display: flex;
 		align-items: center;
 	}
 	&__image {
-		position: absolute;
-		left: 0;
-		z-index: -1;
-		width: 100%;
-		@media (width >= 1440px) {position: static;}
+		// position: absolute;
+		// left: 0;
+		// z-index: -1;
+		// width: 100%;
+		// @media (width >= 768px) {
+		// 	position: static;
+		// 	width: 50%;
+		// }
+		filter: brightness(0.7);
+		@media (width >= 768px) {filter: brightness(1.0);}			
 		& img {
 			width: 100%;
-			filter: brightness(0.7);
-			@media (width >= 1440px) {
-				width: 100%;
-				object-fit: cover;
-				border-radius: 12px;
-			}
+			@media (width >= 768px) {border-radius: 8px;}
+			@media (width >= 992px) {border-radius: 10px;}
+			@media (width >= 1440px) {border-radius: 14px;}			
 		}
+		
+		// & img {
+		// 	@media (width >= 1440px) {
+		// 		width: 100%;
+		// 		object-fit: cover;
+		// 		border-radius: 12px;
+		// 	}
+		// }
 	}
 	&__card {
-		position: relative;	
+		position: absolute;
+		top: 0;
+		left: 0;
+		@media (width >= 768px) {
+			position: static;
+			// width: 50%;
+			text-align: left;
+		}	
 	}
 }	
