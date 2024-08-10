@@ -1,0 +1,11 @@
+.text-footer {
+    &__row {
+        display: flex;
+        column-gap: 120px;
+    } 
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+}

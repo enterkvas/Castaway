@@ -1,0 +1,28 @@
+.item-reviews {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: var(--bg-black);
+    line-height: 1.2;
+    @media (width >= 1440px) {
+        width: 423px;
+        height: 364px;
+        padding: 52px 50px;
+        border-radius: 32px;
+    }
+    &__icons {
+        // margin: 0px 0px 20px;
+        // line-height: 1;
+    }
+    &__text {
+        @media (width >= 1440px) {
+            font-size: 36px;
+        }
+    }
+    &__autor {
+        color: var(--color-text-subtitle);
+        @media (width >= 1440px) {
+            font-size: 24px;
+        }
+    }
+}

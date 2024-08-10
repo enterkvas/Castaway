@@ -35,18 +35,25 @@ body._lock {
 	display: flex;
 	flex-direction: column;
 }
+h3 {
+	font-size: 22px;
+    line-height: 1.1;
+    letter-spacing: 1.5px;
+	@media (width >= 500px) {
+		font-size: 28px;
+	}
+}
 .container {
 	max-width: 1440px;
 	margin: 0px auto;
-	padding-left: 15px;
-	padding-right: 15px;
-	@media (min-width: 375px) {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-	// @media (min-width: 576px) {
+	padding: 0px;
+	// @media (min-width: 375px) {
 	// 	padding-left: 20px;
 	// 	padding-right: 20px;
+	// }
+	// @media (min-width: 425px) {
+	// 	padding-left: 40px;
+	// 	padding-right: 40px;
 	// }
 	@media (min-width: 768px) {
 		padding-left: 30px;
@@ -69,26 +76,35 @@ body._lock {
 		padding-right: 70px;
 	}
 }
-.no-padding {
-	@media (max-width: 767px) {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-}
+// .no-padding {
+// 	@media (max-width: 767px) {
+// 		padding-left: 0px;
+// 		padding-right: 0px;
+// 	}
+// }
 
 .subtitle {
-	font-size: 16px;
+	font-size: 12px;
 	line-height: 1.5;
-	@media (width >= 768px) {font-size: 14px;}
+	@media (width >= 768px) {
+		font-size: 14px;
+		color: var(--color-text-subtitle);
+	}
 	@media (width >= 1190px) {font-size: 18px;}
 	@media (width >= 1440px) {font-size: 22px;}
 }
 
 .textblue {
-	font-size: 14px;
-	line-height: 1.6;
+	// font-size: 14px;
+	// line-height: 1.6;
 	color: var(--blue);
 	filter: saturate(200%);
+}
+.text-short {
+	line-height: 1.5882;
+	@media (width >= 1440px) {
+		font-size: 17px;
+	}
 }
 // ._ibg {
 // 	position: relative;
@@ -101,9 +117,9 @@ body._lock {
 // 	left: 0;
 // 	object-fit: cover;
 // }
-.ellipsis-text {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-}
+// .ellipsis-text {
+// 	overflow: hidden;
+// 	text-overflow: ellipsis;
+// 	display: -webkit-box;
+// 	-webkit-box-orient: vertical;
+// }

@@ -3,7 +3,8 @@
 	--bg-black:#000;
 	--blue: #118DA8;
 	--color-text:#fff;
-	--fz:16px;
-	--lh:1;
+	--color-text-subtitle: rgba(255, 255, 255, .7);
+	--fz: 16px;
+	--lh: 1;
 	/* --refRes: 1920;	 */
 }

@@ -6,7 +6,7 @@
 	min-height: 60px;
 	width: 100%;
 	display: flex;
-  align-items: center;
+  	align-items: center;
 	padding: 10px 0px;
 	background-color: var(--bg);
 	@media (min-width: 768px) {	
@@ -24,6 +24,7 @@
 		padding: 26px 0;
 	}
 	&__container {
+		// padding: 0px 15px;
 		display: flex;
 		justify-content: space-between;	
 		width: 100%;

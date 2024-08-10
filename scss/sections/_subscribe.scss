@@ -1,5 +1,5 @@
 .subscribe {
-	padding: 40px 0px;	
+	padding: 40px 0px 0px;	
 	&::before {
 		@media (width >= 768px) {
 			content: "";
@@ -35,11 +35,11 @@
 		margin: 0px 0px 20px;
 		@media (width >= 768px) {
 			padding: 0px;
-			line-height: 1.5;
+			// line-height: 1.5;
 		}
 		@media (width >= 1440px) {
 			margin: 0px;
-			font-size: 18px;
+			// font-size: 18px;
 		}
 	}
 	&__title {

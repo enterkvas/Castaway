@@ -1,17 +1,18 @@
 .episodes {
-	position: relative;
+	// position: relative;
 	text-align: center;
 	padding: 40px 0px 0px;
 	@media (width >= 375px) {padding: 60px 0px 0px;}
-	@media (width >= 768px) {padding: 40px 0px;}
+	@media (width >= 768px) {padding: 40px 0px 0px;}
 	@media (width >= 992px) {padding: 60px 0px;}
 	@media (width >= 1190px) {padding: 80px 0px;}
 	@media (width >= 1440px) {padding: 92px 0px 0px;}
+	// &__container {padding: 0px;}
 	&__header {
 		&--title {
 			margin: 0px 0px 20px;
 			font-size: 30px;
-			line-height: 1.25;
+			line-height: 1.2375;
 			letter-spacing: 1.5px;
 		}
 		&--link {margin: 0px 0px 32px;}
@@ -46,8 +47,8 @@
 			&--title {font-size: 52px;}
 		}
 		@media (width >= 1440px) {
-			margin: 0px 0px 66px;
-			// padding: 10px 0px;
+			margin: 0px 0px 36px;
+			padding: 12px 0px;
 			&--title {
 				font-size: 64px;
 				letter-spacing: 2.88px;
@@ -65,6 +66,7 @@
 		@media (width >= 1440px) {row-gap: 60px;}
 	}
 	&__col {
+		position: relative;
 		overflow: hidden;
 		@media (width >= 768px) {
 			&--content {
@@ -88,36 +90,46 @@
 			border-radius: 32px;
 			background-color: var(--bg-black);
 			&--content {
-				column-gap: 30px;	
+				column-gap: 53px;	
 				padding: 40px;
 			}
 		}
 	}
 	&__image {
-		position: absolute;
-		width: 100%;
-		left: 0;
+		// position: absolute;
+		// width: 100%;
+		// left: 0;
+		filter: brightness(0.7);
 		& img {
 			width: 100%;
-			height: auto;
-			filter: brightness(0.7);
+			// height: auto;
+			// filter: brightness(0.7);
+			@media (width >= 768px) {
+			}
 		}
-		@media (width >= 768px) {
-			position: static;
-			width: 50%;
-			margin: 0px;
-			& img {filter: brightness(1);}
-		}
+		// @media (width >= 768px) {
+		// 	position: static;
+		// 	width: 50%;
+		// 	margin: 0px;
+		// 	& img {filter: brightness(1);}
+		// }
+		@media (width >= 768px) {filter: brightness(1.0);}
 		@media (width >= 992px) {
 			& img {border-radius: 0px;}
 		}
 		@media (width >= 1440px) {
-			width: 50%;
+			// width: 50%;
 			margin: 0px 0px 0px;
-			& img {max-width: none;}
+			// & img {max-width: none;}
 		}
 	}
 	&__card {
-		position: relative;
+		// position: relative;
+		position: absolute;
+		top: 0;
+		// left: 0;
+		@media (width >= 768px) {
+			position: static;
+		}
 	}
 }

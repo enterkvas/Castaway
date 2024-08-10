@@ -1,4 +1,20 @@
 .footer {
-	background-color: blue;
-	color: var(--color-text);
+	@media (width >= 1440px) {
+		padding: 100px 0px 120px;
+		color: var(--color-text);		
+	}
+	&__row {
+		@media (width >= 1440px) {
+			display: flex;
+			column-gap: 18%;		
+		}
+	}
+	&__logo {
+		@media (width >= 1440px) {
+			margin: 0px 0px 20px;		
+		}
+	}
+	// &__icons_1 {
+	// 	margin-left: -10px;
+	// }
 }

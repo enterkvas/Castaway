@@ -1,9 +1,10 @@
 .card-host {
-    // padding: 40px 0px 0px;
 	padding: 20px 0px 0px;			
-    // @media (width >= 545px) {padding: 40px 0px 0px;}
 	@media (width >= 576px) {padding: 40px 0px 0px;}
-	@media (width >= 768px) {padding: 0px;}
+	@media (width >= 768px) {
+		max-width: 90%;
+		padding: 0px;
+	}
     @media (width >= 1440px) {max-width: 590px;}
 	// &__container {padding: 0px 30px;}
 	// &::after {
@@ -42,79 +43,57 @@
 		@media (width >= 768px) {
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
-			height: 100%;
-			padding: 0px 20px;
+			// justify-content: space-between;
+			// height: 100%;
+			// padding: 0px 20px;
+			padding: 0px;
 		}
 		@media (width >= 1440px) {padding: 0px;}
 	}
 	&__arrow {
+		display: none;
 		margin: 0px 0px 20px;
+		@media (width >= 768px) {
+			display: block;
+			margin: 0px 0px 12px;
+		}
+		@media (width >= 1440px) {margin: 0px 0px 20px;}
+		// & img {width: 20%;}
 	}
-    // &__arrow {
-	// 	position: absolute;
-	// 	top: 6%;
-    //     right: 15%;	
-    //     width: 40px;
-    //     height: 40px;
-	// 	background-size: 60%;
-	// 	background-color: var(--blue);
-	// 	@media (width >= 400px) {
-	// 		right: 20%;
-	// 	}
-	// 	@media (width >= 545px) {
-	// 		top: 10%;
-	// 		right: 25%;
-	// 	}
-	// 	@media (width >= 650px) {
-	// 		top: 8%;
-	// 		right: 30%;
-	// 	}
-	// 	@media (width >= 768px) {
-	// 		position: static;
-	// 	}
-	// 	@media (width >= 1440px) {
-	// 		width: 112px;
-	// 		height: 112px;
-	// 		margin: 0px 0px 20px;
-	// 		background-color: var(--blue);
-	// 	}
-	// }
     &__textblue {
-		// position: relative;
         display: inline-block;
-		// margin: 0px auto 20px;
 		margin: 0px auto 40px;
         padding: 0px 8px;
         border-radius: 2px;
         background-color: var(--bg);
-		line-height: 1.5;
-		// @media (width >= 400px) {margin: 0px auto 100px;}
+		// line-height: 1.5;
 		@media (width >= 375px) {margin: 0px auto 80px;}
-		// @media (width >= 450px) {margin: 0px auto 140px;}
 		@media (width >= 425px) {margin: 0px auto 100px;}
 		@media (width >= 500px) {margin: 0px auto 260px;}
 		@media (width >= 576px) {margin: 0px auto 320px;}
-		// @media (width >= 520px) {margin: 0px auto 20px;}
-		// @media (width >= 600px) {margin: 0px auto 40px;}
-		// @media (width >= 650px) {margin: 0px auto 100px;}
 		@media (width >= 768px) {
 			padding: 0px;
-		}
-		@media (width >= 1440px) {
 			margin: 0px;
-			font-size: 18px;
+			// font-size: 11px;
 		}
+		// @media (width >= 1440px) {
+		// 	font-size: 18px;
+		// }
 	}
 	&__title {
 		margin: 0px 0px 32px;
         font-size: 34px;
         line-height: 1.14;
 		// @media (width >= 520px) {margin: 0px 0px 12px;}
+		@media (width >= 768px) {
+			margin: 0px 0px 20px;
+			line-height: 1.218;
+			letter-spacing: 1.5px;
+		}	
 		@media (width >= 1440px) {
 			margin: 0px 0px 28px;
 			font-size: 65px;
-			line-height: 1.218;
+			letter-spacing: 2.88px;
 		}
 	}
     &__subtitle:not(:last-child) {
