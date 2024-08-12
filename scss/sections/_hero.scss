@@ -18,6 +18,12 @@
 		// 	display: flex;
 		// }
 	// }
+	&__container {
+		@media (width >= 1440px) {
+			padding-left: 70px;
+			padding-right: 70px;
+		}
+	}
 	&__row {
 		@media (width >= 768px) {
 			display: flex;
@@ -94,7 +100,7 @@
 		// @media (width >= 965px) {padding: 180px 120px 0px 40px;}
 		// @media (width >= 992px) {padding: 180px 40px 0px 40px;}
 		// @media (width >= 1162px) {padding: 180px 40px 0px 60px;}
-		// @media (width >= 1190px) {padding: 200px 4px 0px 60px;}
+		@media (width >= 1190px) {padding: 240px 5px 0px 60px;}
 		// @media (width >= 1395px) {padding: 240px 40px 0px 60px;}
 		@media (width >= 1440px) {padding: 294px 60px 0px;}
 	}

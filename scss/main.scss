@@ -1,7 +1,5 @@
 @import "../css/var.css";
 
-@import "./base/base";
-@import "./base/null";
 
 @import "./blocks/arrow-to-right";
 @import "./blocks/buttons";
@@ -18,6 +16,9 @@
 @import "./blocks/page";
 @import "./blocks/reviews";
 @import "./blocks/text-footer";
+
+@import "./base/base";
+@import "./base/null";
 
 @import "./sections/hero";
 @import "./sections/about";

@@ -1,7 +1,8 @@
 .logo {
 	display: flex;
 	align-items: center;
-	&__img img {
+	// &__img img {
+	&__img {
 		padding-top: 5%;	
 		width: 80px;
 		cursor: pointer;	
@@ -20,6 +21,7 @@
 		@media (min-width: 1440px) {
 		padding-top: 0%;	
 			width: 160px;	
-		}		
-	}
+		}
+	}		
+	// }
 }
