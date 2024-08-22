@@ -1,159 +1,71 @@
-.menu {
-	display: flex;
-	align-items: center;
-	&__icon {
-		position: relative;
-		display: block;
-		width: 24px;
-		height: 16px;
-		cursor: pointer;
+.menu-list {
+  position: absolute;
+  left: -150%;
+  background-color: rgba(6, 33, 55, 0.9);
+  padding-top: 120px; 
+  width: 100%;
+  text-align: center;
+  // top: 30px;
+  transition: all 0.5s ease 0s;
 
-		&::before,
-		&::after,
-		& span {
-			position: absolute;
-			left: 0;
-			height: 20%;
-			width: 100%;
-			background-color: var(--color-text);
-			transition: all 0.3s ease 0s;
-		}
-		&::before,
-		&::after {
-			content: "";
-		}
-		&::before {
-			top: 0;
-		}
-		&::after {
-			bottom: 0;
-		}
-		& span {
-			top: 50%;
-			transform: scale(1) translate(0px, -50%);
-		}
-		&._active {
-			bottom: 150%;
-			right: -170%;
-			@media (width >= 576px) {
-				bottom: 100%;
-			}
-		}
-		&._active span {
-			transform: scale(0) translate(0px, -50%);
-		}
-		&._active::before {
-			top: 430%;
-			transform: rotate(-50deg) translate(0px, -50px);
-		}
-		&._active::after {
-			bottom: 50%;
-			transform: rotate(50deg) translate(0px, 50px);
-		}
-		@media (width >= 768px) {
-			// display: none;
-			opacity: 0;
-			visibility: hidden;
-			width: 0px;
-			height: 0px;
-			display: block;
-			// margin-left: -10000px;
-			background: transparent;
-			font-size: 0;
-		}
+  &._active {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transition: all 0.5s ease 0s;
   }
-	// &__body {
-	// 	position: fixed;
-	// 	left: -100%;
-	// 	top: 0;
-	// 	height: 100%;
-	// 	width: 100%;
-	// 	padding: 30px 15px 10px;
-	// 	margin-top: 60px;
-	// 	background-color: rgba(0, 0, 0, 0.9);
-	// 	transition: left 0.3s ease 0s;
-	// 	overflow: auto;
-		
-	// 	&._active {
-	// 		left: 0px;
-	// 	}
-	// 	@media (width >= 576px) {
-	// 		padding: 30px 20px 10px;
-	// 	}
-	// 	@media (width >= 768px) {
-	// 		position: static;
-	// 		padding: 0;
-	// 		margin: 0;
-	// 		background-color: var(--bg);
-	// 	}
-	// }
-	&__list {
-		position: fixed;
-		left: -100%;
-		top: 0;
-		height: 100%;
-		width: 100%;
-		padding: 30px 15px 10px;
-		margin-top: 60px;
-		background-color: rgba(0, 0, 0, 0.9);
-		transition: left 0.3s ease 0s;
-		overflow: auto;
-		
-		&._active {
-			left: 0px;
-		}
-		@media (width >= 576px) {
-			padding: 30px 20px 10px;
-		}
-		@media (width >= 768px) {
-			position: static;
-			padding: 0;
-			margin: 0;
-			background-color: var(--bg);
-			display: flex;
-			align-items: center;
-			column-gap: 25px;
-		}
-		// @media (width >= 768px) {
-		// 	display: flex;
-		// 	align-items: center;
-		// 	column-gap: 25px;
-		// }
-		@media (width >= 1190px) {
-			column-gap: 35px;
-		}
-		@media (width >= 1440px) {
-			column-gap: 40px;
-		}
-		& > li {
-			padding: 5px 0;
-			margin: 0 0 30px 0;
-			@media (width >= 768px) {
-				margin-bottom: 0;
-			}
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
-	}
-	&__link {
-		// font-size: 24px;
-		color: var(--color-text);
-		@media (min-width: 768px) {
-			// font-size: 12px;
-			// line-height: calc((22 / 12));
-			text-decoration: none;
-			&:hover {
-				color: var(--blue);
-			}
-		}
-		// @media (width >= 992px) {
-		// 	font-size: 14px;
-		// 	line-height: calc(24 / 14);
-		// }
-		// @media (width >= 1190px) {
-		// 	font-size: 17px;
-		// 	line-height: calc(27 / 17);
-		// }
-	}
+
+  & li {margin-bottom: 48px;}
+
+  &__item a {
+    color: var(--default-text-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .1em;
+  }
+
+  &__item a:active {color: var(--default-hover-orange);}  
+}
+
+@media (min-width: 768px) {
+  .menu-list {
+    position: static;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 85px;
+    background-color: transparent;
+    padding-top: 0px;
+    margin-bottom: 68px;
+
+    &._active {
+      top: 0px;
+      left: 0;
+      height: auto;
+    }
+
+    & li {
+      margin-bottom: 0;
+      line-height: 1.2;
+    }
+  }  
+}
+
+@media (min-width: 992px) {
+  a.menu-list__link:hover {
+    color: var(--default-hover-orange);
+    text-decoration: none;
+    transition: all 1s ease 0s;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu-list {
+    column-gap: 130px;
+    margin-bottom: 108px;
+
+    &__item a {font-size: 22px;}
+  }
 }

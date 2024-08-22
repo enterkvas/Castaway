@@ -1,7 +1,10 @@
 @import "../css/var.css";
 
+@import "./base/null";
+@import "./base/base";
 
 @import "./blocks/arrow-to-right";
+@import "./blocks/burger-btn";
 @import "./blocks/buttons";
 @import "./blocks/card-episodes";
 @import "./blocks/card-host";
@@ -9,19 +12,17 @@
 @import "./blocks/form-subscribe";
 @import "./blocks/item-reviews";
 @import "./blocks/header";
-@import "./blocks/icons-social_1";
-@import "./blocks/icons-social_2";
+@import "./blocks/heading";
+@import "./blocks/icons-social-1";
+@import "./blocks/icons-social-2";
 @import "./blocks/logo";
 @import "./blocks/menu";
 @import "./blocks/page";
 @import "./blocks/reviews";
 @import "./blocks/text-footer";
 
-@import "./base/base";
-@import "./base/null";
-
-@import "./sections/hero";
 @import "./sections/about";
 @import "./sections/episodes";
+@import "./sections/hero";
 @import "./sections/host";
 @import "./sections/subscribe";

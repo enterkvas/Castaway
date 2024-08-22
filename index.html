@@ -18,22 +18,45 @@
 				<!-- <div class="header__logo logo"> -->
 				<a class="header__logo logo" href="#"><img class="logo__img" src="./img/images/logo.png" alt="header block logo picture"></a>
 				<!-- </div> -->
-				<nav class="header__menu menu">
+				<!-- <nav class="header__menu menu">
 					<div class="menu__icon">
 						<span></span>
 					</div>
-					<!-- <div class="menu__body"> -->
-						<ul class="menu__list text-short">
-							<li><a class="menu__link" href="#">Home</a></li>
-							<li><a class="menu__link" href="#">Episodes</a></li>
-							<li><a class="menu__link" href="#">About</a></li>
-							<li><a class="menu__link" href="#">Contact</a></li>
-						</ul>
-					<!-- </div> -->
-				</nav>				
+					<ul class="menu__list text-short">
+						<li><a class="menu__link" href="#">Home</a></li>
+						<li><a class="menu__link" href="#">Episodes</a></li>
+						<li><a class="menu__link" href="#">About</a></li>
+						<li><a class="menu__link" href="#">Contact</a></li>
+					</ul>
+				</nav>				 -->
+				<nav class="navigation">
+					<div class="burger-btn"><span></span></div>
+					<ul class="navigation__list menu-list">
+					  <li class="menu-list__item">
+						<a data-goto="#resume" href="#" class="menu-list__link"
+						  >Home</a
+						>
+					  </li>
+					  <li class="menu-list__item">
+						<a data-goto="#portfolio" href="#" class="menu-list__link"
+						  >Episodes</a
+						>
+					  </li>
+					  <li class="menu-list__item">
+						<a data-goto="#contacts" href="#" class="menu-list__link"
+						  >About</a
+						>
+					  </li>
+					  <li class="menu-list__item">
+						<a data-goto="#contacts" href="#" class="menu-list__link"
+						  >Contact</a
+						>
+					  </li>
+					</ul>
+				  </nav>
 			</div>
 		</header>
-		<main class="page">
+		<main class="page page__container container">
 			<section class="page__hero hero">
 				<div class="hero__container container">
 					<div class="hero__row">
@@ -46,12 +69,12 @@
 							<div class="hero__body">
 								<h2 class="hero__text-main">Take your podcast to the <span class="hero__text-underlining">next</span> <span class="hero__text-green">level</span></h2>
 								<p class="hero__text-add">Listen on</p>
-								<div class="hero__icons icons-social_1">
-									<a href="#"><img class="icons-social__icon" src="././img/icons/icons-social/icons-social_1/icon-1.png" alt="icon image_1"></a>
-									<a href="#"><img class="icons-social__icon" src="././img/icons/icons-social/icons-social_1/icon-2.png" alt="icon image_2"></a>
-									<a href="#"><img class="icons-social__icon" src="././img/icons/icons-social/icons-social_1/icon-3.png" alt="icon image_3"></a>
-									<a href="#"><img class="icons-social__icon" src="././img/icons/icons-social/icons-social_1/icon-4.png" alt="icon image_4"></a>
-									<a href="#"><img class="icons-social__icon" src="././img/icons/icons-social/icons-social_1/icon-5.png" alt="icon image_5"></a>
+								<div class="hero__icons icons-social-1">
+									<a href="#"><img class="icons-social-1__icon" src="././img/icons/icons-social/icons-social-1/icon-1.png" alt="icon image_1"></a>
+									<a href="#"><img class="icons-social-1__icon" src="././img/icons/icons-social/icons-social-1/icon-2.png" alt="icon image_2"></a>
+									<a href="#"><img class="icons-social-1__icon" src="././img/icons/icons-social/icons-social-1/icon-3.png" alt="icon image_3"></a>
+									<a href="#"><img class="icons-social-1__icon" src="././img/icons/icons-social/icons-social-1/icon-4.png" alt="icon image_4"></a>
+									<a href="#"><img class="icons-social-1__icon" src="././img/icons/icons-social/icons-social-1/icon-5.png" alt="icon image_5"></a>
 								</div>
 							</div>
 						</div>
@@ -61,12 +84,12 @@
 			<section class="page__episodes episodes">
 				<div class="episodes__container container">
 					<div class="episodes__header">
-						<h3 class="episodes__header--title">Latest episodes</h3>
-						<div class="episodes__header--link button text-short">View all episodes</div>
+						<h3 class="episodes__header-title">Latest episodes</h3>
+						<div class="episodes__header-link button text-short">View all episodes</div>
 					</div>
 					<div class="episodes__row">
 						<div class="episodes__col">
-							<div class="episodes__col--content">
+							<div class="episodes__col-content">
 								<div class="episodes__image">
 									<img src="./img/images/episodes-img/episodes-img_1.jpg" alt="image of episodes_3">
 								</div>
@@ -82,7 +105,7 @@
 							</div>
 						</div>
 						<div class="episodes__col">
-							<div class="episodes__col--content">
+							<div class="episodes__col-content">
 								<div class="episodes__image">
 									<img src="./img/images/episodes-img/episodes-img_2.jpg" alt="image of episodes_2">
 								</div>
@@ -98,7 +121,7 @@
 							</div>
 						</div>
 						<div class="episodes__col">
-							<div class="episodes__col--content">
+							<div class="episodes__col-content">
 								<div class="episodes__image">
 									<img src="./img/images/episodes-img/episodes-img_3.jpg" alt="image of episodes_1">
 								</div>
@@ -141,7 +164,7 @@
 						</div>
 					</section>
 					<section class="about__subscribe subscribe">
-						<div class="subscribe__container container">
+						<div class="subscribe__container">
 							<div class="subscribe__row">
 								<div class="subscribe__col">
 									<div class="subscribe__text">
@@ -243,10 +266,10 @@
 						<div class="footer__logo">
 							<img src="./img/icons/footer-icons/footer-logo.png" alt="header block footer picture">
 						</div>
-						<div class="footer__icons_2 icons-social_2">
-							<img src="./img/icons/icons-social/icons-social_2/insta-icon.svg" alt="image instagram">
-							<img src="./img/icons/icons-social/icons-social_2/twitter-icon.svg" alt="image twitter">
-							<img src="./img/icons/icons-social/icons-social_2/facebook-icon.svg" alt="image facebook">
+						<div class="footer__icons-2 icons-social-2">
+							<img src="./img/icons/icons-social/icons-social-2/insta-icon.svg" alt="image instagram">
+							<img src="./img/icons/icons-social/icons-social-2/twitter-icon.svg" alt="image twitter">
+							<img src="./img/icons/icons-social/icons-social-2/facebook-icon.svg" alt="image facebook">
 						</div>
 					</div>
 					<div class="footer__col">
@@ -274,12 +297,12 @@
 						</div>
 					</div>
 					<div class="footer__col">
-						<div class="footer__icons_1 icons-social_1">
-							<a href="#"><img class="icons-social__icon" src="././img/icons/icons-social/icons-social_1/icon-1.png" alt="icon image_1"></a>
-							<a href="#"><img class="icons-social__icon" src="././img/icons/icons-social/icons-social_1/icon-2.png" alt="icon image_2"></a>
-							<a href="#"><img class="icons-social__icon" src="././img/icons/icons-social/icons-social_1/icon-3.png" alt="icon image_3"></a>
-							<a href="#"><img class="icons-social__icon" src="././img/icons/icons-social/icons-social_1/icon-4.png" alt="icon image_4"></a>
-							<a href="#"><img class="icons-social__icon" src="././img/icons/icons-social/icons-social_1/icon-5.png" alt="icon image_5"></a>
+						<div class="footer__icons-1 icons-social-1">
+							<a href="#"><img class="icons-social-1__icon" src="././img/icons/icons-social/icons-social-1/icon-1.png" alt="icon image_1"></a>
+							<a href="#"><img class="icons-social-1__icon" src="././img/icons/icons-social/icons-social-1/icon-2.png" alt="icon image_2"></a>
+							<a href="#"><img class="icons-social-1__icon" src="././img/icons/icons-social/icons-social-1/icon-3.png" alt="icon image_3"></a>
+							<a href="#"><img class="icons-social-1__icon" src="././img/icons/icons-social/icons-social-1/icon-4.png" alt="icon image_4"></a>
+							<a href="#"><img class="icons-social-1__icon" src="././img/icons/icons-social/icons-social-1/icon-5.png" alt="icon image_5"></a>
 						</div>
 					</div>
 				</div>

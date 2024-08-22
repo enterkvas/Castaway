@@ -82,18 +82,18 @@
 	}
 	&__title {
 		margin: 0px 0px 32px;
-        font-size: 34px;
-        line-height: 1.14;
+        // font-size: 34px;
+        // line-height: 1.14;
 		// @media (width >= 520px) {margin: 0px 0px 12px;}
 		@media (width >= 768px) {
 			margin: 0px 0px 20px;
-			line-height: 1.218;
-			letter-spacing: 1.5px;
+			// line-height: 1.218;
+			// letter-spacing: 1.5px;
 		}	
 		@media (width >= 1440px) {
 			margin: 0px 0px 28px;
-			font-size: 65px;
-			letter-spacing: 2.88px;
+			// font-size: 65px;
+			// letter-spacing: 2.88px;
 		}
 	}
     &__subtitle:not(:last-child) {
