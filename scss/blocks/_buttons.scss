@@ -14,3 +14,57 @@
 		// font-size: 18px;
 	}
 }
+/* Button "Up": */
+.btn_up {
+	display: none;
+	position: fixed;
+	bottom: 40px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid #000;
+	z-index: 100;
+	outline: 0 !important;
+	background: rgba(255, 255, 255, .5);
+  
+	&::before {
+	  content: "";
+	  width: 10px;
+	  height: 10px;
+	  border-top: 2px solid #000;
+	  border-right: 2px solid #000;
+	  transform: rotate(-45deg);
+	  position: absolute;
+	  top: -5px;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  margin: auto;
+	}
+  
+	&::after {
+	  content: "";
+	  width: 10px;
+	  height: 10px;
+	  border-top: 2px solid #000;
+	  border-right: 2px solid #000;
+	  transform: rotate(-45deg);
+	  position: absolute;
+	  top: 10px;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  margin: auto;
+	}
+	
+	&.active {display: block;}
+  
+	@media(min-width: 992px) {
+	  &:hover {
+		cursor: pointer;
+		background-color: var(--default-hover-orange);
+		transition: 0.5s;
+	  }
+	}
+  }

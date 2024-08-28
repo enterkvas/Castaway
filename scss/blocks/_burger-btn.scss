@@ -5,8 +5,10 @@
   top: 20px;
   right: 15px;
   z-index: 1;
-
-  @media(min-width:768px) {
+  @media(min-width: 576px) {
+    right: 20px;
+  }
+  @media(min-width: 768px) {
     opacity: 0;
     visibility: hidden;
     width: 0px;

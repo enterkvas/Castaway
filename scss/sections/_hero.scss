@@ -78,8 +78,8 @@
 				width: 68px;
 				height: 74px;
 				position: absolute;
-				top: -3%;
-				left: -4%;
+				top: -5%;
+				left: -7%;
 				z-index: 7;
 				background-image: url('../img/images/hero-img/hero-img_add-top.svg');
 				background-repeat: no-repeat;
@@ -100,8 +100,9 @@
 			position: static;
 			width: 100%;
 			height: auto;
-			border-radius: 8px;			
+			// border-radius: 8px;			
 			transform: translate(0, 0);
+			@media (width >= 768px) {border-radius: 8px;}
 			@media (width >= 992px) {border-radius: 10px;}
 			@media (width >= 1440px) {border-radius: 14px;}
 		}		
@@ -110,8 +111,12 @@
 		position: absolute;
 		bottom: 20px;
 		padding: 0px 15px;
+		@media(min-width: 576px) {
+			padding: 0px 20px;
+		}
 		@media (width >= 768px) {
 			position: static;
+			padding: 0 9.2% 0;
 			// width: 50%;
 			text-align: left;
 		}
@@ -119,7 +124,6 @@
 		// padding: 60px 0px 0px;
 		// @media (width >= 496px) {padding: 100px 0px 0px;}
 		// @media (width >= 768px) {padding: 100px 16px 0px 40px;}
-		@media (width >= 768px) {padding: 45% 9.2% 0;}
 		// @media (width >= 865px) {padding: 100px 80px 0px 40px;}
 		// @media (width >= 865px) {padding: 45% 80px 0px 40px;}
 		// @media (width >= 900px) {padding: 140px 60px 0px 40px;}
@@ -128,7 +132,7 @@
 		// @media (width >= 992px) {padding: 45% 60px 0px 40px;}
 		// @media (width >= 1024px) {padding: 220px 20px 0px 40px;}
 		// @media (width >= 1024px) {padding: 45% 20px 0px 40px;}
-		// @media (width >= 1190px) {padding: 240px 5px 0px 40px;}
+		@media (width >= 1190px) {padding: 0 6% 0;}
 		// @media (width >= 1390px) {padding: 240px 40px 0px 60px;}
 		// @media (width >= 1440px) {padding: 294px 60px 0px;}
 	}
@@ -140,7 +144,8 @@
 		// letter-spacing: 1.45px;
 		@media (width >= 375px) {margin: 0px 0px 300px;}	
 		@media (width >= 425px) {margin: 0px 0px 360px;}
-		@media (width >= 576px) {margin: 0px 0px 520px;}
+		@media (width >= 496px) {margin: 0px 0px 420px;}
+		@media (width >= 576px) {margin: 0px 0px 468px;}
 		// @media (width >= 456px) {padding: 0px 80px;}
 		// @media (width >= 496px) {padding: 0px 100px;}
 		// @media (width >= 524px) {padding: 0px 60px;}
@@ -154,24 +159,25 @@
 			// letter-spacing: 1.8px;
 		}
 		@media (width >= 900px) {margin: 0px 0px 100px;}
-		@media (width >= 992px) {
-			margin: 0px 0px 60px;
+		// @media (width >= 992px) {
+			// margin: 0px 0px 60px;
 			// font-size: 48px;
 			// letter-spacing: 2.2px;			
-		}
-		@media (width >= 1024px) {
+		// }
+		// @media (width >= 1024px) {
 			// letter-spacing: 2.6px;
-		}
-		@media (width >= 1190px) {
-			margin: 0px 0px 80px;
+		// }
+		// @media (width >= 1190px) {
+			// margin: 0px 0px 80px;
 			// font-size: 62px;
 			// letter-spacing: 2.8px;
-		}
+		// }
 		@media (width >= 1440px) {
-			margin: 0px 0px 84px;
+			// margin: 0px 0px 84px;
+			margin: 136px 0px 88px;
 			// font-size: 70px;
 			// letter-spacing: 3.2px;
-			padding: 0px;
+			// padding: 0px;
 		}
 	}
 	&__text-underlining {
