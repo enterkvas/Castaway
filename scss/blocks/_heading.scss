@@ -42,7 +42,7 @@ h2 {
 }
 h3 {
   @include adaptive-font(64, 22);
-  @include adaptive-letterspacing(2.56, 1.2);
+  @include adaptive-letterspacing(2.88, 1.2);
   @include adaptive-lineheight(70.4, 24.2);
 }
 

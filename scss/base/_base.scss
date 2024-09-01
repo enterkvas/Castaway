@@ -97,6 +97,16 @@ $maxWidth: 1440;
 }
 .text-short {
 	line-height: 1.5882;
+	font-size: 9px;
+	@media (width >= 375px) {
+		font-size: 10px;
+	}
+	@media (width >= 425px) {
+		font-size: 11px;
+	}
+	@media (width >= 576px) {
+		font-size: 12px;
+	}
 	@media (width >= 1440px) {
 		font-size: 17px;
 	}
@@ -112,9 +122,9 @@ $maxWidth: 1440;
 // 	left: 0;
 // 	object-fit: cover;
 // }
-// .ellipsis-text {
-// 	overflow: hidden;
-// 	text-overflow: ellipsis;
-// 	display: -webkit-box;
-// 	-webkit-box-orient: vertical;
-// }
+.ellipsis-text {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}

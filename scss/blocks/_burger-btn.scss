@@ -5,9 +5,7 @@
   top: 20px;
   right: 15px;
   z-index: 1;
-  @media(min-width: 576px) {
-    right: 20px;
-  }
+  @media(min-width: 576px) {right: 20px;}
   @media(min-width: 768px) {
     opacity: 0;
     visibility: hidden;
@@ -17,7 +15,6 @@
     background: transparent;
     font-size: 0;
   }
-
   & span,
   &::before,
   &::after {
@@ -27,7 +24,6 @@
     background-color: #fff;
     transition: all .3s ease 0s;
   }
-
   &::before,
   &::after {content: "";}
   &::before {top: 0;}
@@ -36,7 +32,6 @@
     top: 50%;
     transform: translate(0px, -50%);
   }
-
   &._active span {transform: scale(0) translate(0px, -50%);}
   &._active::before,
   &._active::after {
