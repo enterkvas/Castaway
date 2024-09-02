@@ -19,9 +19,6 @@
 		}
 	}	
 	&__episodes {
-		// @media (width >= 330px) {margin: 0px 0px 30px;}
-		// @media (width >= 450px) {margin: 0px 0px 80px;}
-		// @media (width >= 500px) {margin: 0px 0px 100px;}
 		@media (width >= 768px) {margin: 0px 0px 80px;}
 		@media (width >= 992px) {background-color: var(--bg);}
 		@media (width >= 1440px) {margin: 0px 0px 160px;}

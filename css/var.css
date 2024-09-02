@@ -1,6 +1,7 @@
 :root {
 	--bg:#191919;
 	--bg-black:#000;
+	/* --bg-white:#fff; */
 	--blue: #118DA8;
 	--color-text:#fff;
 	--color-text-subtitle: rgba(255, 255, 255, .7);
