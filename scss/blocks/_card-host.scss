@@ -1,5 +1,5 @@
 .card-host {
-	padding: 20px 0px 0px;			
+	padding-top: 4%;			
 	@media (width >= 576px) {padding: 40px 0px 0px;}
 	@media (width >= 768px) {
 		max-width: 90%;
@@ -30,7 +30,7 @@
 	// 	}
 	// }
 	&__container {
-		// padding: 0px 0px;
+		padding: 0px 15px;
 		// display: flex;
 		// flex-direction: column;
 		// justify-content: space-between;
@@ -62,15 +62,12 @@
 	}
     &__textblue {
         display: inline-block;
-		margin: 0px auto 40px;
+		margin: 0 auto 30%;
         padding: 0px 8px;
         border-radius: 2px;
         background-color: var(--bg);
-		// line-height: 1.5;
-		@media (width >= 375px) {margin: 0px auto 80px;}
-		@media (width >= 425px) {margin: 0px auto 100px;}
-		@media (width >= 500px) {margin: 0px auto 260px;}
-		@media (width >= 576px) {margin: 0px auto 320px;}
+		@media (width >= 425px) {margin: 0 auto 45%;}
+		@media (width >= 576px) {margin: 0 auto 75%;}
 		@media (width >= 768px) {
 			padding: 0px;
 			margin: 0px;

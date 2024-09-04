@@ -421,7 +421,7 @@ body._lock {
 }
 
 .card-host {
-  padding: 20px 0px 0px;
+  padding-top: 4%;
 }
 @media (width >= 576px) {
   .card-host {
@@ -438,6 +438,9 @@ body._lock {
   .card-host {
     max-width: 590px;
   }
+}
+.card-host__container {
+  padding: 0px 15px;
 }
 @media (width >= 425px) {
   .card-host__container {
@@ -478,29 +481,19 @@ body._lock {
 }
 .card-host__textblue {
   display: inline-block;
-  margin: 0px auto 40px;
+  margin: 0 auto 30%;
   padding: 0px 8px;
   border-radius: 2px;
   background-color: var(--bg);
 }
-@media (width >= 375px) {
-  .card-host__textblue {
-    margin: 0px auto 80px;
-  }
-}
 @media (width >= 425px) {
   .card-host__textblue {
-    margin: 0px auto 100px;
-  }
-}
-@media (width >= 500px) {
-  .card-host__textblue {
-    margin: 0px auto 260px;
+    margin: 0 auto 45%;
   }
 }
 @media (width >= 576px) {
   .card-host__textblue {
-    margin: 0px auto 320px;
+    margin: 0 auto 75%;
   }
 }
 @media (width >= 768px) {
@@ -591,6 +584,7 @@ body._lock {
 }
 
 .form-subscribe {
+  padding: 0 0 7%;
   display: flex;
   flex-direction: column;
   row-gap: 32px;
@@ -608,6 +602,7 @@ body._lock {
 .form-subscribe__form {
   padding: 12px 10px;
   border-radius: 4px;
+  background-color: var(--bg);
 }
 @media (width >= 450px) {
   .form-subscribe__form {
@@ -666,12 +661,8 @@ body._lock {
   }
 }
 .form-subscribe__button {
-  display: flex;
-  align-self: flex-start;
-  padding: 8px 14px;
   margin: 0px auto;
-  font-size: 11px;
-  line-height: 1.92;
+  letter-spacing: 1.3px;
 }
 @media (width >= 768px) {
   .form-subscribe__button {
@@ -750,36 +741,6 @@ body._lock {
   .header {
     min-height: 120px;
     padding: 26px 0px;
-  }
-}
-@media (min-width: 576px) {
-  .header__container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (min-width: 768px) {
-  .header__container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media (min-width: 992px) {
-  .header__container {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-@media (min-width: 1190px) {
-  .header__container {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-@media (width >= 1440px) {
-  .header__container {
-    padding-left: 70px;
-    padding-right: 70px;
   }
 }
 .header__container {
@@ -1124,7 +1085,7 @@ body._lock {
   }
 }
 .page__about {
-  margin: 0px 0px 20px;
+  margin: 0px 0px 7%;
   text-align: center;
 }
 @media (width >= 768px) {
@@ -1182,7 +1143,7 @@ body._lock {
 }
 
 .about {
-  padding: 20px 0px;
+  padding-top: 7%;
 }
 @media (width >= 768px) {
   .about {
@@ -1240,7 +1201,7 @@ body._lock {
 
 .episodes {
   text-align: center;
-  padding: 7% 0px 2%;
+  padding: 7% 0% 0%;
 }
 @media (width >= 768px) {
   .episodes {
@@ -1696,7 +1657,7 @@ body._lock {
 }
 
 .subscribe {
-  padding: 40px 0px 0px;
+  padding: 7% 0% 0%;
 }
 @media (width >= 768px) {
   .subscribe::before {
@@ -1721,6 +1682,9 @@ body._lock {
   .subscribe {
     padding: 60px 0px 60px;
   }
+}
+.subscribe__container {
+  padding: 0 15px;
 }
 @media (width >= 768px) {
   .subscribe__container {
