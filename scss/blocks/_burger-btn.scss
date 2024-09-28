@@ -38,7 +38,6 @@
     top: 50%;
     height: 25%;
   }
-
   &._active::before {transform: rotate(-45deg) translate(3px, -50%);}
   &._active::after {transform: rotate(45deg) translate(-3px, -50%);}
 }

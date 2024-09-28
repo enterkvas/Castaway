@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    column-gap: 36px;
     background-color: transparent;
     padding-top: 0px;
   }
@@ -26,43 +27,22 @@
     }
   }
   &__item {
-    margin: 0px 0px 48px 15px;
-    @media (min-width: 576px) {
-      margin: 0px 0px 48px 20px;
-		}
+    margin: 0px 0px 0px 15px;
+    line-height: 4;
+    @media (min-width: 576px) {margin: 0px 0px 0px 20px;}
     @media (min-width: 768px) {
-      margin-bottom: 0;
+      margin: 0;
       line-height: 1.2;
     }
-    @media (min-width: 1440px) {
-      margin: 0px;
-    }
+    @media (min-width: 1440px) {margin: 0px;}
   }
   &__link {
-    @media (width < 768px) {
-      font-size: 16px;
-    }
-    $maxWidth: 1440;
-    @mixin adaptive-font ($pcSize, $mobSize) {
-      @media (768px <= width <= 1440px) {
-        $addSize: $pcSize - $mobSize;
-        $addMobSize: $addSize + $addSize * 1.15;
-        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 768px) / #{$maxWidth}));
-      }
-    }
-    @mixin adaptive-lineheight ($pcSize, $mobSize) {
-      @media (768px <= width <= 1440px) {
-        $addSize: $pcSize - $mobSize;
-        $addMobSize: $addSize + $addSize * 1.15;
-        line-height: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 768px) / #{$maxWidth}));
-      }
-    }
     color: var(--color-text);
     text-decoration: none;
-    @include adaptive-font(17, 12);
-	  @include adaptive-lineheight(27, 19);
-    font-weight: 700;
-    @media (width >= 992px) {
+    @media (width <= 768px) {font-size: clamp(16px, 0.732rem + 1.34vw, 22px);}
+    @media (width >= 768px) {
+      font-size: clamp(14px, 0.661rem + 0.45vw, 17px);
+      line-height: clamp(22px, 1.045rem + 0.71vw, 27px);      
       &:hover, &:active {color: var(--blue);}      
     }
   }    

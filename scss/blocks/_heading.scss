@@ -30,19 +30,25 @@
 //   }
 // }
 
-h1 {
-  @include adaptive-font(72, 26);
-  @include adaptive-letterspacing(2.88, 1.6);
-  @include adaptive-lineheight(79.2, 28.6);
-}
-h2 {
-  @include adaptive-font(70, 24);
-  @include adaptive-letterspacing(3.2, 1.8);
-  @include adaptive-lineheight(88, 30.168);
-}
-h3 {
-  @include adaptive-font(64, 22);
-  @include adaptive-letterspacing(2.88, 1.2);
-  @include adaptive-lineheight(70.4, 24.2);
-}
+// h1 {
+//   @include adaptive-font(72, 26);
+//   @include adaptive-letterspacing(2.88, 1.6);
+//   @include adaptive-lineheight(79.2, 28.6);
+// }
+// h2 {
+//   @include adaptive-font(70, 24);
+//   @include adaptive-letterspacing(3.2, 1.8);
+//   @include adaptive-lineheight(88, 30.168);
+// }
+    h2 {
+        // font-size: clamp(1.5rem, 0.679rem + 4.11vw, 4.375rem);
+        font-size: clamp(1.25rem, 0.357rem + 4.46vw, 4.375rem);
+        line-height: clamp(1.875rem, 0.839rem + 5.18vw, 5.5rem);
+        letter-spacing: clamp(0.113rem, 0.088rem + 0.13vw, 0.2rem);
+    }
+// h3 {
+//   @include adaptive-font(64, 22);
+//   @include adaptive-letterspacing(2.88, 1.2);
+//   @include adaptive-lineheight(70.4, 24.2);
+// }
 

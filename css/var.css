@@ -1,11 +1,10 @@
 :root {
 	--bg:#191919;
-	--bg-black:#000;
-	/* --bg-white:#fff; */
+	--bg-black: #000;
 	--blue: #118DA8;
 	--color-text:#fff;
-	--color-text-subtitle: rgba(255, 255, 255, .7);
-	--fz: 16px;
-	--lh: 1;
-	/* --refRes: 1920;	 */
+	--color-text-subtitle: rgba(255, 255, 255, 0.7);
+	--color-active: #118DA8;
+	--fz:16px;
+	--lh:1;
 }
