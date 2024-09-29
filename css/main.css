@@ -762,9 +762,9 @@ body._lock {
 }
 
 h2 {
-  font-size: clamp(1.25rem, 0.357rem + 4.46vw, 4.375rem);
-  line-height: clamp(1.875rem, 0.839rem + 5.18vw, 5.5rem);
-  letter-spacing: clamp(0.113rem, 0.088rem + 0.13vw, 0.2rem);
+  font-size: clamp(20px, 0.357rem + 4.46vw, 70px);
+  line-height: clamp(30px, 0.839rem + 5.18vw, 88px);
+  letter-spacing: clamp(1.824px, 0.088rem + 0.13vw, 3.2px);
 }
 
 .icons-social-1 {
@@ -1454,6 +1454,9 @@ h2 {
   }
 }
 .hero__text-underlining {
+  font-size: clamp(22px, 0.429rem + 4.73vw, 75px);
+  line-height: clamp(30px, 0.839rem + 5.18vw, 88px);
+  letter-spacing: clamp(1.824px, 0.088rem + 0.13vw, 3.2px);
   position: relative;
 }
 .hero__text-underlining::after {
@@ -1468,6 +1471,9 @@ h2 {
   background-size: cover;
 }
 .hero__text-green {
+  font-size: clamp(23px, 0.42rem + 5.09vw, 80px);
+  line-height: clamp(30px, 0.839rem + 5.18vw, 88px);
+  letter-spacing: clamp(1.824px, 0.088rem + 0.13vw, 3.2px);
   font-weight: 700;
   color: #1ED760;
 }
