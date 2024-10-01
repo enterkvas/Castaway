@@ -39,7 +39,8 @@
 		& img {
 			position: static;
 			width: 100%;
-			height: auto;		
+			height: auto;
+			// overflow:clip !important;		
 			transform: translate(0, 0);
 			@media (width >= 768px) {border-radius: 8px;}
 			@media (width >= 992px) {border-radius: 10px;}

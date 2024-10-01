@@ -1,54 +1,16 @@
-// $maxWidth: 1440;
-// @mixin adaptive-font($pcSize, $mobSize) {
-//   $addSize: $pcSize - $mobSize;
-//   $addMobSize: $addSize + $addSize * 0.7;
-//   @media (max-width: 767px) {
-//     font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
-//   }
-//   @media (min-width: 768px) {
-//     font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
-//   }
-// }
-// @mixin adaptive-letterspacing($pcSize, $mobSize) {
-//   $addSize: $pcSize - $mobSize;
-//   $addMobSize: $addSize + $addSize * 0.7;
-//   @media (max-width: 767px) {
-//     letter-spacing: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
-//   }
-//   @media (min-width: 768px) {
-//     letter-spacing: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
-//   }
-// }
-// @mixin adaptive-lineheight($pcSize, $mobSize) {
-//   $addSize: $pcSize - $mobSize;
-//   $addMobSize: $addSize + $addSize * 0.7;
-//   @media (max-width: 767px) {
-//     line-height: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
-//   }
-//   @media (min-width: 768px) {
-//     line-height: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
-//   }
-// }
-
 // h1 {
 //   @include adaptive-font(72, 26);
 //   @include adaptive-letterspacing(2.88, 1.6);
 //   @include adaptive-lineheight(79.2, 28.6);
 // }
-// h2 {
-//   @include adaptive-font(70, 24);
-//   @include adaptive-letterspacing(3.2, 1.8);
-//   @include adaptive-lineheight(88, 30.168);
-// }
     h2 {
-        // font-size: clamp(1.5rem, 0.679rem + 4.11vw, 4.375rem);
         font-size: clamp(20px, 0.357rem + 4.46vw, 70px);
         line-height: clamp(30px, 0.839rem + 5.18vw, 88px);
         letter-spacing: clamp(1.824px, 0.088rem + 0.13vw, 3.2px);
     }
-// h3 {
-//   @include adaptive-font(64, 22);
-//   @include adaptive-letterspacing(2.88, 1.2);
-//   @include adaptive-lineheight(70.4, 24.2);
-// }
+    h3 {
+        font-size: clamp(18px, 0.304rem + 4.11vw, 64px);
+        line-height: clamp(20px, 0.357rem + 4.46vw, 70px);
+        letter-spacing: clamp(0.8px, 0.013rem + 0.19vw, 2.88px);
+    }
 
