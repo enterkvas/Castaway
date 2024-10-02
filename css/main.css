@@ -220,12 +220,14 @@ body._lock {
 }
 @media (width >= 768px) {
   .card-episodes {
-    height: 100vh;
+    height: auto;
+    width: 50%;
+    padding: 0;
   }
 }
 @media (width >= 1440px) {
   .card-episodes {
-    padding-top: 8px;
+    width: 100%;
   }
 }
 .card-episodes__container {
@@ -335,11 +337,6 @@ body._lock {
     font-size: 18px;
   }
 }
-@media (width >= 1440px) {
-  .card-episodes__textblue {
-    margin-bottom: -8px;
-  }
-}
 .card-episodes__title {
   margin: 0px 0px 5%;
 }
@@ -350,7 +347,7 @@ body._lock {
 }
 @media (width >= 1440px) {
   .card-episodes__title {
-    padding: 0px 89px 0px 0px;
+    padding: 0px 83px 0px 0px;
     margin-bottom: 4px;
   }
 }
@@ -367,6 +364,11 @@ body._lock {
 @media (width >= 768px) {
   .card-episodes__subtitle {
     margin: 0px;
+  }
+}
+@media (width >= 1440px) {
+  .card-episodes__subtitle {
+    text-wrap: inherit;
   }
 }
 .card-episodes__button {
@@ -1168,7 +1170,10 @@ h3 {
     border-radius: 18px;
   }
   .episodes__col-border {
-    column-gap: 60px;
+    display: flex;
+    column-gap: 5%;
+    padding: 3%;
+    border-radius: clamp(22px, 0.661rem + 1.49vw, 32px);
   }
 }
 @media (width >= 1190px) {
@@ -1182,20 +1187,10 @@ h3 {
 @media (width >= 1440px) {
   .episodes__col {
     border-radius: 32px;
-    background-color: var(--bg-black);
   }
   .episodes__col-border {
-    column-gap: 30px;
+    column-gap: 53px;
     padding: 40px;
-  }
-}
-@media (width >= 768px) {
-  .episodes__col-border {
-    display: flex;
-    column-gap: 20px;
-    padding: 20px;
-    border-radius: 16px;
-    background-color: var(--bg-black);
   }
 }
 .episodes__image {
@@ -1207,7 +1202,6 @@ h3 {
   width: 100%;
   height: auto;
   filter: brightness(0.7);
-  object-fit: cover;
 }
 @media (width >= 768px) {
   .episodes__image {
@@ -1219,18 +1213,13 @@ h3 {
     filter: brightness(1);
   }
 }
-@media (width >= 992px) {
-  .episodes__image img {
-    border-radius: 0px;
-  }
-}
 @media (width >= 1440px) {
   .episodes__image {
-    width: 50%;
+    width: auto;
     margin: 0px 0px 0px;
   }
   .episodes__image img {
-    max-width: none;
+    width: auto;
   }
 }
 .episodes__card {
@@ -1304,21 +1293,7 @@ h3 {
   width: 100%;
   height: auto;
   transform: translate(0, 0);
-}
-@media (width >= 768px) {
-  .hero__image img {
-    border-radius: 8px;
-  }
-}
-@media (width >= 992px) {
-  .hero__image img {
-    border-radius: 10px;
-  }
-}
-@media (width >= 1440px) {
-  .hero__image img {
-    border-radius: 14px;
-  }
+  border-radius: clamp(8px, 0.214rem + 0.6vw, 12px);
 }
 .hero__body {
   position: absolute;

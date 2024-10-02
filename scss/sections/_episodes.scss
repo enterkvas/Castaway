@@ -16,18 +16,8 @@
 			align-items: center;
 			padding: 0px;
 			margin: 0px 0px 40px;
-			// &-link {
-			// 	margin: 0px;
-			// }
 		}
-		@media (width >= 1440px) {
-			margin: 0px 0px 66px;
-			// padding: 10px 0px;
-			// &-title {
-			// 	font-size: 64px;
-			// 	letter-spacing: 2.88px;
-			// }
-		}
+		@media (width >= 1440px) {margin: 0px 0px 66px;}
 		&-title {
 			margin: 0px 0px 20px;
 			@media (width >= 576px) {margin: 0px 0px 28px;}
@@ -53,7 +43,12 @@
 		@media (width >= 768px) {
 			background-color: var(--bg-black);
 			border-radius: 18px;
-			&-border {column-gap: 60px;}
+			&-border {
+				display: flex;
+				column-gap: 5%;
+				padding: 3%;
+				border-radius: clamp(22px, 0.661rem + 1.49vw, 32px);
+			}
 		}
 		@media (width >= 1190px) {
 			border-radius: 24px;
@@ -61,19 +56,9 @@
 		}
 		@media (width >= 1440px) {
 			border-radius: 32px;
-			background-color: var(--bg-black);
 			&-border {
-				column-gap: 30px;	
+				column-gap: 53px;	
 				padding: 40px;
-			}
-		}
-		@media (width >= 768px) {
-			&-border {
-				display: flex;
-				column-gap: 20px;
-				padding: 20px;
-				border-radius: 16px;
-				background-color: var(--bg-black);
 			}
 		}
 	}
@@ -85,7 +70,6 @@
 			width: 100%;
 			height: auto;
 			filter: brightness(0.7);
-			object-fit: cover;
 		}
 		@media (width >= 768px) {
 			position: static;
@@ -93,16 +77,11 @@
 			margin: 0px;
 			& img {filter: brightness(1);}
 		}
-		@media (width >= 992px) {
-			& img {border-radius: 0px;}
-		}
 		@media (width >= 1440px) {
-			width: 50%;
+			width: auto;
 			margin: 0px 0px 0px;
-			& img {max-width: none;}
+			& img {width: auto;}
 		}
 	}
-	&__card {
-		position: relative;
-	}
+	&__card {position: relative;}
 }
