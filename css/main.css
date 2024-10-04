@@ -149,15 +149,25 @@ body._lock {
 
 .button {
   display: inline-block;
-  padding: 4px 12px;
+  padding: 6px 10px;
   border-radius: 4px;
   background-color: var(--blue);
   color: var(--color-text);
   cursor: pointer;
 }
+@media (width >= 768px) {
+  .button {
+    padding: 8px 14px;
+  }
+}
+@media (width >= 1100px) {
+  .button {
+    padding: 10px 18px;
+  }
+}
 @media (width >= 1440px) {
   .button {
-    padding: 12px 22px;
+    padding: 14px;
     border-radius: 6px;
   }
 }
@@ -434,6 +444,9 @@ body._lock {
     display: block;
     margin: 0px 0px 12px;
   }
+  .card-host__arrow img {
+    width: 20%;
+  }
 }
 @media (width >= 1440px) {
   .card-host__arrow {
@@ -557,7 +570,14 @@ body._lock {
 }
 @media (width >= 768px) {
   .form-subscribe {
-    row-gap: 20px;
+    row-gap: 16px;
+    padding: 0px;
+    align-items: flex-start;
+  }
+}
+@media (width >= 1440px) {
+  .form-subscribe {
+    row-gap: 22px;
   }
 }
 .form-subscribe__form {
@@ -575,55 +595,61 @@ body._lock {
     width: 60%;
   }
 }
+@media (width >= 768px) {
+  .form-subscribe__form {
+    width: 100%;
+    padding: 16px 12px;
+  }
+}
+@media (width >= 992px) {
+  .form-subscribe__form {
+    padding: 22px 10px 22px 18px;
+  }
+}
+@media (width >= 1200px) {
+  .form-subscribe__form {
+    padding: 26px 10px 26px 20px;
+  }
+}
 @media (width >= 1440px) {
   .form-subscribe__form {
     width: 522px;
     height: 82px;
-    padding: 0px 10px 0px 20px;
+    padding: 22px 10px 10px 20px;
     margin: 0px;
     border-radius: 6px;
     background-color: var(--bg);
   }
 }
 .form-subscribe__form::placeholder {
+  font-size: clamp(12px, 0.536rem + 1.07vw, 24px);
   line-height: 1.2;
   color: var(--color-text-subtitle);
-}
-@media (width >= 1440px) {
-  .form-subscribe__form::placeholder {
-    font-size: 24px;
-  }
 }
 .form-subscribe__form::-webkit-input-placeholder {
+  font-size: clamp(12px, 0.536rem + 1.07vw, 24px);
   line-height: 1.2;
   color: var(--color-text-subtitle);
-}
-@media (width >= 1440px) {
-  .form-subscribe__form::-webkit-input-placeholder {
-    font-size: 24px;
-  }
 }
 .form-subscribe__form:-moz-placeholder {
+  font-size: clamp(12px, 0.536rem + 1.07vw, 24px);
   line-height: 1.2;
   color: var(--color-text-subtitle);
-}
-@media (width >= 1440px) {
-  .form-subscribe__form:-moz-placeholder {
-    font-size: 24px;
-  }
 }
 .form-subscribe__form:-ms-input-placeholder {
+  font-size: clamp(12px, 0.536rem + 1.07vw, 24px);
   line-height: 1.2;
   color: var(--color-text-subtitle);
-}
-@media (width >= 1440px) {
-  .form-subscribe__form:-ms-input-placeholder {
-    font-size: 24px;
-  }
 }
 .form-subscribe__button {
   margin: 0px auto;
+  font-size: 8px;
   letter-spacing: 1.3px;
+}
+@media (width >= 576px) {
+  .form-subscribe__button {
+    font-size: 10px;
+  }
 }
 @media (width >= 768px) {
   .form-subscribe__button {
@@ -634,9 +660,13 @@ body._lock {
     font-weight: 700;
   }
 }
+@media (width >= 992px) {
+  .form-subscribe__button {
+    font-size: 13px;
+  }
+}
 @media (width >= 1440px) {
   .form-subscribe__button {
-    padding: 9px 18px 10px;
     font-size: 15px;
   }
 }
@@ -651,7 +681,7 @@ body._lock {
 @media (width >= 1440px) {
   .item-reviews {
     width: 423px;
-    height: 364px;
+    height: 321px;
     padding: 52px 50px;
     border-radius: 32px;
   }
@@ -741,15 +771,21 @@ body._lock {
   }
 }
 
+h1 {
+  font-size: clamp(22px, 0.482rem + 4.46vw, 72px);
+  line-height: 1.1;
+  letter-spacing: clamp(1.6px, 0.077rem + 0.11vw, 2.88px);
+}
+
 h2 {
   font-size: clamp(20px, 0.357rem + 4.46vw, 70px);
-  line-height: clamp(30px, 0.839rem + 5.18vw, 88px);
+  line-height: 1.257;
   letter-spacing: clamp(1.824px, 0.088rem + 0.13vw, 3.2px);
 }
 
 h3 {
   font-size: clamp(18px, 0.304rem + 4.11vw, 64px);
-  line-height: clamp(20px, 0.357rem + 4.46vw, 70px);
+  line-height: 1.1;
   letter-spacing: clamp(0.8px, 0.013rem + 0.19vw, 2.88px);
 }
 
@@ -1152,7 +1188,7 @@ h3 {
 }
 @media (width >= 768px) {
   .episodes__row {
-    row-gap: 40px;
+    row-gap: 20px;
   }
 }
 @media (width >= 1440px) {
@@ -1509,6 +1545,12 @@ h3 {
     left: -2%;
   }
 }
+@media (width >= 768px) {
+  .subscribe {
+    padding-block: 6%;
+    border-radius: clamp(22px, 0.661rem + 1.49vw, 32px);
+  }
+}
 @media (width >= 1440px) {
   .subscribe {
     padding: 60px 0px 60px;
@@ -1519,7 +1561,12 @@ h3 {
 }
 @media (width >= 768px) {
   .subscribe__container {
-    padding: 0px;
+    padding: 0px 30px;
+  }
+}
+@media (width >= 992px) {
+  .subscribe__container {
+    padding: 0px 40px;
   }
 }
 @media (width >= 1440px) {
@@ -1534,6 +1581,16 @@ h3 {
     background-color: var(--bg-black);
   }
 }
+@media (width >= 768px) {
+  .subscribe__col {
+    width: 50%;
+  }
+}
+@media (width >= 1440px) {
+  .subscribe__col {
+    width: auto;
+  }
+}
 .subscribe__textblue {
   display: inline-block;
   padding: 0px 8px;
@@ -1542,29 +1599,39 @@ h3 {
 @media (width >= 768px) {
   .subscribe__textblue {
     padding: 0px;
+    margin: 0;
   }
 }
 @media (width >= 1440px) {
   .subscribe__textblue {
     margin: 0px;
+    letter-spacing: 0.5px;
   }
 }
 .subscribe__title {
   margin: 0px 0px 40px;
-  line-height: 1.5;
 }
 @media (width >= 520px) {
   .subscribe__title {
     margin: 0px 0px 20px;
   }
 }
+@media (width >= 768px) {
+  .subscribe__title {
+    width: 80%;
+    margin: 0px;
+  }
+}
+@media (width >= 1280px) {
+  .subscribe__title {
+    width: 70%;
+  }
+}
 @media (width >= 1440px) {
   .subscribe__title {
-    max-width: 70%;
     margin-bottom: 0px;
     padding-right: 40px;
     font-size: 72px;
-    line-height: 1.1;
     letter-spacing: 2.88px;
   }
 }/*# sourceMappingURL=main.css.map */

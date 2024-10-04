@@ -1,16 +1,16 @@
-// h1 {
-//   @include adaptive-font(72, 26);
-//   @include adaptive-letterspacing(2.88, 1.6);
-//   @include adaptive-lineheight(79.2, 28.6);
-// }
-    h2 {
-        font-size: clamp(20px, 0.357rem + 4.46vw, 70px);
-        line-height: clamp(30px, 0.839rem + 5.18vw, 88px);
-        letter-spacing: clamp(1.824px, 0.088rem + 0.13vw, 3.2px);
-    }
-    h3 {
-        font-size: clamp(18px, 0.304rem + 4.11vw, 64px);
-        line-height: clamp(20px, 0.357rem + 4.46vw, 70px);
-        letter-spacing: clamp(0.8px, 0.013rem + 0.19vw, 2.88px);
-    }
+h1 {
+    font-size: clamp(22px, 0.482rem + 4.46vw, 72px);
+    line-height: 1.1;
+    letter-spacing: clamp(1.6px, 0.077rem + 0.11vw, 2.88px);
+}
+h2 {
+    font-size: clamp(20px, 0.357rem + 4.46vw, 70px);
+    line-height: 1.257;
+    letter-spacing: clamp(1.824px, 0.088rem + 0.13vw, 3.2px);
+}
+h3 {
+    font-size: clamp(18px, 0.304rem + 4.11vw, 64px);
+    line-height: 1.1;
+    letter-spacing: clamp(0.8px, 0.013rem + 0.19vw, 2.88px);
+}
 
