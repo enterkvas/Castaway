@@ -24,7 +24,7 @@
 		@media (width >= 1440px) {margin: 0px 0px 160px;}
 	}	
 	&__about {
-		margin: 0px 0px 7%;
+		margin: 0px 0px 16%;
 		text-align: center;		
 		@media (width >= 768px) {
 			margin: 0px 0px 40px;
@@ -43,6 +43,7 @@
 		}
 	}
 	&__reviews {
+		margin-bottom: 16%;
 		@media (width >= 1440px) {
 			margin: 0px 0px 100px;
 		}

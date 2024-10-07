@@ -1,4 +1,4 @@
-@import "../css/var.css";
+@import '../css/var.css';
 *, *::before, *::after {
   padding: 0;
   margin: 0;
@@ -54,7 +54,7 @@ body._lock {
 
 .container {
   max-width: 1440px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .align-center {
@@ -109,7 +109,7 @@ body._lock {
     width: 0px;
     height: 0px;
     left: -1000%;
-    background: transparent;
+    background-color: transparent;
     font-size: 0;
   }
 }
@@ -184,7 +184,7 @@ body._lock {
   border: 2px solid #000;
   z-index: 100;
   outline: 0 !important;
-  background: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .btn_up::before {
   content: "";
@@ -231,7 +231,7 @@ body._lock {
 @media (width >= 768px) {
   .card-episodes {
     height: auto;
-    width: 50%;
+    width: 80%;
     padding: 0;
   }
 }
@@ -358,7 +358,6 @@ body._lock {
 @media (width >= 1440px) {
   .card-episodes__title {
     padding: 0px 83px 0px 0px;
-    margin-bottom: 4px;
   }
 }
 .card-episodes__subtitle {
@@ -677,14 +676,21 @@ body._lock {
   row-gap: 20px;
   background-color: var(--bg-black);
   line-height: 1.2;
+  padding: 20px 15px;
 }
 @media (width >= 1440px) {
   .item-reviews {
     width: 423px;
-    height: 321px;
     padding: 52px 50px;
     border-radius: 32px;
   }
+}
+.item-reviews__icons img {
+  width: 3%;
+}
+.item-reviews__text {
+  font-size: clamp(12px, 0.321rem + 2.14vw, 36px);
+  line-height: 1.23;
 }
 @media (width >= 1440px) {
   .item-reviews__text {
@@ -692,6 +698,8 @@ body._lock {
   }
 }
 .item-reviews__autor {
+  font-size: clamp(8px, 0.232rem + 1.34vw, 23px);
+  line-height: 1.25;
   color: var(--color-text-subtitle);
 }
 @media (width >= 1440px) {
@@ -996,7 +1004,7 @@ h3 {
   }
 }
 .page__about {
-  margin: 0px 0px 7%;
+  margin: 0px 0px 16%;
   text-align: center;
 }
 @media (width >= 768px) {
@@ -1022,6 +1030,9 @@ h3 {
     margin: 0px 0px 100px;
   }
 }
+.page__reviews {
+  margin-bottom: 16%;
+}
 @media (width >= 1440px) {
   .page__reviews {
     margin: 0px 0px 100px;
@@ -1035,10 +1046,12 @@ h3 {
 }
 .reviews__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 20px;
 }
 @media (width >= 1440px) {
   .reviews__list {
+    flex-wrap: wrap;
     gap: 15px;
   }
 }
@@ -1208,6 +1221,7 @@ h3 {
   .episodes__col-border {
     display: flex;
     column-gap: 5%;
+    overflow: scroll;
     padding: 3%;
     border-radius: clamp(22px, 0.661rem + 1.49vw, 32px);
   }
@@ -1234,15 +1248,10 @@ h3 {
   width: 100%;
   left: 0;
 }
-.episodes__image img {
-  width: 100%;
-  height: auto;
-  filter: brightness(0.7);
-}
 @media (width >= 768px) {
   .episodes__image {
     position: static;
-    width: 50%;
+    width: auto;
     margin: 0px;
   }
   .episodes__image img {
@@ -1251,9 +1260,15 @@ h3 {
 }
 @media (width >= 1440px) {
   .episodes__image {
-    width: auto;
     margin: 0px 0px 0px;
   }
+}
+.episodes__image img {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.7);
+}
+@media (width >= 1440px) {
   .episodes__image img {
     width: auto;
   }

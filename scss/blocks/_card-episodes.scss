@@ -2,7 +2,7 @@
 	padding: 5% 0px;
 	@media (width >= 768px) {
 		height: auto;
-		width: 50%;
+		width: 80%;
 		padding: 0;
 	}
 	@media (width >= 1440px) {width: 100%;}
@@ -74,7 +74,6 @@
 		@media (width >= 768px) {margin: 0;}
 		@media (width >= 1440px) {
 			padding: 0px 83px 0px 0px;
-			margin-bottom: 4px;
 		}
 	}
 	&__subtitle {

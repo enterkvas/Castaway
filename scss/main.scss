@@ -1,29 +1,28 @@
-@import "../css/var.css";
+  @import '../css/var.css',
 
-@import "./base/null";
-@import "./base/base";
+  './base/null',
+  './base/base',
 
-@import "./blocks/arrow-to-right";
-@import "./blocks/burger-btn";
-@import "./blocks/buttons";
-@import "./blocks/card-episodes";
-@import "./blocks/card-host";
-@import "./blocks/footer";
-@import "./blocks/form-subscribe";
-@import "./blocks/item-reviews";
-@import "./blocks/header";
-@import "./blocks/heading";
-@import "./blocks/icons-social-1";
-@import "./blocks/icons-social-2";
-@import "./blocks/logo";
-@import "./blocks/menu";
-@import "./blocks/navigation";
-@import "./blocks/page";
-@import "./blocks/reviews";
-@import "./blocks/text-footer";
+  './blocks/burger-btn',
+  './blocks/buttons',
+  './blocks/card-episodes',
+  './blocks/card-host',
+  './blocks/footer',
+  './blocks/form-subscribe',
+  './blocks/item-reviews',
+  './blocks/header',
+  './blocks/heading',
+  './blocks/icons-social-1',
+  './blocks/icons-social-2',
+  './blocks/logo',
+  './blocks/menu',
+  './blocks/navigation',
+  './blocks/page',
+  './blocks/reviews',
+  './blocks/text-footer',
 
-@import "./sections/about";
-@import "./sections/episodes";
-@import "./sections/hero";
-@import "./sections/host";
-@import "./sections/subscribe";
+  './sections/about',
+  './sections/episodes',
+  './sections/hero',
+  './sections/host',
+  './sections/subscribe';

@@ -46,6 +46,7 @@
 			&-border {
 				display: flex;
 				column-gap: 5%;
+				overflow: scroll;
 				padding: 3%;
 				border-radius: clamp(22px, 0.661rem + 1.49vw, 32px);
 			}
@@ -66,21 +67,22 @@
 		position: absolute;
 		width: 100%;
 		left: 0;
-		& img {
-			width: 100%;
-			height: auto;
-			filter: brightness(0.7);
-		}
 		@media (width >= 768px) {
 			position: static;
-			width: 50%;
+			width: auto;
 			margin: 0px;
 			& img {filter: brightness(1);}
 		}
 		@media (width >= 1440px) {
-			width: auto;
 			margin: 0px 0px 0px;
-			& img {width: auto;}
+		}
+		& img {
+			width: 100%;
+			height: auto;
+			filter: brightness(0.7);
+			@media (width >= 1440px) {
+				width: auto;
+			}
 		}
 	}
 	&__card {position: relative;}
