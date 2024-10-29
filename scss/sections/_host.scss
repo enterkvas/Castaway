@@ -48,6 +48,7 @@
 		@media (width >= 768px) {filter: brightness(1.0);}			
 		& img {
 			width: 100%;
+			height: auto;
 			@media (width >= 768px) {border-radius: 8px;}
 			@media (width >= 992px) {border-radius: 10px;}
 			@media (width >= 1440px) {border-radius: 14px;}			

@@ -39,11 +39,16 @@
   &__link {
     color: var(--color-text);
     text-decoration: none;
-    @media (width <= 768px) {font-size: clamp(16px, 0.732rem + 1.34vw, 22px);}
+    @media (width >= 768px) {font-size: clamp(16px, 0.732rem + 1.34vw, 22px);}
     @media (width >= 768px) {
       font-size: clamp(14px, 0.661rem + 0.45vw, 17px);
       line-height: clamp(22px, 1.045rem + 0.71vw, 27px);      
       &:hover, &:active {color: var(--blue);}      
+    }
+    @media (width >= 1440px) {
+      display: inline-flex;
+      height: 67px;
+      align-items: center;
     }
   }    
 }

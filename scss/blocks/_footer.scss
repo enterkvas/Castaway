@@ -1,53 +1,55 @@
 .footer {
 	position: relative;
+	padding-block: 8%;
 	&__container {
-		// @media (width >= 1440px) {
-		// 	padding-left: 70px;
-		// 	padding-right: 70px;
-		// }
-		@media (min-width: 576px) {
-			padding-left: 20px;
-			padding-right: 20px;
-		}
-		@media (min-width: 768px) {
-			padding-left: 40px;
-			padding-right: 40px;
-		}
-		@media (min-width: 992px) {
-			padding-left: 50px;
-			padding-right: 50px;
-		}
-		@media (min-width: 1190px) {
-			padding-left: 60px;
-			padding-right: 60px;
-		}
-		@media (width >= 1440px) {
-			padding-left: 70px;
-			padding-right: 70px;
-		}
+		padding-inline: 15px;
+		@media (min-width: 576px) {padding-inline: 20px;}
+		@media (min-width: 768px) {padding-inline: 40px;}
+		@media (min-width: 992px) {padding-inline: 50px;}
+		@media (min-width: 1190px) {padding-inline: 60px;}
+		@media (width >= 1440px) {padding-inline: 70px;}
 	}
 	@media (width >= 1440px) {
 		padding: 100px 0px 120px;
 		color: var(--color-text);		
 	}
 	&__row {
+		display: grid;
+		row-gap: clamp(20px, 0.654rem + 2.98vw, 40px); // from 320px to 991px
+		margin-bottom: clamp(20px, 0.654rem + 2.98vw, 40px); // from 320px to 991px		
+		@media (width >= 992px) {
+			position: relative;
+			display: flex;
+			column-gap: 12%;
+		}
+		@media (width >= 1024px) {column-gap: clamp(130px, -4.829rem + 20.24vw, 214px);}
 		@media (width >= 1440px) {
 			position: relative;
 			display: flex;
-			column-gap: 18%;		
+			column-gap: 240px;		
 		}
+	}
+	&__col {
+		display: flex;
+		column-gap: clamp(44px, -4.433rem + 35.92vw, 285px);
+		@media (width >= 992px) {display: block;}
 	}
 	&__logo {
-		@media (width >= 1440px) {
-			margin: 0px 0px 20px;		
+		width: clamp(112px, 5rem + 10vw, 223px);
+		& img {
+			width: 100%;
+			height: auto;
 		}
+		@media (width >= 992px) {margin: 0px 0px 24px;}
 	}
 	&__icons-1 {
-		@media (width >= 1440px) {
+		@media (width >= 992px) {
 			position: absolute;
-			top: 0;
-			right: 12%;
+			top: 19%;
+			right: 5%;
 		}
-		// margin-left: -10px;
+		@media (width >= 1200px) {top: 21%;}
+		@media (width >= 1440px) {right: 20%;}
+		@media (width >= 2200px) {right: 30%;}
 	}
 }

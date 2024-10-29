@@ -2,10 +2,8 @@
 	position: relative;
 	@media (width >= 768px) {padding: 120px 0px 0px;}
 	@media (width >= 1190px) {padding: 140px 0px 0px;}
-	@media (width >= 1440px) {padding: 160px 0px 0px;}
-	&__row {
-		@media (width >= 768px) {display: flex;}
-	}
+	@media (width >= 1440px) {padding: 160px 0px 50px;}
+	&__row {@media (width >= 768px) {display: flex;}}
 	&__col {
 		position: relative;
 		width: 100%;
@@ -21,11 +19,11 @@
 			filter: brightness(1.0);
 			&::before {
 				content: "";
-				width: 68px;
-				height: 74px;
+				width: clamp(36px, -0.036rem + 4.76vw, 68px);
+				height: clamp(39px, -0.063rem + 5.21vw, 74px);
 				position: absolute;
-				top: -5%;
-				left: -7%;
+				top: -3%;
+				left: -4%;
 				z-index: 7;
 				background-image: url('../img/images/hero-img/hero-img_add-top.svg');
 				background-repeat: no-repeat;

@@ -21,7 +21,7 @@
 	}
 	@media (min-width: 1440px) {
 		min-height: 120px;
-		padding: 26px 0px;
+		padding-block: 34px;
 	}
 	&__container {
 		padding: 0px 15px;
@@ -29,24 +29,29 @@
 		justify-content: space-between;	
 		width: 100%;
 		@media (min-width: 576px) {
-			padding-left: 20px;
-			padding-right: 20px;
+			padding-inline: 20px;
 		}
 		@media (min-width: 768px) {
-			padding-left: 40px;
-			padding-right: 40px;
+			padding-inline: 40px;
 		}
 		@media (min-width: 992px) {
-			padding-left: 50px;
-			padding-right: 50px;
+			padding-inline: 50px;
 		}
 		@media (min-width: 1190px) {
-			padding-left: 60px;
-			padding-right: 60px;
+			padding-inline: 60px;
 		}
 		@media (width >= 1440px) {
-			padding-left: 70px;
-			padding-right: 70px;
+			padding-inline: 70px;
 		}
+	}
+	&__logo {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+	}
+	&__navigation {
+		display: flex;
+		align-items: center;
 	}
 }
