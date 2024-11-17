@@ -1,8 +1,7 @@
 .burger-btn {
   position: absolute;
-  width: 30px;
-  height: 20px;
-  top: 20px;
+  height: clamp(22px, 1.151rem + 1.12vw, 27px); // from 320 to 767
+  aspect-ratio: 20/15;
   right: 15px;
   z-index: 1;
   @media(min-width: 576px) {right: 20px;}

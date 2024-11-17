@@ -26,12 +26,14 @@ body {
 body._lock {
 	overflow: hidden;
 }
+img {
+	display: block;
+}
 .none {
 	display: none;
 }
 .wrapper {
 	min-height: 100vh;
-	// min-width: 320px;
 	display: flex;
 	flex-direction: column;
 }

@@ -1,25 +1,6 @@
 .logo {
-	display: inline-flex;
 	&__img {
-		padding-top: 5%;	
-		width: 80px;
+		width: clamp(110px, 5.982rem + 4.46vw, 160px);
 		height: auto;
-		cursor: pointer;	
-		@media (min-width: 576px) {
-			width: 110px;
-		}
-		@media (min-width: 992px) {
-			width: 120px;	
-		}
-		@media (min-width: 1024px) {
-			width: 130px;	
-		}
-		@media (min-width: 1190px) {
-			width: 150px;	
-		}
-		@media (min-width: 1440px) {
-		padding-top: 0%;	
-			width: 160px;	
-		}
 	}		
 }

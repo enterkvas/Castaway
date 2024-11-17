@@ -1,8 +1,15 @@
 .hero {
 	position: relative;
-	@media (width >= 768px) {padding: 120px 0px 0px;}
-	@media (width >= 1190px) {padding: 140px 0px 0px;}
-	@media (width >= 1440px) {padding: 160px 0px 50px;}
+	// @media (width >= 768px) {padding: 120px 0px 0px;}
+	// @media (width >= 1190px) {padding: 140px 0px 0px;}
+	// @media (width >= 1440px) {padding: 160px 0px 50px;}
+	// padding-top: clamp(84px, -14.75rem + 41.67vw, 364px);
+	// padding-top: clamp(84px, -0.464rem + 11.9vw, 164px);
+	// padding-top: clamp(84px, -0.75rem + 12.5vw, 168px);
+	// padding-top: clamp(84px, -1.036rem + 13.1vw, 172px);
+	@media (width >= 768px) {
+		padding-top: clamp(100px, 1.107rem + 10.71vw, 172px);		
+	}
 	&__row {@media (width >= 768px) {display: flex;}}
 	&__col {
 		position: relative;
@@ -54,7 +61,8 @@
 		}
 		@media (width >= 992px) {padding: 0 0 0 10%;}
 		@media (width >= 1200px) {padding: 0 0 0 15%;}
-		@media (width >= 1440px) {padding: 16px 60px 0px;}
+		// @media (width >= 1440px) {padding: 16px 60px 0px;}
+		@media (width >= 1440px) {padding: 8px 60px 0px;}
 	}
 	&__text-main {
 		margin: 0px 0px 228px;
