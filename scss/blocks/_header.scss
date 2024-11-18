@@ -11,7 +11,8 @@
 	&__container {
 		padding-inline: clamp(15px, -0.045rem + 4.91vw, 70px); // from 320 to 1440
 		display: flex;
-		justify-content: space-between;	
+		justify-content: space-between;
+		align-items: center;	
 		width: 100%;
 	}
 	&__logo {
