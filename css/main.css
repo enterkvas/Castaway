@@ -903,7 +903,7 @@ h3 {
 
 .icons-social-1 {
   display: flex;
-  column-gap: clamp(30px, 1.577rem + 1.49vw, 40px);
+  column-gap: 22px;
 }
 .icons-social-1__icon {
   width: clamp(22px, 1.196rem + 0.89vw, 32px);
@@ -1307,7 +1307,7 @@ h3 {
 @media (width >= 768px) {
   .hero__body {
     position: static;
-    padding: 0 0 0 5%;
+    padding: 0 0 0 10%;
     text-align: left;
   }
 }
@@ -1323,7 +1323,7 @@ h3 {
 }
 @media (width >= 1440px) {
   .hero__body {
-    padding: 8px 60px 0px;
+    padding-inline: 60px;
   }
 }
 .hero__text-main {
@@ -1424,7 +1424,6 @@ h3 {
 }
 @media (width >= 1440px) {
   .hero__text-add {
-    margin-bottom: 20px;
     font-size: 15px;
   }
 }

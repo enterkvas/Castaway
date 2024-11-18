@@ -1,6 +1,7 @@
 .icons-social-1 {
 	display: flex;
-	column-gap: clamp(30px, 1.577rem + 1.49vw, 40px);
+	// column-gap: clamp(30px, 1.577rem + 1.49vw, 40px);
+	column-gap: 22px;
 	// @media (width >= 992px) {column-gap: 16px;}
 	&__icon {
 		width: clamp(22px, 1.196rem + 0.89vw, 32px);
