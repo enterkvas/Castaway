@@ -247,7 +247,7 @@ img {
 }
 @media (min-width: 375px) {
   .card-episodes__container {
-    padding: 0px 40px;
+    padding-inline: 40px;
   }
 }
 @media (width >= 768px) {
@@ -342,7 +342,7 @@ img {
 }
 @media (width >= 1440px) {
   .card-episodes__textblue span {
-    margin: 0px 0px 0px 4px;
+    margin-left: 4px;
     font-size: 18px;
   }
 }
@@ -356,22 +356,22 @@ img {
 }
 @media (width >= 1440px) {
   .card-episodes__title {
-    padding: 0px 83px 0px 0px;
+    padding-right: 83px;
   }
 }
 .card-episodes__subtitle {
-  margin: 0px 0px 35%;
+  margin-bottom: 35%;
   -webkit-line-clamp: 3;
   text-wrap: balance;
 }
 @media (width >= 576px) {
   .card-episodes__subtitle {
-    margin: 0px 0px 46%;
+    margin-bottom: 46%;
   }
 }
 @media (width >= 768px) {
   .card-episodes__subtitle {
-    margin: 0px;
+    margin: 0;
   }
 }
 @media (width >= 1440px) {
@@ -384,7 +384,7 @@ img {
 }
 @media (width >= 768px) {
   .card-episodes__button {
-    margin: 0px;
+    margin: 0;
     align-self: flex-start;
   }
 }
@@ -394,13 +394,13 @@ img {
 }
 @media (width >= 576px) {
   .card-host {
-    padding: 40px 0px 0px;
+    padding-top: 40px;
   }
 }
 @media (width >= 768px) {
   .card-host {
     max-width: 90%;
-    padding: 0px;
+    padding: 0;
   }
 }
 @media (width >= 1440px) {
@@ -409,16 +409,16 @@ img {
   }
 }
 .card-host__container {
-  padding: 0px 15px;
+  padding-inline: 15px;
 }
 @media (width >= 425px) {
   .card-host__container {
-    padding: 0px 60px;
+    padding-inline: 60px;
   }
 }
 @media (width >= 576px) {
   .card-host__container {
-    padding: 0px 120px;
+    padding-inline: 120px;
   }
 }
 @media (width >= 768px) {
@@ -435,12 +435,12 @@ img {
 }
 .card-host__arrow {
   display: none;
-  margin: 0px 0px 20px;
+  margin-bottom: 20px;
 }
 @media (width >= 768px) {
   .card-host__arrow {
     display: block;
-    margin: 0px 0px 12px;
+    margin-bottom: 12px;
   }
   .card-host__arrow img {
     width: clamp(62px, 0.304rem + 7.44vw, 112px);
@@ -449,13 +449,13 @@ img {
 }
 @media (width >= 1440px) {
   .card-host__arrow {
-    margin: 0px 0px 20px;
+    margin-bottom: 20px;
   }
 }
 .card-host__textblue {
   display: inline-block;
   margin: 0 auto 30%;
-  padding: 0px 8px;
+  padding-inline: 8px;
   border-radius: 2px;
   background-color: var(--bg);
 }
@@ -471,29 +471,29 @@ img {
 }
 @media (width >= 768px) {
   .card-host__textblue {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
 }
 .card-host__title {
-  margin: 0px 0px 32px;
+  margin-bottom: 32px;
 }
 @media (width >= 768px) {
   .card-host__title {
-    margin: 0px 0px 20px;
+    margin-bottom: 20px;
   }
 }
 @media (width >= 1440px) {
   .card-host__title {
-    margin: 0px 0px 28px;
+    margin-bottom: 28px;
   }
 }
 .card-host__subtitle:not(:last-child) {
-  margin: 0px 0px 20px;
+  margin-bottom: 20px;
 }
 @media (width >= 1440px) {
   .card-host__subtitle:not(:last-child) {
-    margin: 0px 0px 32px;
+    margin-bottom: 32px;
   }
 }
 
@@ -645,7 +645,7 @@ img {
 }
 
 .form-subscribe {
-  padding: 0 0 7%;
+  padding-bottom: 7%;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -722,7 +722,7 @@ img {
   .form-subscribe__button {
     display: flex;
     align-self: flex-start;
-    margin: 0px;
+    margin: 0;
   }
 }
 
@@ -937,26 +937,22 @@ h3 {
 }
 @media (min-width: 768px) {
   .page__container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-inline: 40px;
   }
 }
 @media (min-width: 992px) {
   .page__container {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-inline: 50px;
   }
 }
 @media (min-width: 1190px) {
   .page__container {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-inline: 60px;
   }
 }
 @media (width >= 1440px) {
   .page__container {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-inline: 70px;
   }
 }
 .page__episodes {
@@ -964,7 +960,7 @@ h3 {
 }
 @media (width >= 768px) {
   .page__episodes {
-    margin: 0px 0px 80px;
+    margin-bottom: 80px;
   }
 }
 @media (width >= 992px) {
@@ -974,34 +970,34 @@ h3 {
 }
 @media (width >= 1440px) {
   .page__episodes {
-    margin: 0px 0px 160px;
+    margin-bottom: 160px;
   }
 }
 .page__about {
-  margin: 0px 0px 8%;
+  margin-bottom: 8%;
   text-align: center;
 }
 @media (width >= 768px) {
   .page__about {
-    margin: 0px 0px 40px;
+    margin-bottom: 40px;
     text-align: left;
   }
 }
 @media (width >= 992px) {
   .page__about {
-    margin: 0px 0px 60px;
+    margin-bottom: 60px;
     text-align: left;
   }
 }
 @media (width >= 1190px) {
   .page__about {
-    margin: 0px 0px 80px;
+    margin-bottom: 80px;
     text-align: left;
   }
 }
 @media (width >= 1440px) {
   .page__about {
-    margin: 0px 0px 100px;
+    margin-bottom: 100px;
   }
 }
 .page__reviews {
@@ -1009,7 +1005,7 @@ h3 {
 }
 @media (width >= 1440px) {
   .page__reviews {
-    margin: 0px 0px 100px;
+    margin-bottom: 100px;
   }
 }
 
@@ -1018,7 +1014,7 @@ h3 {
 }
 @media (width >= 1440px) {
   .reviews {
-    padding: 100px 0px 0px;
+    padding-top: 100px;
   }
 }
 .reviews__container {
@@ -1062,22 +1058,22 @@ h3 {
 }
 @media (width >= 768px) {
   .about {
-    padding: 40px 0px 0px;
+    padding-top: 40px;
   }
 }
 @media (width >= 992px) {
   .about {
-    padding: 60px 0px 0px;
+    padding-top: 60px;
   }
 }
 @media (width >= 1190px) {
   .about {
-    padding: 80px 0px 0px;
+    padding-top: 80px;
   }
 }
 @media (width >= 1440px) {
   .about {
-    padding: 100px 0px 0px;
+    padding-top: 100px;
   }
 }
 .about__host {
@@ -1085,22 +1081,22 @@ h3 {
 }
 @media (width >= 768px) {
   .about__host {
-    margin: 0px 0px 40px;
+    margin-bottom: 40px;
   }
 }
 @media (width >= 992px) {
   .about__host {
-    margin: 0px 0px 60px;
+    margin-bottom: 60px;
   }
 }
 @media (width >= 1190px) {
   .about__host {
-    margin: 0px 0px 80px;
+    margin-bottom: 80px;
   }
 }
 @media (width >= 1440px) {
   .about__host {
-    margin: 0px 0px 200px;
+    margin-bottom: 200px;
   }
 }
 .about__subscribe {
@@ -1120,11 +1116,11 @@ h3 {
   padding-top: clamp(28px, 0.607rem + 5.71vw, 92px);
 }
 .episodes__header {
-  padding: 0px 0px 28px;
+  padding-bottom: 28px;
 }
 @media (width >= 576px) {
   .episodes__header {
-    padding: 0px 0px 32px;
+    padding-bottom: 32px;
   }
 }
 @media (width >= 768px) {
@@ -1132,13 +1128,13 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
-    margin: 0px 0px 40px;
+    padding: 0;
+    margin-bottom: 40px;
   }
 }
 @media (width >= 1440px) {
   .episodes__header {
-    margin: 0px 0px 66px;
+    margin-bottom: 66px;
   }
 }
 .episodes__header-title {
@@ -1146,24 +1142,24 @@ h3 {
 }
 @media (width >= 576px) {
   .episodes__header-title {
-    margin: 0px 0px 28px;
+    margin-bottom: 28px;
   }
 }
 @media (width >= 768px) {
   .episodes__header-title {
-    margin: 0px;
+    margin: 0;
   }
 }
 @media (width >= 768px) {
   .episodes__header-link {
     align-self: center;
-    margin: 0px;
+    margin: 0;
   }
 }
 .episodes__row {
   display: flex;
   flex-direction: column;
-  row-gap: 0px;
+  row-gap: 0;
 }
 @media (width >= 768px) {
   .episodes__row {
@@ -1217,15 +1213,10 @@ h3 {
   .episodes__image {
     position: static;
     width: auto;
-    margin: 0px;
+    margin: 0;
   }
   .episodes__image img {
     filter: brightness(1);
-  }
-}
-@media (width >= 1440px) {
-  .episodes__image {
-    margin: 0px 0px 0px;
   }
 }
 .episodes__image img {
@@ -1270,14 +1261,14 @@ h3 {
   }
 }
 .hero__image {
-  padding: 60px 0px 0px;
+  padding-top: 60px;
   filter: brightness(0.7);
 }
 @media (width >= 768px) {
   .hero__image {
     position: relative;
     top: 0%;
-    padding: 0px;
+    padding: 0;
     filter: brightness(1);
   }
   .hero__image::before {
@@ -1309,28 +1300,28 @@ h3 {
 .hero__body {
   position: absolute;
   bottom: 20px;
-  padding: 0px 15px;
+  padding-inline: 15px;
 }
 @media (min-width: 576px) {
   .hero__body {
-    padding: 0px 20px;
+    padding-inline: 20px;
   }
 }
 @media (width >= 768px) {
   .hero__body {
     position: static;
-    padding: 0 0 0 10%;
+    padding-bottom: 10%;
     text-align: left;
   }
 }
 @media (width >= 992px) {
   .hero__body {
-    padding: 0 0 0 10%;
+    padding-bottom: 10%;
   }
 }
 @media (width >= 1200px) {
   .hero__body {
-    padding: 0 0 0 15%;
+    padding-bottom: 15%;
   }
 }
 @media (width >= 1440px) {
@@ -1339,49 +1330,49 @@ h3 {
   }
 }
 .hero__text-main {
-  margin: 0px 0px 228px;
+  margin-bottom: 228px;
   text-align: center;
 }
 @media (width >= 375px) {
   .hero__text-main {
-    margin: 0px 0px 300px;
+    margin-bottom: 300px;
   }
 }
 @media (width >= 425px) {
   .hero__text-main {
-    margin: 0px 40px 360px;
+    margin-bottom: 360px;
   }
 }
 @media (width >= 496px) {
   .hero__text-main {
-    margin: 0px 40px 420px;
+    margin-bottom: 420px;
   }
 }
 @media (width >= 576px) {
   .hero__text-main {
-    margin: 0px 40px 468px;
+    margin-bottom: 468px;
   }
 }
 @media (width >= 620px) {
   .hero__text-main {
-    margin: 0px 40px 540px;
+    margin-bottom: 540px;
   }
 }
 @media (width >= 690px) {
   .hero__text-main {
-    margin: 0px 80px 620px;
+    margin-bottom: 620px;
   }
 }
 @media (width >= 768px) {
   .hero__text-main {
     padding: 0px;
-    margin: 0px 0px 80px;
+    margin-bottom: 80px;
     text-align: left;
   }
 }
 @media (width >= 900px) {
   .hero__text-main {
-    margin: 0px 0px 100px;
+    margin-bottom: 100px;
   }
 }
 @media (width >= 1440px) {
@@ -1499,7 +1490,7 @@ h3 {
 }
 
 .subscribe {
-  padding: 7% 0% 0%;
+  padding-top: 7%;
 }
 @media (width >= 768px) {
   .subscribe::before {
@@ -1569,17 +1560,17 @@ h3 {
 .subscribe__textblue {
   display: inline-block;
   padding-inline: 8px;
-  margin: 0px 0px 20px;
+  margin-bottom: 20px;
 }
 @media (width >= 768px) {
   .subscribe__textblue {
-    padding: 0px;
+    padding: 0;
     margin: 0;
   }
 }
 @media (width >= 1440px) {
   .subscribe__textblue {
-    margin: 0px;
+    margin: 0;
     letter-spacing: 0.5px;
   }
 }
@@ -1589,7 +1580,7 @@ h3 {
 @media (width >= 768px) {
   .subscribe__title {
     width: 80%;
-    margin: 0px;
+    margin: 0;
   }
 }
 @media (width >= 1280px) {
@@ -1599,7 +1590,7 @@ h3 {
 }
 @media (width >= 1440px) {
   .subscribe__title {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding-right: 40px;
     font-size: 72px;
     letter-spacing: 2.88px;

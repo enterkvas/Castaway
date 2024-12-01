@@ -2,39 +2,33 @@
 	position: relative;
 	text-align: center;
 	padding-top: clamp(28px, 0.607rem + 5.71vw, 92px);
-	// padding: 28px 0px 0px;
-	// @media (width >= 576px) {padding: 40px 0px 0px;}
-	// @media (width >= 768px) {padding: 48px 0px 0px;}
-	// @media (width >= 992px) {padding: 60px 0px;}
-	// @media (width >= 1190px) {padding: 80px 0px;}
-	// @media (width >= 1440px) {padding: 42px 0px 0px;}
 	&__header {
-		padding: 0px 0px 28px;
-		@media (width >= 576px) {padding: 0px 0px 32px;}
+		padding-bottom: 28px;
+		@media (width >= 576px) {padding-bottom: 32px;}
 		@media (width >= 768px) {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			padding: 0px;
-			margin: 0px 0px 40px;
+			padding: 0;
+			margin-bottom: 40px;
 		}
-		@media (width >= 1440px) {margin: 0px 0px 66px;}
+		@media (width >= 1440px) {margin-bottom: 66px;}
 		&-title {
 			margin: 0px 0px 20px;
-			@media (width >= 576px) {margin: 0px 0px 28px;}
-			@media (width >= 768px) {margin: 0px;}
+			@media (width >= 576px) {margin-bottom: 28px;}
+			@media (width >= 768px) {margin: 0;}
 		}
 		&-link {
 			@media (width >= 768px) {
 				align-self: center;
-				margin: 0px;
+				margin: 0;
 			}
 		}	
 	}
 	&__row {
 		display: flex;
 		flex-direction: column;
-		row-gap: 0px;
+		row-gap: 0;
 		@media (width >= 768px) {row-gap: 20px;}
 		@media (width >= 1440px) {row-gap: 60px;}
 	}
@@ -47,7 +41,6 @@
 			&-border {
 				display: flex;
 				column-gap: 5%;
-				// overflow: scroll;
 				padding: 3%;
 				border-radius: clamp(22px, 0.661rem + 1.49vw, 32px);
 			}
@@ -71,25 +64,18 @@
 		@media (width >= 768px) {
 			position: static;
 			width: auto;
-			margin: 0px;
+			margin: 0;
 			& img {filter: brightness(1);}
-		}
-		@media (width >= 1440px) {
-			margin: 0px 0px 0px;
 		}
 		& img {
 			width: 100%;
 			height: auto;
 			filter: brightness(0.7);
-			@media (width >= 1440px) {
-				width: auto;
-			}
+			@media (width >= 1440px) {width: auto;}
 		}
 	}
 	&__card {
 		position: relative;
-		@media (width >= 1440px) {
-			padding-top: 8px;
-		}
+		@media (width >= 1440px) {padding-top: 8px;}
 	}
 }

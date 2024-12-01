@@ -1,15 +1,15 @@
 .card-host {
 	padding-top: 4%;			
-	@media (width >= 576px) {padding: 40px 0px 0px;}
+	@media (width >= 576px) {padding-top: 40px;}
 	@media (width >= 768px) {
 		max-width: 90%;
-		padding: 0px;
+		padding: 0;
 	}
     @media (width >= 1440px) {max-width: 590px;}
 	&__container {
-		padding: 0px 15px;
-		@media (width >= 425px) {padding: 0px 60px;}
-		@media (width >= 576px) {padding: 0px 120px;}
+		padding-inline: 15px;
+		@media (width >= 425px) {padding-inline: 60px;}
+		@media (width >= 576px) {padding-inline: 120px;}
 		@media (width >= 768px) {
 			display: flex;
 			flex-direction: column;
@@ -19,37 +19,37 @@
 	}
 	&__arrow {
 		display: none;
-		margin: 0px 0px 20px;
+		margin-bottom: 20px;
 		@media (width >= 768px) {
 			display: block;
-			margin: 0px 0px 12px;
+			margin-bottom: 12px;
 			& img {
 				width: clamp(62px, 0.304rem + 7.44vw, 112px);
 				height: clamp(62px, 0.304rem + 7.44vw, 112px);
 			}
 		}
-		@media (width >= 1440px) {margin: 0px 0px 20px;}
+		@media (width >= 1440px) {margin-bottom: 20px;}
 	}
     &__textblue {
         display: inline-block;
 		margin: 0 auto 30%;
-        padding: 0px 8px;
+        padding-inline: 8px;
         border-radius: 2px;
         background-color: var(--bg);
 		@media (width >= 425px) {margin: 0 auto 45%;}
 		@media (width >= 576px) {margin: 0 auto 75%;}
 		@media (width >= 768px) {
-			padding: 0px;
-			margin: 0px;
+			padding: 0;
+			margin: 0;
 		}
 	}
 	&__title {
-		margin: 0px 0px 32px;
-		@media (width >= 768px) {margin: 0px 0px 20px;}	
-		@media (width >= 1440px) {margin: 0px 0px 28px;}
+		margin-bottom: 32px;
+		@media (width >= 768px) {margin-bottom: 20px;}	
+		@media (width >= 1440px) {margin-bottom: 28px;}
 	}
     &__subtitle:not(:last-child) {
-		margin: 0px 0px 20px;
-		@media (width >= 1440px) {margin: 0px 0px 32px;}
+		margin-bottom: 20px;
+		@media (width >= 1440px) {margin-bottom: 32px;}
 	}
 }

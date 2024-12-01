@@ -1,7 +1,5 @@
 .icons-social-1 {
 	display: flex;
-	// column-gap: clamp(30px, 1.577rem + 1.49vw, 40px);
-	// column-gap: 17px;
 	justify-content: space-around;
 	@media (width >= 768px) {
 		justify-content: normal;

@@ -8,12 +8,12 @@
 		@media (width >= 768px) {width: 50%;}
 	}
 	&__image {
-		padding: 60px 0px 0px;
+		padding-top: 60px;
 		filter: brightness(0.7);
 		@media (width >= 768px) {
 			position: relative;
 			top: 0%;
-			padding: 0px;
+			padding: 0;
 			filter: brightness(1.0);
 			&::before {
 				content: "";
@@ -43,32 +43,32 @@
 	&__body {
 		position: absolute;
 		bottom: 20px;
-		padding: 0px 15px;
-		@media(min-width: 576px) {padding: 0px 20px;}
+		padding-inline: 15px;
+		@media(min-width: 576px) {padding-inline: 20px;}
 		@media (width >= 768px) {
 			position: static;
-			padding: 0 0 0 10%;
+			padding-bottom: 10%;
 			text-align: left;
 		}
-		@media (width >= 992px) {padding: 0 0 0 10%;}
-		@media (width >= 1200px) {padding: 0 0 0 15%;}
+		@media (width >= 992px) {padding-bottom: 10%;}
+		@media (width >= 1200px) {padding-bottom: 15%;}
 		@media (width >= 1440px) {padding-inline: 60px;}
 	}
 	&__text-main {
-		margin: 0px 0px 228px;
+		margin-bottom: 228px;
 		text-align: center;
-		@media (width >= 375px) {margin: 0px 0px 300px;}	
-		@media (width >= 425px) {margin: 0px 40px 360px;}
-		@media (width >= 496px) {margin: 0px 40px 420px;}
-		@media (width >= 576px) {margin: 0px 40px 468px;}
-		@media (width >= 620px) {margin: 0px 40px 540px;}
-		@media (width >= 690px) {margin: 0px 80px 620px;}
+		@media (width >= 375px) {margin-bottom: 300px;}	
+		@media (width >= 425px) {margin-bottom: 360px;}
+		@media (width >= 496px) {margin-bottom: 420px;}
+		@media (width >= 576px) {margin-bottom: 468px;}
+		@media (width >= 620px) {margin-bottom: 540px;}
+		@media (width >= 690px) {margin-bottom: 620px;}
 		@media (width >= 768px) {
 			padding: 0px;
-			margin: 0px 0px 80px;
+			margin-bottom: 80px;
 			text-align: left;
 		}
-		@media (width >= 900px) {margin: 0px 0px 100px;}
+		@media (width >= 900px) {margin-bottom: 100px;}
 		@media (width >= 1440px) {margin: 136px 0px 88px;}
 	}
 	&__text-underlining {

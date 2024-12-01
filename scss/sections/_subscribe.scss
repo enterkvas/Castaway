@@ -1,5 +1,5 @@
 .subscribe {
-	padding: 7% 0% 0%;	
+	padding-top: 7%;	
 	&::before {
 		@media (width >= 768px) {
 			content: "";
@@ -42,13 +42,13 @@
 	&__textblue {
 		display: inline-block;
 		padding-inline: 8px;
-		margin: 0px 0px 20px;
+		margin-bottom: 20px;
 		@media (width >= 768px) {
-			padding: 0px;
+			padding: 0;
 			margin: 0;
 		}
 		@media (width >= 1440px) {
-			margin: 0px;
+			margin: 0;
 			letter-spacing: 0.5px;
 		}
 	}
@@ -56,11 +56,11 @@
 		margin-bottom: clamp(2.5rem, 1.605rem + 4.47vw, 3.75rem);
 		@media (width >= 768px) {
 			width: 80%;
-			margin: 0px;
+			margin: 0;
 		}
 		@media (width >= 1280px) {width: 70%;}
 		@media (width >= 1440px) {
-			margin-bottom: 0px;
+			margin-bottom: 0;
 			padding-right: 40px;
 			font-size: 72px;
 			letter-spacing: 2.88px;

@@ -1,6 +1,6 @@
 .reviews {
     padding-top: 8%;
-    @media (width >= 1440px) {padding: 100px 0px 0px;}
+    @media (width >= 1440px) {padding-top: 100px;}
     &__container {
         margin-inline: 15px;
         @media (min-width: 576px) {

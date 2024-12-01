@@ -1,7 +1,5 @@
 .nav-footer {
-    @media (width >= 1440px) {
-        padding-top: 2px;
-    }
+    @media (width >= 1440px) {padding-top: 2px;}
     &__row {
         display: flex;
         column-gap: clamp(120px, -1.025rem + 42.62vw, 406px);
