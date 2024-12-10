@@ -57,6 +57,7 @@
 			@media (width >= 375px) {font-size: 11px;}
 			@media (width >= 425px) {font-size: 12px;}
 			@media (width >= 576px) {font-size: 13px;}
+			// @include fluid-text(18,10);
 			@media (width >= 768px) {margin: 0px 0px 0px 2px;}
 			@media (width >= 992px) {
 				margin: 0px 0px 0px 3px;

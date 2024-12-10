@@ -20,7 +20,7 @@
     &__item {
         margin-left: clamp(15px, -0.045rem + 4.91vw, 70px); // from 320 to 1440;
         &:not(:last-child) {
-            margin-bottom: clamp(3.75rem, 1.96rem + 8.95vw, 6.25rem); // from 320 to 767
+            margin-bottom: clamp(60px, 1.96rem + 8.95vw, 100px); // from 320 to 767
         }
         @media (min-width: 768px) {
             margin-left: 0;
@@ -29,10 +29,13 @@
         }
     }
     &__link {
+        @include fluid-text(16, 24);
+        // font-size: clamp(1rem, 0.642rem + 1.79vw, 1.5rem);
         color: var(--color-text);
         text-decoration: none;
         @media (width >= 768px) {
-            font-size: clamp(14px, 0.589rem + 0.6vw, 18px); // from 768 to 1440
+            // font-size: clamp(14px, 0.589rem + 0.6vw, 18px); // from 768 to 1440
+            @include fluid-text(14, 18);
             line-height: clamp(22px, 1.045rem + 0.71vw, 27px);      
             &:hover, &:active {color: var(--blue);}      
         }

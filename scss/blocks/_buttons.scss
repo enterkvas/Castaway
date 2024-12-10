@@ -2,7 +2,8 @@
 	display: inline-block;
 	padding-block: clamp(5px, 0.188rem + 0.63vw, 12px);
 	padding-inline: clamp(6px, 0.071rem + 1.52vw, 23px);
-	font-size: clamp(9px, 0.42rem + 0.71vw, 17px);
+	// font-size: clamp(9px, 0.42rem + 0.71vw, 17px);
+	@include fluid-text(17,9);
 	font-weight: 400;
 	border-radius: clamp(4px, 0.214rem + 0.18vw, 6px);
 	color: var(--color-text);

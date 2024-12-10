@@ -9,11 +9,11 @@
 	padding-block: clamp(10px, 0.089rem + 2.68vw, 40px);
 	background-color: var(--bg);
 	&__container {
-		padding-inline: clamp(15px, -0.045rem + 4.91vw, 70px); // from 320 to 1440
 		display: flex;
 		justify-content: space-between;
 		align-items: center;	
 		width: 100%;
+		padding-inline: clamp(15px, -0.045rem + 4.91vw, 70px);
 	}
 	&__logo {
 		position: relative;

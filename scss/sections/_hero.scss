@@ -47,11 +47,11 @@
 		@media(min-width: 576px) {padding-inline: 20px;}
 		@media (width >= 768px) {
 			position: static;
-			padding-bottom: 10%;
+			padding-block: 20px;
+			padding-left: clamp(32px, 4.17vw, 60px);
+			padding-right: 2px;
 			text-align: left;
 		}
-		@media (width >= 992px) {padding-bottom: 10%;}
-		@media (width >= 1200px) {padding-bottom: 15%;}
 		@media (width >= 1440px) {padding-inline: 60px;}
 	}
 	&__text-main {
