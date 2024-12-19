@@ -63,7 +63,7 @@
 	@media(min-width: 992px) {
 		&:hover {
 			cursor: pointer;
-			background-color: var(--default-hover-orange);
+			background-color: var(--color-active);
 			transition: 0.5s;
 		}
 	}

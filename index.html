@@ -7,7 +7,7 @@
 	<link rel="shortcut icon" href="img/favicons/favicon-48x48.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" type="image/png">
 	<title>Castaway project</title>
-	<link href="https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap" rel="stylesheet" type="text/css">
+	<!-- <link href="https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap" rel="stylesheet" type="text/css"> -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
@@ -16,23 +16,25 @@
 		<header class="header" id="home">
 			<div class="header__container container">
 				<a href="/" class="header__logo logo"><img class="logo__img" width="160" height="33" loading="lazy" src="./img/images/header-logo.png" alt="logo picture"></a>
-				<nav class="header__navigation navigation">
-					<div class="navigation__btn burger-btn"><span></span></div>
-					<ul class="navigation__list menu-list">
-						<li class="menu-list__item">
-							<a data-goto="#home" href="#" class="menu-list__link">Home</a>
-						</li>
-						<li class="menu-list__item">
-							<a data-goto="#episodes" href="#" class="menu-list__link">Episodes</a>
-						</li>
-						<li class="menu-list__item">
-							<a data-goto="#about" href="#" class="menu-list__link">About</a>
-						</li>
-						<li class="menu-list__item">
-							<a data-goto="#contact" href="#" class="menu-list__link">Contact</a>
-						</li>
-					</ul>
-				</nav>
+				<div class="header__menu menu">
+					<div class="menu__icon"><span></span></div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#home" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item">
+								<a href="#episodes" class="menu__link">Episodes</a>
+							</li>
+							<li class="menu__item">
+								<a href="#about" class="menu__link">About</a>
+							</li>
+							<li class="menu__item">
+								<a href="#contact" class="menu__link">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</header>
 		<main class="page page__container container">
@@ -131,7 +133,8 @@
 								<div class="host__card card-host">
 									<div class="card-host__container">
 										<div class="card-host__arrow">
-											<img loading="lazy" src="./img/images/about-img/host/arrow-host.png" width="112" height="112" alt="image of an arrow">
+											<!-- <img loading="lazy" src="./img/icons/host-arrow/host-arrow.svg" width="71" height="38" alt="image of an arrow"> -->
+											<!-- <span></span> -->
 										</div>
 										<p class="host__blue card-host__textblue textblue text-short">Meet your host</p>
 										<h3 class="host__title card-host__title">Jacob Paulaner</h3>

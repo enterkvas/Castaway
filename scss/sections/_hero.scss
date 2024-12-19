@@ -1,6 +1,11 @@
 .hero {
 	position: relative;
-	@media (width >= 768px) {padding-top: clamp(100px, 1.107rem + 10.71vw, 172px);}
+	@media (width >= 768px) {
+		// padding-top: clamp(100px, 1.107rem + 10.71vw, 172px);
+		padding-top: clamp(6.25rem, 1.964rem + 8.93vw, 10rem);
+		// padding-top: clamp(1rem, 0.286rem + 1.49vw, 1.625rem);
+		// padding-top: clamp(16px, -4.714rem + 11.9vw, 96px);
+	}
 	&__row {@media (width >= 768px) {display: flex;}}
 	&__col {
 		position: relative;
@@ -69,7 +74,7 @@
 			text-align: left;
 		}
 		@media (width >= 900px) {margin-bottom: 100px;}
-		@media (width >= 1440px) {margin: 136px 0px 88px;}
+		@media (width >= 1440px) {margin: 144px 0px 88px;}
 	}
 	&__text-underlining {
 		font-size: clamp(22px, 0.429rem + 4.73vw, 75px);

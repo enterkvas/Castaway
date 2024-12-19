@@ -1,11 +1,13 @@
-  @import '../css/var.css',
+  // @import '../css/var.css',
+  @import
 
   './base/null',
-  './base/base',
+  './base/fonts',
   './base/mixins',
+  './base/base',
   './base/utils',
+  './base/variables',
 
-  './blocks/burger-btn',
   './blocks/buttons',
   './blocks/episodes-card',
   './blocks/host-card',
@@ -15,7 +17,6 @@
   './blocks/reviews-item',
   './blocks/header',
   './blocks/header-menu',
-  './blocks/header-nav',
   './blocks/heading',
   './blocks/icons-social-1',
   './blocks/icons-social-2',

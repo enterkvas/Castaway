@@ -5,6 +5,9 @@
 	--color-text:#fff;
 	--color-text-subtitle: rgba(255, 255, 255, 0.7);
 	--color-active: #118DA8;
+	
 	--fz:16px;
 	--lh:1;
+
+	--header-height: clamp(60px, 2.679rem + 5.36vw, 120px);
 }

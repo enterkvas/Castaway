@@ -1,10 +1,13 @@
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: var(--header-height);
+}
 html,
 body {
 	height: 100%;
 	color: var(--color-text);
 	background-color: var(--bg);
 	font-family: "DM Sans";
-	font-size: 16px;
 	line-height: 1;
 }
 body._lock {overflow: hidden;}

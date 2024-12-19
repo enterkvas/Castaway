@@ -17,19 +17,46 @@
 		}
 		@media (width >= 1440px) {padding: 0px;}
 	}
+	
+
 	&__arrow {
 		display: none;
-		margin-bottom: 20px;
 		@media (width >= 768px) {
+			position: relative;
+			width: clamp(60px, 0.036rem + 7.74vw, 112px);
+			aspect-ratio: 1;
+			background-color: var(--color-active);
 			display: block;
-			margin-bottom: 12px;
-			& img {
-				width: clamp(62px, 0.304rem + 7.44vw, 112px);
-				height: clamp(62px, 0.304rem + 7.44vw, 112px);
+			// width: 19%;
+			border-radius: 50%;
+			margin-bottom: 20px;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 62%;
+			aspect-ratio: 1;
+			width: 62%;
+			transform: translate(34%, 34%);
+			// width: 100%;
+			// height: 100%;
+			background: url('../../img/icons/host-arrow/host-arrow.svg') no-repeat center center;
+			background-size: contain; /* Измените на cover, если нужно полностью покрыть элемент */
+			//opacity: 0.5; /* Прозрачность, при необходимости */
+			// z-index: -1;
+
+			@media (max-width: 600px) {
+			background-size: 50%; /* Изменение размера на меньших экранах */
+			}
+			@media (min-width: 601px) {
+			background-size: contain; /* Размер для более крупных экранов */
 			}
 		}
-		@media (width >= 1440px) {margin-bottom: 20px;}
 	}
+
     &__textblue {
         display: inline-block;
 		margin: 0 auto 30%;
