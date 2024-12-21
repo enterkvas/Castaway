@@ -1,9 +1,9 @@
 .menu {
   &__icon {
     position: absolute;
-    height: clamp(22px, 1.151rem + 1.12vw, 27px); // from 320 to 767
-    aspect-ratio: 20/15;
-    right: 15px;
+    height: clamp(1.375rem, 1.151rem + 1.12vw, 1.688rem); // from 320 to 767
+    aspect-ratio: 4 / 3;
+    right: rem(15);
     z-index: 6;
     transition: all .3s ease 0s;
     & span,
@@ -32,12 +32,12 @@
     &._active::before {transform: rotate(-45deg) translate(3px, -50%);}
     &._active::after {transform: rotate(45deg) translate(-3px, -50%);}
 
-    @media(min-width: 576px) {right: 20px;}
-    @media(min-width: 768px) {
+    @media(min-width: rem(576)) {right: rem(20);}
+    @media(min-width: rem(768)) {
       opacity: 0;
       visibility: hidden;
-      width: 0px;
-      height: 0px;    
+      width: 0;
+      height: 0;    
       left: -1000%;
       background-color: transparent;
       font-size: 0;
@@ -59,7 +59,7 @@
     &._active {
       left: 0;
     }
-    @media (min-width: 768px) {
+    @media (min-width: rem(768)) {
       position: static;
       height: auto;
       background-color: transparent;
@@ -71,17 +71,17 @@
     // transition: all 0.5s ease 0s;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: rem(30);
     gap: 0;
     // height: 100%;
     // width: 60%;
     // overflow: auto;
     margin: auto;
-    @media (min-width: 768px) {
+    @media (min-width: rem(768)) {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        column-gap: 40px;
+        column-gap: rem(40);
         padding: 0;
     }    
   }
@@ -110,20 +110,20 @@
     // }
   &__link {
     display: block;
-    // @include fluid-text(16, 24);
-    font-size: clamp(1rem, 0.642rem + 1.79vw, 1.5rem);
-    line-height: 70px;
+    @include fluid-text-mobile(32, 24);
+    // font-size: clamp(1rem, 0.642rem + 1.79vw, 1.5rem);
+    line-height: clamp(5rem, 3.568rem + 7.16vw, 7rem);
     color: var(--color-text);
     text-decoration: none;
-    @media (width >= 768px) {
+    @media (width >= rem(768)) {
         // font-size: clamp(14px, 0.589rem + 0.6vw, 18px); // from 768 to 1440
-        @include fluid-text(14, 18);
-        line-height: clamp(22px, 1.045rem + 0.71vw, 27px);      
+        @include fluid-text(18, 16);
+        line-height: clamp(1.375rem, 1.018rem + 0.74vw, 1.688rem);  // from 768 to 1339      
         &:hover, &:active {color: var(--blue);}      
     }
-    @media (width >= 1440px) {
+    @media (width >= rem(1440)) {
         display: inline-flex;
-        height: 67px;
+        height: rem(67);
         align-items: center;
     }
   }

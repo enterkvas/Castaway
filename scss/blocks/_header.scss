@@ -10,14 +10,14 @@
 	width: 100%;
 	display: flex;
 	// padding-block: clamp(10px, 0.089rem + 2.68vw, 40px);
-	padding-block: clamp(10px, 0.339rem + 1.43vw, 26px);
+	padding-block: clamp(0.625rem, 0.339rem + 1.43vw, 1.625rem);
 	background-color: var(--bg);
 	&__container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;	
 		width: 100%;
-		padding-inline: clamp(15px, -0.045rem + 4.91vw, 70px);
+		padding-inline: clamp(0.938rem, -0.045rem + 4.91vw, 4.375rem);
 	}
 	&__logo {
 		position: relative;
