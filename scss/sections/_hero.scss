@@ -1,29 +1,29 @@
 .hero {
 	position: relative;
-	@media (width >= 768px) {
+	@media (width >= rem(768)) {
 		// padding-top: clamp(100px, 1.107rem + 10.71vw, 172px);
 		padding-top: clamp(6.25rem, 1.964rem + 8.93vw, 10rem);
 		// padding-top: clamp(1rem, 0.286rem + 1.49vw, 1.625rem);
 		// padding-top: clamp(16px, -4.714rem + 11.9vw, 96px);
 	}
-	&__row {@media (width >= 768px) {display: flex;}}
+	&__row {@media (width >= rem(768)) {display: flex;}}
 	&__col {
 		position: relative;
 		width: 100%;
-		@media (width >= 768px) {width: 50%;}
+		@media (width >= rem(768)) {width: 50%;}
 	}
 	&__image {
-		padding-top: 60px;
+		padding-top: rem(60);
 		filter: brightness(0.7);
-		@media (width >= 768px) {
+		@media (width >= rem(768)) {
 			position: relative;
 			top: 0%;
 			padding: 0;
 			filter: brightness(1.0);
 			&::before {
 				content: "";
-				width: clamp(36px, -0.036rem + 4.76vw, 68px);
-				height: clamp(39px, -0.063rem + 5.21vw, 74px);
+				width: clamp(2.25rem, -0.036rem + 4.76vw, 4.25rem);
+				height: clamp(2.438rem, -0.063rem + 5.21vw, 4.625rem);
 				position: absolute;
 				top: -3%;
 				left: -4%;
@@ -31,7 +31,7 @@
 				background-image: url('../img/images/hero-img/hero-img_add-top.svg');
 				background-repeat: no-repeat;
 				background-size: cover;
-				@media (width >= 1190px) {
+				@media (width >= rem(1190)) {
 					top: -3%;
 					left: -4%;
 				}
@@ -42,44 +42,44 @@
 			width: 100%;
 			height: auto;		
 			transform: translate(0, 0);
-			border-radius: clamp(8px, 0.214rem + 0.6vw, 12px);
+			border-radius: clamp(0.5rem, 0.214rem + 0.6vw, 0.75rem); // from 768 to 1440
 		}		
 	}
 	&__body {
 		position: absolute;
-		bottom: 20px;
-		padding-inline: 15px;
-		@media(min-width: 576px) {padding-inline: 20px;}
-		@media (width >= 768px) {
+		bottom: rem(20);
+		padding-inline: rem(15);
+		@media(min-width: rem(576)) {padding-inline: rem(20);}
+		@media (width >= rem(768)) {
 			position: static;
-			padding-block: 20px;
-			padding-left: clamp(32px, 4.17vw, 60px);
-			padding-right: 2px;
+			padding-block: rem(20);
+			padding-left: clamp(2rem, 4.17vw, 3.75rem);
+			padding-right: rem(2);
 			text-align: left;
 		}
-		@media (width >= 1440px) {padding-inline: 60px;}
+		@media (width >= rem(1440)) {padding-inline: rem(60);}
 	}
 	&__text-main {
-		margin-bottom: 228px;
+		margin-bottom: rem(228);
 		text-align: center;
-		@media (width >= 375px) {margin-bottom: 300px;}	
-		@media (width >= 425px) {margin-bottom: 360px;}
-		@media (width >= 496px) {margin-bottom: 420px;}
-		@media (width >= 576px) {margin-bottom: 468px;}
-		@media (width >= 620px) {margin-bottom: 540px;}
-		@media (width >= 690px) {margin-bottom: 620px;}
-		@media (width >= 768px) {
-			padding: 0px;
-			margin-bottom: 80px;
+		@media (width >= rem(375)) {margin-bottom: rem(300);}	
+		@media (width >= rem(425)) {margin-bottom: rem(360);}
+		@media (width >= rem(496)) {margin-bottom: rem(420);}
+		@media (width >= rem(576)) {margin-bottom: rem(468);}
+		@media (width >= rem(620)) {margin-bottom: rem(540);}
+		@media (width >= rem(690)) {margin-bottom: rem(620);}
+		@media (width >= rem(768)) {
+			padding: 0;
+			margin-bottom: rem(80);
 			text-align: left;
 		}
-		@media (width >= 900px) {margin-bottom: 100px;}
-		@media (width >= 1440px) {margin: 144px 0px 88px;}
+		@media (width >= rem(900)) {margin-bottom: rem(100);}
+		@media (width >= rem(1440)) {margin: rem(144) 0 rem(88);}
 	}
 	&__text-underlining {
-		font-size: clamp(22px, 0.429rem + 4.73vw, 75px);
-		line-height: clamp(30px, 0.839rem + 5.18vw, 88px);
-		letter-spacing: clamp(1.824px, 0.088rem + 0.13vw, 3.2px);		
+		font-size: clamp(1.375rem, 0.429rem + 4.73vw, 4.688rem);
+		line-height: clamp(1.875rem, 0.839rem + 5.18vw, 5.5rem);
+		letter-spacing: clamp(0.114rem, 0.089rem + 0.12vw, 0.2rem);		
 		position: relative;
 		&::after {
 			content: "";
@@ -94,22 +94,19 @@
 		}
 	}
 	&__text-green {
-		font-size: clamp(23px, 0.42rem + 5.09vw, 80px);
-        line-height: clamp(30px, 0.839rem + 5.18vw, 88px);
-		letter-spacing: clamp(1.824px, 0.088rem + 0.13vw, 3.2px);
+		font-size: clamp(1.438rem, 0.42rem + 5.09vw, 5rem);
+        line-height: clamp(1.875rem, 0.839rem + 5.18vw, 5.5rem);
+		letter-spacing: clamp(0.114rem, 0.089rem + 0.12vw, 0.2rem);
 		font-weight: 700;
 		color: #1ED760;
-		@media (width >= 768px) {color: var(--color-text);}
+		@media (width >= rem(768)) {color: var(--color-text);}
 	}
 	&__text-add {
-		margin-bottom: 12px;
-		font-size: 12px;
+		margin-bottom: rem(12);
+		font-size: rem(12);
 		line-height: 1.6;
-		@media (width >= 768px) {
-			margin-bottom: 16px;
-			font-size: 12px;
-		}
-		@media (width >= 992px) {font-size: 14px;}
-		@media (width >= 1440px) {font-size: 15px;}
+		@media (width >= rem(768)) {margin-bottom: rem(16);}
+		@media (width >= rem(992)) {font-size: rem(14);}
+		@media (width >= rem(1440)) {font-size: rem(15);}
 	}
 }
