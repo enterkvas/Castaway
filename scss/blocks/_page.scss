@@ -2,33 +2,33 @@
 	flex: 1 1 auto;
 	&__container {
 		padding-inline: 0;
-		// @media (width >= 768px) {padding-inline: 40px;}
-		// @media (width >= 992px) {padding-inline: 50px;}
-		// @media (width >= 1190px) {padding-inline: 60px;}
-		// @media (width >= 1440px) {padding-inline: 70px;}
-		@media (width >= 768px) {
-			padding-inline: clamp(40px, 0.357rem + 4.46vw, 70px);			
+		// @media (width >= rem(768)) {padding-inline: 40px;}
+		// @media (width >= rem(992)) {padding-inline: 50px;}
+		// @media (width >= rem(1190)) {padding-inline: 60px;}
+		// @media (width >= rem(1440)) {padding-inline: 70px;}
+		@media (width >= rem(768)) {
+			padding-inline: clamp(2.5rem, 0.357rem + 4.46vw, 4.375rem);			
 		}
 	}	
 	&__episodes {
 		margin-bottom: 8%;
-		@media (width >= 768px) {margin-bottom: 80px;}
-		@media (width >= 992px) {background-color: var(--bg);}
-		@media (width >= 1440px) {margin-bottom: 160px;}
+		@media (width >= rem(768)) {margin-bottom: rem(80);}
+		@media (width >= rem(992)) {background-color: var(--bg);}
+		@media (width >= rem(1440)) {margin-bottom: rem(160);}
 	}	
 	&__about {
 		margin-bottom: 8%;
 		text-align: center;		
-		@media (width >= 768px) {
-			margin-bottom: 40px;
+		@media (width >= rem(768)) {
+			margin-bottom: rem(40);
 			text-align: left;
 		}
-		@media (width >= 992px) {margin-bottom: 60px;}
-		@media (width >= 1190px) {margin-bottom: 80px;}
-		@media (width >= 1440px) {margin-bottom: 100px;}
+		@media (width >= rem(992)) {margin-bottom: rem(60);}
+		@media (width >= rem(1190)) {margin-bottom: rem(80);}
+		@media (width >= rem(1440)) {margin-bottom: rem(100);}
 	}
 	&__reviews {
 		margin-bottom: 8%;
-		@media (width >= 1440px) {margin-bottom: 100px;}
+		@media (width >= rem(1440)) {margin-bottom: rem(100);}
 	}	
 }

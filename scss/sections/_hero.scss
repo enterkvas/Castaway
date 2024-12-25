@@ -61,6 +61,9 @@
 	}
 	&__text-main {
 		margin-bottom: rem(228);
+		@include fluid-text(70, 20);
+		line-height: 1.257;
+		letter-spacing: clamp(0.114rem, 0.089rem + 0.12vw, 0.2rem);
 		text-align: center;
 		@media (width >= rem(375)) {margin-bottom: rem(300);}	
 		@media (width >= rem(425)) {margin-bottom: rem(360);}

@@ -21,9 +21,9 @@
     &::after {bottom: 0;}
     & span {
       top: 50%;
-      transform: translate(0px, -50%);
+      transform: translate(0, -50%);
     }
-    &._active span {transform: scale(0) translate(0px, -50%);}
+    &._active span {transform: scale(0) translate(0, -50%);}
     &._active::before,
     &._active::after {
       top: 50%;
@@ -49,8 +49,7 @@
     top: 0;
     left: -150%;
     height: 100vh;
-    width: 100%;
-    // padding-top: 120px; 
+    width: 100%; 
     background-color: rgb(6 33 55 / 0.9);
     display: flex;
     z-index: 5;
@@ -63,19 +62,14 @@
       position: static;
       height: auto;
       background-color: transparent;
-      // padding-top: 0;
     }
   }
 
   &__list {
-    // transition: all 0.5s ease 0s;
     display: flex;
     flex-direction: column;
     padding: rem(30);
     gap: 0;
-    // height: 100%;
-    // width: 60%;
-    // overflow: auto;
     margin: auto;
     @media (min-width: rem(768)) {
         display: flex;

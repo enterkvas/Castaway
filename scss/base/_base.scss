@@ -5,10 +5,10 @@ html {
 html,
 body {
 	height: 100%;
-	color: var(--color-text);
-	background-color: var(--bg);
 	font-family: "DM Sans";
 	line-height: 1;
+	color: var(--color-text);
+	background-color: var(--bg);
 }
 body._lock {overflow: hidden;}
 img {display: block;}

@@ -1,18 +1,18 @@
 .card-episodes {
-	padding: 5% 0px;
-	@media (width >= 768px) {
+	padding: 5% 0;
+	@media (width >= rem(768)) {
 		height: auto;
 		width: 80%;
 		padding: 0;
 	}
-	@media (width >= 1440px) {width: 100%;}
+	@media (width >= rem(1440)) {width: 100%;}
 	&__container {
 		height: 100%;
-		padding: 0px 15px;
+		padding: 0 rem(15);
 		display: flex;
 		flex-direction: column;
-		@media (min-width: 375px) {padding-inline: 40px;}
-		@media (width >= 768px) {
+		@media (width >= rem(375)) {padding-inline: rem(40);}
+		@media (width >= rem(768)) {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
@@ -23,69 +23,74 @@
 	&__top-title {
 		display: inline-block;
 		align-self: flex-start;
-		margin: 0px auto 5%;
-		padding: 4px 8px;
-		border-radius: 4px;
+		margin: 0 auto 5%;
+		padding: rem(4) rem(8);
+		border-radius: rem(4);
 		background-color: var(--bg);
-		@media (width >= 768px) {
-			margin: 0;
-			border-radius: 4px;
-		}
-		@media (width >= 1440px) {			
-			padding: 0px 18px;
-			margin-bottom: 24px;
-			border-radius: 6px;
+		@media (width >= rem(768)) {margin: 0;}
+		@media (width >= rem(1440)) {			
+			padding: rem(0) rem(14);
+			// margin-bottom: rem(20);
+			margin-bottom: rem(26);
+			border-radius: rem(6);
 			background-color: var(--bg);
 		}
 	}
 	&__textblue {
 		display: inline-block;
 		align-self: flex-start;
-		padding: 4px 8px;
-		margin: 0px auto 10%;
-		border-radius: 4px;
+		padding: rem(4) rem(8);
+		margin: 0 auto 10%;
+		border-radius: rem(4);
 		color: var(--blue);
 		filter: saturate(200%);
-		@media (width >= 375px) {margin: 0px auto 15%;}
-		@media (width >= 425px) {margin: 0px auto 19%;}
-		@media (width >= 768px) {			
+		@media (width >= rem(375)) {margin: 0 auto 15%;}
+		@media (width >= rem(425)) {margin: 0 auto 19%;}
+		@media (width >= rem(768)) {			
 			margin: 0;
 			padding: 0;
 		}
+		@media (width >= rem(768)) {margin-bottom: rem(-3);}
 		& span {
-			font-size: 10px;
-			@media (width >= 375px) {font-size: 11px;}
-			@media (width >= 425px) {font-size: 12px;}
-			@media (width >= 576px) {font-size: 13px;}
+			font-size: rem(10);
+			@media (width >= rem(375)) {font-size: rem(11);}
+			@media (width >= rem(425)) {font-size: rem(12);}
+			@media (width >= rem(576)) {font-size: rem(13);}
 			// @include fluid-text(18,10);
-			@media (width >= 768px) {margin: 0px 0px 0px 2px;}
-			@media (width >= 992px) {
-				margin: 0px 0px 0px 3px;
-				font-size: 15px;
+			@media (width >= rem(768)) {margin: 0 0 0 rem(2);}
+			@media (width >= rem(992)) {
+				margin: 0 0 0 rem(3);
+				font-size: rem(15);
 			}
-			@media (width >= 1190px) {font-size: 17px;}
-			@media (width >= 1440px) {
-				margin-left: 4px;
-				font-size: 18px;
+			@media (width >= rem(1190)) {font-size: rem(17);}
+			@media (width >= rem(1440)) {
+				margin-left: rem(4);
+				font-size: rem(18);
 			}			
 		}
 	}
 	&__title {
-		margin: 0px 0px 5%;
-		@media (width >= 768px) {margin: 0;}
-		@media (width >= 1440px) {padding-right: 83px;}
+		margin: 0 0 5%;
+		@include fluid-text(64, 18);
+		line-height: 1.1;
+		letter-spacing: clamp(0.05rem, 0.013rem + 0.19vw, 0.18rem);
+		@media (width >= rem(768)) {margin: 0;}
+		@media (width >= rem(1440)) {
+			padding-right: rem(89);
+			letter-spacing: rem(2.6);
+		}
 	}
 	&__subtitle {
 		margin-bottom: 35%;
 		-webkit-line-clamp: 3;
 		text-wrap: balance;
-		@media (width >= 576px) {margin-bottom: 46%;}
-		@media (width >= 768px) {margin: 0;}
-		@media (width >= 1440px) {text-wrap: inherit;}												
+		@media (width >= rem(576)) {margin-bottom: 46%;}
+		@media (width >= rem(768)) {margin: 0;}
+		@media (width >= rem(1440)) {text-wrap: inherit;}												
 	}
 	&__button {
-		margin: 0px auto;
-		@media (width >= 768px) {
+		margin: 0 auto;
+		@media (width >= rem(768)) {
 			margin: 0;
 			align-self: flex-start;
 		}
