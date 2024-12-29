@@ -1,11 +1,12 @@
 .icons-social-1 {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	@media (width >= rem(768)) {
 		justify-content: normal;
-		column-gap: rem(40);
+		column-gap: rem(18);
 	}
-	@media (width >= rem(992)) {column-gap: rem(17);}
+	@media (width >= rem(992)) {column-gap: rem(22);}
+	@media (width >= rem(1440)) {column-gap: rem(28);}
 	&__icon {
 		width: clamp(1.375rem, 1.196rem + 0.89vw, 2rem);
 		height: clamp(1.375rem, 1.196rem + 0.89vw, 2rem);

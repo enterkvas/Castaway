@@ -1,7 +1,8 @@
 .episodes {
 	position: relative;
 	text-align: center;
-	padding-top: clamp(1.75rem, 0.464rem + 6.43vw, 6.25rem);
+	// padding-top: clamp(1.75rem, 0.464rem + 6.43vw, 6.25rem);
+	padding-top: clamp(1.75rem, 0.536rem + 6.07vw, 6rem);
 	&__header {
 		padding-bottom: rem(28);
 		@media (width >= rem(576)) {padding-bottom: rem(32);}
@@ -12,7 +13,7 @@
 			padding: 0;
 			margin-bottom: rem(40);
 		}
-		@media (width >= rem(1440)) {margin-bottom: rem(66);}
+		@media (width >= rem(1440)) {margin-bottom: rem(72);}
 		&-title {
 			margin: 0 0 rem(20);
 			@include fluid-text(64, 18);
@@ -23,8 +24,10 @@
 		}
 		&-link {
 			@media (width >= rem(768)) {
-				align-self: center;
 				margin: 0;
+				@include fluid-text(17,15);
+				line-height: calc(27 / 17);
+				align-self: center;
 			}
 		}	
 	}
@@ -71,8 +74,6 @@
 			& img {filter: brightness(1.0);}
 		}
 		& img {
-			width: 100%;
-			height: auto;
 			filter: brightness(0.7);
 			@media (width >= rem(768)) {filter: brightness(1.0);}
 			@media (width >= rem(1440)) {width: auto;}

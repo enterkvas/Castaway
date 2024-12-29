@@ -1,5 +1,13 @@
 @use 'sass:math';
 
+
+@mixin fluid-text($max: 80, $min: 15) {
+    $maxViewportWidth: 1440;
+    $minViewportWidth: 320;
+    
+    font-size: calculate-font-size($max, $min, $maxViewportWidth, $minViewportWidth);
+}
+
 @mixin fluid-text-mobile($max: 80, $min: 15) {
     $maxViewportWidth: 767;
     $minViewportWidth: 320;
@@ -7,12 +15,11 @@
     font-size: calculate-font-size($max, $min, $maxViewportWidth, $minViewportWidth);
 }
 
-@mixin fluid-text($max: 80, $min: 15) {
+@mixin fluid-text-desk-tope($max: 80, $min: 15) {
     $maxViewportWidth: 1440;
-    $minViewportWidth: 320;
+    $minViewportWidth: 768;
 
     font-size: calculate-font-size($max, $min, $maxViewportWidth, $minViewportWidth);
-    // letter-spacing: calculate-font-size($max, $min, $maxViewportWidth, $minViewportWidth);
 }
 
 @mixin menu-icon($size) {

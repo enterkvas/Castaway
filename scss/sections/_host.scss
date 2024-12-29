@@ -1,6 +1,6 @@
 .host {
 	&__row {
-		@media (width >= 768px) {
+		@media (width >= rem(768)) {
 			display: flex;
 			align-items: center;
 			& > div:nth-child(1) {order: 2;}
@@ -9,23 +9,21 @@
 	}
 	&__col {
 		display: block;
-		@media (width >= 768px) {width: 50%;}
+		@media (width >= rem(768)) {width: 50%;}
 	}
 	&__image {
 		filter: brightness(0.7);
-		@media (width >= 768px) {filter: brightness(1.0);}			
+		@media (width >= rem(768)) {filter: brightness(1.0);}			
 		& img {
-			width: 100%;
-			height: auto;
-			@media (width >= 768px) {border-radius: 8px;}
-			@media (width >= 992px) {border-radius: 10px;}
-			@media (width >= 1440px) {border-radius: 14px;}			
+			@media (width >= rem(768)) {border-radius: rem(8);}
+			@media (width >= rem(992)) {border-radius: rem(10);}
+			@media (width >= rem(1440)) {border-radius: rem(14);}			
 		}
 	}
 	&__card {
 		position: absolute;
 		top: 0;
-		@media (width >= 768px) {
+		@media (width >= rem(768)) {
 			position: static;
 			text-align: left;
 		}	

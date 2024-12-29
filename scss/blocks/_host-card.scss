@@ -1,35 +1,34 @@
 .card-host {
 	padding-top: 4%;			
-	@media (width >= 576px) {padding-top: 40px;}
-	@media (width >= 768px) {
+	@media (width >= rem(576)) {padding-top: rem(40);}
+	@media (width >= rem(768)) {
 		max-width: 90%;
 		padding: 0;
 	}
-    @media (width >= 1440px) {max-width: 590px;}
+	@media (width >= rem(1440)) {margin-top: rem(-16);}
+    @media (width >= rem(1440)) {max-width: rem(590);}
 	&__container {
-		padding-inline: 15px;
-		@media (width >= 425px) {padding-inline: 60px;}
-		@media (width >= 576px) {padding-inline: 120px;}
-		@media (width >= 768px) {
+		padding-inline: rem(15);
+		@media (width >= rem(425)) {padding-inline: rem(60);}
+		@media (width >= rem(576)) {padding-inline: rem(120);}
+		@media (width >= rem(768)) {
 			display: flex;
 			flex-direction: column;
-			padding: 0px;
+			padding: 0;
 		}
-		@media (width >= 1440px) {padding: 0px;}
-	}
-	
+		@media (width >= rem(1440)) {padding: 0;}
+	}	
 
 	&__arrow {
 		display: none;
-		@media (width >= 768px) {
+		@media (width >= rem(768)) {
 			position: relative;
-			width: clamp(60px, 0.036rem + 7.74vw, 112px);
+			width: clamp(3.75rem, 0.036rem + 7.74vw, 7rem);
 			aspect-ratio: 1;
 			background-color: var(--color-active);
 			display: block;
-			// width: 19%;
 			border-radius: 50%;
-			margin-bottom: 20px;
+			margin-bottom: rem(20);
 		}
 
 		&::before {
@@ -40,19 +39,15 @@
 			width: 62%;
 			aspect-ratio: 1;
 			width: 62%;
-			transform: translate(34%, 34%);
-			// width: 100%;
-			// height: 100%;
+			transform: translate(24%, 24%);
 			background: url('../../img/icons/host-arrow/host-arrow.svg') no-repeat center center;
-			background-size: contain; /* Измените на cover, если нужно полностью покрыть элемент */
-			//opacity: 0.5; /* Прозрачность, при необходимости */
-			// z-index: -1;
+			background-size: contain;
 
-			@media (max-width: 600px) {
-			background-size: 50%; /* Изменение размера на меньших экранах */
+			@media (max-width: rem(600)) {
+				background-size: 50%;
 			}
-			@media (min-width: 601px) {
-			background-size: contain; /* Размер для более крупных экранов */
+			@media (min-width: rem(601)) {
+				background-size: contain;
 			}
 		}
 	}
@@ -60,23 +55,26 @@
     &__textblue {
         display: inline-block;
 		margin: 0 auto 30%;
-        padding-inline: 8px;
-        border-radius: 2px;
+        padding-inline: rem(8);
+        border-radius: rem(2);
         background-color: var(--bg);
-		@media (width >= 425px) {margin: 0 auto 45%;}
-		@media (width >= 576px) {margin: 0 auto 75%;}
-		@media (width >= 768px) {
+		@media (width >= rem(425)) {margin: 0 auto 45%;}
+		@media (width >= rem(576)) {margin: 0 auto 75%;}
+		@media (width >= rem(768)) {
 			padding: 0;
 			margin: 0;
 		}
 	}
 	&__title {
-		margin-bottom: 32px;
-		@media (width >= 768px) {margin-bottom: 20px;}	
-		@media (width >= 1440px) {margin-bottom: 28px;}
+		margin-bottom: rem(32);
+		font-size: clamp(1.125rem, 0.286rem + 4.2vw, 4.063rem);
+		line-height: 1.218;
+		letter-spacing: clamp(0.05rem, 0.013rem + 0.19vw, 0.18rem);
+		@media (width >= rem(768)) {margin-bottom: rem(20);}	
+		@media (width >= rem(1440)) {margin-bottom: rem(28);}
 	}
     &__subtitle:not(:last-child) {
-		margin-bottom: 20px;
-		@media (width >= 1440px) {margin-bottom: 32px;}
+		margin-bottom: rem(20);
+		@media (width >= rem(1440)) {margin-bottom: rem(32);}
 	}
 }

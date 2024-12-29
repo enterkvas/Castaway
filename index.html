@@ -38,7 +38,8 @@
 				</div>
 			</div>
 		</header>
-		<main class="page page__container container">
+
+		<main class="main page page__container container">
 			<h1 class="visually-hidden">Podcast Studio</h1>
 			<section class="page__hero hero">
 				<h2 class="visually-hidden">Motivation</h2>
@@ -65,25 +66,26 @@
 					</div>
 				</div>
 			</section>
+
 			<section class="page__episodes episodes" id="episodes">
 				<div class="episodes__container container">
 					<div class="episodes__header">
 						<h2 class="episodes__header-title">Latest episodes</h2>
-						<a href="#" class="episodes__header-link button text-short">View all episodes</a>
+						<a href="#" class="episodes__header-link button">View all episodes</a>
 					</div>
 					<div class="episodes__row">
 						<div class="episodes__col">
 							<div class="episodes__col-border">
 								<a href="#" class="episodes__image">
-									<img loading="lazy" src="./img/images/episodes-img/episodes-img_1.jpg" width="389" height="432" alt="image of episodes_3">
+									<img loading="lazy" src="./img/images/episodes-img/episodes-img_1_origin.jpg" width="389" height="432" alt="image of episodes_3">
 								</a>
 								<div class="episodes__card card-episodes">
 									<div class="card-episodes__container">
-										<p class="card-episodes__top-title text-short">Gear</p>
-										<p class="card-episodes__textblue text-short">Episode <span>3</span></p>
+										<p class="card-episodes__top-title">Gear</p>
+										<p class="card-episodes__textblue">Episode <span>3</span></p>
 										<h3 class="card-episodes__title">Should you get outboard audio gear?</h3>
 										<p class="card-episodes__subtitle subtitle ellipsis-text">Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.</p>
-										<a href="#" class="card-episodes__button button text-short">View Episode Details</a>
+										<a href="#" class="card-episodes__button button">View Episode Details</a>
 									</div>
 								</div>
 							</div>
@@ -95,11 +97,11 @@
 								</a>
 								<div class="episodes__card card-episodes">
 									<div class="card-episodes__container">
-										<p class="card-episodes__top-title text-short">Tips & Tricks</p>
-										<p class="card-episodes__textblue text-short">Episode <span>2</span></p>
+										<p class="card-episodes__top-title">Tips & Tricks</p>
+										<p class="card-episodes__textblue">Episode <span>2</span></p>
 										<h3 class="card-episodes__title">Mic tricks to take you to the next level</h3>
 										<p class="card-episodes__subtitle subtitle ellipsis-text">Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.</p>
-										<a href="#" class="card-episodes__button button text-short">View Episode Details</a>
+										<a href="#" class="card-episodes__button button">View Episode Details</a>
 									</div>
 								</div>
 							</div>
@@ -111,11 +113,11 @@
 								</a>
 								<div class="episodes__card card-episodes">
 									<div class="card-episodes__container">
-										<p class="card-episodes__top-title text-short">Gear</p>
-										<p class="card-episodes__textblue text-short">Episode <span>1</span></p>
+										<p class="card-episodes__top-title">Gear</p>
+										<p class="card-episodes__textblue">Episode <span>1</span></p>
 										<h3 class="card-episodes__title">The best microphone under $200</h3>
 										<p class="card-episodes__subtitle subtitle ellipsis-text">With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.</p>
-										<a href="#" class="card-episodes__button button text-short">View Episode Details</a>
+										<a href="#" class="card-episodes__button button">View Episode Details</a>
 									</div>									
 								</div>
 							</div>
@@ -123,7 +125,9 @@
 					</div>					
 				</div>
 			</section>
+
 			<section class="page__about about" id="about">
+				<h2 class="visually-hidden">Meet your host</h2>
 				<div class="about__container container">
 					<section class="about__host host">
 						<div class="host__row">
@@ -136,10 +140,8 @@
 								<div class="host__card card-host">
 									<div class="card-host__container">
 										<div class="card-host__arrow">
-											<!-- <img loading="lazy" src="./img/icons/host-arrow/host-arrow.svg" width="71" height="38" alt="image of an arrow"> -->
-											<!-- <span></span> -->
 										</div>
-										<p class="host__blue card-host__textblue textblue text-short">Meet your host</p>
+										<div class="host__blue card-host__textblue textblue">Meet your host</div>
 										<h3 class="host__title card-host__title">Jacob Paulaner</h3>
 										<p class="host__subtitle card-host__subtitle subtitle">Jacob has a background in audio engineering, and has been podcasting since the early days.</p>
 										<p class="host__subtitle card-host__subtitle subtitle">He’s here to help you level up your game by sharing everything he’s learned along the way.</p>
@@ -148,13 +150,14 @@
 							</div>
 						</div>
 					</section>
+
 					<section class="about__subscribe subscribe">
 						<div class="subscribe__container">
 							<div class="subscribe__row">
 								<div class="subscribe__col">
 									<div class="subscribe__text">
-										<div class="subscribe__textblue textblue text-short">Email Newsletter</div>
-										<p class="subscribe__title">Subscribe for updates</p>
+										<div class="subscribe__textblue textblue">Email Newsletter</div>
+										<h3 class="subscribe__title">Subscribe for updates</h3>
 									</div>
 								</div>
 								<div class="subscribe__col">
@@ -169,6 +172,7 @@
 					</section>
 				</div>
 			</section>
+
 			<div class="page__reviews reviews">
 				<div class="reviews__container container">
 					<ul class="reviews__list">
@@ -266,6 +270,7 @@
 				</div>
 			</div>
 		</main>
+		
 		<footer class="footer" id="contact">
 			<div class="footer__container container">
 				<div class="footer__row">
@@ -283,7 +288,7 @@
 						<div class="footer__nav nav-footer">
 							<div class="nav-footer__row">
 								<div class="nav-footer__col">
-									<ul class="nav-footer__list text-short">
+									<ul class="nav-footer__list">
 										<li class="nav-footer__item"><a href="#" class="nav-footer__link">Home</a></li>
 										<li class="nav-footer__item"><a href="#" class="nav-footer__link">About</a></li>
 										<li class="nav-footer__item"><a href="#" class="nav-footer__link">Episodes</a></li>
@@ -291,7 +296,7 @@
 									</ul>
 								</div>
 								<div class="nav-footer__col">
-									<ul class="nav-footer__list text-short">
+									<ul class="nav-footer__list">
 										<li class="nav-footer__item"><a href="#" class="nav-footer__link">Style Guide</a></li>
 										<li class="nav-footer__item"><a href="#" class="nav-footer__link">Instructions</a></li>
 										<li class="nav-footer__item"><a href="#" class="nav-footer__link">Changelog</a></li>

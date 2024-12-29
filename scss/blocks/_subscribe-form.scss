@@ -2,58 +2,57 @@
 	padding-bottom: 7%;
 	display: flex;
 	flex-direction: column;
-	row-gap: 20px;
+	row-gap: rem(20);
 	align-items: center;
-	@media (width >= 768px) {
-		row-gap: 16px;
-		padding: 0px;
+	@media (width >= rem(768)) {
+		row-gap: rem(16);
+		padding: 0;
 		align-items: flex-start;
 	}
-	@media (width >= 1440px) {row-gap: 22px;}
+	@media (width >= rem(1440)) {row-gap: rem(22);}
 	&__form {
 		width: clamp(16.25rem, 6.407rem + 49.22vw, 30rem);
-		padding: 12px 10px;
-		border-radius: 4px;
+		padding: rem(12) rem(10);
+		border-radius: rem(4);
 		background-color: var(--bg);
-		@media (width >= 768px) {
+		@media (width >= rem(768)) {
 			width: 100%;
-			padding: 16px 12px;
+			padding: rem(16) rem(12);
 		}
-		@media (width >= 992px) {padding: 22px 10px 22px 18px;}
-		@media (width >= 1200px) {padding: 26px 10px 26px 20px;
-		}
-		@media (width >= 1440px) {
-			width: 522px;
-			height: 82px;
-			padding: 22px 10px 10px 20px;
-			margin: 0px;
-			border-radius: 6px;
+		@media (width >= rem(992)) {padding: rem(22) rem(10) rem(22) rem(18);}
+		@media (width >= rem(1200)) {padding: rem(26) rem(10) rem(26) rem(20);}
+		@media (width >= rem(1440)) {
+			width: rem(522);
+			height: rem(82);
+			padding: rem(22) rem(10) rem(10) rem(20);
+			margin: 0;
+			border-radius: rem(6);
 			background-color: var(--bg);
 		}
 		&::placeholder {
-			font-size: clamp(12px, 0.536rem + 1.07vw, 24px);
+			@include fluid-text(24,12);
 			line-height: 1.2;
 			color: var(--color-text-subtitle);
 		}
 		&::-webkit-input-placeholder {
-			font-size: clamp(12px, 0.536rem + 1.07vw, 24px);
+			@include fluid-text(24,12);
 			line-height: 1.2;
 			color: var(--color-text-subtitle);
 		}
 		&:-moz-placeholder {
-			font-size: clamp(12px, 0.536rem + 1.07vw, 24px);
+			@include fluid-text(24,12);
 			line-height: 1.2;
 			color: var(--color-text-subtitle);
 		}
 		&:-ms-input-placeholder {
-			font-size: clamp(12px, 0.536rem + 1.07vw, 24px);
+			@include fluid-text(24,12);
 			line-height: 1.2;
 			color: var(--color-text-subtitle);
 		}				
 	}
 	&__button {
-		margin: 0px auto;
-		@media (width >= 768px) {
+		margin: 0 auto;
+		@media (width >= rem(768)) {
 			display: flex;
 			align-self: flex-start;
 			margin: 0;

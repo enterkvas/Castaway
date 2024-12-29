@@ -1,7 +1,7 @@
 .subscribe {
 	padding-top: 7%;	
 	&::before {
-		@media (width >= 768px) {
+		@media (width >= rem(768)) {
 			content: "";
 			width: clamp(4.875rem, -0.054rem + 10.27vw, 9.188rem);
 			height: clamp(3rem, -0.071rem + 6.4vw, 5.688rem);
@@ -12,58 +12,59 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
-		@media (width >= 1440px) {
+		@media (width >= rem(1440)) {
 			bottom: -16%;
 			left: -2%;
 		}
 	}
-	@media (width >= 768px) {
+	@media (width >= rem(768)) {
 		padding-block: 6%;
-		border-radius: clamp(22px, 0.661rem + 1.49vw, 32px);
+		border-radius: clamp(1.375rem, 0.661rem + 1.49vw, 2rem);
 	}
-	@media (width >= 1440px) {padding-block: 60px;}
+	@media (width >= rem(1440)) {padding-block: rem(60);}
 	&__container {
-		padding-inline: 15px;
-		@media (width >= 768px) {padding-inline: 30px;}
-		@media (width >= 992px) {padding-inline: 40px;}
-		@media (width >= 1440px) {padding-inline: 60px;}
+		padding-inline: rem(15);
+		@media (width >= rem(768)) {padding-inline: rem(30);}
+		@media (width >= rem(992)) {padding-inline: rem(40);}
+		@media (width >= rem(1440)) {padding-inline: rem(60);}
 	}
 	&__row {
-		@media (width >= 768px) {
+		@media (width >= rem(768)) {
 			display: flex;
 			justify-content: space-between;
 			background-color: var(--bg-black);
 		}
 	}
 	&__col {
-		@media (width >= 768px) {width: 50%;}
-		@media (width >= 1440px) {width: auto;}
+		@media (width >= rem(768)) {width: 50%;}
+		@media (width >= rem(1440)) {width: auto;}
 	}
 	&__textblue {
 		display: inline-block;
-		padding-inline: 8px;
-		margin-bottom: 20px;
-		@media (width >= 768px) {
+		padding-inline: rem(8);
+		margin-bottom: rem(20);
+		@media (width >= rem(768)) {
 			padding: 0;
 			margin: 0;
 		}
-		@media (width >= 1440px) {
-			margin: 0;
-			letter-spacing: 0.5px;
+		@media (width >= rem(1440)) {
+			padding-top: rem(3);
+			margin-bottom: rem(-3);
+			letter-spacing: rem(0.5);
 		}
 	}
 	&__title {
-		margin-bottom: clamp(2.5rem, 1.605rem + 4.47vw, 3.75rem);
-		@media (width >= 768px) {
+		margin-bottom: clamp(2.5rem, 1.605rem + 4.47vw, 3.75rem); // from 320 to 767
+		@include fluid-text(72,22);
+		line-height: 1.1;
+		letter-spacing: clamp(0.05rem, 0.013rem + 0.19vw, 0.18rem);
+		@media (width >= rem(768)) {
 			width: 80%;
 			margin: 0;
 		}
-		@media (width >= 1280px) {width: 70%;}
-		@media (width >= 1440px) {
+		@media (width >= rem(1440)) {
 			margin-bottom: 0;
-			padding-right: 40px;
-			font-size: 72px;
-			letter-spacing: 2.88px;
+			padding-right: rem(40);
 		}
 	}
 }

@@ -38,9 +38,7 @@
 			}
 		}
 		& img {
-			position: static;
-			width: 100%;
-			height: auto;		
+			position: static;		
 			transform: translate(0, 0);
 			border-radius: clamp(0.5rem, 0.214rem + 0.6vw, 0.75rem); // from 768 to 1440
 		}		
@@ -72,17 +70,16 @@
 		@media (width >= rem(620)) {margin-bottom: rem(540);}
 		@media (width >= rem(690)) {margin-bottom: rem(620);}
 		@media (width >= rem(768)) {
-			padding: 0;
 			margin-bottom: rem(80);
 			text-align: left;
 		}
 		@media (width >= rem(900)) {margin-bottom: rem(100);}
-		@media (width >= rem(1440)) {margin: rem(144) 0 rem(88);}
+		@media (width >= rem(1440)) {margin: rem(138) 0 rem(84);}
 	}
 	&__text-underlining {
-		font-size: clamp(1.375rem, 0.429rem + 4.73vw, 4.688rem);
-		line-height: clamp(1.875rem, 0.839rem + 5.18vw, 5.5rem);
-		letter-spacing: clamp(0.114rem, 0.089rem + 0.12vw, 0.2rem);		
+		@include fluid-text (75,22);
+		line-height: clamp(1.875rem, 0.839rem + 5.18vw, 5.5rem);	
+		letter-spacing: clamp(0.113rem, 0.088rem + 0.13vw, 0.2rem);	
 		position: relative;
 		&::after {
 			content: "";
@@ -97,19 +94,17 @@
 		}
 	}
 	&__text-green {
-		font-size: clamp(1.438rem, 0.42rem + 5.09vw, 5rem);
+		@include fluid-text (80,23);
         line-height: clamp(1.875rem, 0.839rem + 5.18vw, 5.5rem);
-		letter-spacing: clamp(0.114rem, 0.089rem + 0.12vw, 0.2rem);
+		letter-spacing: clamp(0.113rem, 0.088rem + 0.13vw, 0.2rem);
 		font-weight: 700;
 		color: #1ED760;
 		@media (width >= rem(768)) {color: var(--color-text);}
 	}
 	&__text-add {
 		margin-bottom: rem(12);
-		font-size: rem(12);
+		font-size: rem(15);
 		line-height: 1.6;
 		@media (width >= rem(768)) {margin-bottom: rem(16);}
-		@media (width >= rem(992)) {font-size: rem(14);}
-		@media (width >= rem(1440)) {font-size: rem(15);}
 	}
 }

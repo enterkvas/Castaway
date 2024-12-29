@@ -105,20 +105,16 @@
   &__link {
     display: block;
     @include fluid-text-mobile(32, 24);
-    // font-size: clamp(1rem, 0.642rem + 1.79vw, 1.5rem);
     line-height: clamp(5rem, 3.568rem + 7.16vw, 7rem);
     color: var(--color-text);
     text-decoration: none;
     @media (width >= rem(768)) {
-        // font-size: clamp(14px, 0.589rem + 0.6vw, 18px); // from 768 to 1440
-        @include fluid-text(18, 16);
-        line-height: clamp(1.375rem, 1.018rem + 0.74vw, 1.688rem);  // from 768 to 1339      
-        &:hover, &:active {color: var(--blue);}      
-    }
-    @media (width >= rem(1440)) {
         display: inline-flex;
-        height: rem(67);
+        height: clamp(3.125rem, 1.911rem + 2.53vw, 4.188rem);
         align-items: center;
+        @include fluid-text-desk-tope(17, 16);
+        line-height: clamp(1.375rem, 1.018rem + 0.74vw, 1.688rem);      
+        &:hover, &:active {color: var(--blue);}      
     }
   }
 }

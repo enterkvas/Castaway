@@ -11,13 +11,19 @@ body {
 	background-color: var(--bg);
 }
 body._lock {overflow: hidden;}
-img {display: block;}
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
 .none {display: none;}
 .wrapper {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
+
+.main {flex-grow: 1;}
 
 .align-center {
 	display: flex;
@@ -32,10 +38,10 @@ img {display: block;}
 	color: var(--blue);
 	filter: saturate(200%);
 }
-.text-short {
-	font-size: clamp(9px, 0.42rem + 0.71vw, 17px);
-	line-height: 1.6;
-}
+// .text-short {
+// 	font-size: clamp(9px, 0.42rem + 0.71vw, 17px);
+// 	line-height: 1.6;
+// }
 .ellipsis-text {
 	overflow: hidden;
 	text-overflow: ellipsis;
