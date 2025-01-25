@@ -1,6 +1,6 @@
 .logo {
 	&__img {
-		width: clamp(110px, 5.982rem + 4.46vw, 160px);
+		width: fluid-full(160,80);
 		height: auto;
 	}		
 }

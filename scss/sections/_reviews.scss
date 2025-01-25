@@ -1,0 +1,24 @@
+.reviews {
+    padding-top: 8%;
+    @media (width >= rem(1440)) {padding-top: rem(100);}
+    &__container {
+        // margin-inline: rem(15);
+        padding-inline: rem(15);
+        @media (min-width: rem(576)) {
+            padding-inline: rem(20);
+            margin: 0;
+        }
+		@media (min-width: rem(768)) {padding: 0;}
+    }
+    &__list {
+        display: grid;
+        row-gap: rem(20);
+        @media (width >= rem(576)) {
+            grid-template-columns: 1fr 1fr;
+            align-items: stretch;
+            gap: clamp(rem(12), 0.625rem + 0.35vw, rem(16));
+        }
+        @media (width >= rem(1024)) {grid-template-columns: repeat(3, 1fr);}
+        // @media (width >= rem(1440)) {gap: rem(15);}
+    }
+}

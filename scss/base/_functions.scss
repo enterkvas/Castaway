@@ -1,12 +1,14 @@
 @use 'sass:math';
 
+// Function for translation px in rem
 @function rem($pixel) {
     @if math.is-unitless($pixel) {
-    @return math.div($pixel, 16) + rem;
+		@return math.div($pixel, 16) + rem;
     }
 }
 
-@function calculate-font-size($max, $min, $maxViewportWidth, $minViewportWidth) {
+// General function for creating fluid dimension
+@function fluid-size($max, $min, $maxViewportWidth, $minViewportWidth) {
     $maxSize: math.div($max, 16);
     $minSize: math.div($min, 16);
     $maxWidth: math.div($maxViewportWidth, 16);
@@ -16,8 +18,43 @@
     $yAxisIntersection: -$minWidth * $slope + $minSize;
 
     @return clamp(
-      #{$minSize * 1rem},
-      #{$yAxisIntersection * 1rem} + #{$slope * 100vw},
-      #{$maxSize * 1rem}
+        #{$minSize * 1rem},
+        #{$yAxisIntersection * 1rem} + #{$slope * 100vw},
+        #{$maxSize * 1rem}
     );
+}
+
+// Full Viewport function
+@function fluid-full($max, $min) {
+    @return fluid-size($max, $min, 1440, 320);
+}
+
+// Function for Mobile Viewport
+@function fluid-mobile($max, $min) {
+    @return fluid-size($max, $min, 767, 320);
+}
+
+// Function for Mobile-add Viewport
+@function fluid-mobile-add($max, $min) {
+    @return fluid-size($max, $min, 991, 320);
+}
+
+// Function for Mid Viewport
+@function fluid-mid($max, $min) {
+    @return fluid-size($max, $min, 1440, 768);
+}
+
+// Function for Mid_1 Viewport
+@function fluid-mid_1($max, $min) {
+    @return fluid-size($max, $min, 1189, 768);
+}
+
+// Function for Mid_2 Viewport
+@function fluid-mid_2($max, $min) {
+    @return fluid-size($max, $min, 1440, 992);
+}
+
+// Function for Mid_3 Viewport
+@function fluid-mid_3($max, $min) {
+    @return fluid-size($max, $min, 1439, 1024);
 }

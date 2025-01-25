@@ -1,6 +1,8 @@
 .icons-social-2 {
 	& img {
-		width: clamp(16px, 0.857rem + 0.71vw, 24px);
-		height: clamp(16px, 0.857rem + 0.71vw, 24px);
+		// width: clamp(16px, 0.857rem + 0.71vw, 24px);
+		width: fluid-full(24,16);
+		// height: clamp(16px, 0.857rem + 0.71vw, 24px);
+		// height: fluid-full(24,16);
 	}
 }

@@ -1,10 +1,7 @@
 .hero {
 	position: relative;
 	@media (width >= rem(768)) {
-		// padding-top: clamp(100px, 1.107rem + 10.71vw, 172px);
-		padding-top: clamp(6.25rem, 1.964rem + 8.93vw, 10rem);
-		// padding-top: clamp(1rem, 0.286rem + 1.49vw, 1.625rem);
-		// padding-top: clamp(16px, -4.714rem + 11.9vw, 96px);
+		padding-top: fluid-mid(160,100);
 	}
 	&__row {@media (width >= rem(768)) {display: flex;}}
 	&__col {
@@ -13,8 +10,6 @@
 		@media (width >= rem(768)) {width: 50%;}
 	}
 	&__image {
-		padding-top: rem(60);
-		filter: brightness(0.7);
 		@media (width >= rem(768)) {
 			position: relative;
 			top: 0%;
@@ -22,8 +17,8 @@
 			filter: brightness(1.0);
 			&::before {
 				content: "";
-				width: clamp(2.25rem, -0.036rem + 4.76vw, 4.25rem);
-				height: clamp(2.438rem, -0.063rem + 5.21vw, 4.625rem);
+				width: fluid-mid_1(68,36);
+				height: fluid-mid_1(74,39);
 				position: absolute;
 				top: -3%;
 				left: -4%;
@@ -40,7 +35,7 @@
 		& img {
 			position: static;		
 			transform: translate(0, 0);
-			border-radius: clamp(0.5rem, 0.214rem + 0.6vw, 0.75rem); // from 768 to 1440
+			border-radius: fluid-mid(12,8);
 		}		
 	}
 	&__body {
@@ -51,7 +46,7 @@
 		@media (width >= rem(768)) {
 			position: static;
 			padding-block: rem(20);
-			padding-left: clamp(2rem, 4.17vw, 3.75rem);
+			padding-left: fluid-mid(60,32);
 			padding-right: rem(2);
 			text-align: left;
 		}
@@ -59,9 +54,9 @@
 	}
 	&__text-main {
 		margin-bottom: rem(228);
-		@include fluid-text(70, 20);
+		font-size: fluid-full(70, 20);
 		line-height: 1.257;
-		letter-spacing: clamp(0.114rem, 0.089rem + 0.12vw, 0.2rem);
+		letter-spacing: fluid-full(3.2,1.8);
 		text-align: center;
 		@media (width >= rem(375)) {margin-bottom: rem(300);}	
 		@media (width >= rem(425)) {margin-bottom: rem(360);}
@@ -77,9 +72,8 @@
 		@media (width >= rem(1440)) {margin: rem(138) 0 rem(84);}
 	}
 	&__text-underlining {
-		@include fluid-text (75,22);
-		line-height: clamp(1.875rem, 0.839rem + 5.18vw, 5.5rem);	
-		letter-spacing: clamp(0.113rem, 0.088rem + 0.13vw, 0.2rem);	
+		font-size: fluid-full(75, 22);
+		line-height: calc(88 / 75);	
 		position: relative;
 		&::after {
 			content: "";
@@ -94,9 +88,8 @@
 		}
 	}
 	&__text-green {
-		@include fluid-text (80,23);
-        line-height: clamp(1.875rem, 0.839rem + 5.18vw, 5.5rem);
-		letter-spacing: clamp(0.113rem, 0.088rem + 0.13vw, 0.2rem);
+		font-size: fluid-full(80, 23);
+		line-height: calc(88 / 80);
 		font-weight: 700;
 		color: #1ED760;
 		@media (width >= rem(768)) {color: var(--color-text);}
@@ -104,7 +97,7 @@
 	&__text-add {
 		margin-bottom: rem(12);
 		font-size: rem(15);
-		line-height: 1.6;
+		line-height: calc(24 / 15);
 		@media (width >= rem(768)) {margin-bottom: rem(16);}
 	}
 }

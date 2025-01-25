@@ -14,10 +14,11 @@
 <body>
 	<div class="wrapper">
 		<header class="header" id="home">
-			<div class="header__container container">
+			<div class="header__container container align-center">
 				<a href="/" class="header__logo logo" aria-label="Home" title="Home">
-					<img class="logo__img" width="160" height="33" src="./img/images/logo.svg" alt=""></a>
-				<div class="header__menu menu">
+					<img class="logo__img" width="160" height="33" src="./img/images/logo.svg" alt="">
+				</a>
+				<div class="header__menu menu align-center">
 					<div class="menu__icon"><span></span></div>
 					<nav class="menu__body">
 						<ul class="menu__list">
@@ -47,7 +48,7 @@
 					<div class="hero__row">
 						<div class="hero__col">
 							<div class="hero__image">
-								<img loading="lazy" src="./img/images/hero-img/hero-img.jpg" width="650" height="873" alt="hero section image">
+								<img src="./img/images/hero-img/hero-img.jpg" width="650" height="873" alt="hero section image">
 							</div>
 						</div>
 						<div class="hero__col align-center">
@@ -69,10 +70,10 @@
 
 			<section class="page__episodes episodes" id="episodes">
 				<div class="episodes__container container">
-					<div class="episodes__header">
+					<header class="episodes__header">
 						<h2 class="episodes__header-title">Latest episodes</h2>
 						<a href="#" class="episodes__header-link button">View all episodes</a>
-					</div>
+					</header>
 					<div class="episodes__row">
 						<div class="episodes__col">
 							<div class="episodes__col-border">
@@ -82,7 +83,7 @@
 								<div class="episodes__card card-episodes">
 									<div class="card-episodes__container">
 										<p class="card-episodes__top-title">Gear</p>
-										<p class="card-episodes__textblue">Episode <span>3</span></p>
+										<p class="card-episodes__text-blue text-blue">Episode <span>3</span></p>
 										<h3 class="card-episodes__title">Should you get outboard audio gear?</h3>
 										<p class="card-episodes__subtitle subtitle ellipsis-text">Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.</p>
 										<a href="#" class="card-episodes__button button">View Episode Details</a>
@@ -98,7 +99,7 @@
 								<div class="episodes__card card-episodes">
 									<div class="card-episodes__container">
 										<p class="card-episodes__top-title">Tips & Tricks</p>
-										<p class="card-episodes__textblue">Episode <span>2</span></p>
+										<p class="card-episodes__text-blue text-blue">Episode <span>2</span></p>
 										<h3 class="card-episodes__title">Mic tricks to take you to the next level</h3>
 										<p class="card-episodes__subtitle subtitle ellipsis-text">Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.</p>
 										<a href="#" class="card-episodes__button button">View Episode Details</a>
@@ -114,7 +115,7 @@
 								<div class="episodes__card card-episodes">
 									<div class="card-episodes__container">
 										<p class="card-episodes__top-title">Gear</p>
-										<p class="card-episodes__textblue">Episode <span>1</span></p>
+										<p class="card-episodes__text-blue text-blue">Episode <span>1</span></p>
 										<h3 class="card-episodes__title">The best microphone under $200</h3>
 										<p class="card-episodes__subtitle subtitle ellipsis-text">With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.</p>
 										<a href="#" class="card-episodes__button button">View Episode Details</a>
@@ -141,7 +142,7 @@
 									<div class="card-host__container">
 										<div class="card-host__arrow">
 										</div>
-										<div class="host__blue card-host__textblue textblue">Meet your host</div>
+										<div class="host__blue card-host__text-blue text-blue">Meet your host</div>
 										<h3 class="host__title card-host__title">Jacob Paulaner</h3>
 										<p class="host__subtitle card-host__subtitle subtitle">Jacob has a background in audio engineering, and has been podcasting since the early days.</p>
 										<p class="host__subtitle card-host__subtitle subtitle">He’s here to help you level up your game by sharing everything he’s learned along the way.</p>
@@ -156,12 +157,12 @@
 							<div class="subscribe__row">
 								<div class="subscribe__col">
 									<div class="subscribe__text">
-										<div class="subscribe__textblue textblue">Email Newsletter</div>
+										<div class="subscribe__text-blue text-blue">Email Newsletter</div>
 										<h3 class="subscribe__title">Subscribe for updates</h3>
 									</div>
 								</div>
 								<div class="subscribe__col">
-									<form class="subscribe__form form-subscribe" action="./php/">
+									<form class="subscribe__form form-subscribe align-center" action="./php/">
 										<input class="form-subscribe__form" type="text" id="name" name="name" placeholder="Name">
 										<input class="form-subscribe__form" type="email" id="email" name="email" placeholder="Email">
 										<button class="form-subscribe__button button-subscribe" type="submit">Submit</button>
@@ -173,102 +174,103 @@
 				</div>
 			</section>
 
-			<div class="page__reviews reviews">
+			<section class="page__reviews reviews">
+				<h2 class="visually-hidden">Student reviews</h2>
 				<div class="reviews__container container">
 					<ul class="reviews__list">
-						<li class="reviews__item item-reviews">
+						<li class="reviews__item">
 							<a href="#">
-								<div class="item-reviews__card">
-									<div class="item-reviews__icons">
+								<article class="reviews-card">
+									<div class="reviews-card__icons">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 									</div>
-									<div class="item-reviews__text">I can’t recommend this podcast enough</div>
-									<div class="item-reviews__autor">Betty Lacey</div>
-								</div>
+									<h3 class="reviews-card__title">I can’t recommend this podcast enough</h3>
+									<div class="reviews-card__autor">Betty Lacey</div>
+								</article>
 							</a>															
 						</li>
-						<li class="reviews__item item-reviews">
+						<li class="reviews__item">
 							<a href="#">
-								<div class="item-reviews__card">
-									<div class="item-reviews__icons">
+								<article class="reviews-card">
+									<div class="reviews-card__icons">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 									</div>
-									<div class="item-reviews__text">Jacob is the best in the business</div>
-									<div class="item-reviews__autor">Adam Driver</div>
-								</div>
+									<h3 class="reviews-card__title">Jacob is the best in the business</h3>
+									<div class="reviews-card__autor">Adam Driver</div>
+								</article>
 							</a>
 						</li>
-						<li class="reviews__item item-reviews">
+						<li class="reviews__item">
 							<a href="#">
-								<div class="item-reviews__card">
-									<div class="item-reviews__icons">
+								<article class="reviews-card">
+									<div class="reviews-card__icons">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 									</div>
-									<div class="item-reviews__text">A wealth of audio knowledge</div>
-									<div class="item-reviews__autor">Marcus Brown</div>
-								</div>
+									<h3 class="reviews-card__title">A wealth of audio knowledge</h3>
+									<div class="reviews-card__autor">Marcus Brown</div>
+								</article>
 							</a>
 						</li>
-						<li class="reviews__item item-reviews">
+						<li class="reviews__item">
 							<a href="#">
-								<div class="item-reviews__card">
-									<div class="item-reviews__icons">
+								<article class="reviews-card">
+									<div class="reviews-card__icons">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 									</div>
-									<div class="item-reviews__text">Every episode is a gem!</div>
-									<div class="item-reviews__autor">Jessica Knowl</div>
-								</div>
+									<h3 class="reviews-card__title">Every episode is a gem!</h3>
+									<div class="reviews-card__autor">Jessica Knowl</div>
+								</article>
 							</a>
 						</li>
-						<li class="reviews__item item-reviews">
+						<li class="reviews__item">
 							<a href="#">
-								<div class="item-reviews__card">
-									<div class="item-reviews__icons">
+								<article class="reviews-card">
+									<div class="reviews-card__icons">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 									</div>
-									<div class="item-reviews__text">Whoa whoa, let me take some notes!</div>
-									<div class="item-reviews__autor">Scott Adams</div>
-								</div>
+									<h3 class="reviews-card__title">Whoa whoa, let me take some notes!</h3>
+									<div class="reviews-card__autor">Scott Adams</div>
+								</article>
 							</a>
 						</li>
-						<li class="reviews__item item-reviews">
+						<li class="reviews__item">
 							<a href="#">
-								<div class="item-reviews__card">
-									<div class="item-reviews__icons">
+								<article class="reviews-card">
+									<div class="reviews-card__icons">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
 									</div>
-									<div class="item-reviews__text">I’ve upped my game considerably since I started listening</div>
-									<div class="item-reviews__autor">Steven Blast</div>
-								</div>
+									<h3 class="reviews-card__title">I’ve upped my game considerably since I started listening</h3>
+									<div class="reviews-card__autor">Steven Blast</div>
+								</article>
 							</a>
 						</li>
 					</ul>
 				</div>
-			</div>
+			</section>
 		</main>
 		
 		<footer class="footer" id="contact">

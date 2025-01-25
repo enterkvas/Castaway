@@ -1,10 +1,28 @@
 .subscribe {
-	padding-top: 7%;	
+	padding-top: 7%;
+	// margin-bottom: 8%;
+	// padding-block: 8%;
+	position: relative;
+	// background-color: var(--bg-black);	
+	
+	@media (width >= rem(768)) {
+		// padding-block: 6%;
+		// border-radius: clamp(1.375rem, 0.661rem + 1.49vw, 2rem);
+		// border-radius: clamp(0.75rem, -0.679rem + 2.98vw, 2rem);
+	}
+	@media (width >= rem(1440)) {
+		padding: rem(60);
+		// padding-block: rem(100);
+		// background-color: var(--bg-black);
+		// border-radius: 32px;
+	}
 	&::before {
 		@media (width >= rem(768)) {
 			content: "";
-			width: clamp(4.875rem, -0.054rem + 10.27vw, 9.188rem);
-			height: clamp(3rem, -0.071rem + 6.4vw, 5.688rem);
+			// width: clamp(4.875rem, -0.054rem + 10.27vw, 9.188rem);
+			width: fluid-mid(147,78);
+			// height: clamp(3rem, -0.071rem + 6.4vw, 5.688rem);
+			height: fluid-mid(91,48);
 			position: absolute;
 			bottom: -13%;
 			left: -2%;
@@ -17,16 +35,21 @@
 			left: -2%;
 		}
 	}
-	@media (width >= rem(768)) {
-		padding-block: 6%;
-		border-radius: clamp(1.375rem, 0.661rem + 1.49vw, 2rem);
-	}
-	@media (width >= rem(1440)) {padding-block: rem(60);}
 	&__container {
+		background-color: var(--bg-black);	
 		padding-inline: rem(15);
-		@media (width >= rem(768)) {padding-inline: rem(30);}
+		@media (width >= rem(768)) {
+			// padding-inline: rem(30);
+			// padding-top: 0;
+			padding: rem(30);
+			// border-radius: clamp(0.75rem, -0.679rem + 2.98vw, 2rem);
+			border-radius: fluid-mid(32,12);
+		}
 		@media (width >= rem(992)) {padding-inline: rem(40);}
-		@media (width >= rem(1440)) {padding-inline: rem(60);}
+		@media (width >= rem(1440)) {
+			// padding-inline: rem(60);
+			padding: rem(60);
+		}
 	}
 	&__row {
 		@media (width >= rem(768)) {
@@ -39,7 +62,7 @@
 		@media (width >= rem(768)) {width: 50%;}
 		@media (width >= rem(1440)) {width: auto;}
 	}
-	&__textblue {
+	&__text-blue {
 		display: inline-block;
 		padding-inline: rem(8);
 		margin-bottom: rem(20);
@@ -54,17 +77,20 @@
 		}
 	}
 	&__title {
-		margin-bottom: clamp(2.5rem, 1.605rem + 4.47vw, 3.75rem); // from 320 to 767
-		@include fluid-text(72,22);
+		// margin-bottom: clamp(2.5rem, 1.605rem + 4.47vw, 3.75rem); // from 320 to 767
+		margin-bottom: fluid-mobile(60,40);
+		// @include fluid-font(72,22);
+		font-size: fluid-full(72, 22);
 		line-height: 1.1;
-		letter-spacing: clamp(0.05rem, 0.013rem + 0.19vw, 0.18rem);
+		// letter-spacing: clamp(0.05rem, 0.013rem + 0.19vw, 0.18rem);
+		letter-spacing: fluid-full(2.88,0.8);
 		@media (width >= rem(768)) {
-			width: 80%;
+			// width: 80%;
 			margin: 0;
 		}
 		@media (width >= rem(1440)) {
 			margin-bottom: 0;
-			padding-right: rem(40);
+			padding-right: rem(44);
 		}
 	}
 }

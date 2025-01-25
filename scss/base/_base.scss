@@ -2,6 +2,7 @@ html {
 	scroll-behavior: smooth;
 	scroll-padding-top: var(--header-height);
 }
+
 html,
 body {
 	height: 100%;
@@ -11,12 +12,13 @@ body {
 	background-color: var(--bg);
 }
 body._lock {overflow: hidden;}
+
 img {
 	display: block;
 	width: 100%;
 	height: auto;
 }
-.none {display: none;}
+
 .wrapper {
 	min-height: 100vh;
 	display: flex;
@@ -25,26 +27,4 @@ img {
 
 .main {flex-grow: 1;}
 
-.align-center {
-	display: flex;
-	align-items: center;
-}
-.subtitle {
-	font-size: clamp(12px, 0.571rem + 0.89vw, 22px);
-	line-height: clamp(18px, 0.857rem + 1.34vw, 33px);
-	@media (width >= 768px) {color: var(--color-text-subtitle);}
-}
-.textblue {
-	color: var(--blue);
-	filter: saturate(200%);
-}
-// .text-short {
-// 	font-size: clamp(9px, 0.42rem + 0.71vw, 17px);
-// 	line-height: 1.6;
-// }
-.ellipsis-text {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-}
+p:not([class]):not(:last-child) {margin-bottom: 24px;}

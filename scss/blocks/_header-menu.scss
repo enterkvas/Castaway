@@ -1,7 +1,7 @@
 .menu {
   &__icon {
     position: absolute;
-    height: clamp(1.375rem, 1.151rem + 1.12vw, 1.688rem); // from 320 to 767
+    height: fluid-mobile(24,16);
     aspect-ratio: 4 / 3;
     right: rem(15);
     z-index: 6;
@@ -29,8 +29,8 @@
       top: 50%;
       height: 25%;
     }
-    &._active::before {transform: rotate(-45deg) translate(3px, -50%);}
-    &._active::after {transform: rotate(45deg) translate(-3px, -50%);}
+    &._active::before {transform: rotate(-45deg) translate(rem(3), -50%);}
+    &._active::after {transform: rotate(45deg) translate(rem(-3), -50%);}
 
     @media(min-width: rem(576)) {right: rem(20);}
     @media(min-width: rem(768)) {
@@ -80,40 +80,18 @@
     }    
   }
 
-  // &._active {
-    //     top: 0;
-    //     left: 0;
-    //     height: 100vh;
-    //     transition: all 0.5s ease 0s;
-    //     @media (min-width: 768px) {
-    //         top: 0;
-    //         left: 0;
-    //         height: auto;
-    //     }
-    // }
-    // &__item {
-    //     margin-left: clamp(15px, -0.045rem + 4.91vw, 70px); // from 320 to 1440;
-    //     &:not(:last-child) {
-    //         margin-bottom: clamp(60px, 1.96rem + 8.95vw, 100px); // from 320 to 767
-    //     }
-    //     @media (min-width: 768px) {
-    //         margin-left: 0;
-    //         line-height: 1.2;
-    //         &:not(:last-child) {margin-bottom: 0;}
-    //     }
-    // }
   &__link {
     display: block;
-    @include fluid-text-mobile(32, 24);
-    line-height: clamp(5rem, 3.568rem + 7.16vw, 7rem);
+    font-size: fluid-mobile(32,24);
+    line-height: fluid-mobile(112,80);
     color: var(--color-text);
     text-decoration: none;
     @media (width >= rem(768)) {
         display: inline-flex;
-        height: clamp(3.125rem, 1.911rem + 2.53vw, 4.188rem);
+        height: fluid-mid(67,50); // from 768 to 1440
         align-items: center;
-        @include fluid-text-desk-tope(17, 16);
-        line-height: clamp(1.375rem, 1.018rem + 0.74vw, 1.688rem);      
+        font-size: rem(17);
+        line-height: fluid-mid(27,22);     
         &:hover, &:active {color: var(--blue);}      
     }
   }
