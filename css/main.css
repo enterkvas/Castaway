@@ -296,25 +296,24 @@ p:not([class]):not(:last-child) {
 }
 .card-episodes__title {
   margin: 0 0 5%;
-  font-size: clamp(1.125rem, 0.3035714286rem + 4.1071428571vw, 4rem);
-  line-height: 1.1;
-  letter-spacing: clamp(0.16rem, 0.1911428571rem + -0.1557142857vw, 0.051rem);
+  font-size: clamp(1.125rem, 0.1406599553rem + 4.9217002237vw, 2.5rem);
+  line-height: 1.2351;
+  letter-spacing: clamp(0.051rem, 0.0198571429rem + 0.1557142857vw, 0.16rem);
 }
 @media (width >= 48rem) {
   .card-episodes__title {
     margin: 0;
+    font-size: clamp(1.75rem, -0.3214285714rem + 4.3154761905vw, 3.5625rem);
   }
 }
 @media (width >= 90rem) {
   .card-episodes__title {
     padding-right: 5.5625rem;
-    letter-spacing: 0.1625rem;
   }
 }
 .card-episodes__subtitle {
-  margin-bottom: 35%;
+  margin-bottom: 20%;
   -webkit-line-clamp: 3;
-  text-wrap: balance;
 }
 @media (width >= 36rem) {
   .card-episodes__subtitle {
@@ -997,14 +996,6 @@ p:not([class]):not(:last-child) {
     margin-bottom: 6.25rem;
   }
 }
-.page__reviews {
-  margin-bottom: 8%;
-}
-@media (width >= 90rem) {
-  .page__reviews {
-    margin-bottom: 6.25rem;
-  }
-}
 
 .reviews {
   padding-top: 8%;
@@ -1104,7 +1095,7 @@ p:not([class]):not(:last-child) {
 
 .episodes {
   position: relative;
-  padding-block: clamp(1.75rem, 0.4642857143rem + 6.4285714286vw, 6.25rem);
+  padding-block: clamp(1.25rem, -0.1785714286rem + 7.1428571429vw, 6.25rem);
   text-align: center;
 }
 @media (width >= 62rem) {
@@ -1148,6 +1139,7 @@ p:not([class]):not(:last-child) {
 @media (width >= 48rem) {
   .episodes__header-title {
     margin: 0;
+    font-weight: 400;
   }
 }
 .episodes__row {

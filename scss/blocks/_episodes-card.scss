@@ -79,23 +79,33 @@
 	&__title {
 		margin: 0 0 5%;
 		// @include fluid-font(64, 18);
-		font-size: fluid-full(64,18);
-		line-height: 1.1;
+		// font-size: fluid-full(64,18);
+		font-size: fluid-mobile(40,18);
+		// font-weight: 700;
+		line-height: 1.2351;
 		// letter-spacing: clamp(0.05rem, 0.013rem + 0.19vw, 0.18rem);
-		letter-spacing: fluid-full(0.816,2.56);
-		@media (width >= rem(768)) {margin: 0;}
+		letter-spacing: fluid-full(2.56,0.816);
+		@media (width >= rem(768)) {
+			margin: 0;
+			font-size: fluid-mid(57,28);
+			// font-weight: 400;
+		}
 		@media (width >= rem(1440)) {
 			padding-right: rem(89);
-			letter-spacing: rem(2.6);
+			// letter-spacing: rem(2.6);
 		}
 	}
 	&__subtitle {
-		margin-bottom: 35%;
+		// margin-bottom: 35%;
+		margin-bottom: 20%;
 		-webkit-line-clamp: 3;
 		// line-clamp: 3;
-		text-wrap: balance;
+		// text-wrap: balance;
 		@media (width >= rem(576)) {margin-bottom: 46%;}
-		@media (width >= rem(768)) {margin: 0;}
+		@media (width >= rem(768)) {
+			margin: 0;
+			// line-height: 1.2;
+		}
 		@media (width >= rem(1440)) {text-wrap: inherit;}												
 	}
 	&__button {
