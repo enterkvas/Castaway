@@ -37,9 +37,8 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			width: 62%;
+			width: 63%;
 			aspect-ratio: 1;
-			width: 62%;
 			transform: translate(24%, 24%);
 			background: url('../../img/icons/host-arrow/host-arrow.svg') no-repeat center center;
 			background-size: contain;
@@ -72,12 +71,12 @@
 	&__title {
 		margin-bottom: rem(32);
 		// font-size: clamp(1.125rem, 0.286rem + 4.2vw, 4.063rem);
-		font-size: fluid-full(64,18);
+		font-size: fluid-full(65,18);
 		line-height: calc(70.4 / 64);
 		// letter-spacing: clamp(0.05rem, 0.013rem + 0.19vw, 0.18rem);
 		letter-spacing: fluid-full(2.88,0.8);
 		@media (width >= rem(768)) {margin-bottom: rem(20);}	
-		@media (width >= rem(1440)) {margin-bottom: rem(28);}
+		@media (width >= rem(1440)) {margin-bottom: rem(32);}
 	}
     &__subtitle:not(:last-child) {
 		margin-bottom: rem(20);

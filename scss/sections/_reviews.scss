@@ -1,6 +1,6 @@
 .reviews {
     padding-top: 8%;
-    @media (width >= rem(1440)) {padding-top: rem(100);}
+    @media (width >= rem(1440)) {padding-block: rem(100);}
     &__container {
         // margin-inline: rem(15);
         padding-inline: rem(15);
@@ -16,7 +16,8 @@
         @media (width >= rem(576)) {
             grid-template-columns: 1fr 1fr;
             align-items: stretch;
-            gap: clamp(rem(12), 0.625rem + 0.35vw, rem(16));
+            // gap: clamp(rem(12), 0.625rem + 0.35vw, rem(16));
+            gap: clamp(0.75rem, 0.679rem + 0.36vw, 1rem);
         }
         @media (width >= rem(1024)) {grid-template-columns: repeat(3, 1fr);}
         // @media (width >= rem(1440)) {gap: rem(15);}

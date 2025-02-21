@@ -25,7 +25,6 @@
 		align-self: flex-start;
 		margin: 0 auto 5%;
 		padding: rem(4) rem(8);
-		// @include fluid-font(18,16);
 		font-size: fluid-full(18,16);
 		line-height: calc(27 / 18);
 		border-radius: rem(4);
@@ -43,12 +42,9 @@
 		align-self: flex-start;
 		padding: rem(4) rem(8);
 		margin: 0 auto 10%;
-		// @include fluid-font(17,15);
 		font-size: fluid-full(17,15);
 		line-height: calc(27 / 17);
 		border-radius: rem(4);
-		// color: var(--blue);
-		// filter: saturate(200%);
 		@media (width >= rem(375)) {margin: 0 auto 15%;}
 		@media (width >= rem(425)) {margin: 0 auto 19%;}
 		@media (width >= rem(768)) {			
@@ -56,56 +52,30 @@
 			padding: 0;
 		}
 		& span {
-			// margin-left: clamp(0.188rem, 0.152rem + 0.18vw, 0.313rem);
 			margin-left: fluid-full(5,3);
-			// @include fluid-font(18,16);
 			font-size: fluid-full(18,16);
-			line-height: calc(27 / 18);
-			// @media (width >= rem(375)) {font-size: rem(11);}
-			// @media (width >= rem(425)) {font-size: rem(12);}
-			// @media (width >= rem(576)) {font-size: rem(13);}
-			// @media (width >= rem(768)) {margin: 0 0 0 rem(2);}
-			// @media (width >= rem(992)) {
-			// 	margin: 0 0 0 rem(3);
-				// font-size: rem(15);
-			// }
-			// @media (width >= rem(1190)) {font-size: rem(17);}
-			// @media (width >= rem(1440)) {
-				// margin-left: rem(5);
-				// font-size: rem(18);
-			// }			
+			line-height: calc(27 / 18);			
 		}
 	}
 	&__title {
 		margin: 0 0 5%;
-		// @include fluid-font(64, 18);
-		// font-size: fluid-full(64,18);
 		font-size: fluid-mobile(40,18);
-		// font-weight: 700;
 		line-height: 1.2351;
-		// letter-spacing: clamp(0.05rem, 0.013rem + 0.19vw, 0.18rem);
 		letter-spacing: fluid-full(2.56,0.816);
 		@media (width >= rem(768)) {
 			margin: 0;
 			font-size: fluid-mid(57,28);
-			// font-weight: 400;
 		}
 		@media (width >= rem(1440)) {
-			padding-right: rem(89);
-			// letter-spacing: rem(2.6);
+			// padding-right: rem(159);
+			max-width: rem(619);
 		}
 	}
 	&__subtitle {
-		// margin-bottom: 35%;
 		margin-bottom: 20%;
 		-webkit-line-clamp: 3;
-		// line-clamp: 3;
-		// text-wrap: balance;
 		@media (width >= rem(576)) {margin-bottom: 46%;}
-		@media (width >= rem(768)) {
-			margin: 0;
-			// line-height: 1.2;
-		}
+		@media (width >= rem(768)) {margin: 0;}
 		@media (width >= rem(1440)) {text-wrap: inherit;}												
 	}
 	&__button {

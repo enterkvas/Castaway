@@ -23,9 +23,9 @@
 			margin-bottom: rem(40);
 			text-align: left;
 		}
-		@media (width >= rem(992)) {margin-bottom: rem(60);}
-		@media (width >= rem(1190)) {margin-bottom: rem(80);}
-		@media (width >= rem(1440)) {margin-bottom: rem(100);}
+		@media (width >= rem(992)) {margin-bottom: rem(0);}
+		// @media (width >= rem(1190)) {margin-bottom: rem(80);}
+		// @media (width >= rem(1440)) {margin-bottom: rem(100);}
 	}
 	// &__reviews {
 	// 	margin-bottom: 8%;

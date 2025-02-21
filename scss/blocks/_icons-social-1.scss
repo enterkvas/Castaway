@@ -1,20 +1,22 @@
-.icons-social-1 {
-	display: flex;
-	justify-content: space-between;
-	@media (width >= rem(576)) {
+.soc1als-1 {
+	&__list {
+		display: flex;
 		justify-content: space-around;
+		@media (width >= rem(576)) {
+		}
+		@media (width >= rem(768)) {
+			justify-content: start;
+			column-gap: rem(20);
+		}
+		@media (width >= rem(992)) {
+			// column-gap: rem(22);
+			// column-gap: fluid-mid_2(28,22);
+			column-gap: rem(17.34);
+		}
 	}
-	@media (width >= rem(768)) {
-		// justify-content: normal;
-		justify-content: start;
-		// column-gap: rem(17);
-		column-gap: rem(40);
-	}
-	@media (width >= rem(992)) {
-		// column-gap: rem(22);
-		column-gap: fluid-mid_2(28,22);
-	}
-	&__icon {
+	
+	&__link {
+		display: inline-block;
 		width: fluid-full(32,22);
 	}
 }

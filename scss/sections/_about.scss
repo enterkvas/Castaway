@@ -3,16 +3,16 @@
 	@media (width >= rem(768)) {padding-block: rem(40);}
 	@media (width >= rem(992)) {padding-block: rem(60);}
 	@media (width >= 1190px) {padding-block: rem(80);}
-	@media (width >= rem(14440)) {padding-block: rem(100);}
+	@media (width >= rem(1440)) {padding-block: rem(100);}
 	&__host {
 		position: relative;
 		@media (width >= rem(768)) {
 			position: static;
-			margin-bottom: rem(40);
+			// margin-bottom: rem(40);
 		}
-		@media (width >= rem(992)) {margin-bottom: rem(60);}
-		@media (width >= rem(1190)) {margin-bottom: rem(80);}
-		@media (width >= rem(14440)) {margin-bottom: rem(100);}
+		// @media (width >= rem(992)) {margin-bottom: rem(60);}
+		// @media (width >= rem(1190)) {margin-bottom: rem(80);}
+		// @media (width >= rem(1440)) {margin-bottom: rem(100);}
 	}
 	&__subscribe {
 		position: relative;
