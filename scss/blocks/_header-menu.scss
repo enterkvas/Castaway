@@ -75,7 +75,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        column-gap: rem(40);
+        // column-gap: rem(40);
         padding: 0;
     }    
   }
@@ -88,7 +88,8 @@
     text-decoration: none;
     @media (width >= rem(768)) {
         display: inline-flex;
-        height: fluid-mid(67,50); // from 768 to 1440
+        // height: fluid-mid(67,50); // from 768 to 1440
+        padding: 20px;
         align-items: center;
         font-size: rem(17);
         line-height: fluid-mid(27,22);     
