@@ -17,7 +17,9 @@
 		row-gap:  fluid-mobile-add(40,20);
 		//margin-bottom: clamp(20px, 0.654rem + 2.98vw, 40px); // from 320px to 991px
 		// margin-bottom: clamp(1.25rem, 0.654rem + 2.98vw, 2.5rem);
-		margin-bottom: fluid-mobile-add(40,20);		
+		// margin-bottom: fluid-mobile-add(40,30);
+		margin-bottom: fluid-mobile-add(40,30);		
+
 		@media (width >= rem(992)) {
 			position: relative;
 			display: flex;
@@ -39,7 +41,10 @@
 		display: flex;
 		//column-gap: clamp(44px, -4.433rem + 35.92vw, 285px); // from 320 to 991
 		// column-gap: clamp(2.75rem, -4.433rem + 35.92vw, 17.813rem);
-		column-gap: fluid-mobile-add(285,44);
+		align-items: center;
+		column-gap: fluid-mobile-add(285,28);
+		@media (width >= rem(576)) {column-gap: fluid-mobile-add(285,30);}
+		@media (width >= rem(768)) {column-gap: fluid-mobile-add(285,40);}
 		@media (width >= rem(992)) {display: block;}
 	}
 	&__logo {
@@ -51,17 +56,17 @@
 		}
 		@media (width >= rem(992)) {margin-bottom: rem(20);}
 	}
-	&__icons-1 {
+	&__soc1als-1 {
 		@media (width >= rem(992)) {
 			position: absolute;
 			top: 19%;
 			right: 5%;
 		}
 		@media (width >= rem(1200)) {top: 21%;}
-		@media (width >= rem(1440)) {right: 20%;}
+		@media (width >= rem(1440)) {right: 15%;}
 		@media (width >= rem(2200)) {right: 30%;}
 	}
-	&__icons-2 {
+	&__soc1als-2 {
 		display: flex;
 		//column-gap: clamp(30px, 1.279rem + 2.98vw, 50px); // from 320 to 991
 		// column-gap: clamp(1.875rem, 1.279rem + 2.98vw, 3.125rem);

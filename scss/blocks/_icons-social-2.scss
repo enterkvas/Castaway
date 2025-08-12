@@ -1,4 +1,11 @@
-.soc1als-2__link {
-	display: inline-flex;
-	width: fluid-full(24,16);
+.soc1als-2 {
+	&__list {
+		display: flex;
+		column-gap: rem(10);
+	}
+	&__link {
+		display: inline-flex;
+		width: fluid-full(24,16);
+	}
+
 }

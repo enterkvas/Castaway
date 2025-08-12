@@ -37,7 +37,9 @@
 	-webkit-box-orient: vertical;
 }
 // Service selectors:
-.none {display: none;}
+.none {
+	display: none !important;
+}
 // * {
 // 	outline: 1px solid red !important;
 // }

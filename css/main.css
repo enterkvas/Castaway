@@ -125,7 +125,7 @@ p:not([class]):not(:last-child) {
 }
 
 .none {
-  display: none;
+  display: none !important;
 }
 
 :root {
@@ -168,7 +168,7 @@ p:not([class]):not(:last-child) {
   display: none;
   position: fixed;
   bottom: 2.5rem;
-  right: 1.875rem;
+  right: 0.9375rem;
   width: 3.125rem;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -411,7 +411,7 @@ p:not([class]):not(:last-child) {
   left: 0;
   width: 63%;
   aspect-ratio: 1;
-  transform: translate(24%, 24%);
+  transform: translate(30%, 30%);
   background: url("../../img/icons/host-arrow/host-arrow.svg") no-repeat center center;
   background-size: contain;
 }
@@ -515,7 +515,7 @@ p:not([class]):not(:last-child) {
 .footer__row {
   display: grid;
   row-gap: clamp(1.25rem, 0.6538748137rem + 2.9806259314vw, 2.5rem);
-  margin-bottom: clamp(1.25rem, 0.6538748137rem + 2.9806259314vw, 2.5rem);
+  margin-bottom: clamp(1.875rem, 1.5769374069rem + 1.4903129657vw, 2.5rem);
 }
 @media (width >= 62rem) {
   .footer__row {
@@ -539,7 +539,18 @@ p:not([class]):not(:last-child) {
 }
 .footer__col {
   display: flex;
-  column-gap: clamp(2.75rem, -4.4333084948rem + 35.9165424739vw, 17.8125rem);
+  align-items: center;
+  column-gap: clamp(1.75rem, -5.9102086438rem + 38.3010432191vw, 17.8125rem);
+}
+@media (width >= 36rem) {
+  .footer__col {
+    column-gap: clamp(1.875rem, -5.7255961252rem + 38.0029806259vw, 17.8125rem);
+  }
+}
+@media (width >= 48rem) {
+  .footer__col {
+    column-gap: clamp(2.5rem, -4.802533532rem + 36.5126676602vw, 17.8125rem);
+  }
 }
 @media (width >= 62rem) {
   .footer__col {
@@ -560,33 +571,33 @@ p:not([class]):not(:last-child) {
   }
 }
 @media (width >= 62rem) {
-  .footer__icons-1 {
+  .footer__soc1als-1 {
     position: absolute;
     top: 19%;
     right: 5%;
   }
 }
 @media (width >= 75rem) {
-  .footer__icons-1 {
+  .footer__soc1als-1 {
     top: 21%;
   }
 }
 @media (width >= 90rem) {
-  .footer__icons-1 {
-    right: 20%;
+  .footer__soc1als-1 {
+    right: 15%;
   }
 }
 @media (width >= 137.5rem) {
-  .footer__icons-1 {
+  .footer__soc1als-1 {
     right: 30%;
   }
 }
-.footer__icons-2 {
+.footer__soc1als-2 {
   display: flex;
   column-gap: clamp(1.875rem, 1.2788748137rem + 2.9806259314vw, 3.125rem);
 }
 @media (width >= 62rem) {
-  .footer__icons-2 {
+  .footer__soc1als-2 {
     column-gap: 0.625rem;
   }
 }
@@ -604,7 +615,21 @@ p:not([class]):not(:last-child) {
   font-size: clamp(0.9375rem, 0.9017857143rem + 0.1785714286vw, 1.0625rem);
 }
 .nav-footer__link {
+  display: inline-flex;
+  padding-block: 1.25rem;
+  height: clamp(2rem, 2.0892857143rem + -0.4464285714vw, 1.6875rem);
   color: var(--color-text);
+}
+@media (width >= 48rem) {
+  .nav-footer__link {
+    padding-block: 0;
+    margin-bottom: 0.625rem;
+    height: 1.6875rem;
+    line-height: clamp(1.375rem, 1.0178571429rem + 0.744047619vw, 1.6875rem);
+  }
+  .nav-footer__link:hover, .nav-footer__link:active {
+    color: var(--blue);
+  }
 }
 
 .form-subscribe {
@@ -798,6 +823,9 @@ p:not([class]):not(:last-child) {
   top: 50%;
   transform: translate(0, -50%);
 }
+.menu__icon._active {
+  top: 50%;
+}
 .menu__icon._active span {
   transform: scale(0) translate(0, -50%);
 }
@@ -864,6 +892,11 @@ p:not([class]):not(:last-child) {
     padding: 0;
   }
 }
+@media (width >= 48rem) {
+  .menu__item:last-child .menu__link {
+    padding-right: 0;
+  }
+}
 .menu__link {
   display: block;
   font-size: clamp(1.5rem, 1.1420581655rem + 1.7897091723vw, 2rem);
@@ -874,8 +907,8 @@ p:not([class]):not(:last-child) {
 @media (width >= 48rem) {
   .menu__link {
     display: inline-flex;
-    padding: 20px;
     align-items: center;
+    padding: 1.25rem;
     font-size: 1.0625rem;
     line-height: clamp(1.375rem, 1.0178571429rem + 0.744047619vw, 1.6875rem);
   }
@@ -886,17 +919,17 @@ p:not([class]):not(:last-child) {
 
 .soc1als-1__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  column-gap: 10%;
 }
 @media (width >= 48rem) {
   .soc1als-1__list {
-    justify-content: start;
-    column-gap: 1.25rem;
+    column-gap: 5%;
   }
 }
 @media (width >= 62rem) {
   .soc1als-1__list {
-    column-gap: 1.08375rem;
+    column-gap: 1.25rem;
   }
 }
 .soc1als-1__link {
@@ -904,6 +937,10 @@ p:not([class]):not(:last-child) {
   width: clamp(1.375rem, 1.1964285714rem + 0.8928571429vw, 2rem);
 }
 
+.soc1als-2__list {
+  display: flex;
+  column-gap: 0.625rem;
+}
 .soc1als-2__link {
   display: inline-flex;
   width: clamp(1rem, 0.8571428571rem + 0.7142857143vw, 1.5rem);
@@ -1075,7 +1112,7 @@ p:not([class]):not(:last-child) {
 }
 @media (width >= 90rem) {
   .episodes__header {
-    margin-bottom: 4.125rem;
+    margin-bottom: 2.5rem;
   }
 }
 .episodes__header-title {
