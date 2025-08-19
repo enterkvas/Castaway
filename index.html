@@ -7,7 +7,6 @@
 	<link rel="shortcut icon" href="img/favicons/favicon-48x48.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" type="image/png">
 	<title>Castaway project</title>
-	<!-- <link href="https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap" rel="stylesheet" type="text/css"> -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
@@ -42,6 +41,7 @@
 
 		<main class="main page page__container container">
 			<h1 class="visually-hidden" id="hero-title">Podcast Studio</h1>
+
 			<section class="page__hero hero" aria-labelledby="hero-title">
 				<div class="hero__row">
 					<div class="hero__col">
@@ -266,7 +266,7 @@
 				<div class="host__row">
 					<div class="host__col">
 						<div class="host__image">
-							<img loading="lazy" src="./img/images/about-img/host/host.jpg" width="650" height="743" alt="picture of an about block">
+							<img loading="lazy" src="./img/images/host/host.jpg" width="650" height="743" alt="picture of an about block">
 						</div>
 					</div>
 					<div class="host__col">
@@ -297,8 +297,8 @@
 						</div>
 						<div class="subscribe__col">
 							<form class="subscribe__form form-subscribe align-center" action="./php/">
-								<input class="form-subscribe__form" type="text" id="name" name="name" placeholder="Name">
-								<input class="form-subscribe__form" type="email" id="email" name="email" placeholder="Email">
+								<input class="form-subscribe__form" type="text" id="name" name="name" placeholder="Name" autocomplete="given-name">
+								<input class="form-subscribe__form" type="email" id="email" name="email" placeholder="Email" autocomplete="off">
 								<button class="form-subscribe__button button-subscribe" type="submit">Submit</button>
 							</form>
 						</div>
@@ -314,16 +314,11 @@
 							<a href="#">
 								<article class="reviews-card">
 									<div class="reviews-card__rating  rating-view" aria-label="Rating 5 star" title="Rating 5 star">
-										<!-- <img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star"> -->
 										<div class="rating-view__star is-active"></div>
 										<div class="rating-view__star is-active"></div>
 										<div class="rating-view__star is-active"></div>
 										<div class="rating-view__star is-active"></div>
-										<div class="rating-view__star is-active"></div>
+										<div class="rating-view__star"></div>
 									</div>
 									<blockquote class="reviews-card__description"><p>I can’t recommend this podcast enough</p></blockquote>
 									<p class="reviews-card__author">Betty Lacey</p>
@@ -334,16 +329,11 @@
 							<a href="#">
 								<article class="reviews-card">
 									<div class="reviews-card__rating  rating-view" aria-label="Rating 5 star" title="Rating 5 star">
-										<!-- <img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star"> -->
 										<div class="rating-view__star is-active"></div>
 										<div class="rating-view__star is-active"></div>
 										<div class="rating-view__star is-active"></div>
-										<div class="rating-view__star is-active"></div>
-										<div class="rating-view__star is-active"></div>
+										<div class="rating-view__star"></div>
+										<div class="rating-view__star"></div>
 									</div>
 									<blockquote class="reviews-card__description"><p>Jacob is the best in the business</p></blockquote>
 									<p class="reviews-card__author">Adam Driver</p>
@@ -354,16 +344,11 @@
 							<a href="#">
 								<article class="reviews-card">
 									<div class="reviews-card__rating  rating-view" aria-label="Rating 5 star" title="Rating 5 star">
-										<!-- <img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star"> -->
 										<div class="rating-view__star is-active"></div>
 										<div class="rating-view__star is-active"></div>
-										<div class="rating-view__star is-active"></div>
-										<div class="rating-view__star is-active"></div>
-										<div class="rating-view__star is-active"></div>
+										<div class="rating-view__star"></div>
+										<div class="rating-view__star"></div>
+										<div class="rating-view__star"></div>
 									</div>
 									<blockquote class="reviews-card__description"><p>A wealth of audio knowledge</p></blockquote>
 									<p class="reviews-card__author">Marcus Brown</p>
@@ -374,11 +359,6 @@
 							<a href="#">
 								<article class="reviews-card">
 									<div class="reviews-card__rating  rating-view" aria-label="Rating 5 star" title="Rating 5 star">
-										<!-- <img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star"> -->
 										<div class="rating-view__star is-active"></div>
 										<div class="rating-view__star is-active"></div>
 										<div class="rating-view__star is-active"></div>
@@ -394,16 +374,11 @@
 							<a href="#">
 								<article class="reviews-card">
 									<div class="reviews-card__rating  rating-view" aria-label="Rating 5 star" title="Rating 5 star">
-										<!-- <img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star"> -->
 										<div class="rating-view__star is-active"></div>
-										<div class="rating-view__star is-active"></div>
-										<div class="rating-view__star is-active"></div>
-										<div class="rating-view__star is-active"></div>
-										<div class="rating-view__star is-active"></div>
+										<div class="rating-view__star"></div>
+										<div class="rating-view__star"></div>
+										<div class="rating-view__star"></div>
+										<div class="rating-view__star"></div>
 									</div>
 									<blockquote class="reviews-card__description"><p>Whoa whoa, let me take some notes!</p></blockquote>
 									<p class="reviews-card__author">Scott Adams</p>
@@ -414,16 +389,11 @@
 							<a href="#">
 								<article class="reviews-card">
 									<div class="reviews-card__rating  rating-view" aria-label="Rating 5 star" title="Rating 5 star">
-										<!-- <img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
-										<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star"> -->
 										<div class="rating-view__star is-active"></div>
 										<div class="rating-view__star is-active"></div>
 										<div class="rating-view__star is-active"></div>
 										<div class="rating-view__star is-active"></div>
-										<div class="rating-view__star is-active"></div>
+										<div class="rating-view__star"></div>
 									</div>
 									<blockquote class="reviews-card__description"><p>I’ve upped my game considerably since I started listening</p></blockquote>
 									<p class="reviews-card__author">Steven Blast</p>
@@ -434,13 +404,13 @@
 				</div>
 			</section>
 		</main>
-		
+	
 		<footer class="footer" id="contact">
 			<div class="footer__container container">
 				<div class="footer__row">
 					<div class="footer__col">
 						<a href="/" class="footer__logo logo">
-							<img loading="lazy" src="./img/images/footer-logo.png" width="223" height="46" alt="logo picture">
+							<img loading="lazy" src="./img/images/footer/footer-logo.png" width="223" height="46" alt="logo picture">
 						</a>
 						<div class="footer__soc1als-2 soc1als-2">
 							<ul class="soc1als-2__list">
@@ -486,9 +456,6 @@
 									</a>
 								</li>
 							</ul>
-							<!-- <a href="#"><img loading="lazy" src="./img/icons/icons-social/icons-social-2/insta-icon.svg" target="_blank" alt="image instagram"></a>
-							<a href="#"><img loading="lazy" src="./img/icons/icons-social/icons-social-2/twitter-icon.svg" target="_blank" alt="image twitter"></a>
-							<a href="#"><img loading="lazy" src="./img/icons/icons-social/icons-social-2/facebook-icon.svg" target="_blank" alt="image facebook"></a> -->
 						</div>
 					</div>
 					<div class="footer__col">
@@ -656,11 +623,6 @@
 							</a>
 						</li>
 					</ul>
-					<!-- <a href="#"><img class="icons-soc1al-1__icon" loading="lazy" src="././img/icons/icons-social/icons-social-1/icon-1.png" target="_blank" width="32" height="32" alt="icon image_1"></a>
-					<a href="#"><img class="icons-soc1al-1__icon" loading="lazy" src="././img/icons/icons-social/icons-social-1/icon-2.png" target="_blank" width="32" height="32" alt="icon image_2"></a>
-					<a href="#"><img class="icons-soc1al-1__icon" loading="lazy" src="././img/icons/icons-social/icons-social-1/icon-3.png" target="_blank" width="32" height="32" alt="icon image_3"></a>
-					<a href="#"><img class="icons-soc1al-1__icon" loading="lazy" src="././img/icons/icons-social/icons-social-1/icon-4.png" target="_blank" width="32" height="32" alt="icon image_4"></a>
-					<a href="#"><img class="icons-soc1al-1__icon" loading="lazy" src="././img/icons/icons-social/icons-social-1/icon-5.png" target="_blank" width="32" height="32" alt="icon image_5"></a> -->
 				</div>
 			</div>
 		</footer>

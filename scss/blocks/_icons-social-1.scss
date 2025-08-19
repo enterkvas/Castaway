@@ -1,23 +1,11 @@
 .soc1als-1 {
 	&__list {
 		display: flex;
-		// justify-content: space-around;
 		justify-content: flex-start;
 		column-gap: 10%;
-		@media (width >= rem(576)) {
-		}
-		@media (width >= rem(768)) {
-			column-gap: 5%;
-		}
-		@media (width >= rem(992)) {
-			// column-gap: rem(22);
-			// column-gap: fluid-mid_2(28,22);
-			// column-gap: rem(17.34);
-			column-gap: rem(20);
-
-		}
-	}
-	
+		@media (width >= rem(768)) {column-gap: 5%;}
+		@media (width >= rem(992)) {column-gap: rem(20);}
+	}	
 	&__link {
 		display: inline-block;
 		width: fluid-full(32,22);

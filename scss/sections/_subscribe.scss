@@ -1,21 +1,15 @@
 .subscribe {
 	position: relative;	
-	// @media (width >= rem(768)) {padding-block: rem(40);}
-	// @media (width >= rem(992)) {padding-block: rem(60);}
-	// @media (width >= 1190px) {padding-block: rem(80);}
-	// @media (width >= rem(1440)) {padding-block: rem(100);}
 	padding-block: fluid-full(100,20);
-	// @media (width >= rem(1440)) {padding-top: rem(100);}
 	&::before {
 		@media (width >= rem(768)) {
 			content: "";
 			width: fluid-mid(147,78);
 			height: fluid-mid(91,48);
 			position: absolute;
-			// bottom: -12%;
 			bottom: 7%;
 			left: -2%;
-			background-image: url('../img/images/about-img/subscribe.svg');
+			background-image: url('../img/images/subscribe/subscribe.svg');
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
@@ -24,22 +18,11 @@
 		padding-top: fluid-mobile(40,20);
 		padding-inline: rem(15);
 		@media (width >= rem(576)) {padding-inline: rem(20);}
-		// @media (width >= rem(768)) {padding-inline: rem(40);}
-		// @media (width >= rem(992)) {padding-inline: rem(50);}
-		// @media (width >= rem(1190)) {padding-inline: rem(60);}
-		// @media (width >= rem(1440)) {padding-inline: rem(70);}
 		background-color: var(--bg-black);	
 		@media (width >= rem(768)) {
-			// padding: rem(30);
 			padding: fluid-mid(60,40);
 			border-radius: fluid-mid(32,12);
 		}
-		// @media (width >= rem(992)) {padding-inline: rem(40);}
-		// @media (width >= rem(768)) {padding-inline: rem(40);}
-		// @media (width >= rem(1440)) {padding: rem(60);}
-		// @media (width >= rem(768)) {padding-block: rem(40);}
-		// @media (width >= rem(768)) {padding: fluid-size(60,40);} 
-
 	}
 	&__row {
 		@media (width >= rem(768)) {
@@ -54,9 +37,7 @@
 	}
 	&__text {
 		text-align: center;
-		@media (width >= rem(768)) {
-			text-align: left;
-		}
+		@media (width >= rem(768)) {text-align: left;}
 	}
 	&__text-blue {
 		display: inline-block;

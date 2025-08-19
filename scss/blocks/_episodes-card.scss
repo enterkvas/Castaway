@@ -66,10 +66,7 @@
 			margin: 0;
 			font-size: fluid-mid(57,28);
 		}
-		@media (width >= rem(1440)) {
-			// padding-right: rem(159);
-			max-width: rem(619);
-		}
+		@media (width >= rem(1440)) {max-width: rem(619);}
 	}
 	&__subtitle {
 		margin-bottom: 20%;

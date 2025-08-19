@@ -628,3 +628,28 @@ display: flex; подогнать;
 в) Локализовал баг: нажал в браузере, проверил: в каком файле находится причина (т.к. есть 2 файла episodes: _episodes.scss и _episodes-card.scss). Обнаружил, что баг - в файле  _episodes-card.scss 
 г) зашёл в редакторе в этот файл, сразу ввёл в поиске: 576 и... - единственное место в файле показало строку: @media (width >= rem(576)) {margin-bottom: 46%;} Закомментировал её и - баг исчез.
 
+!!!!!	Вариант на всякий случай для звёздного рейтинга(закомментированный):
+
+	<div class="reviews-card__rating  rating-view" aria-label="Rating 5 star" title="Rating 5 star">
+		<!-- <img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
+		<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
+		<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
+		<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star">
+		<img loading="lazy" src="./img/icons/review-stars/star.png" width="18" height="17" alt="image of a star" class="card__star"> -->
+		<div class="rating-view__star is-active"></div>
+		<div class="rating-view__star is-active"></div>
+		<div class="rating-view__star is-active"></div>
+		<div class="rating-view__star is-active"></div>
+		<div class="rating-view__star"></div>
+	</div>
+
+
+!!!!!	Вариант на всякий случай социальных иконок (которых 5 штук) в png:
+
+		<!-- <a href="#"><img class="icons-soc1al-1__icon" loading="lazy" src="././img/icons/icons-social/icons-social-1/icon-1.png" target="_blank" width="32" height="32" alt="icon image_1"></a>
+	<a href="#"><img class="icons-soc1al-1__icon" loading="lazy" src="././img/icons/icons-social/icons-social-1/icon-2.png" target="_blank" width="32" height="32" alt="icon image_2"></a>
+	<a href="#"><img class="icons-soc1al-1__icon" loading="lazy" src="././img/icons/icons-social/icons-social-1/icon-3.png" target="_blank" width="32" height="32" alt="icon image_3"></a>
+	<a href="#"><img class="icons-soc1al-1__icon" loading="lazy" src="././img/icons/icons-social/icons-social-1/icon-4.png" target="_blank" width="32" height="32" alt="icon image_4"></a>
+	<a href="#"><img class="icons-soc1al-1__icon" loading="lazy" src="././img/icons/icons-social/icons-social-1/icon-5.png" target="_blank" width="32" height="32" alt="icon image_5"></a> -->
+
+

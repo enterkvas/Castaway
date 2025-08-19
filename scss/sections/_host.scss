@@ -1,20 +1,7 @@
 .host {
 	position: relative;
-		@media (width >= rem(768)) {
-			position: static;
-			// margin-bottom: rem(40);
-		}
+		@media (width >= rem(768)) {position: static;}
 	padding-block: fluid-full(100,20);
-	// padding-top: 8%;
-	// @media (width >= rem(768)) {padding-block: rem(40);}
-	// @media (width >= rem(992)) {padding-block: rem(60);}
-	// @media (width >= 1190px) {padding-block: rem(80);}
-	// @media (width >= rem(1440)) {padding-block: rem(100);}
-	// padding-top: 8%;
-	// @media (width >= 768px) {padding-bottom: 40px;}
-	// @media (width >= 992px) {padding-bottom: 60px;}
-	// @media (width >= 1190px) {padding-bottom: 80px;}
-	// @media (width >= 1440px) {padding-bottom: 100px;}
 	border-radius: fluid-mobile(32,12);
 	&__row {
 		@media (width >= rem(768)) {

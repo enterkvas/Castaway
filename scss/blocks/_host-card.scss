@@ -26,7 +26,6 @@
 		display: none;
 		@media (width >= rem(768)) {
 			position: relative;
-			// width: clamp(3.75rem, 0.036rem + 7.74vw, 7rem);
 			width: fluid-mid(112,60);
 			aspect-ratio: 1;
 			background-color: var(--color-active);
@@ -57,10 +56,8 @@
 
     &__text-blue {
         display: inline-block;
-		// margin: 0 auto 30%;
 		margin: 0 auto 50%;
         padding-inline: rem(8);
-		// @include fluid-font(18,15);
 		font-size: fluid-full(18, 15);
 		line-height: calc(27 / 18);
         border-radius: rem(2);
@@ -73,10 +70,8 @@
 	}
 	&__title {
 		margin-bottom: rem(32);
-		// font-size: clamp(1.125rem, 0.286rem + 4.2vw, 4.063rem);
 		font-size: fluid-full(65,18);
 		line-height: calc(70.4 / 64);
-		// letter-spacing: clamp(0.05rem, 0.013rem + 0.19vw, 0.18rem);
 		letter-spacing: fluid-full(2.88,0.8);
 		@media (width >= rem(768)) {margin-bottom: rem(20);}	
 		@media (width >= rem(1440)) {margin-bottom: rem(32);}
