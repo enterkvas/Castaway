@@ -57,15 +57,15 @@
 
     &__text-blue {
         display: inline-block;
-		margin: 0 auto 30%;
+		// margin: 0 auto 30%;
+		margin: 0 auto 50%;
         padding-inline: rem(8);
 		// @include fluid-font(18,15);
 		font-size: fluid-full(18, 15);
 		line-height: calc(27 / 18);
         border-radius: rem(2);
         background-color: var(--bg);
-		@media (width >= rem(425)) {margin: 0 auto 45%;}
-		@media (width >= rem(576)) {margin: 0 auto 75%;}
+		@media (width >= rem(425)) {margin: 0 auto 65%;}
 		@media (width >= rem(768)) {
 			padding: 0;
 			margin: 0;

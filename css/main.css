@@ -153,13 +153,18 @@ p:not([class]):not(:last-child) {
 
 .button-subscribe {
   padding-block: clamp(0.1875rem, -0.3125rem + 1.0416666667vw, 0.625rem);
-  padding-inline: clamp(0.375rem, -0.625rem + 2.0833333333vw, 1.25rem);
+  padding-inline: clamp(0.9375rem, 0.5803571429rem + 0.744047619vw, 1.25rem);
   font-size: clamp(0.625rem, 0.5357142857rem + 0.4464285714vw, 0.9375rem);
   font-weight: 700;
   line-height: 1.92;
   border-radius: clamp(0.125rem, 0.0535714286rem + 0.3571428571vw, 0.375rem);
   color: var(--color-text-subtitle);
   background-color: var(--blue);
+}
+@media (width >= 48rem) {
+  .button-subscribe {
+    padding-inline: clamp(0.625rem, -0.0892857143rem + 1.4880952381vw, 1.25rem);
+  }
 }
 
 /* Button "Up": */
@@ -429,7 +434,7 @@ p:not([class]):not(:last-child) {
 }
 .card-host__text-blue {
   display: inline-block;
-  margin: 0 auto 30%;
+  margin: 0 auto 50%;
   padding-inline: 0.5rem;
   font-size: clamp(0.9375rem, 0.8839285714rem + 0.2678571429vw, 1.125rem);
   line-height: 1.5;
@@ -438,12 +443,7 @@ p:not([class]):not(:last-child) {
 }
 @media (width >= 26.5625rem) {
   .card-host__text-blue {
-    margin: 0 auto 45%;
-  }
-}
-@media (width >= 36rem) {
-  .card-host__text-blue {
-    margin: 0 auto 75%;
+    margin: 0 auto 65%;
   }
 }
 @media (width >= 48rem) {
@@ -1391,8 +1391,9 @@ p:not([class]):not(:last-child) {
   }
 }
 .subscribe__container {
-  background-color: var(--bg-black);
+  padding-top: clamp(1.25rem, 0.3551454139rem + 4.4742729306vw, 2.5rem);
   padding-inline: 0.9375rem;
+  background-color: var(--bg-black);
 }
 @media (width >= 36rem) {
   .subscribe__container {
