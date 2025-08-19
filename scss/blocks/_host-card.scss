@@ -8,6 +8,8 @@
 	@media (width >= rem(1440)) {margin-top: rem(-16);}
     @media (width >= rem(1440)) {max-width: rem(590);}
 	&__container {
+		text-align: center;
+		padding-top: fluid-mobile(60,20);
 		padding-inline: rem(15);
 		@media (width >= rem(425)) {padding-inline: rem(60);}
 		@media (width >= rem(576)) {padding-inline: rem(120);}
@@ -15,6 +17,7 @@
 			display: flex;
 			flex-direction: column;
 			padding: 0;
+			text-align: left;
 		}
 		@media (width >= rem(1440)) {padding: 0;}
 	}	

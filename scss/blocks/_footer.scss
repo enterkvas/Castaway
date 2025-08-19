@@ -1,6 +1,8 @@
 .footer {
 	position: relative;
-	padding-block: 8%;
+	// padding-block: 8%;
+	padding-top: fluid-full(100,20);
+	padding-bottom: fluid-full(124,20);
 	&__container {
 		padding-inline: rem(15);
 		@media (width >= rem(576)) {padding-inline: rem(20);}
@@ -9,7 +11,7 @@
 		@media (width >= rem(1190)) {padding-inline: rem(60);}
 		@media (width >= rem(1440)) {padding-inline: rem(70);}
 	}
-	@media (width >= rem(1440)) {padding: rem(100) 0 rem(127);}
+	// @media (width >= rem(1440)) {padding: rem(100) 0 rem(127);}
 	&__row {
 		display: grid;
 		//row-gap: clamp(20px, 0.654rem + 2.98vw, 40px); // from 320px to 991px

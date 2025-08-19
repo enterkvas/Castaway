@@ -1,10 +1,10 @@
 const menu = document.querySelector('.menu__body'),
-	  menuBtn = document.querySelector('.menu__icon'),
-	  body = document.body;
-if(menu && menuBtn) {
-	menuBtn.addEventListener('click', () => {
+	iconMenu = document.querySelector('.menu__icon'),
+	body = document.body;
+if(menu && iconMenu) {
+	iconMenu.addEventListener('click', () => {
 		menu.classList.toggle('_active');
-		menuBtn.classList.toggle('_active');
+		iconMenu.classList.toggle('_active');
 		body.classList.toggle('_lock');
 	})
 }
@@ -12,7 +12,7 @@ if(menu && menuBtn) {
 menu.querySelectorAll('.menu__link').forEach(link => {
 	link.addEventListener('click', () => {
 		menu.classList.remove('_active');
-		menuBtn.classList.remove('_active');
+		iconMenu.classList.remove('_active');
 		body.classList.remove('_lock');
 	})
 })
