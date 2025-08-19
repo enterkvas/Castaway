@@ -320,11 +320,6 @@ p:not([class]):not(:last-child) {
   margin-bottom: 20%;
   -webkit-line-clamp: 3;
 }
-@media (width >= 36rem) {
-  .card-episodes__subtitle {
-    margin-bottom: 46%;
-  }
-}
 @media (width >= 48rem) {
   .card-episodes__subtitle {
     margin: 0;

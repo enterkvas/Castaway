@@ -74,7 +74,6 @@
 	&__subtitle {
 		margin-bottom: 20%;
 		-webkit-line-clamp: 3;
-		@media (width >= rem(576)) {margin-bottom: 46%;}
 		@media (width >= rem(768)) {margin: 0;}
 		@media (width >= rem(1440)) {text-wrap: inherit;}												
 	}
