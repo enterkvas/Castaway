@@ -4,17 +4,22 @@
         column-gap: fluid-mobile-add(406,80);
         @media (width >= rem(992)) {column-gap: fluid-mid_2(124,112);}
     } 
-    &__list {font-size: fluid-full(17,15);}
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(10);
+        font-size: fluid-full(17,15);
+    }
     &__link {
         display: inline-flex;
         padding-block: rem(20);
-        height: fluid-full(27,32);        
+        // height: fluid-full(27,32);        
+        // line-height: fluid-mid(27,22);
+        line-height: calc(27 / 17);
         color: var(--color-text); 
 		@media (width >= rem(768)) {
             padding-block: 0;
-            margin-bottom: rem(10);
-            height: rem(27);
-			line-height: fluid-mid(27,22);
+            // height: rem(27);
             &:hover, &:active {color: var(--blue);} 
         }
     }

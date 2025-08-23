@@ -152,7 +152,7 @@ p:not([class]):not(:last-child) {
 
 .button-subscribe {
   padding-block: clamp(0.1875rem, -0.3125rem + 1.0416666667vw, 0.625rem);
-  padding-inline: clamp(0.9375rem, 0.5803571429rem + 0.744047619vw, 1.25rem);
+  padding-inline: clamp(0.9375rem, 0.7232142857rem + 0.4464285714vw, 1.125rem);
   font-size: clamp(0.625rem, 0.5357142857rem + 0.4464285714vw, 0.9375rem);
   font-weight: 700;
   line-height: 1.92;
@@ -162,7 +162,7 @@ p:not([class]):not(:last-child) {
 }
 @media (width >= 48rem) {
   .button-subscribe {
-    padding-inline: clamp(0.625rem, -0.0892857143rem + 1.4880952381vw, 1.25rem);
+    padding-inline: clamp(0.625rem, 0.0535714286rem + 1.1904761905vw, 1.125rem);
   }
 }
 
@@ -474,7 +474,7 @@ p:not([class]):not(:last-child) {
 .footer {
   position: relative;
   padding-top: clamp(1.25rem, -0.1785714286rem + 7.1428571429vw, 6.25rem);
-  padding-bottom: clamp(1.25rem, -0.6071428571rem + 9.2857142857vw, 7.75rem);
+  padding-bottom: clamp(2.5rem, 1rem + 7.5vw, 7.75rem);
 }
 .footer__container {
   padding-inline: 0.9375rem;
@@ -507,7 +507,7 @@ p:not([class]):not(:last-child) {
 .footer__row {
   display: grid;
   row-gap: clamp(1.25rem, 0.6538748137rem + 2.9806259314vw, 2.5rem);
-  margin-bottom: clamp(1.875rem, 1.5769374069rem + 1.4903129657vw, 2.5rem);
+  margin-bottom: 2.5rem;
 }
 @media (width >= 62rem) {
   .footer__row {
@@ -604,20 +604,20 @@ p:not([class]):not(:last-child) {
   }
 }
 .nav-footer__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.625rem;
   font-size: clamp(0.9375rem, 0.9017857143rem + 0.1785714286vw, 1.0625rem);
 }
 .nav-footer__link {
   display: inline-flex;
   padding-block: 1.25rem;
-  height: clamp(2rem, 2.0892857143rem + -0.4464285714vw, 1.6875rem);
+  line-height: 1.5882352941;
   color: var(--color-text);
 }
 @media (width >= 48rem) {
   .nav-footer__link {
     padding-block: 0;
-    margin-bottom: 0.625rem;
-    height: 1.6875rem;
-    line-height: clamp(1.375rem, 1.0178571429rem + 0.744047619vw, 1.6875rem);
   }
   .nav-footer__link:hover, .nav-footer__link:active {
     color: var(--blue);
@@ -637,7 +637,7 @@ p:not([class]):not(:last-child) {
 }
 @media (width >= 90rem) {
   .form-subscribe {
-    row-gap: 1.375rem;
+    row-gap: 1.25rem;
   }
 }
 .form-subscribe__form {
@@ -673,24 +673,16 @@ p:not([class]):not(:last-child) {
   }
 }
 .form-subscribe__form::placeholder {
-  font-size: clamp(0.9375rem, 0.7767857143rem + 0.8035714286vw, 1.5rem);
-  line-height: 1.2;
-  color: var(--color-text-subtitle);
+  font-size: clamp(14px, 2vw, 24px);
 }
 .form-subscribe__form::-webkit-input-placeholder {
-  font-size: clamp(0.9375rem, 0.7767857143rem + 0.8035714286vw, 1.5rem);
-  line-height: 1.2;
-  color: var(--color-text-subtitle);
+  font-size: clamp(14px, 2vw, 24px);
 }
-.form-subscribe__form:-moz-placeholder {
-  font-size: clamp(0.9375rem, 0.7767857143rem + 0.8035714286vw, 1.5rem);
-  line-height: 1.2;
-  color: var(--color-text-subtitle);
+.form-subscribe__form::-moz-placeholder {
+  font-size: clamp(14px, 2vw, 24px);
 }
-.form-subscribe__form:-ms-input-placeholder {
-  font-size: clamp(0.9375rem, 0.7767857143rem + 0.8035714286vw, 1.5rem);
-  line-height: 1.2;
-  color: var(--color-text-subtitle);
+.form-subscribe__form::-ms-input-placeholder {
+  font-size: clamp(14px, 2vw, 24px);
 }
 .form-subscribe__button {
   margin: 0 auto;
@@ -1430,6 +1422,8 @@ p:not([class]):not(:last-child) {
   display: inline-block;
   padding-inline: 0.5rem;
   margin-bottom: 1.25rem;
+  font-size: clamp(0.9375rem, 0.8839285714rem + 0.2678571429vw, 1.125rem);
+  line-height: 1.5;
 }
 @media (width >= 48rem) {
   .subscribe__text-blue {
@@ -1441,8 +1435,6 @@ p:not([class]):not(:last-child) {
   .subscribe__text-blue {
     padding-top: 0.1875rem;
     margin-bottom: -0.1875rem;
-    font-size: 1.125rem;
-    line-height: 1.6875rem;
     letter-spacing: 0.03125rem;
   }
 }
