@@ -13,7 +13,7 @@
 	&__row {
 		display: grid;
 		row-gap:  fluid-mobile-add(40,20);		
-		margin-bottom: rem(40);
+		margin-bottom: fluid-mobile-add(40,28);
 		@media (width >= rem(992)) {
 			position: relative;
 			display: flex;
