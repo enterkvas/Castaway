@@ -1,11 +1,8 @@
 .episodes {
-	position: relative;
 	padding-block: fluid-full(100,20);	
 	text-align: center;
-	@media (width >= rem(992)) {background-color: var(--bg);}
 	&__header {
-		padding-bottom: rem(28);
-		@media (width >= rem(576)) {padding-bottom: rem(32);}
+		padding-bottom: fluid-mobile(40,28);
 		@media (width >= rem(768)) {
 			display: flex;
 			justify-content: space-between;
@@ -14,64 +11,20 @@
 			margin-bottom: fluid-mid(60,28);
 		}
 		&-title {
-			margin: 0 0 rem(20);
+			margin-bottom: fluid-mobile(32,20);
 			font-size: fluid-full(64, 18);
 			line-height: calc(79.2 / 64);
 			letter-spacing: fluid-full(2.88,0.8);
-			@media (width >= rem(576)) {margin-bottom: rem(28);}
 			@media (width >= rem(768)) {
 				margin: 0;
 				font-weight: 400;
 			}
 		}	
 	}
-	&__row {
-		display: flex;
-		flex-direction: column;
-		row-gap: 0;
-		@media (width >= rem(768)) {row-gap: rem(20);}
-		@media (width >= rem(1440)) {row-gap: rem(60);}
-	}
-	&__col {
-		position: relative;
-		overflow: hidden;
+	&__list {
 		@media (width >= rem(768)) {
-			&-border {
-				display: flex;
-				column-gap: 5%;
-				padding: 3%;
-				border-radius: fluid-mid_1(32,22);
-				background-color: var(--bg-black);
-			}
+			display: grid;
+			row-gap: fluid-mid(60,20);			
 		}
-		@media (width >= rem(1190)) {
-			&-border {padding: rem(32);}
-		}
-		@media (width >= rem(1440)) {
-			&-border {
-				column-gap: rem(53);	
-				padding: rem(40);
-			}
-		}
-	}
-	&__image {
-		position: absolute;
-		width: 100%;
-		left: 0;
-		@media (width >= rem(768)) {
-			position: static;
-			width: auto;
-			margin: 0;
-			& img {filter: brightness(1.0);}
-		}
-		& img {
-			filter: brightness(0.7);
-			@media (width >= rem(768)) {filter: brightness(1.0);}
-			@media (width >= rem(1440)) {width: auto;}
-		}
-	}
-	&__card {
-		position: relative;
-		@media (width >= rem(1440)) {padding-top: rem(8);}
 	}
 }
