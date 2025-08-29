@@ -1,4 +1,4 @@
-.card-host {
+.text-host {
 	padding-top: 4%;			
 	@media (width >= rem(576)) {padding-top: rem(40);}
 	@media (width >= rem(768)) {
@@ -45,18 +45,14 @@
 			background: url('../../img/icons/host-arrow/host-arrow.svg') no-repeat center center;
 			background-size: contain;
 
-			@media (max-width: rem(600)) {
-				background-size: 50%;
-			}
-			@media (min-width: rem(601)) {
-				background-size: contain;
-			}
+			@media (max-width: rem(600)) {background-size: 50%;}
+			@media (min-width: rem(601)) {background-size: contain;}
 		}
 	}
 
     &__text-blue {
         display: inline-block;
-		margin: 0 auto 50%;
+		margin: 0 auto 32%;
         padding-inline: rem(8);
 		font-size: fluid-full(18, 15);
 		line-height: calc(27 / 18);
