@@ -336,7 +336,7 @@ p:not([class]):not(:last-child) {
   line-height: 1.5;
 }
 .card-episodes__header {
-  margin-bottom: clamp(3.75rem, -3.408836689rem + 35.7941834452vw, 13.75rem);
+  margin-bottom: clamp(4.0625rem, -2.8726230425rem + 34.6756152125vw, 13.75rem);
 }
 @media (width >= 48rem) {
   .card-episodes__header {
