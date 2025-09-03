@@ -16,17 +16,3 @@ menu.querySelectorAll('.menu__link').forEach(link => {
 		body.classList.remove('_lock');
 	})
 })
-
-const anchors = document.querySelectorAll('a[href*="#"]');
-anchors.forEach(anchor => {		
-	anchor.addEventListener('click', event => {
-		event.preventDefault();
-
-		const blockID = anchor.getAttribute('href').substring(1);
-		document.getElementById(blockID).scrollIntoView();
-		// document.getElementById(blockID).scrollIntoView({
-		// 	behavior: 'smooth',
-		// 	block: 'start'
-		// })
-	})
-})

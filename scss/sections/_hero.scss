@@ -2,18 +2,20 @@
 	@media (width >= rem(768)) {
 		padding-top: fluid-mid(160,100);
 	}
+
 	&__row {@media (width >= rem(768)) {display: flex;}}
+
 	&__col {
 		position: relative;
 		width: 100%;
 		@media (width >= rem(768)) {width: 50%;}
 	}
+
 	&__image {
 		@media (width >= rem(768)) {
 			position: relative;
 			top: 0%;
 			padding: 0;
-			filter: brightness(1.0);
 			&::before {
 				content: "";
 				width: fluid-mid_1(68,36);
@@ -31,12 +33,13 @@
 				}
 			}
 		}
+
 		& img {
 			position: static;		
-			transform: translate(0, 0);
 			border-radius: fluid-mid(12,8);
 		}		
 	}
+
 	&__body {
 		position: absolute;
 		bottom: rem(20);
@@ -51,18 +54,13 @@
 		}
 		@media (width >= rem(1440)) {padding-inline: rem(60);}
 	}
+
 	&__text-main {
-		margin-bottom: rem(228);
+		margin-bottom: fluid-mobile(620,228);
 		font-size: fluid-full(70, 20);
 		line-height: 1.257;
 		letter-spacing: fluid-full(3.2,1.8);
 		text-align: center;
-		@media (width >= rem(375)) {margin-bottom: rem(300);}	
-		@media (width >= rem(425)) {margin-bottom: rem(360);}
-		@media (width >= rem(496)) {margin-bottom: rem(420);}
-		@media (width >= rem(576)) {margin-bottom: rem(468);}
-		@media (width >= rem(620)) {margin-bottom: rem(540);}
-		@media (width >= rem(690)) {margin-bottom: rem(620);}
 		@media (width >= rem(768)) {
 			margin-bottom: rem(80);
 			text-align: left;
@@ -70,6 +68,7 @@
 		@media (width >= rem(900)) {margin-bottom: rem(100);}
 		@media (width >= rem(1440)) {margin: rem(138) 0 rem(84);}
 	}
+
 	&__text-underlining {
 		font-size: fluid-full(75, 22);
 		line-height: calc(88 / 75);	
@@ -86,6 +85,7 @@
 			background-size: cover;
 		}
 	}
+
 	&__text-green {
 		font-size: fluid-full(80, 23);
 		line-height: calc(88 / 80);
@@ -93,6 +93,7 @@
 		color: #1ED760;
 		@media (width >= rem(768)) {color: var(--color-text);}
 	}
+	
 	&__text-add {
 		margin-bottom: rem(12);
 		font-size: rem(15);

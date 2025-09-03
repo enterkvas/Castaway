@@ -10,6 +10,7 @@
 		@media (width >= rem(1190)) {padding-inline: rem(60);}
 		@media (width >= rem(1440)) {padding-inline: rem(70);}
 	}
+
 	&__row {
 		display: grid;
 		row-gap:  fluid-mobile-add(40,20);		
@@ -26,7 +27,8 @@
 			display: flex;
 			column-gap: rem(240);		
 		}
-	};
+	}
+
 	&__col {
 		display: flex;
 		align-items: center;
@@ -35,6 +37,7 @@
 		@media (width >= rem(768)) {column-gap: fluid-mobile-add(285,40);}
 		@media (width >= rem(992)) {display: block;}
 	}
+
 	&__logo {
 		display: inline-block;
 		width: fluid-full(223,112);
@@ -44,6 +47,7 @@
 		}
 		@media (width >= rem(992)) {margin-bottom: rem(20);}
 	}
+
 	&__soc1als-1 {
 		@media (width >= rem(992)) {
 			position: absolute;
@@ -54,6 +58,7 @@
 		@media (width >= rem(1440)) {right: 15%;}
 		@media (width >= rem(2200)) {right: 30%;}
 	}
+	
 	&__soc1als-2 {
 		display: flex;
 		column-gap: fluid-mobile-add(50,30);

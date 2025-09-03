@@ -371,7 +371,6 @@ p:not([class]):not(:last-child) {
   }
 }
 .card-episodes__subtitle {
-  font-size: clamp(0.9375rem, 0.8125rem + 0.625vw, 1.375rem);
   -webkit-line-clamp: 2;
 }
 @media (width >= 48rem) {
@@ -389,9 +388,6 @@ p:not([class]):not(:last-child) {
   }
 }
 
-.text-host {
-  padding-top: 4%;
-}
 @media (width >= 36rem) {
   .text-host {
     padding-top: 2.5rem;
@@ -415,7 +411,6 @@ p:not([class]):not(:last-child) {
 }
 .text-host__container {
   text-align: center;
-  padding-top: clamp(1.25rem, -0.5397091723rem + 8.9485458613vw, 3.75rem);
   padding-inline: 0.9375rem;
 }
 @media (width >= 26.5625rem) {
@@ -478,17 +473,14 @@ p:not([class]):not(:last-child) {
 }
 .text-host__text-blue {
   display: inline-block;
-  margin: 0 auto 32%;
+  margin-top: 0;
+  margin-inline: auto;
+  margin-bottom: clamp(5.75rem, -5.346196868rem + 55.48098434vw, 21.25rem);
   padding-inline: 0.5rem;
   font-size: clamp(0.9375rem, 0.8839285714rem + 0.2678571429vw, 1.125rem);
   line-height: 1.5;
   border-radius: 0.125rem;
   background-color: var(--bg);
-}
-@media (width >= 26.5625rem) {
-  .text-host__text-blue {
-    margin: 0 auto 65%;
-  }
 }
 @media (width >= 48rem) {
   .text-host__text-blue {
@@ -656,26 +648,35 @@ p:not([class]):not(:last-child) {
 .nav-footer__list {
   display: flex;
   flex-direction: column;
-  row-gap: 0.625rem;
   font-size: clamp(0.9375rem, 0.9017857143rem + 0.1785714286vw, 1.0625rem);
 }
 .nav-footer__link {
   display: inline-flex;
-  padding-block: 1.25rem;
+  padding-block: clamp(0.5rem, 0.4105145414rem + 0.4474272931vw, 0.625rem);
   line-height: 1.5882352941;
   color: var(--color-text);
 }
 @media (width >= 48rem) {
   .nav-footer__link {
-    padding-block: 0;
+    padding-block: 0.375rem;
   }
   .nav-footer__link:hover, .nav-footer__link:active {
     color: var(--blue);
   }
 }
+@media (width >= 48rem) and (width >= 62rem) {
+  .nav-footer__link {
+    padding-block: 0;
+    padding-bottom: 0.5rem;
+  }
+}
+@media (width >= 48rem) and (width >= 90rem) {
+  .nav-footer__link {
+    padding-bottom: 0.625rem;
+  }
+}
 
 .form-subscribe {
-  padding-bottom: 7%;
   flex-direction: column;
   row-gap: 1.25rem;
 }
@@ -953,11 +954,11 @@ p:not([class]):not(:last-child) {
 .soc1als-1__list {
   display: flex;
   justify-content: flex-start;
-  column-gap: 10%;
+  column-gap: clamp(1.875rem, 0.0852908277rem + 8.9485458613vw, 4.375rem);
 }
 @media (width >= 48rem) {
   .soc1als-1__list {
-    column-gap: 5%;
+    column-gap: 2.125rem;
   }
 }
 @media (width >= 62rem) {
@@ -1115,7 +1116,6 @@ p:not([class]):not(:last-child) {
     position: relative;
     top: 0%;
     padding: 0;
-    filter: brightness(1);
   }
   .hero__image::before {
     content: "";
@@ -1138,7 +1138,6 @@ p:not([class]):not(:last-child) {
 }
 .hero__image img {
   position: static;
-  transform: translate(0, 0);
   border-radius: clamp(0.5rem, 0.2142857143rem + 0.5952380952vw, 0.75rem);
 }
 .hero__body {
@@ -1166,41 +1165,11 @@ p:not([class]):not(:last-child) {
   }
 }
 .hero__text-main {
-  margin-bottom: 14.25rem;
+  margin-bottom: clamp(14.25rem, -3.2891498881rem + 87.6957494407vw, 38.75rem);
   font-size: clamp(1.25rem, 0.3571428571rem + 4.4642857143vw, 4.375rem);
   line-height: 1.257;
   letter-spacing: clamp(0.1125rem, 0.0875rem + 0.125vw, 0.2rem);
   text-align: center;
-}
-@media (width >= 23.4375rem) {
-  .hero__text-main {
-    margin-bottom: 18.75rem;
-  }
-}
-@media (width >= 26.5625rem) {
-  .hero__text-main {
-    margin-bottom: 22.5rem;
-  }
-}
-@media (width >= 31rem) {
-  .hero__text-main {
-    margin-bottom: 26.25rem;
-  }
-}
-@media (width >= 36rem) {
-  .hero__text-main {
-    margin-bottom: 29.25rem;
-  }
-}
-@media (width >= 38.75rem) {
-  .hero__text-main {
-    margin-bottom: 33.75rem;
-  }
-}
-@media (width >= 43.125rem) {
-  .hero__text-main {
-    margin-bottom: 38.75rem;
-  }
 }
 @media (width >= 48rem) {
   .hero__text-main {
@@ -1311,7 +1280,7 @@ p:not([class]):not(:last-child) {
 }
 .host__text {
   position: absolute;
-  top: 0;
+  top: clamp(2rem, 0.7472035794rem + 6.2639821029vw, 3.75rem);
 }
 @media (width >= 48rem) {
   .host__text {
@@ -1338,7 +1307,7 @@ p:not([class]):not(:last-child) {
   }
 }
 .subscribe__container {
-  padding-top: clamp(1.25rem, 0.3551454139rem + 4.4742729306vw, 2.5rem);
+  padding-block: clamp(1.25rem, 0.3551454139rem + 4.4742729306vw, 2.5rem);
   padding-inline: 0.9375rem;
   background-color: var(--bg-black);
 }

@@ -1,8 +1,9 @@
 .host {
 	position: relative;
-		@media (width >= rem(768)) {position: static;}
 	padding-block: fluid-full(100,20);
 	border-radius: fluid-mobile(32,12);
+	@media (width >= rem(768)) {position: static;}
+
 	&__row {
 		@media (width >= rem(768)) {
 			display: flex;
@@ -11,10 +12,12 @@
 			& > div:nth-child(2) {order: 1;}
 		}
 	}
+
 	&__col {
 		display: block;
 		@media (width >= rem(768)) {width: 50%;}
 	}
+
 	&__image {
 		filter: brightness(0.7);
 		@media (width >= rem(768)) {filter: brightness(1.0);}			
@@ -24,9 +27,10 @@
 			@media (width >= rem(1440)) {border-radius: rem(14);}			
 		}
 	}
+	
 	&__text {
 		position: absolute;
-		top: 0;
+		top:  fluid-mobile(60,32);
 		@media (width >= rem(768)) {
 			position: static;
 			text-align: left;

@@ -4,7 +4,6 @@
 }
 
 .visually-hidden {
-    // @include visually-hidden;
 	position: absolute !important;
     width: 1rem !important;
     height: 1rem !important;
@@ -16,20 +15,24 @@
     clip: rect(0 0 0 0) !important;
     overflow: hidden !important;
 }
+
 .align-center {
 	display: flex;
 	align-items: center;
 }
+
 .subtitle {
-	// @include fluid-font (22, 15);
 	font-size: fluid-full(22,15);
 	line-height: calc(33 / 22);
 	@media (width >= rem(768)) {color: var(--color-text-subtitle);}
+
 }
+
 .text-blue {
 	color: var(--blue);
 	filter: saturate(200%);
 }
+
 .ellipsis-text {
 	overflow: hidden;
 	text-overflow: ellipsis;

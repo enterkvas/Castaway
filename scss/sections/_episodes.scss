@@ -10,6 +10,7 @@
 			padding: 0;
 			margin-bottom: fluid-mid(60,28);
 		}
+
 		&-title {
 			margin-bottom: fluid-mobile(32,20);
 			font-size: fluid-full(64, 18);
@@ -21,6 +22,7 @@
 			}
 		}	
 	}
+	
 	&__list {
 		@media (width >= rem(768)) {
 			display: grid;

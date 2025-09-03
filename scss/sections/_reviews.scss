@@ -8,6 +8,7 @@
         }
 		@media (min-width: rem(768)) {padding: 0;}
     }
+
     &__list {
         display: grid;
         row-gap: rem(20);
@@ -16,6 +17,7 @@
             align-items: stretch;
             gap: clamp(0.75rem, 0.679rem + 0.36vw, 1rem);
         }
+        
         @media (width >= rem(1024)) {grid-template-columns: repeat(3, 1fr);}
     }
 }

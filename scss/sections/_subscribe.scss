@@ -14,8 +14,9 @@
 			background-size: cover;
 		}
 	}
+
 	&__container {
-		padding-top: fluid-mobile(40,20);
+		padding-block: fluid-mobile(40,20);
 		padding-inline: rem(15);
 		@media (width >= rem(576)) {padding-inline: rem(20);}
 		background-color: var(--bg-black);	
@@ -24,6 +25,7 @@
 			border-radius: fluid-mid(32,12);
 		}
 	}
+
 	&__row {
 		@media (width >= rem(768)) {
 			display: flex;
@@ -31,14 +33,17 @@
 			background-color: var(--bg-black);
 		}
 	}
+
 	&__col {
 		@media (width >= rem(768)) {width: 50%;}
 		@media (width >= rem(1440)) {width: auto;}
 	}
+
 	&__text {
 		text-align: center;
 		@media (width >= rem(768)) {text-align: left;}
 	}
+
 	&__text-blue {
 		display: inline-block;
 		padding-inline: rem(8);
@@ -55,6 +60,7 @@
 			letter-spacing: rem(0.5);
 		}
 	}
+	
 	&__title {
 		margin-bottom: fluid-mobile(60,40);
 		font-size: fluid-full(72, 22);

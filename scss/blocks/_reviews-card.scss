@@ -12,12 +12,14 @@
         padding: rem(54) rem(50);
         border-radius: rem(32);
     }
+
     &__description {
         font-size: fluid-full(36,15);
         line-height: 1.5;        
         color: var(--color-text);
         @media (width >= rem(1440)) {line-height: calc(43.2 / 36);}
     }
+    
     &__author {
         font-size: fluid-full(23,15);
         line-height: calc(28.8 / 24);

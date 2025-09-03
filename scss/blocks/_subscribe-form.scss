@@ -1,12 +1,13 @@
 .form-subscribe {
-	padding-bottom: 7%;
 	flex-direction: column;
 	row-gap: rem(20);
 	@media (width >= rem(768)) {
 		row-gap: rem(16);
 		padding: 0;
 	}
+
 	@media (width >= rem(1440)) {row-gap: rem(20);}
+
 	&__form {
 		width: fluid-mobile(480,260);
 		padding: rem(12) rem(10);
@@ -39,6 +40,7 @@
 			font-size: clamp(14px, 2vw, 24px);
 		}
 	}
+	
 	&__button {
 		margin: 0 auto;
 		@media (width >= rem(768)) {
