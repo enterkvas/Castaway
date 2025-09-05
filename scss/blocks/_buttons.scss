@@ -12,13 +12,13 @@
 .button-subscribe {
 	padding-block: fluid-mid(10,3);
 	padding-inline: fluid-mid(18,15);
-	@media (width >= rem(768)) {padding-inline: fluid-mid(18,10);}
 	font-size: fluid-full(15,10);
 	font-weight: 700;
 	line-height: calc(28.8 / 15);
 	border-radius: fluid-full(6,2);
 	color: var(--color-text-subtitle);
 	background-color: var(--blue);
+	@media (width >= rem(768)) {padding-inline: fluid-mid(18,10);}
 }
 /* Button "Up": */
 .btn_up {
