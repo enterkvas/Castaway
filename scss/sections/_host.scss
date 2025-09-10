@@ -1,6 +1,6 @@
 .host {
 	position: relative;
-	padding-block: fluid-full(100,20);
+	padding-block: var(--pad-bl-main);
 	border-radius: fluid-mobile(32,12);
 	@media (width >= rem(768)) {position: static;}
 

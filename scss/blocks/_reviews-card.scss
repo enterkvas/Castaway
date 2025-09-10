@@ -3,10 +3,10 @@
     display: flex;
     flex-direction: column;
     row-gap: fluid-full(21,12);
-    background-color: var(--bg-black);
+    background-color: var(--color-bg-cards);
     line-height: 1.2;
     padding: fluid-full(50,20);
-    border-radius: rem(20);
+    @media (width >= rem(576)) {border-radius: rem(20);}
     @media (width >= rem(1440)) {
         width: rem(423);
         padding: rem(54) rem(50);
@@ -16,14 +16,14 @@
     &__description {
         font-size: fluid-full(36,15);
         line-height: 1.5;        
-        color: var(--color-text);
+        color: var(--color-text-primary);
         @media (width >= rem(1440)) {line-height: calc(43.2 / 36);}
     }
     
     &__author {
         font-size: fluid-full(23,15);
         line-height: calc(28.8 / 24);
-        color: var(--color-text-subtitle);
+        color: var(--color-text-muted);
         @media (width >= rem(1440)) {font-size: rem(24);}
     }
 }

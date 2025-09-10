@@ -1,7 +1,5 @@
 .hero {
-	@media (width >= rem(768)) {
-		padding-top: fluid-mid(160,100);
-	}
+	@media (width >= rem(768)) {padding-top: fluid-mid(160,100);}
 
 	&__row {@media (width >= rem(768)) {display: flex;}}
 
@@ -90,8 +88,10 @@
 		font-size: fluid-full(80, 23);
 		line-height: calc(88 / 80);
 		font-weight: 700;
-		color: #1ED760;
-		@media (width >= rem(768)) {color: var(--color-text);}
+		color: var(--color-text-for-level);
+		@media (width >= rem(768)) {
+			color: var(--color-text-primary);
+		}
 	}
 	
 	&__text-add {

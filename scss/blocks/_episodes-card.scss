@@ -5,7 +5,7 @@
 			display: flex;
 			column-gap: fluid-mid(53,40);
 			padding: fluid-mid(40,20);
-			background-color: var(--bg-black);
+			background-color: var(--color-bg-cards);
 			border-radius: fluid-mid_1(32,22);
 
 			& > div:nth-child(1) {order: 2;}
@@ -60,7 +60,7 @@
 		font-size: fluid-full(18,16);
 		line-height: calc(27 / 18);
 		border-radius: rem(4);
-		background-color: var(--bg);
+		background-color: var(--color-bg-primary);
 		@media (width >= rem(768)) {
 			margin: 0;
 			margin-bottom: fluid-mid(28,0);
@@ -69,7 +69,6 @@
 			padding: rem(0) rem(16);
 			margin-bottom: rem(28);
 			border-radius: rem(6);
-			background-color: var(--bg);
 		}
 	}
 

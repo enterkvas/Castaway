@@ -15,17 +15,15 @@
         display: inline-flex;
         padding-block: fluid-mobile(10,8);
         line-height: calc(27 / 17);
-        color: var(--color-text); 
+        color: var(--color-text-primary); 
 		@media (width >= rem(768)) {
             padding-block: rem(6);
-            &:hover, &:active {color: var(--blue);} 
+            &:hover, &:active {color: var(--color-accent);} 
             @media (width >= rem(992)) {
                 padding-block: 0;
                 padding-bottom: rem(8);
             }
-            @media (width >= rem(1440)) {
-                padding-bottom: rem(10);                
-            }
+            @media (width >= rem(1440)) {padding-bottom: rem(10);}
         }
     }
 }

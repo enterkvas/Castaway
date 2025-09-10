@@ -1,5 +1,5 @@
 .episodes {
-	padding-block: fluid-full(100,20);	
+	padding-block: var(--pad-bl-main);	
 	text-align: center;
 	&__header {
 		padding-bottom: fluid-mobile(40,28);

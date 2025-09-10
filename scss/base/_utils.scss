@@ -24,12 +24,12 @@
 .subtitle {
 	font-size: fluid-full(22,15);
 	line-height: calc(33 / 22);
-	@media (width >= rem(768)) {color: var(--color-text-subtitle);}
+	@media (width >= rem(768)) {color: var(--color-text-muted);}
 
 }
 
 .text-blue {
-	color: var(--blue);
+	color: var(--color-accent);
 	filter: saturate(200%);
 }
 
@@ -39,10 +39,10 @@
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 }
+
 // Service selectors:
-.none {
-	display: none !important;
-}
+.none {display: none !important;}
+
 // * {
 // 	outline: 1px solid red !important;
 // }

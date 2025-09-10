@@ -6,10 +6,10 @@ html {
 html,
 body {
 	height: 100%;
-	font-family: "DM Sans";
-	line-height: 1;
-	color: var(--color-text);
-	background-color: var(--bg);
+	font-family: var(--font-family-base);
+	line-height: var(--line-height-base);
+	color: var(--color-text-primary);
+	background-color: var(--color-bg-primary);
 }
 
 body._lock {overflow: hidden;}

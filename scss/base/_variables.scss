@@ -1,12 +1,25 @@
 @use 'functions' as *;
 
 :root {
-	--bg:#191919;
-	--bg-black: #000;
-	--blue: #118DA8;
-	--color-text:#fff;
-	--color-text-subtitle: rgba(255, 255, 255, 0.7);
-	--color-btn-up: rgba(255, 255, 255, 0.5);
-	--color-active: #118DA8;
+	--color-bg-primary: #191919;
+	--color-bg-cards: #000;
+	--color-accent: #118DA8;
+	--color-bg-btn-up: rgba(255, 255, 255, 0.5);	
+
+	--color-text-primary: #fff;
+	--color-text-muted: rgba(255, 255, 255, 0.7);
+	--color-text-for-level: #1ED760;
+
+	--font-family-base: "DM Sans", Arial, sans-serif;
+	--font-size-base: #{fluid-full(22,15)};
+	--line-height-base: 1;
+
 	--header-height: #{fluid-full(120,40)};
+
+	--pad-bl-main: #{fluid-full(100,20)};
+	--pad-inl-head-foot: #{fluid-full(70,15)};
+	--pad-inl-page: #{fluid-mid(70,40)};
+
+	--icon-soc1als-1-width: #{fluid-full(32,22)};
+	--icon-soc1als-2-width: #{fluid-full(24,16)};
 }

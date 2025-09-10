@@ -1,9 +1,6 @@
 .page {
 	&__container {
-		padding-inline: 0;
-		@media (width >= rem(768)) {padding-inline: 40px;}
-		@media (width >= rem(992)) {padding-inline: 50px;}
-		@media (width >= rem(1190)) {padding-inline: 60px;}
-		@media (width >= rem(1440)) {padding-inline: 70px;}
+		@media (width >= rem(320)) {padding-inline: 0;}
+		@media (width >= rem(768)) {padding-inline: var(--pad-inl-page);}
 	}			
 }

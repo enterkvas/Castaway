@@ -7,16 +7,11 @@
 	width: 100%;
 	display: flex;
 	padding-block: fluid-full(26,12);
-	background-color: var(--bg);
+	background-color: var(--color-bg-primary);
 	&__container {
 		justify-content: space-between;	
 		width: 100%;
-		padding-inline: rem(15);
-		@media (width >= rem(576)) {padding-inline: rem(20);}
-		@media (width >= rem(768)) {padding-inline: rem(40);}
-		@media (width >= rem(992)) {padding-inline: rem(50);}
-		@media (width >= rem(1190)) {padding-inline: rem(60);}
-		@media (width >= rem(1440)) {padding-inline: rem(70);}
+		padding-inline: var(--pad-inl-head-foot);
 	}
 	
 	&__logo {

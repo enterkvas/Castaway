@@ -6,8 +6,8 @@
 	font-weight: 400;
 	line-height: calc(27 / 18);
 	border-radius: fluid-full(6,4);
-	color: var(--color-text);
-	background-color: var(--blue);
+	color: var(--color-text-primary);
+	background-color: var(--color-accent);
 	}
 .button-subscribe {
 	padding-block: fluid-mid(10,3);
@@ -16,8 +16,8 @@
 	font-weight: 700;
 	line-height: calc(28.8 / 15);
 	border-radius: fluid-full(6,2);
-	color: var(--color-text-subtitle);
-	background-color: var(--blue);
+	color: var(--color-text-muted);
+	background-color: var(--color-accent);
 	@media (width >= rem(768)) {padding-inline: fluid-mid(18,10);}
 }
 /* Button "Up": */
@@ -32,7 +32,7 @@
 	border: rem(2) solid #000;
 	z-index: 100;
 	outline: 0 !important; 
-	background-color: rgb(255 255 255 / 0.5); 
+	background-color: var(--color-bg-btn-up); 
 	&::before, &::after {
 		content: "";
 		width: rem(10);
@@ -52,7 +52,7 @@
 	@media(width >= rem(992)) {
 		&:hover {
 			cursor: pointer;
-			background-color: var(--color-active);
+			background-color: var(--color-accent);
 			transition: 0.5s;
 		}
 	}
