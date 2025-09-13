@@ -20,7 +20,7 @@
 		@media (width >= rem(1440)) {
 			position: relative;
 			display: flex;
-			column-gap: rem(240);		
+			column-gap: rem(264);		
 		}
 	}
 
@@ -50,7 +50,7 @@
 			right: 5%;
 		}
 		@media (width >= rem(1200)) {top: 21%;}
-		@media (width >= rem(1440)) {right: 15%;}
+		@media (width >= rem(1440)) {right: 14%;}
 		@media (width >= rem(2200)) {right: 30%;}
 	}
 	

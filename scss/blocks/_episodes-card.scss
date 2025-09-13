@@ -20,7 +20,6 @@
 			position: static;
 			width: auto;
 			margin: 0;
-			& img {filter: brightness(1.0);}
 		}
 		& img {
 			filter: brightness(0.7);
@@ -56,17 +55,17 @@
     &__top-title {
 		align-self: flex-start;
 		margin: 0 auto 5%;
-		padding: rem(4) rem(8);
-		font-size: fluid-full(18,16);
-		line-height: calc(27 / 18);
-		border-radius: rem(4);
+		padding-block: 0;
+		padding-inline: fluid-full(15,10);
+		font-size: fluid-full(17,15);
+		line-height: calc(27 / 17);
+		border-radius: fluid-full(6,4);
 		background-color: var(--color-bg-primary);
 		@media (width >= rem(768)) {
 			margin: 0;
 			margin-bottom: fluid-mid(28,0);
 		}
 		@media (width >= rem(1440)) {			
-			padding: rem(0) rem(16);
 			margin-bottom: rem(28);
 			border-radius: rem(6);
 		}
@@ -74,16 +73,19 @@
 
     &__text-blue {
 		align-self: flex-start;
-		padding: rem(4) rem(8);
 		margin: 0 auto 10%;
+		padding-block: 0;
+		padding-inline: fluid-mobile(12,10);
 		font-size: fluid-full(17,15);
 		line-height: calc(27 / 17);
-		border-radius: rem(4);
+		border-radius: fluid-full(6,4);
+		background-color: var(--color-bg-primary);
 		@media (width >= rem(375)) {margin: 0 auto 15%;}
 		@media (width >= rem(425)) {margin: 0 auto 19%;}
 		@media (width >= rem(768)) {		
 			margin: 0;
 			padding: 0;
+			background-color: transparent;
 		}
 		& span {
 			margin-left: fluid-full(5,3);

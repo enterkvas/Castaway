@@ -1,12 +1,6 @@
 "use strict"
 document.addEventListener('DOMContentLoaded', function(){
   const form = document.getElementById('form');
-  // form.addEventListener("keydown", function(event) {
-  //   if (event.key === "Enter") {
-  //     event.preventDefault();
-  //     this.submit();
-  //   }
-  // });
   form.addEventListener('submit', formSend);
 //------------------------------------------------
   // Function for submitting the entire form:
