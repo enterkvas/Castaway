@@ -16,6 +16,10 @@
 			font-size: fluid-full(64, 18);
 			line-height: calc(79.2 / 64);
 			letter-spacing: fluid-full(2.88,0.8);
+			@media (width: rem(768)) {
+				font-size: rem(36);
+				line-height: rem(45);
+			}
 			@media (width >= rem(768)) {
 				margin: 0;
 				font-weight: 400;

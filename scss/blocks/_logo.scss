@@ -2,5 +2,8 @@
 	&__img {
 		width: fluid-full(160,80);
 		height: auto;
+		@media (width: rem(768)) {
+			
+		}
 	}		
 }

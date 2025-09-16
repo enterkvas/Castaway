@@ -8,16 +8,23 @@
 	border-radius: fluid-full(6,4);
 	color: var(--color-text-primary);
 	background-color: var(--color-accent);
+	@media (width: rem(768)) {
+		padding-block: rem(8);
+		font-size: rem(16);
+		border-radius: rem(5);
+	}
+	&:hover {background-image: linear-gradient(to right, #E6D925, #20C9EE);}
 	}
 .button-subscribe {
 	padding-block: fluid-mid(10,3);
 	padding-inline: fluid-mid(18,15);
 	font-size: fluid-full(15,10);
 	font-weight: 700;
-	line-height: calc(28.8 / 15);
+	line-height: calc(28 / 15);
 	border-radius: fluid-full(6,2);
 	color: var(--color-text-muted);
 	background-color: var(--color-accent);
+	&:hover {background-image: linear-gradient(to right, #E6D925, #20C9EE);}
 	@media (width >= rem(768)) {padding-inline: fluid-mid(18,10);}
 }
 /* Button "Up": */

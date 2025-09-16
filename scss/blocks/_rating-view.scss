@@ -5,9 +5,9 @@
     &__star {
         width: fluid-full(17.11,7.5);
         height: fluid-full(16.36,7.08);
-        background: url('../../img/icons/review-stars/star_gray.svg') center/contain no-repeat;
+        background: url('../img/icons/review-stars/star_gray.svg') center/contain no-repeat;
         &.is-active {
-            background: url('../../img/icons/review-stars/star_yellow.svg') center/contain no-repeat;
+            background: url('../img/icons/review-stars/star_yellow.svg') center/contain no-repeat;
         }
     }    
 }

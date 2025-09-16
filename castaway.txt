@@ -1002,3 +1002,65 @@ display: flex; подогнать;
 Что тебе интереснее: упаковка проекта или развитие функционала?
 
 =================================================================================================
+
+15.09.25									768: установка бездробных значений размеров(там, где значения: fluid-full):
+
+		header:
+
+		Установил принудительно: 
+	- для header: @media (width: rem(768)) {padding-block: rem(16);}
+	- для header__container: @media (width: rem(768)) {padding-inline: rem(40);} 
+	
+	Там т. м.б. у logo высота дробная, но она регулируется width, а у него нет дробей. К тому же, только в браузере высота дробная, на макете - норм.
+
+----------
+
+		hero: 
+		
+	- hero__text-main: 
+		- font-size сам подстроился нормально под fluid-full: 40px; 
+		- принудительно установил для него: 
+			- line-height: rem(50);
+		- letter-spacing: нормально, что дробное значение (даже в макете на 1440 оно дробное) 
+	- hero__text-underliing: принудительно установил: 
+		- @media (width: rem(768)) {font-size: rem(43);}
+	- hero__text-underliing::after: принудительно установил для него: @media (width: rem(768)) {width: rem(93); height: rem(7);} !!!! На макете рендерится не очень, но на странице в браузере всё норм.
+	- hero__text-green: принудительно установил: @media (width: rem(768)) {font-size: rem(46);}
+	- другие дробные величины для hero_text-main не важны 
+
+!	Поменял названия файлов: _icons-social-1.scss > _soc1als-1.scss, _icons-social-2.scss > _soc1als-2.scss (в main.scss тоже заменил, проверил - норм)
+!	Макет: подправил гэпы между иконками (были: 16, сделал как в вёрстке: 34)
+
+----------
+		
+		episodes:
+
+	- episodes__title: принудительно установил: @media (width: rem(768)) {font-size: rem(36); line-height: rem(45);}
+
+	- card-episodes:
+		card-episodes__image: картинка с дробными размерами. Но тут ничего не попишешь: подстраиваемся под картинку на 1440
+
+	- card-episodes__container: 
+		1-й элемент (card-episodes__top-title) отодвинут от верха паддингом селектора: card-episodes__text на 4px
+		Весь контент текстовый: card-episodes__top-title, card-episodes__text-blue, card__episodes__header до последнего элемента (кнопка) раскидан по 
+	justify-content:space-between; Никаких дополнительных отступов между этими элементами нет. Получилось 3 отступа (row-gap сверху-вниз): 20px,20px,19px. В браузере рендерятся отступы примерно так (60/3)
+		card-episodes__top-title: padding-inline нормально подстроился под 12px, font-size под 16px, line-height под 25px Принудительно установил: border-radius: rem(5);
+
+	- button: установил принудительно: @media (width: rem(768)) {padding-block: rem(8); font-size: rem(16); line-height: rem(24); border-radius: rem(5);} 
+	padding-inline сам нормально подстроился под 12px
+
+-------
+
+		about:
+
+	- text-about__arrow::before: стрелку внутри круга рисовал сам, коряво, поэтому не стоит обращать на это внимание на макете. В браузере выглядит норм.
+
+	- text-about__text-blue: установил принудительно: @media (width: rem(768)) {font-size: rem(17); line-height: rem(25);}
+
+	- text-about__title: установил принудительно: @media (width: rem(768)) {font-size: rem(37); line-height: rem(40);}
+
+==========================================================================
+
+16.09.25	ЗАТЫК: 1440 episodes: card-episodes__text-blue: line-height не становится 27 (только 27,8), несмотря на принудительно установку
+
+=================================================================================

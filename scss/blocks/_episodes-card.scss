@@ -36,6 +36,7 @@
 			position: static;
             width: 80%;
             padding: 0;
+			padding-top: fluid-mid(8,4);
         }
     }
 
@@ -54,20 +55,23 @@
 
     &__top-title {
 		align-self: flex-start;
-		margin: 0 auto 5%;
+		margin: 0 auto;
+		margin-bottom: fluid-mobile(40,20);
 		padding-block: 0;
 		padding-inline: fluid-full(15,10);
-		font-size: fluid-full(17,15);
+		font-size: fluid-full(18,15);
 		line-height: calc(27 / 17);
 		border-radius: fluid-full(6,4);
 		background-color: var(--color-bg-primary);
-		@media (width >= rem(768)) {
-			margin: 0;
-			margin-bottom: fluid-mid(28,0);
+		@media (width: rem(768)) {
+			font-size: rem(16);
+			line-height: rem(24);
+			border-radius: rem(5);
 		}
-		@media (width >= rem(1440)) {			
+		@media (width >= rem(768)) {margin: 0;}
+		@media (width >= rem(1440)) {
 			margin-bottom: rem(28);
-			border-radius: rem(6);
+			line-height: rem(27);
 		}
 	}
 
@@ -76,21 +80,37 @@
 		margin: 0 auto 10%;
 		padding-block: 0;
 		padding-inline: fluid-mobile(12,10);
-		font-size: fluid-full(17,15);
+		font-size: fluid-full(18,15);
 		line-height: calc(27 / 17);
 		border-radius: fluid-full(6,4);
 		background-color: var(--color-bg-primary);
 		@media (width >= rem(375)) {margin: 0 auto 15%;}
 		@media (width >= rem(425)) {margin: 0 auto 19%;}
+		@media (width: rem(768)) {
+			font-size: rem(16);
+			line-height: rem(24);			
+		}
 		@media (width >= rem(768)) {		
 			margin: 0;
 			padding: 0;
 			background-color: transparent;
+			border-radius: 0;
 		}
+		@media (width >= rem(1440)) {
+			line-height: rem(27);
+		}
+
 		& span {
 			margin-left: fluid-full(5,3);
-			font-size: fluid-full(18,16);
-			line-height: calc(27 / 18);			
+			font-size: fluid-full(19,16);
+			// line-height: calc(27 / 18);	
+			@media (width >= rem(768)) {
+				// font-size: rem(17);
+				// line-height: rem(26);
+			}
+			// @media (width >= rem(1440)) {
+			// 	line-height: rem(27);
+			// }	
 		}
 	}
 
@@ -113,11 +133,13 @@
 			margin: 0;
 			margin-bottom: rem(8);
 			font-size: fluid-mid(57,28);
+			line-height: rem(35);
 		}
 		@media (width >= rem(1290)) {margin-bottom: 0;}
 		@media (width >= rem(1440)) {
 			max-width: rem(619);
 			margin-bottom: rem(28);
+			line-height: rem(70);
 		}
 	}
 

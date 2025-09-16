@@ -50,6 +50,10 @@
 		margin-bottom: rem(20);
 		font-size: fluid-full(18, 15);
 		line-height: 1.5;
+		@media (width: rem(768)) {
+			font-size: rem(16);
+			line-height: rem(24);
+		}
 		@media (width >= rem(768)) {
 			padding: 0;
 			margin: 0;

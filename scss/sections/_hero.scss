@@ -59,6 +59,9 @@
 		line-height: 1.257;
 		letter-spacing: fluid-full(3.2,1.8);
 		text-align: center;
+		@media (width: rem(768)) {
+			line-height: rem(50);			
+		}
 		@media (width >= rem(768)) {
 			margin-bottom: rem(80);
 			text-align: left;
@@ -71,6 +74,7 @@
 		font-size: fluid-full(75, 22);
 		line-height: calc(88 / 75);	
 		position: relative;
+		@media (width: rem(768)) {font-size: rem(43);}
 		&::after {
 			content: "";
 			background-image: url("../img/images/hero-img/hero-img_line.svg");
@@ -81,6 +85,10 @@
 			bottom: 0%;
 			background-repeat: no-repeat;
 			background-size: cover;
+			@media (width: rem(768)) {
+				width: rem(93);
+				height: rem(7);
+			}
 		}
 	}
 
@@ -89,9 +97,8 @@
 		line-height: calc(88 / 80);
 		font-weight: 700;
 		color: var(--color-text-for-level);
-		@media (width >= rem(768)) {
-			color: var(--color-text-primary);
-		}
+		@media (width: rem(768)) {font-size: rem(46);}
+		@media (width >= rem(768)) {color: var(--color-text-primary);}
 	}
 	
 	&__text-add {
