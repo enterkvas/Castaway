@@ -37,11 +37,15 @@
 }
 
 .rating-view {
-    display: flex;
+    font-size: rem(0);
+    display: inline-flex;
+    column-gap: fluid-full(5,0.5);
     &__star {
-        // width: fluid-full(17,7);
-        // height: fluid-full(17,7);
-        background-image: url('../../img/icons/review-stars/star.svg');
-        background-repeat: no-repeat;
-    }
+        width: fluid-full(17,7);
+        height: fluid-full(17,7);
+        background: url('../img/icons/review-stars/star_gray.svg') center/contain no-repeat;
+        &.is-active {
+            background: url('../img/icons/review-stars/star_yellow.svg') center/contain no-repeat;
+        }
+    }    
 }

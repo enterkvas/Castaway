@@ -897,11 +897,17 @@ p:not([class]):not(:last-child) {
 }
 
 .rating-view {
-  display: flex;
+  font-size: 0rem;
+  display: inline-flex;
+  column-gap: clamp(0.03125rem, -0.0491071429rem + 0.4017857143vw, 0.3125rem);
 }
 .rating-view__star {
-  background-image: url("../../img/icons/review-stars/star.svg");
-  background-repeat: no-repeat;
+  width: clamp(0.4375rem, 0.2589285714rem + 0.8928571429vw, 1.0625rem);
+  height: clamp(0.4375rem, 0.2589285714rem + 0.8928571429vw, 1.0625rem);
+  background: url("../img/icons/review-stars/star_gray.svg") center/contain no-repeat;
+}
+.rating-view__star.is-active {
+  background: url("../img/icons/review-stars/star_yellow.svg") center/contain no-repeat;
 }
 
 .header {
