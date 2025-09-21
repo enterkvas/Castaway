@@ -848,7 +848,6 @@ p:not([class]):not(:last-child) {
   flex-direction: column;
   row-gap: clamp(0.75rem, 0.625rem + 0.625vw, 1.1875rem);
   background-color: var(--color-bg-cards);
-  line-height: 1.2;
   padding: clamp(1.25rem, 0.7142857143rem + 2.6785714286vw, 3.125rem);
 }
 @media (width >= 36rem) {

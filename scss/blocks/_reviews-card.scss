@@ -4,7 +4,6 @@
     flex-direction: column;
     row-gap: fluid-full(19,12);
     background-color: var(--color-bg-cards);
-    line-height: 1.2;
     padding: fluid-full(50,20);
     @media (width >= rem(576)) {border-radius: rem(20);}
     @media (width >= rem(1440)) {
