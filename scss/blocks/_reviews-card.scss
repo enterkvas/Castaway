@@ -35,16 +35,16 @@
     }
 }
 
-.rating-view {
-    font-size: rem(0);
-    display: inline-flex;
+.stars {
+    display: flex;
     column-gap: fluid-full(5,0.5);
-    &__star {
-        width: fluid-full(17,7);
-        height: fluid-full(17,7);
-        background: url('../img/icons/review-stars/star_gray.svg') center/contain no-repeat;
-        &.is-active {
-            background: url('../img/icons/review-stars/star_yellow.svg') center/contain no-repeat;
-        }
-    }    
+    @media (width: rem(768)) {column-gap: rem(2);}
 }
+
+.star {
+    width: fluid-full(17,7);
+    height: fluid-full(17,7);
+    fill: #B7B7B7;   /* empty by default */
+}
+
+.star.full {fill: #FCFF51; /* filled */}

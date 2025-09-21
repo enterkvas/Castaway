@@ -895,18 +895,24 @@ p:not([class]):not(:last-child) {
   }
 }
 
-.rating-view {
-  font-size: 0rem;
-  display: inline-flex;
+.stars {
+  display: flex;
   column-gap: clamp(0.03125rem, -0.0491071429rem + 0.4017857143vw, 0.3125rem);
 }
-.rating-view__star {
+@media (width: 48rem) {
+  .stars {
+    column-gap: 0.125rem;
+  }
+}
+
+.star {
   width: clamp(0.4375rem, 0.2589285714rem + 0.8928571429vw, 1.0625rem);
   height: clamp(0.4375rem, 0.2589285714rem + 0.8928571429vw, 1.0625rem);
-  background: url("../img/icons/review-stars/star_gray.svg") center/contain no-repeat;
+  fill: #B7B7B7; /* empty by default */
 }
-.rating-view__star.is-active {
-  background: url("../img/icons/review-stars/star_yellow.svg") center/contain no-repeat;
+
+.star.full {
+  fill: #FCFF51; /* filled */
 }
 
 .header {
