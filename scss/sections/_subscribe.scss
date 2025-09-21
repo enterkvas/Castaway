@@ -48,8 +48,7 @@
 		display: inline-block;
 		padding-inline: rem(8);
 		margin-bottom: rem(20);
-		font-size: fluid-full(18, 15);
-		line-height: 1.5;
+		border-radius: 0;
 		@media (width: rem(768)) {
 			font-size: rem(16);
 			line-height: rem(24);
@@ -59,8 +58,6 @@
 			margin: 0;
 		}
 		@media (width >= rem(1440)) {
-			padding-top: rem(3);
-			margin-bottom: rem(-3);
 			letter-spacing: rem(0.5);
 		}
 	}
@@ -68,13 +65,18 @@
 	&__title {
 		margin-bottom: fluid-mobile(60,40);
 		font-size: fluid-full(72, 22);
-		line-height: 1.1;
+		line-height: fluid-full(79, 24);
 		letter-spacing: fluid-full(2.88,0.8);
+		@media (width: rem(768)) {
+			font-size: rem(42);
+			line-height: rem(46);
+		}
 		@media (width >= rem(768)) {margin: 0;}
 		@media (width >= rem(1440)) {
 			max-width: rem(500);
 			margin-bottom: 0;
 			padding-right: rem(20);
+			line-height: rem(79);
 		}
 	}
 }

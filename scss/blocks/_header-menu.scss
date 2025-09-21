@@ -1,8 +1,8 @@
 .menu {
   &__icon {
     position: absolute;
+    width: fluid-mobile(32,21);
     height: fluid-mobile(24,16);
-    aspect-ratio: 4 / 3;
     right: rem(15);
     z-index: 6;
     transition: all .3s ease 0s;

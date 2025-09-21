@@ -2,29 +2,29 @@
 	display: inline-block;
 	padding-block: fluid-full(12,5);
 	padding-inline: fluid-full(18,8);
-	font-size: fluid-full(18,15);
 	font-weight: 400;
-	line-height: calc(27 / 18);
-	border-radius: fluid-full(6,4);
 	color: var(--color-text-primary);
 	background-color: var(--color-accent);
-	@media (width: rem(768)) {
-		padding-block: rem(8);
-		font-size: rem(16);
-		border-radius: rem(5);
+	@media (width: rem(768)) {padding-block: rem(8);}
+	@media (width >= rem(1440)) {
+		line-height: rem(27);
 	}
 	&:hover {background-image: linear-gradient(to right, #E6D925, #20C9EE);}
-	}
+}
 .button-subscribe {
 	padding-block: fluid-mid(10,3);
 	padding-inline: fluid-mid(18,15);
 	font-size: fluid-full(15,10);
 	font-weight: 700;
-	line-height: calc(28 / 15);
-	border-radius: fluid-full(6,2);
+	line-height: fluid-full(29,20);
+	border-radius: fluid-full(6,4);
 	color: var(--color-text-muted);
 	background-color: var(--color-accent);
 	&:hover {background-image: linear-gradient(to right, #E6D925, #20C9EE);}
+	@media (width: rem(768)) {
+		line-height: rem(22);
+		border-radius: rem(5);
+	}
 	@media (width >= rem(768)) {padding-inline: fluid-mid(18,10);}
 }
 /* Button "Up": */

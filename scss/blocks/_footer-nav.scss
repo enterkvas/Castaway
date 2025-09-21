@@ -2,6 +2,9 @@
     &__row {
         display: flex;
         column-gap: fluid-mobile-add(406,80);
+        @media (width: rem(768)) {
+            column-gap: rem(292);
+        }
         @media (width >= rem(992)) {column-gap: fluid-mid_2(124,112);}
     } 
 
@@ -16,6 +19,10 @@
         padding-block: fluid-mobile(10,8);
         line-height: calc(27 / 17);
         color: var(--color-text-primary); 
+        @media (width: rem(768)) {
+            font-size: rem(16);
+            line-height: rem(25);
+        }
 		@media (width >= rem(768)) {
             padding-block: rem(6);
             &:hover, &:active {color: var(--color-accent);} 

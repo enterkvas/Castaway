@@ -7,6 +7,9 @@
 	&__link {
 		display: inline-flex;
 		width: var(--icon-soc1als-2-width);
+		@media (width: rem(768)) {
+			width: rem(19);
+		}
 	}
 
 }

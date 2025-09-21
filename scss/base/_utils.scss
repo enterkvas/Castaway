@@ -23,7 +23,7 @@
 
 .subtitle {
 	font-size: fluid-full(22,15);
-	line-height: calc(33 / 22);
+	line-height: fluid-full(33,22);
 	@media (width: rem(768)) {
 		font-size: rem(18);
 		line-height: rem(27);
@@ -35,6 +35,17 @@
 .text-blue {
 	color: var(--color-accent);
 	filter: saturate(200%);
+}
+
+.text-small {
+	font-size: fluid-full(18,15);
+	line-height: fluid-full(27,24);
+	border-radius: fluid-full(6,4);
+	@media (width: rem(768)) {
+		font-size: rem(16);
+		line-height: rem(24);
+		border-radius: rem(5)
+	}
 }
 
 .ellipsis-text {

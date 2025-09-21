@@ -1,12 +1,15 @@
 .hero {
 	@media (width >= rem(768)) {padding-top: fluid-mid(160,100);}
 
-	&__row {@media (width >= rem(768)) {display: flex;}}
+	&__row {
+		@media (width >= rem(768)) {display: flex;}
+	}
 
 	&__col {
 		position: relative;
 		width: 100%;
 		@media (width >= rem(768)) {width: 50%;}
+		@media (width >= rem(1440)) {align-items: start;}
 	}
 
 	&__image {
@@ -45,34 +48,29 @@
 		@media(min-width: rem(576)) {padding-inline: rem(20);}
 		@media (width >= rem(768)) {
 			position: static;
-			padding-block: rem(20);
 			padding-left: fluid-mid(60,32);
-			padding-right: rem(2);
-			text-align: left;
+			padding-right: rem(5);
+			@media (width >= rem(1440)) {padding-top: rem(294);}
 		}
-		@media (width >= rem(1440)) {padding-inline: rem(60);}
 	}
 
 	&__text-main {
 		margin-bottom: fluid-mobile(620,228);
 		font-size: fluid-full(70, 20);
-		line-height: 1.257;
+		line-height: fluid-full(88,25);
 		letter-spacing: fluid-full(3.2,1.8);
 		text-align: center;
-		@media (width: rem(768)) {
-			line-height: rem(50);			
-		}
+		@media (width: rem(768)) {line-height: rem(50);}
 		@media (width >= rem(768)) {
 			margin-bottom: rem(80);
 			text-align: left;
 		}
-		@media (width >= rem(900)) {margin-bottom: rem(100);}
-		@media (width >= rem(1440)) {margin: rem(138) 0 rem(84);}
+		@media (width >= rem(900)) {margin-bottom: rem(92);}
 	}
 
 	&__text-underlining {
 		font-size: fluid-full(75, 22);
-		line-height: calc(88 / 75);	
+		// line-height: calc(88 / 75);	
 		position: relative;
 		@media (width: rem(768)) {font-size: rem(43);}
 		&::after {
@@ -94,7 +92,7 @@
 
 	&__text-green {
 		font-size: fluid-full(80, 23);
-		line-height: calc(88 / 80);
+		// line-height: calc(88 / 80);
 		font-weight: 700;
 		color: var(--color-text-for-level);
 		@media (width: rem(768)) {font-size: rem(46);}
