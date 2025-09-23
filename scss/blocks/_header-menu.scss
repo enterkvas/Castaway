@@ -12,7 +12,7 @@
       position: absolute;
       width: 100%;
       height: 17%;
-      background-color: #fff;
+      background-color: var(--color-text-primary);
       transition: all .3s ease 0s;
     }
     &::before,
@@ -79,9 +79,7 @@
   }
 
   &__item {
-    @media (width >= rem(768)) {
-      &:last-child .menu__link{ padding-right: 0;}
-    }
+    @media (width >= rem(768)) {&:last-child .menu__link{ padding-right: 0;}}
   }
 
   &__link {
@@ -96,7 +94,7 @@
         padding: fluid-mid(20,10);
         font-size: fluid-mid(17,15);
         line-height: fluid-mid(27,24);     
-        &:hover, &:active {color: var(--color-accent);}     
+        &:hover, &:active {color: var(--color-accent-blue);}     
     }
   }
 }

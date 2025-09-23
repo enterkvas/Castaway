@@ -4,13 +4,14 @@
 	padding-inline: fluid-full(18,8);
 	font-weight: 400;
 	color: var(--color-text-primary);
-	background-color: var(--color-accent);
+	background-color: var(--color-accent-blue);
 	@media (width: rem(768)) {padding-block: rem(8);}
-	@media (width >= rem(1440)) {
-		line-height: rem(27);
+	@media (width >= rem(992)) {
+		&:hover {background-image: linear-gradient(to right, var(--color-accent-yellow), var(--color-accent-blue));}		
 	}
-	&:hover {background-image: linear-gradient(to right, #E6D925, #20C9EE);}
+	@media (width >= rem(1440)) {line-height: rem(27);}
 }
+
 .button-subscribe {
 	padding-block: fluid-mid(10,3);
 	padding-inline: fluid-mid(18,15);
@@ -19,33 +20,36 @@
 	line-height: fluid-full(29,20);
 	border-radius: fluid-full(6,4);
 	color: var(--color-text-muted);
-	background-color: var(--color-accent);
-	&:hover {background-image: linear-gradient(to right, #E6D925, #20C9EE);}
+	background-color: var(--color-accent-blue);
 	@media (width: rem(768)) {
 		line-height: rem(22);
 		border-radius: rem(5);
 	}
 	@media (width >= rem(768)) {padding-inline: fluid-mid(18,10);}
+	@media (width >= rem(992)) {
+		&:hover {background-image: linear-gradient(to right, var(--color-accent-yellow), var(--color-accent-blue));}
+		cursor: pointer;		
+	}
 }
+
 /* Button "Up": */
 .btn_up {
 	display: none;
 	position: fixed;
 	bottom: rem(40);
 	right: rem(15);
-	width: rem(50);
+	width: fluid-full(60,40);
 	aspect-ratio: 1;
 	border-radius: 50%;
-	border: rem(2) solid #000;
 	z-index: 100;
 	outline: 0 !important; 
 	background-color: var(--color-bg-btn-up); 
 	&::before, &::after {
 		content: "";
-		width: rem(10);
+		width: fluid-full(16,10);
 		aspect-ratio: 1;
-		border-top: rem(2) solid #000;
-		border-right: rem(2) solid #000;
+		border-top: rem(2) solid var(--color-bg-cards);
+		border-right: rem(2) solid var(--color-bg-cards);
 		transform: rotate(-45deg);
 		position: absolute;		
 		bottom: 0;
@@ -53,14 +57,33 @@
 		right: 0;
 		margin: auto;
 	} 
-	&::before {top: rem(-5);} 
-	&::after {top: rem(10);}	
-	&.active {display: block;}  
+	&::before {top: 0;} 
+	&::after {top: rem(13);}	
+	&.active {display: block;} 
+	@media (width: rem(768)) {
+		&::before, &::after {
+			width: rem(12);
+		}
+		&::before {top: rem(-3);} 
+		&::after {top: rem(15);}
+	}
 	@media(width >= rem(992)) {
 		&:hover {
 			cursor: pointer;
-			background-color: var(--color-accent);
+			background-color: var(--color-accent-blue);
 			transition: 0.5s;
+			&::before, &::after {
+				border-top: rem(2) solid var(--color-text-primary);
+				border-right: rem(2) solid var(--color-text-primary);
+			}
 		}
 	}
+
+	@media (width >= rem(1440)) {
+		&::before, &::after {
+			border-top: rem(3) solid var(--color-bg-cards);
+			border-right: rem(3) solid var(--color-bg-cards);
+		}
+		&::after {top: rem(24);}
+	} 	
 }

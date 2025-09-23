@@ -44,7 +44,7 @@
 .star {
     width: fluid-full(17,7);
     height: fluid-full(17,7);
-    fill: #B7B7B7;   /* empty by default */
+    fill: var(--color-text-muted);   /* empty by default */
 }
 
-.star.full {fill: #FCFF51; /* filled */}
+.star.full {fill: var(--color-accent-yellow); /* filled */}

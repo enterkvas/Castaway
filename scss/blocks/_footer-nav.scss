@@ -2,22 +2,20 @@
     &__row {
         display: flex;
         column-gap: fluid-mobile-add(406,80);
-        @media (width: rem(768)) {
-            column-gap: rem(292);
-        }
+        @media (width: rem(768)) {column-gap: rem(292);}
         @media (width >= rem(992)) {column-gap: fluid-mid_2(124,112);}
     } 
 
     &__list {
         display: flex;
         flex-direction: column;
-        font-size: fluid-full(17,15);
     }
     
     &__link {
         display: inline-flex;
         padding-block: fluid-mobile(10,8);
-        line-height: calc(27 / 17);
+        font-size: fluid-full(17,15);
+        line-height: fluid-full(27,24);
         color: var(--color-text-primary); 
         @media (width: rem(768)) {
             font-size: rem(16);
@@ -25,7 +23,7 @@
         }
 		@media (width >= rem(768)) {
             padding-block: rem(6);
-            &:hover, &:active {color: var(--color-accent);} 
+            &:hover, &:active {color: var(--color-accent-blue);} 
             @media (width >= rem(992)) {
                 padding-block: 0;
                 padding-bottom: rem(8);

@@ -69,8 +69,7 @@
 	}
 
 	&__text-underlining {
-		font-size: fluid-full(75, 22);
-		// line-height: calc(88 / 75);	
+		font-size: fluid-full(75, 22);	
 		position: relative;
 		@media (width: rem(768)) {font-size: rem(43);}
 		&::after {
@@ -92,7 +91,6 @@
 
 	&__text-green {
 		font-size: fluid-full(80, 23);
-		// line-height: calc(88 / 80);
 		font-weight: 700;
 		color: var(--color-text-for-level);
 		@media (width: rem(768)) {font-size: rem(46);}
