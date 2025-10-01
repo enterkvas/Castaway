@@ -13,16 +13,17 @@
 }
 
 .button-subscribe {
-	padding-block: fluid-mid(10,3);
-	padding-inline: fluid-mid(18,15);
-	font-size: fluid-full(15,10);
+	padding-block: fluid-mid(12,2);
+	padding-inline: fluid-mid(18,10);
+	font-size: fluid-full(15,14);
 	font-weight: 700;
-	line-height: fluid-full(29,20);
+	line-height: rem(24);
 	border-radius: fluid-full(6,4);
 	color: var(--color-text-muted);
 	background-color: var(--color-accent-blue);
 	@media (width: rem(768)) {
-		line-height: rem(22);
+		padding-block: rem(4);
+		font-size: rem(14);
 		border-radius: rem(5);
 	}
 	@media (width >= rem(768)) {padding-inline: fluid-mid(18,10);}

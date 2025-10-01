@@ -1,6 +1,7 @@
 .card-episodes {
 
-    &__border {		
+    &__border {
+		height: fluid-mobile(852,355);		
 		@media (width >= rem(768)) {
 			display: flex;
 			column-gap: fluid-mid(53,40);
@@ -16,11 +17,7 @@
 	&__image {
 		width: 100%;
 		left: 0;
-		@media (width >= rem(768)) {
-			position: static;
-			width: auto;
-			margin: 0;
-		}
+		@media (width >= rem(768)) {width: auto;}
 		& img {
 			filter: brightness(0.7);
 			@media (width >= rem(768)) {filter: brightness(1.0);}
@@ -58,9 +55,12 @@
 		margin: 0 auto;
 		margin-bottom: fluid-mobile(40,20);
 		padding-block: 0;
-		padding-inline: fluid-full(15,10);
+		padding-inline: rem(12);
 		background-color: var(--color-bg-primary);
-		@media (width >= rem(768)) {margin: 0;}
+		@media (width >= rem(768)) {
+			padding-inline: fluid-mid(15,12);
+			margin: 0;
+		}
 		@media (width >= rem(1440)) {
 			margin-bottom: rem(28);
 			line-height: rem(27);
@@ -68,29 +68,36 @@
 	}
 
     &__text-blue {
-		align-self: flex-start;
+		height: rem(24);
 		margin-inline: auto;
 		margin-top: 0;
 		margin-bottom: fluid-mobile(132,28);
 		padding-block: 0;
-		padding-inline: fluid-mobile(12,10);
+		padding-inline: rem(12);
+		line-height: rem(24);
 		background-color: var(--color-bg-primary);
-		@media (width >= rem(768)) {		
+		@media (width >= rem(768)) {
+			height: fluid-mid(27,24);		
 			margin: 0;
 			padding: 0;
 			background-color: transparent;
 			border-radius: 0;
 		}
-		@media (width >= rem(1440)) {line-height: rem(27);}
 
 		& span {
-			margin-left: fluid-full(5,3);
-			font-size: fluid-full(19,16);	
+			display: inline-block;
+			margin-left: rem(3);
+			font-size: rem(16);
+			@media (width >= rem(768)) {
+				height: fluid-mid(27,24);
+				margin-left: fluid-mid(5,4);
+				font-size: fluid-mid(19,16);
+			}
 		}
 	}
 
 	&__header {
-		margin-bottom: fluid-mobile(220,65);
+		margin-bottom: fluid-mobile(220,69);
 		@media (width >= rem(768)) {
 			margin-bottom: 0;
 			width: 100%;
@@ -103,6 +110,7 @@
 		font-size: fluid-mobile(40,18);
 		line-height: fluid-full(70,22);
 		letter-spacing: fluid-full(2.56,0.816);
+		-webkit-line-clamp: 2;
 		@media (width >= rem(768)) {
 			padding-inline: 0;
 			margin: 0;

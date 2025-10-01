@@ -38,13 +38,13 @@
 }
 
 .text-small {
-	font-size: fluid-full(18,15);
-	line-height: fluid-full(27,24);
-	border-radius: fluid-full(6,4);
-	@media (width: rem(768)) {
-		font-size: rem(16);
-		line-height: rem(24);
-		border-radius: rem(5)
+	font-size: rem(15);
+	line-height: rem(24);
+	border-radius: rem(4);
+	@media (width >= rem(768)) {
+		font-size: fluid-mid(18,15);
+		line-height: fluid-mid(27,24);
+		border-radius: fluid-mid(6,4);
 	}
 }
 

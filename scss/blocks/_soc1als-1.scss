@@ -4,8 +4,8 @@
 		justify-content: flex-start;
 		column-gap: fluid-mobile(70,30);
 		font-size: 0;
-		@media (width >= rem(768)) {column-gap: rem(34);}
-		@media (width >= rem(992)) {column-gap: rem(20);}
+		@media (width >= rem(768)) {column-gap: rem(20);}
+		@media (width >= rem(1440)) {column-gap: rem(17);}
 	}
 		
 	&__link {

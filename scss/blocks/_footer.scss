@@ -46,17 +46,6 @@
 		}
 		@media (width >= rem(992)) {margin-bottom: rem(20);}
 	}
-
-	&__soc1als-1 {
-		@media (width >= rem(992)) {
-			position: absolute;
-			top: 19%;
-			right: 5%;
-		}
-		@media (width >= rem(1200)) {top: 21%;}
-		@media (width >= rem(1440)) {right: 14%;}
-		@media (width >= rem(2200)) {right: 30%;}
-	}
 	
 	&__soc1als-2 {
 		display: flex;
