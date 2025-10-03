@@ -37,7 +37,7 @@
 
 .stars {
     display: flex;
-    column-gap: fluid-full(5,0.5);
+    column-gap: fluid-full(5,1);
     @media (width: rem(768)) {column-gap: rem(2);}
 }
 

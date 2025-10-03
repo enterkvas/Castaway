@@ -11,9 +11,6 @@
 	&__link {
 		display: inline-block;
 		width: var(--icon-soc1als-1-width);
-		@media (width: rem(768)) {
-			width: rem(26);
-			height: rem(26);
-		}
+		@media (width: rem(768)) {width: rem(26);}
 	}
 }

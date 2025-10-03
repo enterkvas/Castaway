@@ -51,7 +51,6 @@
 			width: rem(522);
 			height: rem(82);
 			margin: 0;
-			line-height: rem(29);
 		}		
 		&:focus {box-shadow: 0px 0px 10px 2px var(--color-text-primary);}
 		&._error {border: 3px solid var(--color-accent-red);}
