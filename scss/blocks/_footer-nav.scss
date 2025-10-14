@@ -2,7 +2,6 @@
     &__row {
         display: flex;
         column-gap: fluid-mobile-add(406,80);
-        @media (width: rem(768)) {column-gap: rem(292);}
         @media (width >= rem(992)) {column-gap: fluid-mid_2(124,112);}
     } 
 

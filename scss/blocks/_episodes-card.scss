@@ -1,7 +1,6 @@
 .card-episodes {
 
-    &__border {
-		height: fluid-mobile(852,355);		
+    &__border {	
 		@media (width >= rem(768)) {
 			display: flex;
 			column-gap: fluid-mid(53,40);
@@ -91,7 +90,7 @@
 			@media (width >= rem(768)) {
 				height: fluid-mid(27,24);
 				margin-left: fluid-mid(5,4);
-				font-size: fluid-mid(19,16);
+				font-size: fluid-mid(19,17);
 			}
 		}
 	}
@@ -116,7 +115,6 @@
 			margin: 0;
 			margin-bottom: rem(8);
 			font-size: fluid-mid(57,28);
-			line-height: rem(35);
 		}
 		@media (width >= rem(1290)) {margin-bottom: 0;}
 		@media (width >= rem(1440)) {
