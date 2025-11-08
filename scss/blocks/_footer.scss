@@ -9,14 +9,9 @@
 		row-gap:  fluid-mobile-add(40,20);		
 		@media (width: rem(768)) {row-gap: rem(32);}
 		@media (width >= rem(992)) {
-			position: relative;
 			display: flex;
+			justify-content: space-between;	
 			margin-bottom: 0;
-		}
-		@media (width >= rem(1440)) {
-			position: relative;
-			display: flex;
-			justify-content: space-between;		
 		}
 	}
 

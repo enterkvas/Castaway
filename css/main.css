@@ -598,16 +598,9 @@ p:not([class]):not(:last-child) {
 }
 @media (width >= 62rem) {
   .footer__row {
-    position: relative;
-    display: flex;
-    margin-bottom: 0;
-  }
-}
-@media (width >= 90rem) {
-  .footer__row {
-    position: relative;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 }
 .footer__col {
@@ -914,22 +907,19 @@ p:not([class]):not(:last-child) {
 }
 
 .menu__icon {
-  position: absolute;
+  position: relative;
   width: clamp(1.3125rem, 0.8203299776rem + 2.4608501119vw, 2rem);
   height: clamp(1rem, 0.6420581655rem + 1.7897091723vw, 1.5rem);
-  right: 0.9375rem;
-  z-index: 6;
-  transition: all 0.3s ease 0s;
+  z-index: 20;
 }
 .menu__icon span, .menu__icon::before, .menu__icon::after {
+  content: "";
   position: absolute;
+  left: 0;
   width: 100%;
   height: 17%;
-  background-color: var(--color-text-primary);
-  transition: all 0.3s ease 0s;
-}
-.menu__icon::before, .menu__icon::after {
-  content: "";
+  background: var(--color-text-primary);
+  transition: all 0.3s ease;
 }
 .menu__icon::before {
   top: 0;
@@ -939,13 +929,10 @@ p:not([class]):not(:last-child) {
 }
 .menu__icon span {
   top: 50%;
-  transform: translate(0, -50%);
-}
-.menu__icon._active {
-  top: 50%;
+  transform: translateY(-50%);
 }
 .menu__icon._active span {
-  transform: scale(0) translate(0, -50%);
+  opacity: 0;
 }
 .menu__icon._active::before, .menu__icon._active::after {
   top: 50%;
@@ -956,11 +943,6 @@ p:not([class]):not(:last-child) {
 }
 .menu__icon._active::after {
   transform: rotate(45deg) translate(-0.1875rem, -50%);
-}
-@media (min-width: 36rem) {
-  .menu__icon {
-    right: 1.25rem;
-  }
 }
 @media (min-width: 48rem) {
   .menu__icon {
@@ -974,52 +956,79 @@ p:not([class]):not(:last-child) {
   }
 }
 .menu__body {
-  position: absolute;
-  top: 0;
-  left: -150%;
-  height: 100vh;
-  width: 100%;
-  background-color: rgba(6, 33, 55, 0.9);
+  position: fixed;
+  inset: 0;
   display: flex;
-  z-index: 5;
-  overflow: auto;
-  transition: all 0.3s ease 0s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(1.03);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
 }
 .menu__body._active {
-  left: 0;
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
 }
 @media (min-width: 48rem) {
   .menu__body {
     position: static;
     height: auto;
-    background-color: transparent;
+    background: transparent;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
   }
 }
-.menu__list {
+.menu__body .menu__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+.menu__body._active .menu__overlay {
+  opacity: 1;
+}
+.menu__body .menu__list {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  padding: 1.875rem;
-  gap: 0;
-  margin: auto;
-}
-@media (min-width: 48rem) {
-  .menu__list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
-  }
+  align-items: center;
+  gap: 1.5rem;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 @media (width >= 48rem) {
-  .menu__item:last-child .menu__link {
-    padding-right: 0;
+  .menu__body .menu__list {
+    flex-direction: row;
+    padding: 0;
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+.menu__body._active .menu__list {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
 .menu__link {
-  display: block;
   font-size: clamp(1.5rem, 1.1420581655rem + 1.7897091723vw, 2rem);
   line-height: clamp(5rem, 3.5682326622rem + 7.158836689vw, 7rem);
   color: var(--color-text-primary);
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+.menu__link:hover {
+  color: var(--color-accent-blue);
 }
 @media (width >= 48rem) {
   .menu__link {
@@ -1032,6 +1041,10 @@ p:not([class]):not(:last-child) {
   .menu__link:hover, .menu__link:active {
     color: var(--color-accent-blue);
   }
+}
+
+body._lock {
+  overflow: hidden;
 }
 
 .soc1als-1__list {

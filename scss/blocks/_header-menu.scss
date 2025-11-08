@@ -1,40 +1,36 @@
 .menu {
   &__icon {
-    position: absolute;
+    position: relative;
     width: fluid-mobile(32,21);
     height: fluid-mobile(24,16);
-    right: rem(15);
-    z-index: 6;
-    transition: all .3s ease 0s;
-    & span,
-    &::before,
-    &::after {
+    z-index: 20;
+
+    span, &::before, &::after {
+      content: '';
       position: absolute;
+      left: 0;
       width: 100%;
       height: 17%;
-      background-color: var(--color-text-primary);
-      transition: all .3s ease 0s;
+      background: var(--color-text-primary);
+      transition: all 0.3s ease;
     }
-    &::before,
-    &::after {content: "";}
-    &::before {top: 0;}
-    &::after {bottom: 0;}
-    & span {
-      top: 50%;
-      transform: translate(0, -50%);
-    }
+
+    &::before { top: 0; }
+    &::after { bottom: 0; }
+    span { top: 50%; transform: translateY(-50%); }
+
     &._active {
-      top: 50%; 
-      & span {transform: scale(0) translate(0, -50%);}
+      span { opacity: 0; }
       &::before,
       &::after {
         top: 50%;
         height: 25%;
       }
+
       &::before {transform: rotate(-45deg) translate(rem(3), -50%);}
-      &::after {transform: rotate(45deg) translate(rem(-3), -50%);}     
+      &::after {transform: rotate(45deg) translate(rem(-3), -50%);}
     }
-    @media(min-width: rem(576)) {right: rem(20);}
+
     @media(min-width: rem(768)) {
       opacity: 0;
       visibility: hidden;
@@ -44,57 +40,94 @@
       background-color: transparent;
       font-size: 0;
     }
-  }    
+  }
 
   &__body {
-    position: absolute;
-    top: 0;
-    left: -150%;
-    height: 100vh;
-    width: 100%; 
-    background-color: rgb(6 33 55 / 0.9);
+    position: fixed;
+    inset: 0;
     display: flex;
-    z-index: 5;
-    overflow: auto;
-    transition: all .3s ease 0s;
-    &._active {left: 0;}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(1.03);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+
+    &._active {
+      opacity: 1;
+      pointer-events: auto;
+      transform: scale(1);
+    }
+
     @media (min-width: rem(768)) {
       position: static;
       height: auto;
-      background-color: transparent;
+      background: transparent;
+      transform: none;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .menu__overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 1;
+    }
+
+    &._active .menu__overlay { opacity: 1; }
+
+    .menu__list {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      transform: translateY(20px);
+      opacity: 0;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+
+      @media (width >= rem(768)) {
+        flex-direction: row;
+        padding: 0;
+        pointer-events: auto;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    &._active .menu__list {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.1s;
     }
   }
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-    padding: rem(30);
-    gap: 0;
-    margin: auto;
-    @media (min-width: rem(768)) {
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding: 0;
-    } 
-  }
-
-  &__item {
-    @media (width >= rem(768)) {&:last-child .menu__link{ padding-right: 0;}}
-  }
-
   &__link {
-    display: block;
     font-size: fluid-mobile(32,24);
     line-height: fluid-mobile(112,80);
     color: var(--color-text-primary);
     text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover { color: var(--color-accent-blue); }
+
     @media (width >= rem(768)) {
         display: inline-flex;
         align-items: center;
         padding: fluid-mid(20,10);
         font-size: fluid-mid(17,15);
-        line-height: fluid-mid(27,24);     
+        line-height: fluid-mid(27,24);
+
         &:hover, &:active {color: var(--color-accent-blue);}     
     }
   }
 }
+
+body._lock { overflow: hidden; }
