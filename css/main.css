@@ -305,13 +305,13 @@ p:not([class]):not(:last-child) {
     width: auto;
   }
 }
-.card-episodes__text {
+.card-episodes__body {
   position: absolute;
   z-index: 1;
   padding-block: clamp(1.25rem, 0.3551454139rem + 4.4742729306vw, 2.5rem);
 }
 @media (width >= 48rem) {
-  .card-episodes__text {
+  .card-episodes__body {
     position: static;
     width: 80%;
     padding: 0;
