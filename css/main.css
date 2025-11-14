@@ -1235,7 +1235,7 @@ body._lock {
   bottom: 1.25rem;
   padding-inline: 0.9375rem;
 }
-@media (min-width: 36rem) {
+@media (width >= 36rem) {
   .hero__body {
     padding-inline: 1.25rem;
   }
