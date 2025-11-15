@@ -343,6 +343,7 @@ p:not([class]):not(:last-child) {
   padding-block: 0;
   padding-inline: 0.75rem;
   background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
 }
 @media (width >= 48rem) {
   .card-episodes__top-title {
@@ -389,6 +390,7 @@ p:not([class]):not(:last-child) {
 }
 .card-episodes__header {
   margin-bottom: clamp(4.3125rem, -2.4436521253rem + 33.7807606264vw, 13.75rem);
+  color: var(--color-text-primary);
 }
 @media (width >= 48rem) {
   .card-episodes__header {
@@ -439,6 +441,9 @@ p:not([class]):not(:last-child) {
   .card-episodes__button {
     margin: 0;
     align-self: flex-start;
+  }
+  .card-episodes__button:hover {
+    background-image: none;
   }
 }
 
