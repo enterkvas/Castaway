@@ -9,6 +9,7 @@
 	padding-block: fluid-full(26,12);
 	background-color: var(--color-bg-primary);
 	@media (width: rem(768)) {padding-block: rem(16);}
+	
 	&__container {
 		justify-content: space-between;	
 		width: 100%;

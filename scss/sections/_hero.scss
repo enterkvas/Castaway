@@ -17,6 +17,7 @@
 			position: relative;
 			top: 0%;
 			padding: 0;
+			border-radius: fluid-mid(32,22);
 			&::before {
 				content: "";
 				width: fluid-mid_1(68,36);
@@ -33,6 +34,7 @@
 					left: -4%;
 				}
 			}
+			& img {border-radius: fluid-mid(32,22);}
 		}		
 	}
 
