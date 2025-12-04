@@ -29,14 +29,14 @@ ul, li, ol, h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: "DM Sans";
-  src: url("../../fonts/DMSans-Regular.woff2") format("woff2");
+  src: url("./DMSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "DM Sans";
-  src: url("../../fonts/DMSans-Bold.woff2") format("woff2");
+  src: url("./DMSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -69,10 +69,6 @@ img {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-.main {
-  flex-grow: 1;
 }
 
 p:not([class]):not(:last-child) {
@@ -811,9 +807,9 @@ p:not([class]):not(:last-child) {
   background-color: var(--color-bg-cards);
   padding: clamp(1.25rem, 0.7142857143rem + 2.6785714286vw, 3.125rem);
 }
-@media (width >= 36rem) {
+@media (width >= 48rem) {
   .reviews-card {
-    border-radius: 1.25rem;
+    border-radius: clamp(1.375rem, 0.6607142857rem + 1.4880952381vw, 2rem);
   }
 }
 @media (width >= 90rem) {
@@ -949,7 +945,7 @@ p:not([class]):not(:last-child) {
 .menu__icon._active::after {
   transform: rotate(45deg) translate(-0.1875rem, -50%);
 }
-@media (min-width: 48rem) {
+@media (width >= 48rem) {
   .menu__icon {
     opacity: 0;
     visibility: hidden;
@@ -965,7 +961,6 @@ p:not([class]):not(:last-child) {
   inset: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background: transparent;
   opacity: 0;
@@ -976,10 +971,11 @@ p:not([class]):not(:last-child) {
 }
 .menu__body._active {
   opacity: 1;
+  padding-top: 10%;
   pointer-events: auto;
   transform: scale(1);
 }
-@media (min-width: 48rem) {
+@media (width >= 48rem) {
   .menu__body {
     position: static;
     height: auto;
@@ -1378,17 +1374,7 @@ body._lock {
 }
 @media (width >= 48rem) {
   .about__image img {
-    border-radius: 0.5rem;
-  }
-}
-@media (width >= 62rem) {
-  .about__image img {
-    border-radius: 0.625rem;
-  }
-}
-@media (width >= 90rem) {
-  .about__image img {
-    border-radius: 0.875rem;
+    border-radius: clamp(1.375rem, 0.6607142857rem + 1.4880952381vw, 2rem);
   }
 }
 .about__text {
@@ -1432,7 +1418,7 @@ body._lock {
 @media (width >= 48rem) {
   .subscribe__container {
     padding: clamp(2.5rem, 1.0714285714rem + 2.9761904762vw, 3.75rem);
-    border-radius: clamp(0.75rem, -0.6785714286rem + 2.9761904762vw, 2rem);
+    border-radius: clamp(1.375rem, 0.6607142857rem + 1.4880952381vw, 2rem);
   }
 }
 @media (width >= 48rem) {

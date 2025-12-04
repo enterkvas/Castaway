@@ -22,9 +22,7 @@
 		filter: brightness(0.7);
 		@media (width >= rem(768)) {filter: brightness(1.0);}			
 		& img {
-			@media (width >= rem(768)) {border-radius: rem(8);}
-			@media (width >= rem(992)) {border-radius: rem(10);}
-			@media (width >= rem(1440)) {border-radius: rem(14);}			
+			@media (width >= rem(768)) {border-radius: fluid-mid(32,22);}			
 		}
 	}
 	
