@@ -34,7 +34,11 @@
 					left: -4%;
 				}
 			}
-			& img {border-radius: fluid-mid(32,22);}
+			& img {
+				max-width: 100%;
+				height: auto;
+				border-radius: fluid-mid(32,22);
+			}
 		}		
 	}
 

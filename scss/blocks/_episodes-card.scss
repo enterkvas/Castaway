@@ -18,6 +18,8 @@
 		left: 0;
 		@media (width >= rem(768)) {width: auto;}
 		& img {
+			max-width: 100%;
+			height: auto;
 			filter: brightness(0.7);
 			@media (width >= rem(768)) {filter: brightness(1.0);}
 			@media (width >= rem(1440)) {width: auto;}

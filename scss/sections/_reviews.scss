@@ -1,12 +1,5 @@
 .reviews {
 	padding-block: var(--pad-bl-main);
-    &__container {
-        @media (min-width: rem(576)) {
-            padding-inline: rem(20);
-            margin: 0;
-        }
-		@media (min-width: rem(768)) {padding: 0;}
-    }
 
     &__list {
         display: grid;
