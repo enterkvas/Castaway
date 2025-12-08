@@ -18,8 +18,6 @@
 		left: 0;
 		@media (width >= rem(768)) {width: auto;}
 		& img {
-			max-width: 100%;
-			height: auto;
 			filter: brightness(0.7);
 			@media (width >= rem(768)) {filter: brightness(1.0);}
 			@media (width >= rem(1440)) {width: auto;}
@@ -124,7 +122,6 @@
 		@media (width >= rem(1290)) {margin-bottom: 0;}
 		@media (width >= rem(1440)) {
 			max-width: rem(619);
-			margin-bottom: rem(28);
 			line-height: rem(70);
 		}
 	}

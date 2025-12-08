@@ -27,7 +27,6 @@
 		display: inline-block;
 		&-img {
 			width: fluid-full(223,112);
-			height: auto;
 			@media (width: rem(768)) {width: rem(160);}
 		}
 		@media (width >= rem(992)) {margin-bottom: rem(20);}

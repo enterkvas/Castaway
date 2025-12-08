@@ -61,7 +61,7 @@ body._lock {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -289,8 +289,6 @@ p:not([class]):not(:last-child) {
   }
 }
 .card-episodes__image img {
-  max-width: 100%;
-  height: auto;
   filter: brightness(0.7);
 }
 @media (width >= 48rem) {
@@ -420,7 +418,6 @@ p:not([class]):not(:last-child) {
 @media (width >= 90rem) {
   .card-episodes__title {
     max-width: 38.6875rem;
-    margin-bottom: 1.75rem;
     line-height: 4.375rem;
   }
 }
@@ -621,7 +618,6 @@ p:not([class]):not(:last-child) {
 }
 .footer__logo-img {
   width: clamp(7rem, 5.0178571429rem + 9.9107142857vw, 13.9375rem);
-  height: auto;
 }
 @media (width: 48rem) {
   .footer__logo-img {
@@ -906,7 +902,6 @@ p:not([class]):not(:last-child) {
 }
 .header__logo-img {
   width: clamp(5rem, 3.5714285714rem + 7.1428571429vw, 10rem);
-  height: auto;
 }
 
 .menu__icon {
@@ -1225,8 +1220,6 @@ body._lock {
 }
 @media (width >= 48rem) {
   .hero__image img {
-    max-width: 100%;
-    height: auto;
     border-radius: clamp(1.375rem, 0.6607142857rem + 1.4880952381vw, 2rem);
   }
 }
@@ -1367,8 +1360,6 @@ body._lock {
 }
 @media (width >= 48rem) {
   .about__image img {
-    max-width: 100%;
-    height: auto;
     border-radius: clamp(1.375rem, 0.6607142857rem + 1.4880952381vw, 2rem);
   }
 }

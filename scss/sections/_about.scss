@@ -23,8 +23,6 @@
 		@media (width >= rem(768)) {filter: brightness(1.0);}			
 		& img {
 			@media (width >= rem(768)) {
-				max-width: 100%;
-				height: auto;
 				border-radius: fluid-mid(32,22);
 			}			
 		}
